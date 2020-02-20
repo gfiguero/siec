@@ -1,0 +1,72 @@
+App\Entity\Funcionario:
+    funcionario (template):
+        apellidoMaterno: ''
+        codigo (unique): '<randomNumber(9)>'
+        email: '<safeEmail()>'
+        telefono: '<randomNumber(9)>'
+        gradoCarabinero: '@grado_carabinero_pni_cabo_1'
+
+    funcionario_os2_gfiguero (extends funcionario):
+        nombres: 'Garri'
+        apellidoPaterno: 'Figueroa'
+        unidad: '@unidad_os2'
+
+    funcionario_os2_fmontero (extends funcionario):
+        nombres: 'Fernando'
+        apellidoPaterno: 'Montero'
+        unidad: '@unidad_os2'
+
+    funcionario_santiago_jsalgado (extends funcionario):
+        nombres: 'Jorge'
+        apellidoPaterno: 'Salgado'
+        unidad: '@unidad_comisaria_santiago'
+
+    funcionario_santiago_dtobar (extends funcionario):
+        nombres: 'Daniela'
+        apellidoPaterno: 'Tobar'
+        unidad: '@unidad_comisaria_santiago'
+
+    funcionario_santiago_jaburto (extends funcionario):
+        nombres: 'Jessica'
+        apellidoPaterno: 'Aburto'
+        unidad: '@unidad_comisaria_santiago'
+
+    funcionario_providencia_rsoto (extends funcionario):
+        nombres: 'Romanette'
+        apellidoPaterno: 'Soto'
+        unidad: '@unidad_comisaria_providencia'
+
+    funcionario_providencia_adiaz (extends funcionario):
+        nombres: 'Andrea'
+        apellidoPaterno: 'Díaz'
+        unidad: '@unidad_comisaria_providencia'
+
+    funcionario_providencia_pbasterrica (extends funcionario):
+        nombres: 'Pilar'
+        apellidoPaterno: 'Basterrica'
+        unidad: '@unidad_comisaria_providencia'
+
+    funcionario_peñalolen_msanchez (extends funcionario):
+        nombres: 'Mauricio'
+        apellidoPaterno: 'Sánchez'
+        unidad: '@unidad_comisaria_peñalolen'
+
+    funcionario_peñalolen_msilva (extends funcionario):
+        nombres: 'Mauricio'
+        apellidoPaterno: 'Silva'
+        unidad: '@unidad_comisaria_peñalolen'
+
+    funcionario_peñalolen_mdiaz (extends funcionario):
+        nombres: 'Mauricio'
+        apellidoPaterno: 'Díaz'
+        unidad: '@unidad_comisaria_peñalolen'
+
+#    funcionario_{1..200}:
+#        nombres: '<es_ES:firstName()>'
+#        codigo (unique): '<randomNumber(9)>'
+#        apellidoPaterno: '<es_ES:lastName()>'
+#        apellidoMaterno: '<es_ES:lastName()>'
+#        email: '<safeEmail()>'
+#        telefono: '<randomNumber(9)>'
+#        gradoCarabinero: '@grado_carabinero_pni_*'
+#        unidad: '@unidad_*'

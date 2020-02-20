@@ -1,0 +1,28 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Ingreso de Usuarios{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col col-sm-8 col-md-6 col-lg-4 col-xl-3">
+                <main class="my-5">
+                    {% if app.request.hasPreviousSession %}
+                        {% for type, messages in app.session.flashbag.all() %}
+                            {% for message in messages %}
+                                <div class="alert alert-{{ type }} alert-dismissible fade show">
+                                    {{ message }}
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                            {% endfor %}
+                        {% endfor %}
+                    {% endif %}
+                    <div>
+                        {% block fos_user_content %}{% endblock %}
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

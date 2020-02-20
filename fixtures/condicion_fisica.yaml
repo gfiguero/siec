@@ -1,0 +1,19 @@
+App\Entity\CondicionFisica:
+    condicion_fisica_1:
+        nombre: 'Normal'
+        codigo: '01'
+    condicion_fisica_2:
+        nombre: 'Bajo influencia alcohol'
+        codigo: '02'
+    condicion_fisica_3:
+        nombre: 'Ebriedad'
+        codigo: '03'
+    condicion_fisica_4:
+        nombre: 'Bajo influencia drogas'
+        codigo: '04'
+    condicion_fisica_5:
+        nombre: 'Fatiga'
+        codigo: '05'
+    condicion_fisica_6:
+        nombre: 'Sin especificar'
+        codigo: '99'

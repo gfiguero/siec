@@ -1,0 +1,25 @@
+App\Entity\TipoAccidenteConaset:
+    tipo_accidenteconaset_atropello:
+        nombre: 'Atropello'
+        codigo: '10'
+    tipo_accidenteconaset_caida:
+        nombre: 'Caída'
+        codigo: '20'
+    tipo_accidenteconaset_colision:
+        nombre: 'Colisión'
+        codigo: '30'
+    tipo_accidenteconaset_choque:
+        nombre: 'Choque'
+        codigo: '40'
+    tipo_accidenteconaset_volcadura:
+        nombre: 'Volcadura'
+        codigo: '70'
+    tipo_accidenteconaset_incendio:
+        nombre: 'Incendio'
+        codigo: '80'
+    tipo_accidenteconaset_descarrilamiento:
+        nombre: 'Descarrilamiento'
+        codigo: '90'
+    tipo_accidenteconaset_otro:
+        nombre: 'Otro'
+        codigo: '99'

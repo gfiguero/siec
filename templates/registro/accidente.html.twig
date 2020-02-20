@@ -1,0 +1,24 @@
+{% extends 'accidente/edit_layout.html.twig' %}
+
+{% block title %}Editar Accidente{% endblock %}
+
+{% block edit_accidente %}
+    <div class="container-fluid">
+        <ul class="list-unstyled multi-steps">
+            <li><a href="{{ path('registro_edit', {'accidente': accidente.id}) }}">Identificación</a></li>
+            <li>Causas</li>
+            <li>Condiciones</li>
+            <li>Ubicación</li>
+            <li class="is-active">Vehículos y pasajeros</li>
+            <li>Peatones</li>
+        </ul>
+    </div>
+    <hr>
+
+    {% form_theme form 'accidente/themes/accidente_theme.html.twig' %}
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <button type="submit" class="btn btn-primary"><span class="fa fa-save"></span> {{ button_label|default('Guardar Cambios') }}</button>
+    {{ form_end(form) }}
+
+{% endblock %}

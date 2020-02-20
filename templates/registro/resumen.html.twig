@@ -1,0 +1,514 @@
+{% extends 'registro/edit_layout.html.twig' %}
+{% use 'registro/etapa.html.twig' %}
+{% use 'registro/control.html.twig' %}
+
+{% block title %}Resumen Accidente{% endblock %}
+
+{% block header %}
+    <h1><span class="fa fa-fw fa-car-crash"></span> Registrar accidente - Resumen</h1>
+{% endblock %}
+
+{% block edit_registro %}
+    {% block etapa %}{{ parent() }}{% endblock %}
+    <div class="row">
+        <div class="col">
+            {{ block('control') }}
+            <div class="form-row">
+                <div class="col-md-6 mb-2">
+                    {% if accidente.incoherencias|length > 0 %}
+                    <div class="alert alert-danger h-100">
+                        <div class="d-flex">
+                            <span class="fa fa-fw fa-4x fa-exclamation-triangle m-2"></span>
+                            <div class="flex-grow-1">
+                                <h4 class="m-2">Existen incoherencias en el accidente</h4>
+                                <ul>
+                                {% for incoherencia in accidente.incoherencias %}
+                                    <li>{{ incoherencia.descripcion }}</li>
+                                {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% else %}
+                    <div class="alert alert-success h-100">
+                        <div class="d-flex">
+                            <span class="fa fa-fw fa-4x fa-check m-2"></span>
+                            <div class="flex-grow-1">
+                                <h4 class="m-3">No se detectaron incoherencias</h4>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="col-md-6 mb-2">
+                    {% if accidente.registroEtapas|length < 6 %}
+                    <div class="alert alert-danger h-100">
+                        <div class="d-flex">
+                            <span class="fa fa-fw fa-4x fa-exclamation-triangle m-2"></span>
+                            <div class="flex-grow-1">
+                                <h4 class="m-2">No se han registrado todas las etapas del accidente</h4>
+                            </div>
+                        </div>
+                    </div>
+                    {% else %}
+                    <div class="alert alert-success h-100">
+                        <div class="d-flex">
+                            <span class="fa fa-fw fa-4x fa-check m-2"></span>
+                            <div class="flex-grow-1">
+                                <h4 class="m-3">Todas las etapas han sido correctamente ingresadas</h4>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="flex-grow-1 my-1"><span class="fa fa-fw fa-info"></span> Identificación</h4>
+                        {% if accidente.estadoAccidente.codigo == 'nuevo' or accidente.estadoAccidente.codigo == 'objetado' %}
+                        <a class="btn btn-primary" href="{{ path('registro_identificacion', {'accidente': accidente.id}) }}"><span class="fa fa-fw fa-edit"></span> Corregir</a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="card-body p-2">
+                    <dl class="form-row my-2">
+                        <dt class="col-4 text-right">{{ 'accidente.numeroFormulario'|trans }}: </dt><dd class="col-8">{{ accidente.numeroFormulario }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.funcionarioResponsable'|trans }}: </dt><dd class="col-8">{{ accidente.funcionarioResponsable }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.unidad'|trans }}: </dt><dd class="col-8">{{ accidente.unidad }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.fecha'|trans }}: </dt><dd class="col-8">{{ accidente.fecha|date('Y-m-d') }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.hora'|trans }}: </dt><dd class="col-8">{{ accidente.hora|date('H:m') }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.registrado'|trans }}: </dt><dd class="col-8">{{ accidente.creado|date('Y-m-d H:m') }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.actualizado'|trans }}: </dt><dd class="col-8">{{ accidente.actualizado|date('Y-m-d H:m') }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.claseAccidente'|trans }}: </dt><dd class="col-8">{{ accidente.claseAccidente }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.tipoAccidente'|trans }}: </dt><dd class="col-8">{{ accidente.tipoAccidente }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.numeroParte'|trans }}: </dt><dd class="col-8">{{ accidente.numeroParte }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.funcionario'|trans }}: </dt><dd class="col-8">{{ accidente.funcionario }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.tribunal'|trans }}: </dt><dd class="col-8">{{ accidente.tribunal }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.concurreSiat'|trans }}: </dt><dd class="col-8">{% if accidente.concurreSiat %}{{ 'Si' }}{% else %}{{ 'No' }}{% endif %}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.aclaratoria'|trans }}: </dt><dd class="col-8">{{ accidente.aclaratoria }}&nbsp;</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="flex-grow-1 my-1"><span class="fa fa-fw fa-question"></span> Causas</h4>
+                        {% if accidente.estadoAccidente.codigo == 'nuevo' or accidente.estadoAccidente.codigo == 'objetado' %}
+                        <a class="btn btn-primary" href="{{ path('registro_causas', {'accidente': accidente.id}) }}"><span class="fa fa-fw fa-edit"></span> Corregir</a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="card-body p-2">
+                    <dl class="form-row my-2">
+                        <dt class="col-4 text-right">{{ 'accidente.causaBasal'|trans }}: </dt><dd class="col-8">{{ accidente.causaBasal }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.causas'|trans }}: </dt><dd class="col-8">{% for causa in accidente.causas %}<p class="mb-1">{{ causa }}</p>{% else %}{{ 'No ingresada' }}{% endfor %}&nbsp;</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="flex-grow-1 my-1"><span class="fa fa-fw fa-road"></span> Condiciones</h4>
+                        {% if accidente.estadoAccidente.codigo == 'nuevo' or accidente.estadoAccidente.codigo == 'objetado' %}
+                        <a class="btn btn-primary" href="{{ path('registro_condiciones', {'accidente': accidente.id}) }}"><span class="fa fa-fw fa-edit"></span> Corregir</a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="card-body p-2">
+                    <dl class="form-row my-2">
+                        <dt class="col-4 text-right">{{ 'accidente.estadoAtmosferico'|trans }}: </dt><dd class="col-8">{{ accidente.estadoAtmosferico }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.tipoLuminosidad'|trans }}: </dt><dd class="col-8">{{ accidente.tipoLuminosidad }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.estadoLuzArtificial'|trans }}: </dt><dd class="col-8">{{ accidente.estadoLuzArtificial }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.tipoPavimentoCalzada'|trans }}: </dt><dd class="col-8">{{ accidente.tipoPavimentoCalzada }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.condicionPavimentoCalzada'|trans }}: </dt><dd class="col-8">{{ accidente.condicionPavimentoCalzada }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.estadoPavimentoCalzada'|trans }}: </dt><dd class="col-8">{{ accidente.estadoPavimentoCalzada }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.tipoCalzada'|trans }}: </dt><dd class="col-8">{{ accidente.tipoCalzada }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.cantidadPistasIda'|trans }}: </dt><dd class="col-8">{{ accidente.cantidadPistasIda }} Pista(s)&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.cantidadPistasRegreso'|trans }}: </dt><dd class="col-8">{{ accidente.cantidadPistasRegreso }} Pista(s)&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.demarcacionPrioridadCalzada'|trans }}: </dt><dd class="col-8">{% for demarcacion in accidente.demarcacionPrioridadCalzada %}<p class="mb-1">{{ demarcacion }}</p>{% else %}{{ 'Ninguna' }}{% endfor %}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.demarcacionLineaCalzada'|trans }}: </dt><dd class="col-8">{% for demarcacion in accidente.demarcacionLineaCalzada %}<p class="mb-1">{{ demarcacion }}</p>{% else %}{{ 'Ninguna' }}{% endfor %}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.elementosCalzada'|trans }}: </dt><dd class="col-8">{% for elemento in accidente.elementosCalzada %}<p class="mb-1">{{ elemento }}</p>{% else %}{{ 'Ninguno' }}{% endfor %}&nbsp;</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="flex-grow-1 my-1"><span class="fa fa-fw fa-map-marker-alt"></span> Ubicación</h4>
+                        {% if accidente.estadoAccidente.codigo == 'nuevo' or accidente.estadoAccidente.codigo == 'objetado' %}
+                        <a class="btn btn-primary" href="{{ path('registro_ubicacion', {'accidente': accidente.id}) }}"><span class="fa fa-fw fa-edit"></span> Corregir</a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="card-body p-2">
+                    <dl class="form-row my-2">
+                        <dt class="col-4 text-right">{{ 'accidente.comuna'|trans }}: </dt><dd class="col-8">{{ accidente.comuna }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.cuadrante'|trans }}: </dt><dd class="col-8">{{ accidente.cuadrante }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.tipoZonaAccidente'|trans }}: </dt><dd class="col-8">{{ accidente.tipoZonaAccidente }}&nbsp;</dd>
+                        <dt class="col-4 text-right">{{ 'accidente.tipoUbicacionRelativaAccidente'|trans }}: </dt><dd class="col-8">{{ accidente.tipoUbicacionRelativaAccidente }}&nbsp;</dd>
+                    </dl>
+                </div>
+            </div>
+
+{#}
+
+
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="flex-grow-1 my-1"><span class="fa fa-fw fa-car"></span> Vehículos y Ocupantes</h4>
+                        {% if accidente.estadoAccidente.codigo == 'nuevo' or accidente.estadoAccidente.codigo == 'objetado' %}
+                        <a class="btn btn-primary" href="{{ path('registro_vehiculos', {'accidente': accidente.id}) }}"><span class="fa fa-fw fa-edit"></span> Corregir</a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="card-body p-2">
+                    {% for k, vehiculo in accidente.vehiculosAccidente %}
+                        <div class="card border-info mb-2">
+                            <div class="card-header bg-info"><h4 class="m-0">Vehículo {{ k }}</h4></div>
+                            <div class="card-body p-2">
+                                {% if vehiculo.vehiculoSeFuga %}<div class="alert alert-danger mb-2" role="alert"><span class="fa fa-fw fa-lg fa-exclamation-triangle"></span> Vehículo se da a la Fuga</div>{% endif %}
+                                {% if vehiculo.vehiculoEsCausanteProbable %}<div class="alert alert-warning mb-2" role="alert"><span class="fa fa-fw fa-lg fa-exclamation-circle"></span> Vehículo es causante probable</div>{% endif %}
+                                <div class="card border-info mb-2">
+                                    <div class="card-body p-2">
+                                        <dl class="form-row my-2">
+                                            <dt class="col-4 text-right">{{ 'vehiculo.placaPatenteUnica'|trans }}: </dt><dd class="col-8">{{ vehiculo.vehiculo.placaPatenteUnica }}&nbsp;</dd>
+                                            <dt class="col-4 text-right">{{ 'vehiculo.marcaVehiculo'|trans }}: </dt><dd class="col-8">{{ vehiculo.vehiculo.marcaVehiculo }}&nbsp;</dd>
+                                            <dt class="col-4 text-right">{{ 'vehiculo.modeloVehiculo'|trans }}: </dt><dd class="col-8">{{ vehiculo.vehiculo.modeloVehiculo }}&nbsp;</dd>
+                                            <dt class="col-4 text-right">{{ 'vehiculo.ano'|trans }}: </dt><dd class="col-8">{{ vehiculo.vehiculo.ano }}&nbsp;</dd>
+                                            <dt class="col-4 text-right">{{ 'vehiculo.color'|trans }}: </dt><dd class="col-8">{{ vehiculo.vehiculo.color }}&nbsp;</dd>
+                                            <dt class="col-4 text-right">{{ 'vehiculo.tipoVehiculo'|trans }}: </dt><dd class="col-8">{{ vehiculo.vehiculo.tipoVehiculo }}&nbsp;</dd>
+                                            <dt class="col-4 text-right">{{ 'accidente.servicioVehiculo'|trans }}: </dt><dd class="col-8">{{ vehiculo.servicioVehiculo }}&nbsp;</dd>
+                                            <dt class="col-4 text-right">{{ 'accidente.direccionVehiculo'|trans }}: </dt><dd class="col-8">{{ vehiculo.direccionVehiculo }}&nbsp;</dd>
+                                            <dt class="col-4 text-right">{{ 'accidente.maniobraVehiculo'|trans }}: </dt><dd class="col-8">{{ vehiculo.maniobraVehiculo }}&nbsp;</dd>
+                                            <dt class="col-4 text-right">{{ 'accidente.consecuenciaVehiculo'|trans }}: </dt><dd class="col-8">{{ vehiculo.consecuenciaVehiculo }}&nbsp;</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                {% for persona in vehiculo.conductorAccidente %}
+                                    <div class="col-md-6 mb-2">
+                                        <div class="card h-100">
+                                            <div class="card-header bg-light"><h4 class="m-0">Conductor {{ k }}</h4></div>
+                                            <div class="card-body p-2">
+                                                {% if persona.personaSeFuga %}<div class="alert alert-danger mb-2" role="alert"><span class="fa fa-fw fa-exclamation-triangle"></span> El conductor se da a la Fuga</div>{% endif %}
+                                                {% if persona.personaEsCausanteProbable %}<div class="alert alert-warning mb-2" role="alert"><span class="fa fa-fw fa-lg fa-exclamation-circle"></span> El conductor es causante probable</div>{% endif %}
+                                                <dl class="form-row my-2">
+                                                    {{ block('persona') }}
+                                                    {{ block('conductorAccidente') }}
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                                {% for j, persona in vehiculo.pasajerosAccidente %}
+                                    <div class="col-md-6 mb-2">
+                                        <div class="card h-100">
+                                            <div class="card-header bg-light"><h4 class="m-0">Pasajero {{ j }} (Vehiculo {{ k }})</h4></div>
+                                            <div class="card-body p-2">
+                                                {% if persona.personaSeFuga %}<div class="alert alert-danger mb-2" role="alert"><span class="fa fa-fw fa-exclamation-triangle"></span> Pasajero se da la Fuga</div>{% endif %}
+                                                {% if persona.personaEsCausanteProbable %}<div class="alert alert-warning mb-2" role="alert"><span class="fa fa-fw fa-lg fa-exclamation-circle"></span> Pasajero es causante probable</div>{% endif %}
+                                                <dl class="form-row my-2">
+                                                    {{ block('persona') }}
+                                                    {{ block('personaAccidente') }}
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="flex-grow-1 my-1"><span class="fas fa-fw fa-walking"></span> Peatones</h4>
+                        {% if accidente.estadoAccidente.codigo == 'nuevo' or accidente.estadoAccidente.codigo == 'objetado' %}
+                        <a class="btn btn-primary" href="{{ path('registro_peatones', {'accidente': accidente.id}) }}"><span class="fa fa-fw fa-edit"></span> Corregir</a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="card-body p-2">
+                    <div class="form-row">
+                    {% for k, persona in accidente.peatonesAccidente %}
+                        <div class="col-md-6 mb-2">
+                            <div class="card h-100">
+                                <div class="card-header bg-light">
+                                    <div class="d-flex">
+                                        <h4 class="flex-grow-1 m-0">Peatón {{ k }}</h4>
+                                    </div>
+                                </div>
+                                <div class="card-body p-2">
+                                    {% if persona.personaSeFuga %}<div class="alert alert-danger mb-2" role="alert"><span class="fa fa-fw fa-exclamation-triangle"></span> El conductor se da a la Fuga</div>{% endif %}
+                                    {% if persona.personaEsCausanteProbable %}<div class="alert alert-warning mb-2" role="alert"><span class="fa fa-fw fa-lg fa-exclamation-circle"></span>Causante probable</div>{% endif %}
+                                    <dl class="form-row my-2">
+                                        {{ block('persona') }}
+                                        {{ block('personaAccidente') }}
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+{#}
+{#}
+
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="flex-grow-1 my-1"><span class="fas fa-fw fa-car"></span>Vehículos</h4>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">{{ 'vehiculo.placaPatenteUnica'|trans }}</th>
+                                <th scope="col">{{ 'vehiculo.marcaVehiculo'|trans }}</th>
+                                <th scope="col">{{ 'vehiculo.modeloVehiculo'|trans }}</th>
+                                <th scope="col">{{ 'vehiculo.ano'|trans }}</th>
+                                <th scope="col">{{ 'vehiculo.color'|trans }}</th>
+                                <th scope="col">{{ 'vehiculo.tipoVehiculo'|trans }}</th>
+                                <th scope="col">{{ 'accidente.servicioVehiculo'|trans }}</th>
+                                <th scope="col">{{ 'accidente.direccionVehiculo'|trans }}</th>
+                                <th scope="col">{{ 'accidente.maniobraVehiculo'|trans }}</th>
+                                <th scope="col">{{ 'accidente.consecuenciaVehiculo'|trans }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for k, vehiculo in accidente.vehiculosAccidente %}
+                            <tr>
+                                <th scope="row">{% if vehiculo.vehiculo.placaPatenteUnica %}{{ vehiculo.vehiculo.placaPatenteUnica }}{% else %}{{'--'}}{% endif %}</th>
+                                <td>{% if vehiculo.vehiculo.marcaVehiculo %}{{ vehiculo.vehiculo.marcaVehiculo }}{% else %}{{'--'}}{% endif %}</td>
+                                <td>{% if vehiculo.vehiculo.modeloVehiculo %}{{ vehiculo.vehiculo.modeloVehiculo }}{% else %}{{'--'}}{% endif %}</td>
+                                <td>{% if vehiculo.vehiculo.ano %}{{ vehiculo.vehiculo.ano }}{% else %}{{'--'}}{% endif %}</td>
+                                <td>{% if vehiculo.vehiculo.color %}{{ vehiculo.vehiculo.color }}{% else %}{{'--'}}{% endif %}</td>
+                                <td>{% if vehiculo.vehiculo.tipoVehiculo %}{{ vehiculo.vehiculo.tipoVehiculo }}{% else %}{{'--'}}{% endif %}</td>
+                                <td>{% if vehiculo.servicioVehiculo %}{{ vehiculo.servicioVehiculo }}{% else %}{{'--'}}{% endif %}</td>
+                                <td>{% if vehiculo.direccionVehiculo %}{{ vehiculo.direccionVehiculo }}{% else %}{{'--'}}{% endif %}</td>
+                                <td>{% if vehiculo.maniobraVehiculo %}{{ vehiculo.maniobraVehiculo }}{% else %}{{'--'}}{% endif %}</td>
+                                <td>{% if vehiculo.consecuenciaVehiculo %}{{ vehiculo.consecuenciaVehiculo }}{% else %}{{'--'}}{% endif %}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+{#}
+            
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="flex-grow-1 my-1"><span class="fa fa-fw fa-car"></span> Vehículos</h4>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-sm table-bordered mb-0">
+                        <thead>
+                            <tr class="table-info">
+                                <th>{{ 'vehiculo.placaPatenteUnica'|trans }}</th>
+                                <th>{{ 'vehiculo.marcaVehiculo'|trans }}</th>
+                                <th>{{ 'vehiculo.modeloVehiculo'|trans }}</th>
+                                <th>{{ 'vehiculo.ano'|trans }}</th>
+                                <th>{{ 'vehiculo.color'|trans }}</th>
+                                <th>{{ 'vehiculo.tipoVehiculo'|trans }}</th>
+                                <th>{{ 'accidente.servicioVehiculo'|trans }}</th>
+                                <th>{{ 'accidente.direccionVehiculo'|trans }}</th>
+                                <th>{{ 'accidente.maniobraVehiculo'|trans }}</th>
+                                <th>{{ 'accidente.consecuenciaVehiculo'|trans }}</th>
+                                <th class="text-center"><span class="fa fa-exclamation-circle"></span></th>
+                                <th class="text-center"><span class="fa fa-exclamation-triangle"></span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for k, vehiculo in accidente.vehiculosAccidente %}
+                            <tr>
+                                <td>{{ vehiculo.vehiculo.placaPatenteUnica }}&nbsp;</td>
+                                <td>{{ vehiculo.vehiculo.marcaVehiculo }}&nbsp;</td>
+                                <td>{{ vehiculo.vehiculo.modeloVehiculo }}&nbsp;</td>
+                                <td>{{ vehiculo.vehiculo.ano }}&nbsp;</td>
+                                <td>{{ vehiculo.vehiculo.color }}&nbsp;</td>
+                                <td>{{ vehiculo.vehiculo.tipoVehiculo }}&nbsp;</td>
+                                <td>{{ vehiculo.servicioVehiculo }}&nbsp;</td>
+                                <td>{{ vehiculo.direccionVehiculo }}&nbsp;</td>
+                                <td>{{ vehiculo.maniobraVehiculo }}&nbsp;</td>
+                                <td>{{ vehiculo.consecuenciaVehiculo }}&nbsp;</td>
+                                <td class="text-center text-danger">{% if vehiculo.vehiculoEsCausanteProbable %}<span class="fa fa-fw fa-exclamation-circle"></span>{% endif %}</td>
+                                <td class="text-center text-warning">{% if vehiculo.vehiculoSeFuga %}<span class="fa fa-fw fa-exclamation-triangle"></span>{% endif %}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="flex-grow-1 my-1"><span class="fas fa-fw fa-address-card"></span> Conductores</h4>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-sm table-bordered mb-0">
+                        <thead>
+                            <tr class="table-info">
+                                <th>{{ 'vehiculo.placaPatenteUnica'|trans }}</th>
+                                <th>{{ 'persona.claseLicencia'|trans }}</th>
+                                <th>{{ 'persona.run'|trans }}</th>
+                                <th>{{ 'persona.nombres'|trans }}</th>
+                                <th>{{ 'persona.apellidoPaterno'|trans }}</th>
+                                <th>{{ 'persona.apellidoMaterno'|trans }}</th>
+                                <th>{{ 'persona.ocupacion'|trans }}</th>
+                                <th>{{ 'persona.lugarNacimiento'|trans }}</th>
+                                <th>{{ 'persona.fechaNacimiento'|trans }}</th>
+                                <th>{{ 'persona.genero'|trans }}</th>
+                                <th>{{ 'persona.estadoCivil'|trans }}</th>
+                                <th>{{ 'persona.nacionalidad'|trans }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for k, persona in accidente.conductoresAccidente %}
+                            <tr>
+                                <td>{{ persona.vehiculoConducidoAccidente.vehiculo.placaPatenteUnica }}</td>
+                                <td>{{ persona.claseLicencia.codigo }}</td>
+                                <td>{{ persona.persona.run }}</td>
+                                <td>{{ persona.persona.nombres }}</td>
+                                <td>{{ persona.persona.apellidoPaterno }}</td>
+                                <td>{{ persona.persona.apellidoMaterno }}</td>
+                                <td>{{ persona.persona.ocupacion }}</td>
+                                <td>{{ persona.persona.lugarNacimiento }}</td>
+                                <td>{{ persona.persona.fechaNacimiento|date('Y-m-d') }}</td>
+                                <td>{{ persona.persona.genero }}</td>
+                                <td>{{ persona.persona.estadoCivil }}</td>
+                                <td>{{ persona.persona.nacionalidad }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="flex-grow-1 my-1"><span class="fas fa-fw fa-walking"></span> Pasajeros</h4>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-sm table-bordered mb-0">
+                        <thead>
+                            <tr class="table-info">
+                                <th>{{ 'vehiculo.placaPatenteUnica'|trans }}</th>
+                                <th>{{ 'persona.run'|trans }}</th>
+                                <th>{{ 'persona.nombres'|trans }}</th>
+                                <th>{{ 'persona.apellidoPaterno'|trans }}</th>
+                                <th>{{ 'persona.apellidoMaterno'|trans }}</th>
+                                <th>{{ 'persona.ocupacion'|trans }}</th>
+                                <th>{{ 'persona.lugarNacimiento'|trans }}</th>
+                                <th>{{ 'persona.fechaNacimiento'|trans }}</th>
+                                <th>{{ 'persona.genero'|trans }}</th>
+                                <th>{{ 'persona.estadoCivil'|trans }}</th>
+                                <th>{{ 'persona.nacionalidad'|trans }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for k, persona in accidente.pasajerosAccidente %}
+                            <tr>
+                                <td>{{ persona.vehiculoAccidente.vehiculo.placaPatenteUnica }}</td>
+                                <td>{{ persona.persona.run }}</td>
+                                <td>{{ persona.persona.nombres }}</td>
+                                <td>{{ persona.persona.apellidoPaterno }}</td>
+                                <td>{{ persona.persona.apellidoMaterno }}</td>
+                                <td>{{ persona.persona.ocupacion }}</td>
+                                <td>{{ persona.persona.lugarNacimiento }}</td>
+                                <td>{{ persona.persona.fechaNacimiento|date('Y-m-d') }}</td>
+                                <td>{{ persona.persona.genero }}</td>
+                                <td>{{ persona.persona.estadoCivil }}</td>
+                                <td>{{ persona.persona.nacionalidad }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="flex-grow-1 my-1"><span class="fas fa-fw fa-walking"></span> Peatones</h4>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-sm table-bordered mb-0">
+                        <thead>
+                            <tr class="table-info">
+                                <th>{{ 'persona.run'|trans }}</th>
+                                <th>{{ 'persona.nombres'|trans }}</th>
+                                <th>{{ 'persona.apellidoPaterno'|trans }}</th>
+                                <th>{{ 'persona.apellidoMaterno'|trans }}</th>
+                                <th>{{ 'persona.ocupacion'|trans }}</th>
+                                <th>{{ 'persona.lugarNacimiento'|trans }}</th>
+                                <th>{{ 'persona.fechaNacimiento'|trans }}</th>
+                                <th>{{ 'persona.genero'|trans }}</th>
+                                <th>{{ 'persona.estadoCivil'|trans }}</th>
+                                <th>{{ 'persona.nacionalidad'|trans }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for k, persona in accidente.peatonesAccidente %}
+                            <tr>
+                                <td>{{ persona.persona.run }}</td>
+                                <td>{{ persona.persona.nombres }}</td>
+                                <td>{{ persona.persona.apellidoPaterno }}</td>
+                                <td>{{ persona.persona.apellidoMaterno }}</td>
+                                <td>{{ persona.persona.ocupacion }}</td>
+                                <td>{{ persona.persona.lugarNacimiento }}</td>
+                                <td>{{ persona.persona.fechaNacimiento|date('Y-m-d') }}</td>
+                                <td>{{ persona.persona.genero }}</td>
+                                <td>{{ persona.persona.estadoCivil }}</td>
+                                <td>{{ persona.persona.nacionalidad }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            {{ block('control') }}
+        </div>
+    </div>
+{% endblock %}
+
+{% block persona %}
+    <dt class="col-4 text-right">{{ 'persona.run'|trans }}: </dt><dd class="col-8">{{ persona.persona.run }}&nbsp;</dd>
+    <dt class="col-4 text-right">{{ 'persona.nombres'|trans }}: </dt><dd class="col-8">{{ persona.persona.nombres }}&nbsp;</dd>
+    <dt class="col-4 text-right">{{ 'persona.apellidoPaterno'|trans }}: </dt><dd class="col-8">{{ persona.persona.apellidoPaterno }}&nbsp;</dd>
+    <dt class="col-4 text-right">{{ 'persona.apellidoMaterno'|trans }}: </dt><dd class="col-8">{{ persona.persona.apellidoMaterno }}&nbsp;</dd>
+    <dt class="col-4 text-right">{{ 'persona.ocupacion'|trans }}: </dt><dd class="col-8">{{ persona.persona.ocupacion }}&nbsp;</dd>
+    <dt class="col-4 text-right">{{ 'persona.lugarNacimiento'|trans }}: </dt><dd class="col-8">{{ persona.persona.lugarNacimiento }}&nbsp;</dd>
+    <dt class="col-4 text-right">{{ 'persona.fechaNacimiento'|trans }}: </dt><dd class="col-8">{{ persona.persona.fechaNacimiento|date('Y-m-d') }}&nbsp;</dd>
+    <dt class="col-4 text-right">{{ 'persona.genero'|trans }}: </dt><dd class="col-8">{{ persona.persona.genero }}&nbsp;</dd>
+    <dt class="col-4 text-right">{{ 'persona.estadoCivil'|trans }}: </dt><dd class="col-8">{{ persona.persona.estadoCivil }}&nbsp;</dd>
+    <dt class="col-4 text-right">{{ 'persona.nacionalidad'|trans }}: </dt><dd class="col-8">{{ persona.persona.nacionalidad }}&nbsp;</dd>
+{% endblock %}
+
+{% block personaAccidente %}
+    <dt class="col-4 text-right">{{ 'accidente.condicionFisica'|trans }}: </dt><dd class="col-8">{{ persona.condicionFisica }}&nbsp;</dd>
+    <dt class="col-4 text-right">{{ 'accidente.consecuenciaPersona'|trans }}: </dt><dd class="col-8">{{ persona.consecuenciaPersona }}&nbsp;</dd>
+    <dt class="col-4 text-right">{{ 'accidente.cualidadEspecial'|trans }}: </dt><dd class="col-8">{{ persona.cualidadEspecial }}&nbsp;</dd>
+    <dt class="col-4 text-right">{{ 'accidente.tipoTrayecto'|trans }}: </dt><dd class="col-8">{{ persona.tipoTrayecto }}&nbsp;</dd>
+{% endblock %}
+
+{% block conductorAccidente %}
+    {{ block('personaAccidente') }}
+    <dt class="col-4 text-right">{{ 'accidente.claseLicencia'|trans }}: </dt><dd class="col-8">{{ persona.claseLicencia }}&nbsp;</dd>
+    <dt class="col-4 text-right">{{ 'accidente.comunaLicencia'|trans }}: </dt><dd class="col-8">{{ persona.comunaLicencia }}&nbsp;</dd>
+{% endblock %}
+

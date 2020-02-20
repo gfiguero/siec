@@ -1,0 +1,37 @@
+{% block persona_label %}{% endblock %}
+
+{% block persona_widget %}
+    <div class="form-row">
+        <div class="col-md-12">
+        {% form_theme form.run 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+        {{ form_row(form.run) }}
+
+        {% form_theme form.nombres 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+        {{ form_row(form.nombres) }}
+
+        {% form_theme form.apellidoPaterno 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+        {{ form_row(form.apellidoPaterno) }}
+
+        {% form_theme form.apellidoMaterno 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+        {{ form_row(form.apellidoMaterno) }}
+
+        {% form_theme form.ocupacion 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+        {{ form_row(form.ocupacion) }}
+
+        {% form_theme form.lugarNacimiento 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+        {{ form_row(form.lugarNacimiento) }}
+
+        {% form_theme form.fechaNacimiento 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+        {{ form_row(form.fechaNacimiento) }}
+
+        {% form_theme form.genero 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+        {{ form_row(form.genero) }}
+
+        {% form_theme form.estadoCivil 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+        {{ form_row(form.estadoCivil) }}
+
+        {% form_theme form.nacionalidad 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+        {{ form_row(form.nacionalidad) }}
+        </div>
+    </div>
+{% endblock %}

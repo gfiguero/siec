@@ -1,0 +1,16 @@
+App\Entity\Grupo:
+    grupo_carabineros:
+        name: Carabineros
+        roles: ['ROLE_CARABINERO']
+    grupo_carabineros_siec:
+        name: Carabineros SIEC
+        roles: ['ROLE_CARABINERO_SIEC']
+    grupo_admin:
+        name: Administradores de sistema
+        roles: ['ROLE_ADMIN']
+    grupo_conaset:
+        name: Comisión Nacional de Seguridad de Tránsito
+        roles: ['ROLE_CONASET']
+    grupo_minsal:
+        name: Ministerio de salud
+        roles: ['ROLE_MINSAL']

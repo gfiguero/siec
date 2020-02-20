@@ -1,0 +1,40 @@
+{% extends "@FOSUser/layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+
+<div class="card">
+    <div class="card-header bg-primary"><h4 class="text-white m-0">Perfil de Usuario</h4></div>
+    <div class="card-body p-2">
+        <div class="card mb-2">
+            <div class="card-header"><h5 class="m-0">Datos de Usario</h5></div>
+            <div class="card-body">
+                <dl class="form-row">
+                    <dt class="col-4 text-right">{{ 'profile.show.username'|trans }}: </dt><dd class="col-8">{{ user.username }}</dd>
+                    <dt class="col-4 text-right">{{ 'profile.show.email'|trans }}: </dt><dd class="col-8">{{ user.email }}</dd>
+                </dl>
+            </div>
+        </div>
+
+        {% if user.funcionario %}
+        <div class="card">
+            <div class="card-header"><h5 class="m-0">Datos de Funcionario</h5></div>
+            <div class="card-body">
+                <dl class="form-row">
+                    <dt class="col-4 text-right">{{ 'profile.show.nombres'|trans }}: </dt><dd class="col-8">{{ user.funcionario.nombres }}</dd>
+                    <dt class="col-4 text-right">{{ 'profile.show.codigo'|trans }}: </dt><dd class="col-8">{{ user.funcionario.codigo }}</dd>
+                    <dt class="col-4 text-right">{{ 'profile.show.apellidoPaterno'|trans }}: </dt><dd class="col-8">{{ user.funcionario.apellidoPaterno }}</dd>
+                    <dt class="col-4 text-right">{{ 'profile.show.apellidoMaterno'|trans }}: </dt><dd class="col-8">{{ user.funcionario.apellidoMaterno }}</dd>
+                    <dt class="col-4 text-right">{{ 'profile.show.email'|trans }}: </dt><dd class="col-8">{{ user.funcionario.email }}</dd>
+                    <dt class="col-4 text-right">{{ 'profile.show.telefono'|trans }}: </dt><dd class="col-8">{{ user.funcionario.telefono }}</dd>
+                    <dt class="col-4 text-right">{{ 'profile.show.gradoCarabinero'|trans }}: </dt><dd class="col-8">{{ user.funcionario.gradoCarabinero }}</dd>
+                    <dt class="col-4 text-right">{{ 'profile.show.unidad'|trans }}: </dt><dd class="col-8">{{ user.funcionario.unidad }}</dd>
+                </dl>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock fos_user_content %}

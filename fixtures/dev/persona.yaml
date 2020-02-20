@@ -1,0 +1,18 @@
+App\Entity\Persona:
+    persona (template):
+        run (unique): <regexify('[1-9]{1,2}\.[0-9]{3}\.[0-9]{3}\-[0-9K]{1}')>
+        nombres: '<firstName()>'
+        apellidoPaterno: '<lastName()>'
+        apellidoMaterno: '<lastName()>'
+        lugarNacimiento: '<city()>'
+        ocupacion: <randomElement(['Ingeniero','Médico','Abogado','Contador','Constructor','Profesor','Artista','Comerciante'])>
+        fechaNacimiento: '<dateTimeBetween("-40 years", "now")>'
+        genero: <randomElement(['Masculino','Femenino'])>
+        estadoCivil: <randomElement(['Casado(a)','Soltero(a)','Viudo(a)','Divorciado(a)'])>
+        nacionalidad: <randomElement(['Chilena','Venezolana','Peruana','Haitiana','Colombiana','Boliviana','Argentina','Ecuatoriana','Española','Brasileña','Dominicana','Estadounidense','Cuabana','China','Mejicana','Alemana','Otra latinoamericana','Otra norteamericana','Otra europea','Otra del mundo'])>
+
+    conductor_{1..100} (extends persona):
+
+    pasajero_{1..30} (extends persona):
+
+    peaton_{1..30} (extends persona):

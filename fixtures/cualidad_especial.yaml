@@ -1,0 +1,10 @@
+App\Entity\CualidadEspecial:
+    cualidad_especial_1:
+        nombre: 'Estudiante'
+        codigo: '01'
+    cualidad_especial_2:
+        nombre: 'Minusválido'
+        codigo: '02'
+    cualidad_especial_3:
+        nombre: 'Ninguna de las anteriores'
+        codigo: '99'

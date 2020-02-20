@@ -1,0 +1,39 @@
+{% extends 'registro/edit_layout.html.twig' %}
+{% use 'registro/etapa.html.twig' %}
+{% use 'registro/control.html.twig' %}
+
+{% block title %}Editar Accidente{% endblock %}
+
+{% block header %}
+    <h1><span class="fa fa-fw fa-car-crash"></span> Registrar accidente - Vehículos</h1>
+{% endblock %}
+
+{% block edit_registro %}
+    {% block etapa %}{{ parent() }}{% endblock %}
+    {% form_theme form 'registro/themes/vehiculo_accidente_theme.html.twig' 'registro/themes/conductor_accidente_theme.html.twig' 'registro/themes/pasajero_accidente_theme.html.twig' 'jquery.collection.html.twig' _self %}
+    {{ form(form) }}
+{% endblock %}
+
+{% block accidente_widget %}
+    <div class="row">
+        <div class="col">
+            {{ block('control') }}
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="m-0">Formulario N° {{ form.vars.value.numeroFormulario }} - {{ 'etapa.vehiculosyocupantes'|trans }}</h4>
+                    </div>
+                </div>
+                <div class="card-body p-2">
+                    {{ form_widget(form.vehiculosAccidente) }}
+                </div>
+            </div>
+            {{ block('control') }}
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('vehiculos') }}
+{% endblock %}

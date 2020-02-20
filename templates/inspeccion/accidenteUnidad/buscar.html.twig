@@ -1,0 +1,115 @@
+{% extends 'inspeccion/accidenteVehiculo/layout.html.twig' %}
+
+{% block title %}Búsqueda de accidentes{% endblock %}
+
+{% block header %}
+    <h1><span class="fa fa-fw fa-search"></span> Inspección - Búsqueda de accidentes por unidad</h1>
+{% endblock %}
+
+{% block accidente %}
+    <div class="row">
+        <div class="col">
+            <div class="card mb-2">
+                <div class="card-header">
+                    {% set menu = knp_menu_get('inspeccionAccidentesUnidades', [], {}) %}
+                    {{ knp_menu_render(menu) }}
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-2">
+                            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal"><span class="fa fa-search"></span> Ver consulta SQL</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Consulta SQL</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body"><pre class="prettyprint"><code class="language-sql">{{ sql|replace({', ': ',\n', 'LEFT JOIN': '\nLEFT JOIN', 'WHERE': '\nWHERE', 'AND': '\nAND'}) }}</code></pre></div>
+                                        {% if parameters is iterable %}{% set matrix = [] %}{% for parameter in parameters %}{% if parameter.value is iterable %}{% set array = [] %}{% for entity in parameter.value %}{% set array = array|merge([entity.id]) %}{% endfor %}{% set matrix = matrix|merge({ (parameter.name) : array} ) %}{% elseif parameter.value is instanceof('DateTime') %}{% set matrix = matrix|merge({ (parameter.name) : ('"' ~ parameter.value|date('d-m-Y') ~ '"')} ) %}{% else %}{% set matrix = matrix|merge({ (parameter.name) : ('"' ~ parameter.value ~ '"') } ) %}{% endif %}{% endfor %}{% endif %}
+                                        <div class="modal-body">
+                                            {% for key, parameter in matrix %}
+                                                {{ ('inspeccion.' ~ key)|trans }}: {{ parameter|join(', ') }}<br>
+                                            {% endfor %}
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            {{ block('filtro') }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-sm mb-0">
+                        <thead>
+                            <tr class="table-info">
+                                <th>{{ knp_pagination_sortable(accidentes, 'ID', 'a.id') }}</th>
+                                <th>{{ knp_pagination_sortable(accidentes, '#F', 'a.numeroFormulario') }}</th>
+                                <th>{{ knp_pagination_sortable(accidentes, '#P', 'a.numeroParte') }}</th>
+                                <th>{{ knp_pagination_sortable(accidentes, 'Fecha', 'a.fecha') }}</th>
+                                <th>{{ knp_pagination_sortable(accidentes, 'Hora', 'a.hora') }}</th>
+                                <th>{{ knp_pagination_sortable(accidentes, 'Unidad', 'u.nombre') }}</th>
+                                <th class="text-center"><span class="fa fa-fw fa-lg fa-clipboard-check" data-toggle="tooltip" data-placement="left" title data-original-title="Proceso de registro"></span></th>
+                                <th class="text-center"><span class="fa fa-fw fa-lg fa-question-circle" data-toggle="tooltip" data-placement="left" title data-original-title="Coherencia lógica"></span></th>
+                                <th class="text-center"><span class="fa fa-fw fa-lg fa-envelope" data-toggle="tooltip" data-placement="left" title data-original-title="Mensaje"></span></th>
+                                <th class="text-center">Estado</th>
+                                <th class="text-center">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for accidente in accidentes %}
+                            <tr {% if accidente.incoherencias|length > 0 %} class="table-danger" {% endif %}{% if accidente.registroEtapas|length < 6 %} class="table-warning" {% endif %}>
+                                <td>{{ accidente.id }}</td>
+                                <td>{{ accidente.numeroFormulario }}</td>
+                                <td>{{ accidente.numeroParte }}</td>
+                                <td>{{ accidente.fecha ? accidente.fecha|date('Y-m-d') : '' }}</td>
+                                <td>{{ accidente.hora ? accidente.hora|date('H:i') : '' }}</td>
+                                <td>{{ accidente.unidad.nombre }}</td>
+                                <td class="text-center">
+                                    {% if accidente.registroEtapas|length < 6 %}
+                                        <span class="fa fa-lg fa-exclamation-triangle text-warning" data-toggle="tooltip" data-placement="right" title data-original-title="Registro incompleto"></span>
+                                    {% else %}
+                                        <span class="fa fa-lg fa-check text-primary" data-toggle="tooltip" data-placement="right" title data-original-title="Registro terminado"></span>
+                                    {% endif %}
+                                </td>
+                                <td class="text-center">
+                                    {% if accidente.incoherencias|length > 0 %}
+                                        <span class="fa fa-lg fa-times-circle text-danger" data-toggle="tooltip" data-placement="left" data-html="true" title data-original-title="{% for incoherencia in accidente.incoherencias %}<p>{{ incoherencia.descripcion }}</p>{% endfor %}"></span>
+                                    {% else %}
+                                        <span class="fa fa-lg fa-check-circle text-primary" data-toggle="tooltip" data-placement="left" title data-original-title="Coherencia comprobada"></span>
+                                    {% endif %}
+                                </td>
+                                <td class="text-center">
+                                    {% if accidente.esMensaje %}
+                                        <span class="fa fa-lg fa-envelope text-secondary" data-toggle="tooltip" data-placement="left" title data-original-title="Mensaje: {{ accidente.cantidadFallecidos }} persona(s) fallecida(s)"></span>
+                                    {% endif %}
+                                </td>
+                                <td class="text-center">{{ accidente.estadoAccidente }}</td>
+                                <td class="text-center">
+                                    <a class="btn btn-sm btn-light border-primary" href="{{ path('inspeccion_accidenteUnidad_resumen', {'accidente': accidente.id}) }}" data-toggle="tooltip" data-placement="left" title data-original-title="Ver resumen"><span class="fas fa-fw fa-search"></span></a>
+                                    <a class="btn btn-sm btn-light border-primary" href="{{ path('inspeccion_accidenteUnidad_objetar', {'accidente': accidente.id}) }}" data-toggle="tooltip" data-placement="left" title data-original-title="Objetar registro"><span class="fas fa-fw fa-eye"></span></a>
+                                    <a class="btn btn-sm btn-light border-primary" href="{{ path('inspeccion_accidenteUnidad_mensaje', {'accidente': accidente.id}) }}" data-toggle="tooltip" data-placement="left" title data-original-title="Mensaje adjunto"><span class="fas fa-fw fa-envelope-open-text"></span></a>
+                                    <a class="btn btn-sm btn-light border-primary" href="{{ path('inspeccion_accidenteUnidad_editar', {'accidente': accidente.id}) }}" data-toggle="tooltip" data-placement="left" title data-original-title="Editar"><span class="fas fa-fw fa-edit"></span></a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">{{ knp_pagination_render(accidentes) }}</div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+{% endblock %}

@@ -1,0 +1,160 @@
+{% extends 'inspeccion/vehiculo/layout.html.twig' %}
+
+{% block title %}Exportar búsqueda de vehículos{% endblock %}
+
+{% block header %}
+    <h1><span class="fa fa-fw fa-search"></span> Inspección - Exportar búsqueda de vehículos</h1>
+{% endblock %}
+
+{% block vehiculo %}
+    <div class="row">
+        <div class="col">
+            <div class="card mb-2">
+                <div class="card-header">
+                    {% set menu = knp_menu_get('inspeccionVehiculos', [], {}) %}
+                    {{ knp_menu_render(menu) }}
+                </div>
+                <div class="card-body">
+                    {% form_theme form 'bootstrap_4_horizontal_layout.html.twig' _self %}
+                    {{ form_start(form) }}
+                    <div class="form-row">
+                        <div class="col-xl-12">
+                            {{ form_row(form.submit) }}
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-xl-4">
+                            <div class="card mb-2">
+                                <div class="card-header">Información vehicular</div>
+                                <div class="card-body">
+                                {{ form_row(form.placaPatenteUnica) }}
+                                {{ form_row(form.marcaVehiculo) }}
+                                {{ form_row(form.modeloVehiculo) }}
+                                {{ form_row(form.ano) }}
+                                {{ form_row(form.color) }}
+                                {{ form_row(form.tipoVehiculo) }}
+                                {{ form_row(form.direccionVehiculo) }}
+                                {{ form_row(form.servicioVehiculo) }}
+                                {{ form_row(form.maniobraVehiculo) }}
+                                {{ form_row(form.consecuenciaVehiculo) }}
+                                {{ form_row(form.vehiculoEsCausanteProbable) }}
+                                {{ form_row(form.vehiculoSeFuga) }}
+                                </div>
+                            </div>
+                            <div class="card mb-2">
+                                <div class="card-header">Información temporal</div>
+                                <div class="card-body">
+                                {{ form_row(form.id) }}
+                                {{ form_row(form.fecha) }}
+                                {{ form_row(form.hora) }}
+                                {{ form_row(form.creado) }}
+                                {{ form_row(form.actualizado) }}
+                                </div>
+                            </div>
+                            <div class="card mb-2">
+                                <div class="card-header">Información territorial</div>
+                                <div class="card-body">
+                                {{ form_row(form.region) }}
+                                {{ form_row(form.provincia) }}
+                                {{ form_row(form.comuna) }}
+                                {{ form_row(form.cuadrante) }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+{#}
+                            <div class="card mb-2">
+                                <div class="card-header">Información cuantitativa</div>
+                                <div class="card-body">
+                                {{ form_row(form.cantidadPistasIda) }}
+                                {{ form_row(form.cantidadPistasRegreso) }}
+                                {{ form_row(form.vehiculosAccidente) }}
+                                {{ form_row(form.pasajerosAccidente) }}
+                                {{ form_row(form.peatonesAccidente) }}
+                                {{ form_row(form.personasAccidente) }}
+                                {{ form_row(form.fallecidosAccidente) }}
+                                {{ form_row(form.gravesAccidente) }}
+                                {{ form_row(form.menosGravesAccidente) }}
+                                {{ form_row(form.levesAccidente) }}
+                                {{ form_row(form.ilesosAccidente) }}
+                                {{ form_row(form.seIgnoraAccidente) }}
+                                </div>
+                            </div>
+{#}
+                            <div class="card mb-2">
+                                <div class="card-header">Información relativa</div>
+                                <div class="card-body">
+                                {{ form_row(form.claseAccidente) }}
+                                {{ form_row(form.tipoAccidente) }}
+                                {{ form_row(form.causaBasal) }}
+                                {{ form_row(form.tipoDireccion) }}
+                                {{ form_row(form.tipoUbicacionRelativaAccidente) }}
+                                {{ form_row(form.tipoZonaAccidente) }}
+                                </div>
+                            </div>
+
+                            <div class="card mb-2">
+                                <div class="card-header">Información cualitativa</div>
+                                <div class="card-body">
+                                {{ form_row(form.estadoAtmosferico) }}
+                                {{ form_row(form.tipoLuminosidad) }}
+                                {{ form_row(form.estadoLuzArtificial) }}
+                                {{ form_row(form.tipoPavimentoCalzada) }}
+                                {{ form_row(form.condicionPavimentoCalzada) }}
+                                {{ form_row(form.estadoPavimentoCalzada) }}
+                                {{ form_row(form.demarcacionPrioridadCalzada) }}
+                                {{ form_row(form.demarcacionLineaCalzada) }}
+                                {{ form_row(form.tipoCalzada) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4">
+                            <div class="card mb-2">
+                                <div class="card-header">Información espacial</div>
+                                <div class="card-body">
+                                {{ form_row(form.glosa) }}
+                                {{ form_row(form.calle) }}
+                                {{ form_row(form.numero) }}
+                                {{ form_row(form.direccion) }}
+                                {{ form_row(form.latitud) }}
+                                {{ form_row(form.longitud) }}
+                                {{ form_row(form.maestroId) }}
+                                {{ form_row(form.tipoId) }}
+                                {{ form_row(form.tipo) }}
+                                {{ form_row(form.pais) }}
+                                {{ form_row(form.comuna) }}
+                                </div>
+                            </div>
+                            <div class="card mb-2">
+                                <div class="card-header">Información institucional</div>
+                                <div class="card-body">
+                                {{ form_row(form.unidad) }}
+                                {{ form_row(form.funcionario) }}
+                                {{ form_row(form.funcionarioResponsable) }}
+                                {{ form_row(form.tribunal) }}
+                                {{ form_row(form.numeroParte) }}
+                                {{ form_row(form.numeroFormulario) }}
+                                {{ form_row(form.concurreSiat) }}
+                                {{ form_row(form.esMensaje) }}
+                                {{ form_row(form.aclaratoria) }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ form_rest(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block form_label_class -%}col-sm-0{%- endblock form_label_class %}
+
+{% block form_group_class -%}col-sm-12{%- endblock form_group_class %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('inspeccion') }}
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'registro/layout.html.twig' %}
+
+{% block title %}Accidentes{% endblock %}
+
+{% block header %}
+    <h1><span class="fa fa-fw fa-car-crash"></span> Búsqueda de accidentes</h1>
+{% endblock %}
+
+{% block registro %}
+    <div class="row">
+        <div class="col">
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="flex-grow-1 m-0"><span class="fa fa-fw fa-search"></span> {{ 'Buscar Accidente'|trans }}</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                        {% form_theme form 'bootstrap_4_horizontal_layout.html.twig' _self %}
+                        {{ form_start(form) }}
+                            {{ form_row(form.numeroFormulario) }}
+                            {{ form_row(form.numeroParte) }}
+                            {{ form_row(form.causaBasal) }}
+                            {{ form_row(form.claseAccidente) }}
+                            {{ form_row(form.tipoAccidente) }}
+                            {{ form_row(form.funcionario) }}
+                            {{ form_row(form.funcionarioResponsable) }}
+                            {{ form_row(form.fechaInicio) }}
+                            {{ form_row(form.fechaFin) }}
+                            {{ form_row(form.esMensaje) }}
+                            {{ form_row(form.buscar) }}
+                        {{ form_rest(form) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block form_label_class -%}col-sm-4{%- endblock form_label_class %}
+
+{% block form_group_class -%}col-sm-8{%- endblock form_group_class %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('busqueda') }}
+{% endblock %}

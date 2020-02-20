@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}VehiculoAccidente index{% endblock %}
+
+{% block body %}
+    <h1>VehiculoAccidente index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>VehiculoEsCausanteProbable</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for vehiculo_accidente in vehiculo_accidentes %}
+            <tr>
+                <td>{{ vehiculo_accidente.id }}</td>
+                <td>{{ vehiculo_accidente.vehiculoEsCausanteProbable ? 'Yes' : 'No' }}</td>
+                <td>
+                    <a href="{{ path('vehiculo_accidente_show', {'id': vehiculo_accidente.id}) }}">show</a>
+                    <a href="{{ path('vehiculo_accidente_edit', {'id': vehiculo_accidente.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('vehiculo_accidente_new') }}">Create new</a>
+{% endblock %}

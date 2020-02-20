@@ -1,0 +1,96 @@
+{% extends 'inspeccion/persona/layout.html.twig' %}
+
+{% block title %}Búsqueda de personas{% endblock %}
+
+{% block header %}
+    <h1><span class="fa fa-fw fa-search"></span> Inspección - Búsqueda de personas</h1>
+{% endblock %}
+
+{% block persona %}
+    <div class="row">
+        <div class="col">
+            <div class="card mb-2">
+                <div class="card-header">
+                    {% set menu = knp_menu_get('inspeccionPersonas', [], {}) %}
+                    {{ knp_menu_render(menu) }}
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-2">
+                            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal"><span class="fa fa-search"></span> Ver consulta SQL</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Consulta SQL</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body"><pre class="prettyprint"><code class="language-sql">{{ sql|replace({', ': ',\n', 'LEFT JOIN': '\nLEFT JOIN', 'WHERE': '\nWHERE', 'AND': '\nAND'}) }}</code></pre></div>
+                                        {% if parameters is iterable %}{% set matrix = [] %}{% for parameter in parameters %}{% if parameter.value is iterable %}{% set array = [] %}{% for entity in parameter.value %}{% set array = array|merge([entity.id]) %}{% endfor %}{% set matrix = matrix|merge({ (parameter.name) : array} ) %}{% elseif parameter.value is instanceof('DateTime') %}{% set matrix = matrix|merge({ (parameter.name) : ('"' ~ parameter.value|date('d-m-Y') ~ '"')} ) %}{% else %}{% set matrix = matrix|merge({ (parameter.name) : ('"' ~ parameter.value ~ '"') } ) %}{% endif %}{% endfor %}{% endif %}
+                                        <div class="modal-body">
+                                            {% for key, parameter in matrix %}
+                                                {{ ('inspeccion.' ~ key)|trans }}: {{ parameter|join(', ') }}<br>
+                                            {% endfor %}
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            {{ block('filtro') }}
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-sm mb-0">
+                        <thead>
+                            <tr class="table-info">
+                                <th>{{ knp_pagination_sortable(personas, 'RUT', 'pp.run') }}</th>
+                                <th>{{ knp_pagination_sortable(personas, 'Nombre', 'pp.nombres') }}</th>
+                                <th>{{ knp_pagination_sortable(personas, 'Apellido Paterno', 'pp.apellidoPaterno') }}</th>
+                                <th>{{ knp_pagination_sortable(personas, 'Apellido Materno', 'pp.apellidoMaterno') }}</th>
+                                <th>{{ knp_pagination_sortable(personas, 'Nacimiento', 'pp.fechaNacimiento') }}</th>
+                                <th>{{ knp_pagination_sortable(personas, 'Edad', 'pp.edad') }}</th>
+                                <th>Calidad</th>
+                                <th>Accidente</th>
+                                <th class="text-center">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for persona in personas %}
+                            <tr>
+                                <td>{{ persona.persona.run }}</td>
+                                <td>{{ persona.persona.nombres }}</td>
+                                <td>{{ persona.persona.apellidoPaterno }}</td>
+                                <td>{{ persona.persona.apellidoMaterno }}</td>
+                                <td>{{ persona.persona.fechaNacimiento|date('Y-m-d') }}</td>
+                                <td>{{ persona.persona.edad|date('%y') }}</td>
+                                <td>{{ persona.calidadPersonaAccidente }}</td>
+                                <td>{{ persona.participacionPersonaAccidente }}</td>
+{#}
+                                <td>{{ persona.accidente ? persona.accidente.id : '' }}</td>
+                                <td>{{ persona.accidente ? persona.accidente.fecha ? persona.accidente.fecha|date('Y-m-d') : '' }}</td>
+                                <td>{{ persona.accidente ? persona.accidente.hora ? persona.accidente.hora|date('H:i') : '' }}</td>
+{#}
+                                <td class="text-center">
+                                    <a class="btn btn-sm btn-light border-primary" href="{{ path('inspeccion_personaAccidente_editar', {'personaAccidente': persona.id}) }}" data-toggle="tooltip" data-placement="left" title data-original-title="Editar"><span class="fas fa-fw fa-edit"></span></a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="8">Total: {{ personas|length }}</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">{{ knp_pagination_render(personas) }}</div>
+        </div>
+    </div>
+{% endblock %}
+

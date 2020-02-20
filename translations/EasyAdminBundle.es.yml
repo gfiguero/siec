@@ -1,0 +1,65 @@
+# Loco yaml export: Symfony YAML object
+# Project: EasyAdminBundle.es.xlf conversion
+# Release: Working copy
+# Locale: es, Spanish
+# Exported by: Unregistered user
+# Exported at: Thu, 16 May 2019 17:09:51 -0400
+---
+new:
+  page_title: Crear %entity_label%
+show:
+  page_title: '%entity_label% (#%entity_id%)'
+  remaining_items: '{1} existe otro elemento que no se muestra en este listado|]1,Inf] existen otros %count% elementos que no se muestran en este listado'
+edit:
+  page_title: Modificar %entity_label% (#%entity_id%)
+list:
+  page_title: '%entity_label%'
+  row_actions: Acciones
+search:
+  page_title: '{0} No se han encontrado resultados|{1} <strong>1</strong> resultado|]1,Inf] <strong>%count%</strong> resultados'
+  no_results: No se han encontrado resultados.
+paginator:
+  first: Primera
+  previous: Anterior
+  next: Siguiente
+  last: Última
+  counter: <strong>%start%</strong> - <strong>%end%</strong> de <strong>%results%</strong>
+  results: '{0} Ningún resultado|{1} <strong>1</strong> resultado|]1,Inf] <strong>%count%</strong> resultados'
+label:
+  "true": Si
+  "false": "No"
+  empty: Vacío
+  "null": Nulo
+  nullable_field: Dejar vacío
+  object: Objecto PHP
+  inaccessible:
+    0: Inaccesible
+    explanation: Este campo no tiene un método getter o la propiedad asociada no es pública
+user:
+  logged_in_as: Conectado/a como
+  unnamed: Usuario sin nombre
+  anonymous: Usuario anónimo
+  signout: Cerrar sesión
+delete_modal:
+  title: ¿Realmente quieres borrar este elemento?
+  content: Esta acción no se puede deshacer.
+  action: Borrar
+action:
+  add_new_item: Añadir un elemento
+  add_another_item: Añadir otro elemento
+  remove_item: Eliminar este elemento
+  choose_file: Seleccionar archivo
+errors: Error|Errores
+form:
+  are_you_sure: No has guardado los cambios realizados en este formulario.
+exception:
+  entity_not_found: Este elemento ya no está disponible.
+  entity_remove: Este elemento no se puede eliminar porque otros elementos dependen de él.
+  forbidden_action: No se puede realizar la acción solicitada en este elemento.
+  no_entities_configured: La aplicación no está configurada correctamente.
+  undefined_entity: La aplicación no está configurada correctamente para este tipo de elementos.
+login:
+  username: Nombre de usuario
+  password: Contraseña
+  sign_in: Iniciar sesión
+...

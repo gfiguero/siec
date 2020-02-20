@@ -1,0 +1,10 @@
+App\Entity\TipoCalzada:
+    tipo_calzada_unidireccional:
+        nombre: 'Unidireccional'
+        codigo: '01'
+    tipo_calzada_bidireccional:
+        nombre: 'Bidireccional'
+        codigo: '02'
+    tipo_calzada_bidireccional_mediana:
+        nombre: 'Bidireccional con mediana (bandejón)'
+        codigo: '03'

@@ -1,0 +1,10 @@
+App\Entity\TipoTrayecto:
+    tipo_trayecto_1:
+        nombre: 'De trabajo'
+        codigo: '01'
+    tipo_trayecto_2:
+        nombre: 'Particular'
+        codigo: '02'
+    tipo_trayecto_3:
+        nombre: 'No determinado'
+        codigo: '99'

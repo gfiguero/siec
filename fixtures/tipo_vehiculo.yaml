@@ -1,0 +1,88 @@
+App\Entity\TipoVehiculo:
+    tipo_vehiculo_1:
+        nombre: 'Bus / Taxibus'
+        codigo: '01'
+    tipo_vehiculo_2:
+        nombre: 'Minibus'
+        codigo: '02'
+    tipo_vehiculo_3:
+        nombre: 'Trolebus'
+        codigo: '03'
+    tipo_vehiculo_4:
+        nombre: 'Automóvil'
+        codigo: '11'
+    tipo_vehiculo_5:
+        nombre: 'Camioneta'
+        codigo: '12'
+    tipo_vehiculo_6:
+        nombre: 'Jeep'
+        codigo: '13'
+    tipo_vehiculo_7:
+        nombre: 'Furgon'
+        codigo: '14'
+    tipo_vehiculo_8:
+        nombre: 'Ambulancia'
+        codigo: '15'
+    tipo_vehiculo_9:
+        nombre: 'Camion simple'
+        codigo: '21'
+    tipo_vehiculo_10:
+        nombre: 'Camion simple con remolque'
+        codigo: '22'
+    tipo_vehiculo_11:
+        nombre: 'Tracto-camión'
+        codigo: '23'
+    tipo_vehiculo_12:
+        nombre: 'Tracto-camión con semiremolque'
+        codigo: '24'
+    tipo_vehiculo_13:
+        nombre: 'Carro bomba'
+        codigo: '25'
+    tipo_vehiculo_14:
+        nombre: 'Carro transporte de valores'
+        codigo: '26'
+    tipo_vehiculo_15:
+        nombre: 'Remolque / Semiremolque'
+        codigo: '27'
+    tipo_vehiculo_16:
+        nombre: 'Motocicleta'
+        codigo: '31'
+    tipo_vehiculo_17:
+        nombre: 'Motoneta / Bicimoto'
+        codigo: '32'
+    tipo_vehiculo_18:
+        nombre: 'Moto arenera'
+        codigo: '33'
+    tipo_vehiculo_19:
+        nombre: 'Bicicleta'
+        codigo: '34'
+    tipo_vehiculo_20:
+        nombre: 'Tracción animal'
+        codigo: '41'
+    tipo_vehiculo_21:
+        nombre: 'Carro tracción humana'
+        codigo: '42'
+    tipo_vehiculo_22:
+        nombre: 'tractor'
+        codigo: '43'
+    tipo_vehiculo_23:
+        nombre: 'Maquinaria agrícola'
+        codigo: '44'
+    tipo_vehiculo_24:
+        nombre: 'Maquinaria movimiento tierras'
+        codigo: '51'
+    tipo_vehiculo_25:
+        nombre: 'Maquinaria industrial'
+        codigo: '52'
+    tipo_vehiculo_26:
+        nombre: 'Patín / Patineta'
+        codigo: '61'
+    tipo_vehiculo_27:
+        nombre: 'Patín motorizado'
+        codigo: '62'
+    tipo_vehiculo_28:
+        nombre: 'Ferrocarril'
+        codigo: '80'
+    tipo_vehiculo_29:
+        nombre: 'Otros no clasificados'
+        codigo: '99'

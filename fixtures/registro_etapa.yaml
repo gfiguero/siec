@@ -1,0 +1,19 @@
+App\Entity\RegistroEtapa:
+    registro_etapa_1:
+        nombre: 'Identificación'
+        codigo: '01'
+    registro_etapa_2:
+        nombre: 'Causas'
+        codigo: '02'
+    registro_etapa_3:
+        nombre: 'Condiciones'
+        codigo: '03'
+    registro_etapa_4:
+        nombre: 'Ubicación'
+        codigo: '04'
+    registro_etapa_5:
+        nombre: 'Vehículos y ocupantes'
+        codigo: '05'
+    registro_etapa_6:
+        nombre: 'Peatones'
+        codigo: '06'

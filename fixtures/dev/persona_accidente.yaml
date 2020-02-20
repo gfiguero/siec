@@ -1,0 +1,24 @@
+App\Entity\PersonaAccidente:
+    persona_accidente (template):
+        personaEsCausanteProbable: '<numberBetween(0, 1)>'
+        condicionFisica: '@condicion_fisica_*'
+        consecuenciaPersona: '@consecuencia_persona_*'
+        cualidadEspecial: '@cualidad_especial_*'
+        tipoTrayecto: '@tipo_trayecto_*'
+        personaSeFuga: false
+
+    conductor_accidente_{1..100} (extends persona_accidente):
+        claseLicencia: '@clase_licencia_*'
+        comunaLicencia: '@comuna_*'
+        persona: '@conductor_<identity($current)>'
+        personaEsConductor: true
+        vehiculoConducidoAccidente: '@vehiculo_accidente_<identity($current)>'
+        seguridad: ['@seguridad_persona_*', '@seguridad_persona_*', '@seguridad_persona_*']
+
+    pasajero_accidente_{1..30} (extends persona_accidente):
+        persona: '@pasajero_<identity($current)>'
+        vehiculoAccidente: '@vehiculo_accidente_*'
+
+    peaton_accidente_{1..30} (extends persona_accidente):
+        persona: '@peaton_<identity($current)>'
+        accidente: '@accidente_*'

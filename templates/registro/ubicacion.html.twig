@@ -1,0 +1,82 @@
+{% extends 'registro/edit_layout.html.twig' %}
+{% use 'registro/etapa.html.twig' %}
+{% use 'registro/control.html.twig' %}
+
+{% block title %}Editar Accidente{% endblock %}
+
+{% block header %}
+    <h1><span class="fa fa-fw fa-car-crash"></span> Registrar accidente - Ubicación</h1>
+{% endblock %}
+
+{% block edit_registro %}
+    {% block etapa %}{{ parent() }}{% endblock %}
+    {% form_theme form 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' _self %}
+    {{ form(form) }}
+{% endblock %}
+
+{% block accidente_widget %}
+    <div class="row">
+        <div class="col">
+            {{ block('control') }}
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="m-0">Formulario N° {{ form.vars.value.numeroFormulario }} - {{ 'etapa.ubicacion'|trans }}</h4>
+                    </div>
+                </div>
+                <div class="card-body p-2">
+                    <div class="form-row">
+                        <div class="col-md-6 mb-2">
+                            <div class="card bg-info border-primary mb-2">
+                                <div class="card-body">
+                                {{ form_row(form.comuna) }}
+                                {{ form_row(form.cuadrante) }}
+                                {{ form_row(form.tipoZonaAccidente) }}
+                                {{ form_row(form.tipoUbicacionRelativaAccidente) }}
+                                {{ form_row(form.tipoDireccion) }}
+                                </div>
+                            </div>
+                            <div class="card bg-info border-primary">
+                                <div class="card-header">Maestro de calles</div>
+                                <div class="card-body">
+                                {{ form_row(form.ubicacion.glosa) }}
+                                {{ form_row(form.ubicacion.maestroId) }}
+                                {{ form_row(form.ubicacion.comuna) }}
+                                {{ form_row(form.ubicacion.tipoId) }}
+                                {{ form_row(form.ubicacion.tipo) }}
+                                {{ form_row(form.ubicacion.pais) }}
+                                {{ form_row(form.ubicacion.calle) }}
+                                {{ form_row(form.ubicacion.numero) }}
+                                {{ form_row(form.ubicacion.direccion) }}
+                                {{ form_row(form.ubicacion.latitud) }}
+                                {{ form_row(form.ubicacion.longitud) }}
+                                    <div class="form-group row">
+                                        <div class="col-sm-4"></div>
+                                        <div class="col-sm-8">
+                                            <button type="button" id="accidente_ubicacion_limpiar" class="btn-light btn"> Limpiar búsqueda</button>
+                                            <button type="reset" id="accidente_ubicacion_reset" class="btn-light btn"> Deshacer cambios</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <div class="card border-primary h-100">
+                                <div class="card-body p-0">
+                                    <div id="map" class="map h-100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ block('control') }}
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('ubicacion') }}
+    {{ encore_entry_script_tags('maestro') }}
+{% endblock %}

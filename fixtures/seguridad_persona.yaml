@@ -1,0 +1,16 @@
+App\Entity\SeguridadPersona:
+    seguridad_persona_1:
+        nombre: 'Usó cinturón'
+        codigo: '01'
+    seguridad_persona_2:
+        nombre: 'Usó casco'
+        codigo: '02'
+    seguridad_persona_3:
+        nombre: 'Usó sistema de retención infantil'
+        codigo: '03'
+    seguridad_persona_4:
+        nombre: 'Usó celular'
+        codigo: '04'
+    seguridad_persona_5:
+        nombre: 'Usó chaleco reflectante'
+        codigo: '05'

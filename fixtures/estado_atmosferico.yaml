@@ -1,0 +1,19 @@
+App\Entity\EstadoAtmosferico:
+    estado_atmosferico_1:
+        nombre: 'Despejado'
+        codigo: '01'
+    estado_atmosferico_2:
+        nombre: 'Nublado'
+        codigo: '02'
+    estado_atmosferico_3:
+        nombre: 'Lluvia'
+        codigo: '03'
+    estado_atmosferico_4:
+        nombre: 'Llovizna'
+        codigo: '04'
+    estado_atmosferico_5:
+        nombre: 'Neblina'
+        codigo: '05'
+    estado_atmosferico_6:
+        nombre: 'Nieve'
+        codigo: '06'

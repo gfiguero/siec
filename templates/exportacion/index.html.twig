@@ -1,0 +1,14 @@
+<code>App\Entity\Grupo:</code>
+<br>
+{% for item in list %}
+    <code>&nbsp;&nbsp;&nbsp;&nbsp;grupo_{{ item.id }}:</code>
+    <br>
+    <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: '{{ item.name }}'</code>
+    <br>
+    <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;roles:</code>
+    <br>
+    {% for k, role in item.roles %}
+        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;role_{{ k }}: '{{ role }}'</code>
+        <br>
+    {% endfor %}
+{% endfor %}

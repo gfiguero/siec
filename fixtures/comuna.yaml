@@ -1,0 +1,1385 @@
+App\Entity\Comuna:
+    comuna_1:
+        nombre: 'Iquique'
+        codigo: '01101'
+        provincia: '@provincia_1'
+    comuna_2:
+        nombre: 'Alto Hospicio'
+        codigo: '01107'
+        provincia: '@provincia_1'
+    comuna_3:
+        nombre: 'Pozo Almonte'
+        codigo: '01401'
+        provincia: '@provincia_2'
+    comuna_4:
+        nombre: 'Camiña'
+        codigo: '01402'
+        provincia: '@provincia_2'
+    comuna_5:
+        nombre: 'Colchane'
+        codigo: '01403'
+        provincia: '@provincia_2'
+    comuna_6:
+        nombre: 'Huara'
+        codigo: '01404'
+        provincia: '@provincia_2'
+    comuna_7:
+        nombre: 'Pica'
+        codigo: '01405'
+        provincia: '@provincia_2'
+    comuna_8:
+        nombre: 'Antofagasta'
+        codigo: '02101'
+        provincia: '@provincia_3'
+    comuna_9:
+        nombre: 'Mejillones'
+        codigo: '02102'
+        provincia: '@provincia_3'
+    comuna_10:
+        nombre: 'Sierra Gorda'
+        codigo: '02103'
+        provincia: '@provincia_3'
+    comuna_11:
+        nombre: 'Taltal'
+        codigo: '02104'
+        provincia: '@provincia_3'
+    comuna_12:
+        nombre: 'Calama'
+        codigo: '02201'
+        provincia: '@provincia_4'
+    comuna_13:
+        nombre: 'Ollagüe'
+        codigo: '02202'
+        provincia: '@provincia_4'
+    comuna_14:
+        nombre: 'San Pedro de Atacama'
+        codigo: '02203'
+        provincia: '@provincia_4'
+    comuna_15:
+        nombre: 'Tocopilla'
+        codigo: '02301'
+        provincia: '@provincia_5'
+    comuna_16:
+        nombre: 'María Elena'
+        codigo: '02302'
+        provincia: '@provincia_5'
+    comuna_17:
+        nombre: 'Copiapó'
+        codigo: '03101'
+        provincia: '@provincia_6'
+    comuna_18:
+        nombre: 'Caldera'
+        codigo: '03102'
+        provincia: '@provincia_6'
+    comuna_19:
+        nombre: 'Tierra Amarilla'
+        codigo: '03103'
+        provincia: '@provincia_6'
+    comuna_20:
+        nombre: 'Chañaral'
+        codigo: '03201'
+        provincia: '@provincia_7'
+    comuna_21:
+        nombre: 'Diego de Almagro'
+        codigo: '03202'
+        provincia: '@provincia_7'
+    comuna_22:
+        nombre: 'Vallenar'
+        codigo: '03301'
+        provincia: '@provincia_8'
+    comuna_23:
+        nombre: 'Alto del Carmen'
+        codigo: '03302'
+        provincia: '@provincia_8'
+    comuna_24:
+        nombre: 'Freirina'
+        codigo: '03303'
+        provincia: '@provincia_8'
+    comuna_25:
+        nombre: 'Huasco'
+        codigo: '03304'
+        provincia: '@provincia_8'
+    comuna_26:
+        nombre: 'La Serena'
+        codigo: '04101'
+        provincia: '@provincia_9'
+    comuna_27:
+        nombre: 'Coquimbo'
+        codigo: '04102'
+        provincia: '@provincia_9'
+    comuna_28:
+        nombre: 'Andacollo'
+        codigo: '04103'
+        provincia: '@provincia_9'
+    comuna_29:
+        nombre: 'La Higuera'
+        codigo: '04104'
+        provincia: '@provincia_9'
+    comuna_30:
+        nombre: 'Paiguano'
+        codigo: '04105'
+        provincia: '@provincia_9'
+    comuna_31:
+        nombre: 'Vicuña'
+        codigo: '04106'
+        provincia: '@provincia_9'
+    comuna_32:
+        nombre: 'Illapel'
+        codigo: '04201'
+        provincia: '@provincia_10'
+    comuna_33:
+        nombre: 'Canela'
+        codigo: '04202'
+        provincia: '@provincia_10'
+    comuna_34:
+        nombre: 'Los Vilos'
+        codigo: '04203'
+        provincia: '@provincia_10'
+    comuna_35:
+        nombre: 'Salamanca'
+        codigo: '04204'
+        provincia: '@provincia_10'
+    comuna_36:
+        nombre: 'Ovalle'
+        codigo: '04301'
+        provincia: '@provincia_11'
+    comuna_37:
+        nombre: 'Combarbalá'
+        codigo: '04302'
+        provincia: '@provincia_11'
+    comuna_38:
+        nombre: 'Monte Patria'
+        codigo: '04303'
+        provincia: '@provincia_11'
+    comuna_39:
+        nombre: 'Punitaqui'
+        codigo: '04304'
+        provincia: '@provincia_11'
+    comuna_40:
+        nombre: 'Río Hurtado'
+        codigo: '04305'
+        provincia: '@provincia_11'
+    comuna_41:
+        nombre: 'Valparaíso'
+        codigo: '05101'
+        provincia: '@provincia_12'
+    comuna_42:
+        nombre: 'Casablanca'
+        codigo: '05102'
+        provincia: '@provincia_12'
+    comuna_43:
+        nombre: 'Concón'
+        codigo: '05103'
+        provincia: '@provincia_12'
+    comuna_44:
+        nombre: 'Juan Fernández'
+        codigo: '05104'
+        provincia: '@provincia_12'
+    comuna_45:
+        nombre: 'Puchuncaví'
+        codigo: '05105'
+        provincia: '@provincia_12'
+    comuna_46:
+        nombre: 'Quintero'
+        codigo: '05107'
+        provincia: '@provincia_12'
+    comuna_47:
+        nombre: 'Viña del Mar'
+        codigo: '05109'
+        provincia: '@provincia_12'
+    comuna_48:
+        nombre: 'Isla de Pascua'
+        codigo: '05201'
+        provincia: '@provincia_13'
+    comuna_49:
+        nombre: 'Los Andes'
+        codigo: '05301'
+        provincia: '@provincia_14'
+    comuna_50:
+        nombre: 'Calle Larga'
+        codigo: '05302'
+        provincia: '@provincia_14'
+    comuna_51:
+        nombre: 'Rinconada'
+        codigo: '05303'
+        provincia: '@provincia_14'
+    comuna_52:
+        nombre: 'San Esteban'
+        codigo: '05304'
+        provincia: '@provincia_14'
+    comuna_53:
+        nombre: 'La Ligua'
+        codigo: '05401'
+        provincia: '@provincia_15'
+    comuna_54:
+        nombre: 'Cabildo'
+        codigo: '05402'
+        provincia: '@provincia_15'
+    comuna_55:
+        nombre: 'Papudo'
+        codigo: '05403'
+        provincia: '@provincia_15'
+    comuna_56:
+        nombre: 'Petorca'
+        codigo: '05404'
+        provincia: '@provincia_15'
+    comuna_57:
+        nombre: 'Zapallar'
+        codigo: '05405'
+        provincia: '@provincia_15'
+    comuna_58:
+        nombre: 'Quillota'
+        codigo: '05501'
+        provincia: '@provincia_16'
+    comuna_59:
+        nombre: 'Calera'
+        codigo: '05502'
+        provincia: '@provincia_16'
+    comuna_60:
+        nombre: 'Hijuelas'
+        codigo: '05503'
+        provincia: '@provincia_16'
+    comuna_61:
+        nombre: 'La Cruz'
+        codigo: '05504'
+        provincia: '@provincia_16'
+    comuna_62:
+        nombre: 'Nogales'
+        codigo: '05506'
+        provincia: '@provincia_16'
+    comuna_63:
+        nombre: 'San Antonio'
+        codigo: '05601'
+        provincia: '@provincia_17'
+    comuna_64:
+        nombre: 'Algarrobo'
+        codigo: '05602'
+        provincia: '@provincia_17'
+    comuna_65:
+        nombre: 'Cartagena'
+        codigo: '05603'
+        provincia: '@provincia_17'
+    comuna_66:
+        nombre: 'El Quisco'
+        codigo: '05604'
+        provincia: '@provincia_17'
+    comuna_67:
+        nombre: 'El Tabo'
+        codigo: '05605'
+        provincia: '@provincia_17'
+    comuna_68:
+        nombre: 'Santo Domingo'
+        codigo: '05606'
+        provincia: '@provincia_17'
+    comuna_69:
+        nombre: 'San Felipe'
+        codigo: '05701'
+        provincia: '@provincia_18'
+    comuna_70:
+        nombre: 'Catemu'
+        codigo: '05702'
+        provincia: '@provincia_18'
+    comuna_71:
+        nombre: 'Llaillay'
+        codigo: '05703'
+        provincia: '@provincia_18'
+    comuna_72:
+        nombre: 'Panquehue'
+        codigo: '05704'
+        provincia: '@provincia_18'
+    comuna_73:
+        nombre: 'Putaendo'
+        codigo: '05705'
+        provincia: '@provincia_18'
+    comuna_74:
+        nombre: 'Santa María'
+        codigo: '05706'
+        provincia: '@provincia_18'
+    comuna_75:
+        nombre: 'Quilpué'
+        codigo: '05801'
+        provincia: '@provincia_19'
+    comuna_76:
+        nombre: 'Limache'
+        codigo: '05802'
+        provincia: '@provincia_19'
+    comuna_77:
+        nombre: 'Olmué'
+        codigo: '05803'
+        provincia: '@provincia_19'
+    comuna_78:
+        nombre: 'Villa Alemana'
+        codigo: '05804'
+        provincia: '@provincia_19'
+    comuna_79:
+        nombre: 'Rancagua'
+        codigo: '06101'
+        provincia: '@provincia_20'
+    comuna_80:
+        nombre: 'Codegua'
+        codigo: '06102'
+        provincia: '@provincia_20'
+    comuna_81:
+        nombre: 'Coinco'
+        codigo: '06103'
+        provincia: '@provincia_20'
+    comuna_82:
+        nombre: 'Coltauco'
+        codigo: '06104'
+        provincia: '@provincia_20'
+    comuna_83:
+        nombre: 'Doñihue'
+        codigo: '06105'
+        provincia: '@provincia_20'
+    comuna_84:
+        nombre: 'Graneros'
+        codigo: '06106'
+        provincia: '@provincia_20'
+    comuna_85:
+        nombre: 'Las Cabras'
+        codigo: '06107'
+        provincia: '@provincia_20'
+    comuna_86:
+        nombre: 'Machalí'
+        codigo: '06108'
+        provincia: '@provincia_20'
+    comuna_87:
+        nombre: 'Malloa'
+        codigo: '06109'
+        provincia: '@provincia_20'
+    comuna_88:
+        nombre: 'Mostazal'
+        codigo: '06110'
+        provincia: '@provincia_20'
+    comuna_89:
+        nombre: 'Olivar'
+        codigo: '06111'
+        provincia: '@provincia_20'
+    comuna_90:
+        nombre: 'Peumo'
+        codigo: '06112'
+        provincia: '@provincia_20'
+    comuna_91:
+        nombre: 'Pichidegua'
+        codigo: '06113'
+        provincia: '@provincia_20'
+    comuna_92:
+        nombre: 'Quinta de Tilcoco'
+        codigo: '06114'
+        provincia: '@provincia_20'
+    comuna_93:
+        nombre: 'Rengo'
+        codigo: '06115'
+        provincia: '@provincia_20'
+    comuna_94:
+        nombre: 'Requínoa'
+        codigo: '06116'
+        provincia: '@provincia_20'
+    comuna_95:
+        nombre: 'San Vicente'
+        codigo: '06117'
+        provincia: '@provincia_20'
+    comuna_96:
+        nombre: 'Pichilemu'
+        codigo: '06201'
+        provincia: '@provincia_21'
+    comuna_97:
+        nombre: 'La Estrella'
+        codigo: '06202'
+        provincia: '@provincia_21'
+    comuna_98:
+        nombre: 'Litueche'
+        codigo: '06203'
+        provincia: '@provincia_21'
+    comuna_99:
+        nombre: 'Marchihue'
+        codigo: '06204'
+        provincia: '@provincia_21'
+    comuna_100:
+        nombre: 'Navidad'
+        codigo: '06205'
+        provincia: '@provincia_21'
+    comuna_101:
+        nombre: 'Paredones'
+        codigo: '06206'
+        provincia: '@provincia_21'
+    comuna_102:
+        nombre: 'San Fernando'
+        codigo: '06301'
+        provincia: '@provincia_22'
+    comuna_103:
+        nombre: 'Chépica'
+        codigo: '06302'
+        provincia: '@provincia_22'
+    comuna_104:
+        nombre: 'Chimbarongo'
+        codigo: '06303'
+        provincia: '@provincia_22'
+    comuna_105:
+        nombre: 'Lolol'
+        codigo: '06304'
+        provincia: '@provincia_22'
+    comuna_106:
+        nombre: 'Nancagua'
+        codigo: '06305'
+        provincia: '@provincia_22'
+    comuna_107:
+        nombre: 'Palmilla'
+        codigo: '06306'
+        provincia: '@provincia_22'
+    comuna_108:
+        nombre: 'Peralillo'
+        codigo: '06307'
+        provincia: '@provincia_22'
+    comuna_109:
+        nombre: 'Placilla'
+        codigo: '06308'
+        provincia: '@provincia_22'
+    comuna_110:
+        nombre: 'Pumanque'
+        codigo: '06309'
+        provincia: '@provincia_22'
+    comuna_111:
+        nombre: 'Santa Cruz'
+        codigo: '06310'
+        provincia: '@provincia_22'
+    comuna_112:
+        nombre: 'Talca'
+        codigo: '07101'
+        provincia: '@provincia_23'
+    comuna_113:
+        nombre: 'Constitución'
+        codigo: '07102'
+        provincia: '@provincia_23'
+    comuna_114:
+        nombre: 'Curepto'
+        codigo: '07103'
+        provincia: '@provincia_23'
+    comuna_115:
+        nombre: 'Empedrado'
+        codigo: '07104'
+        provincia: '@provincia_23'
+    comuna_116:
+        nombre: 'Maule'
+        codigo: '07105'
+        provincia: '@provincia_23'
+    comuna_117:
+        nombre: 'Pelarco'
+        codigo: '07106'
+        provincia: '@provincia_23'
+    comuna_118:
+        nombre: 'Pencahue'
+        codigo: '07107'
+        provincia: '@provincia_23'
+    comuna_119:
+        nombre: 'Río Claro'
+        codigo: '07108'
+        provincia: '@provincia_23'
+    comuna_120:
+        nombre: 'San Clemente'
+        codigo: '07109'
+        provincia: '@provincia_23'
+    comuna_121:
+        nombre: 'San Rafael'
+        codigo: '07110'
+        provincia: '@provincia_23'
+    comuna_122:
+        nombre: 'Cauquenes'
+        codigo: '07201'
+        provincia: '@provincia_24'
+    comuna_123:
+        nombre: 'Chanco'
+        codigo: '07202'
+        provincia: '@provincia_24'
+    comuna_124:
+        nombre: 'Pelluhue'
+        codigo: '07203'
+        provincia: '@provincia_24'
+    comuna_125:
+        nombre: 'Curicó'
+        codigo: '07301'
+        provincia: '@provincia_25'
+    comuna_126:
+        nombre: 'Hualañé'
+        codigo: '07302'
+        provincia: '@provincia_25'
+    comuna_127:
+        nombre: 'Licantén'
+        codigo: '07303'
+        provincia: '@provincia_25'
+    comuna_128:
+        nombre: 'Molina'
+        codigo: '07304'
+        provincia: '@provincia_25'
+    comuna_129:
+        nombre: 'Rauco'
+        codigo: '07305'
+        provincia: '@provincia_25'
+    comuna_130:
+        nombre: 'Romeral'
+        codigo: '07306'
+        provincia: '@provincia_25'
+    comuna_131:
+        nombre: 'Sagrada Familia'
+        codigo: '07307'
+        provincia: '@provincia_25'
+    comuna_132:
+        nombre: 'Teno'
+        codigo: '07308'
+        provincia: '@provincia_25'
+    comuna_133:
+        nombre: 'Vichuquén'
+        codigo: '07309'
+        provincia: '@provincia_25'
+    comuna_134:
+        nombre: 'Linares'
+        codigo: '07401'
+        provincia: '@provincia_26'
+    comuna_135:
+        nombre: 'Colbún'
+        codigo: '07402'
+        provincia: '@provincia_26'
+    comuna_136:
+        nombre: 'Longaví'
+        codigo: '07403'
+        provincia: '@provincia_26'
+    comuna_137:
+        nombre: 'Parral'
+        codigo: '07404'
+        provincia: '@provincia_26'
+    comuna_138:
+        nombre: 'Retiro'
+        codigo: '07405'
+        provincia: '@provincia_26'
+    comuna_139:
+        nombre: 'San Javier'
+        codigo: '07406'
+        provincia: '@provincia_26'
+    comuna_140:
+        nombre: 'Villa Alegre'
+        codigo: '07407'
+        provincia: '@provincia_26'
+    comuna_141:
+        nombre: 'Yerbas Buenas'
+        codigo: '07408'
+        provincia: '@provincia_26'
+    comuna_142:
+        nombre: 'Concepción'
+        codigo: '08101'
+        provincia: '@provincia_27'
+    comuna_143:
+        nombre: 'Coronel'
+        codigo: '08102'
+        provincia: '@provincia_27'
+    comuna_144:
+        nombre: 'Chiguayante'
+        codigo: '08103'
+        provincia: '@provincia_27'
+    comuna_145:
+        nombre: 'Florida'
+        codigo: '08104'
+        provincia: '@provincia_27'
+    comuna_146:
+        nombre: 'Hualqui'
+        codigo: '08105'
+        provincia: '@provincia_27'
+    comuna_147:
+        nombre: 'Lota'
+        codigo: '08106'
+        provincia: '@provincia_27'
+    comuna_148:
+        nombre: 'Penco'
+        codigo: '08107'
+        provincia: '@provincia_27'
+    comuna_149:
+        nombre: 'San Pedro de la Paz'
+        codigo: '08108'
+        provincia: '@provincia_27'
+    comuna_150:
+        nombre: 'Santa Juana'
+        codigo: '08109'
+        provincia: '@provincia_27'
+    comuna_151:
+        nombre: 'Talcahuano'
+        codigo: '08110'
+        provincia: '@provincia_27'
+    comuna_152:
+        nombre: 'Tomé'
+        codigo: '08111'
+        provincia: '@provincia_27'
+    comuna_153:
+        nombre: 'Hualpén'
+        codigo: '08112'
+        provincia: '@provincia_27'
+    comuna_154:
+        nombre: 'Lebu'
+        codigo: '08201'
+        provincia: '@provincia_28'
+    comuna_155:
+        nombre: 'Arauco'
+        codigo: '08202'
+        provincia: '@provincia_28'
+    comuna_156:
+        nombre: 'Cañete'
+        codigo: '08203'
+        provincia: '@provincia_28'
+    comuna_157:
+        nombre: 'Contulmo'
+        codigo: '08204'
+        provincia: '@provincia_28'
+    comuna_158:
+        nombre: 'Curanilahue'
+        codigo: '08205'
+        provincia: '@provincia_28'
+    comuna_159:
+        nombre: 'Los Álamos'
+        codigo: '08206'
+        provincia: '@provincia_28'
+    comuna_160:
+        nombre: 'Tirúa'
+        codigo: '08207'
+        provincia: '@provincia_28'
+    comuna_161:
+        nombre: 'Los Ángeles'
+        codigo: '08301'
+        provincia: '@provincia_29'
+    comuna_162:
+        nombre: 'Antuco'
+        codigo: '08302'
+        provincia: '@provincia_29'
+    comuna_163:
+        nombre: 'Cabrero'
+        codigo: '08303'
+        provincia: '@provincia_29'
+    comuna_164:
+        nombre: 'Laja'
+        codigo: '08304'
+        provincia: '@provincia_29'
+    comuna_165:
+        nombre: 'Mulchén'
+        codigo: '08305'
+        provincia: '@provincia_29'
+    comuna_166:
+        nombre: 'Nacimiento'
+        codigo: '08306'
+        provincia: '@provincia_29'
+    comuna_167:
+        nombre: 'Negrete'
+        codigo: '08307'
+        provincia: '@provincia_29'
+    comuna_168:
+        nombre: 'Quilaco'
+        codigo: '08308'
+        provincia: '@provincia_29'
+    comuna_169:
+        nombre: 'Quilleco'
+        codigo: '08309'
+        provincia: '@provincia_29'
+    comuna_170:
+        nombre: 'San Rosendo'
+        codigo: '08310'
+        provincia: '@provincia_29'
+    comuna_171:
+        nombre: 'Santa Bárbara'
+        codigo: '08311'
+        provincia: '@provincia_29'
+    comuna_172:
+        nombre: 'Tucapel'
+        codigo: '08312'
+        provincia: '@provincia_29'
+    comuna_173:
+        nombre: 'Yumbel'
+        codigo: '08313'
+        provincia: '@provincia_29'
+    comuna_174:
+        nombre: 'Alto Biobío'
+        codigo: '08314'
+        provincia: '@provincia_29'
+    comuna_175:
+        nombre: 'Temuco'
+        codigo: '09101'
+        provincia: '@provincia_30'
+    comuna_176:
+        nombre: 'Carahue'
+        codigo: '09102'
+        provincia: '@provincia_30'
+    comuna_177:
+        nombre: 'Cunco'
+        codigo: '09103'
+        provincia: '@provincia_30'
+    comuna_178:
+        nombre: 'Curarrehue'
+        codigo: '09104'
+        provincia: '@provincia_30'
+    comuna_179:
+        nombre: 'Freire'
+        codigo: '09105'
+        provincia: '@provincia_30'
+    comuna_180:
+        nombre: 'Galvarino'
+        codigo: '09106'
+        provincia: '@provincia_30'
+    comuna_181:
+        nombre: 'Gorbea'
+        codigo: '09107'
+        provincia: '@provincia_30'
+    comuna_182:
+        nombre: 'Lautaro'
+        codigo: '09108'
+        provincia: '@provincia_30'
+    comuna_183:
+        nombre: 'Loncoche'
+        codigo: '09109'
+        provincia: '@provincia_30'
+    comuna_184:
+        nombre: 'Melipeuco'
+        codigo: '09110'
+        provincia: '@provincia_30'
+    comuna_185:
+        nombre: 'Nueva Imperial'
+        codigo: '09111'
+        provincia: '@provincia_30'
+    comuna_186:
+        nombre: 'Padre Las Casas'
+        codigo: '09112'
+        provincia: '@provincia_30'
+    comuna_187:
+        nombre: 'Perquenco'
+        codigo: '09113'
+        provincia: '@provincia_30'
+    comuna_188:
+        nombre: 'Pitrufquén'
+        codigo: '09114'
+        provincia: '@provincia_30'
+    comuna_189:
+        nombre: 'Pucón'
+        codigo: '09115'
+        provincia: '@provincia_30'
+    comuna_190:
+        nombre: 'Saavedra'
+        codigo: '09116'
+        provincia: '@provincia_30'
+    comuna_191:
+        nombre: 'Teodoro Schmidt'
+        codigo: '09117'
+        provincia: '@provincia_30'
+    comuna_192:
+        nombre: 'Toltén'
+        codigo: '09118'
+        provincia: '@provincia_30'
+    comuna_193:
+        nombre: 'Vilcún'
+        codigo: '09119'
+        provincia: '@provincia_30'
+    comuna_194:
+        nombre: 'Villarrica'
+        codigo: '09120'
+        provincia: '@provincia_30'
+    comuna_195:
+        nombre: 'Cholchol'
+        codigo: '09121'
+        provincia: '@provincia_30'
+    comuna_196:
+        nombre: 'Angol'
+        codigo: '09201'
+        provincia: '@provincia_31'
+    comuna_197:
+        nombre: 'Collipulli'
+        codigo: '09202'
+        provincia: '@provincia_31'
+    comuna_198:
+        nombre: 'Curacautín'
+        codigo: '09203'
+        provincia: '@provincia_31'
+    comuna_199:
+        nombre: 'Ercilla'
+        codigo: '09204'
+        provincia: '@provincia_31'
+    comuna_200:
+        nombre: 'Lonquimay'
+        codigo: '09205'
+        provincia: '@provincia_31'
+    comuna_201:
+        nombre: 'Los Sauces'
+        codigo: '09206'
+        provincia: '@provincia_31'
+    comuna_202:
+        nombre: 'Lumaco'
+        codigo: '09207'
+        provincia: '@provincia_31'
+    comuna_203:
+        nombre: 'Purén'
+        codigo: '09208'
+        provincia: '@provincia_31'
+    comuna_204:
+        nombre: 'Renaico'
+        codigo: '09209'
+        provincia: '@provincia_31'
+    comuna_205:
+        nombre: 'Traiguén'
+        codigo: '09210'
+        provincia: '@provincia_31'
+    comuna_206:
+        nombre: 'Victoria'
+        codigo: '09211'
+        provincia: '@provincia_31'
+    comuna_207:
+        nombre: 'Puerto Montt'
+        codigo: '10101'
+        provincia: '@provincia_32'
+    comuna_208:
+        nombre: 'Calbuco'
+        codigo: '10102'
+        provincia: '@provincia_32'
+    comuna_209:
+        nombre: 'Cochamó'
+        codigo: '10103'
+        provincia: '@provincia_32'
+    comuna_210:
+        nombre: 'Fresia'
+        codigo: '10104'
+        provincia: '@provincia_32'
+    comuna_211:
+        nombre: 'Frutillar'
+        codigo: '10105'
+        provincia: '@provincia_32'
+    comuna_212:
+        nombre: 'Los Muermos'
+        codigo: '10106'
+        provincia: '@provincia_32'
+    comuna_213:
+        nombre: 'Llanquihue'
+        codigo: '10107'
+        provincia: '@provincia_32'
+    comuna_214:
+        nombre: 'Maullín'
+        codigo: '10108'
+        provincia: '@provincia_32'
+    comuna_215:
+        nombre: 'Puerto Varas'
+        codigo: '10109'
+        provincia: '@provincia_32'
+    comuna_216:
+        nombre: 'Castro'
+        codigo: '10201'
+        provincia: '@provincia_33'
+    comuna_217:
+        nombre: 'Ancud'
+        codigo: '10202'
+        provincia: '@provincia_33'
+    comuna_218:
+        nombre: 'Chonchi'
+        codigo: '10203'
+        provincia: '@provincia_33'
+    comuna_219:
+        nombre: 'Curaco de Vélez'
+        codigo: '10204'
+        provincia: '@provincia_33'
+    comuna_220:
+        nombre: 'Dalcahue'
+        codigo: '10205'
+        provincia: '@provincia_33'
+    comuna_221:
+        nombre: 'Puqueldón'
+        codigo: '10206'
+        provincia: '@provincia_33'
+    comuna_222:
+        nombre: 'Queilén'
+        codigo: '10207'
+        provincia: '@provincia_33'
+    comuna_223:
+        nombre: 'Quellón'
+        codigo: '10208'
+        provincia: '@provincia_33'
+    comuna_224:
+        nombre: 'Quemchi'
+        codigo: '10209'
+        provincia: '@provincia_33'
+    comuna_225:
+        nombre: 'Quinchao'
+        codigo: '10210'
+        provincia: '@provincia_33'
+    comuna_226:
+        nombre: 'Osorno'
+        codigo: '10301'
+        provincia: '@provincia_34'
+    comuna_227:
+        nombre: 'Puerto Octay'
+        codigo: '10302'
+        provincia: '@provincia_34'
+    comuna_228:
+        nombre: 'Purranque'
+        codigo: '10303'
+        provincia: '@provincia_34'
+    comuna_229:
+        nombre: 'Puyehue'
+        codigo: '10304'
+        provincia: '@provincia_34'
+    comuna_230:
+        nombre: 'Río Negro'
+        codigo: '10305'
+        provincia: '@provincia_34'
+    comuna_231:
+        nombre: 'San Juan de la Costa'
+        codigo: '10306'
+        provincia: '@provincia_34'
+    comuna_232:
+        nombre: 'San Pablo'
+        codigo: '10307'
+        provincia: '@provincia_34'
+    comuna_233:
+        nombre: 'Chaitén'
+        codigo: '10401'
+        provincia: '@provincia_35'
+    comuna_234:
+        nombre: 'Futaleufú'
+        codigo: '10402'
+        provincia: '@provincia_35'
+    comuna_235:
+        nombre: 'Hualaihué'
+        codigo: '10403'
+        provincia: '@provincia_35'
+    comuna_236:
+        nombre: 'Palena'
+        codigo: '10404'
+        provincia: '@provincia_35'
+    comuna_237:
+        nombre: 'Coyhaique'
+        codigo: '11101'
+        provincia: '@provincia_36'
+    comuna_238:
+        nombre: 'Lago Verde'
+        codigo: '11102'
+        provincia: '@provincia_36'
+    comuna_239:
+        nombre: 'Aysén'
+        codigo: '11201'
+        provincia: '@provincia_37'
+    comuna_240:
+        nombre: 'Cisnes'
+        codigo: '11202'
+        provincia: '@provincia_37'
+    comuna_241:
+        nombre: 'Guaitecas'
+        codigo: '11203'
+        provincia: '@provincia_37'
+    comuna_242:
+        nombre: 'Cochrane'
+        codigo: '11301'
+        provincia: '@provincia_38'
+    comuna_243:
+        nombre: 'O’Higgins'
+        codigo: '11302'
+        provincia: '@provincia_38'
+    comuna_244:
+        nombre: 'Tortel'
+        codigo: '11303'
+        provincia: '@provincia_38'
+    comuna_245:
+        nombre: 'Chile Chico'
+        codigo: '11401'
+        provincia: '@provincia_39'
+    comuna_246:
+        nombre: 'Río Ibáñez'
+        codigo: '11402'
+        provincia: '@provincia_39'
+    comuna_247:
+        nombre: 'Punta Arenas'
+        codigo: '12101'
+        provincia: '@provincia_40'
+    comuna_248:
+        nombre: 'Laguna Blanca'
+        codigo: '12102'
+        provincia: '@provincia_40'
+    comuna_249:
+        nombre: 'Río Verde'
+        codigo: '12103'
+        provincia: '@provincia_40'
+    comuna_250:
+        nombre: 'San Gregorio'
+        codigo: '12104'
+        provincia: '@provincia_40'
+    comuna_251:
+        nombre: 'Cabo de Hornos (Ex - Navarino)'
+        codigo: '12201'
+        provincia: '@provincia_41'
+    comuna_252:
+        nombre: 'Antártica'
+        codigo: '12202'
+        provincia: '@provincia_41'
+    comuna_253:
+        nombre: 'Porvenir'
+        codigo: '12301'
+        provincia: '@provincia_42'
+    comuna_254:
+        nombre: 'Primavera'
+        codigo: '12302'
+        provincia: '@provincia_42'
+    comuna_255:
+        nombre: 'Timaukel'
+        codigo: '12303'
+        provincia: '@provincia_42'
+    comuna_256:
+        nombre: 'Natales'
+        codigo: '12401'
+        provincia: '@provincia_43'
+    comuna_257:
+        nombre: 'Torres del Paine'
+        codigo: '12402'
+        provincia: '@provincia_43'
+    comuna_santiago:
+        nombre: 'Santiago'
+        codigo: '13101'
+        provincia: '@provincia_44'
+    comuna_259:
+        nombre: 'Cerrillos'
+        codigo: '13102'
+        provincia: '@provincia_44'
+    comuna_260:
+        nombre: 'Cerro Navia'
+        codigo: '13103'
+        provincia: '@provincia_44'
+    comuna_261:
+        nombre: 'Conchalí'
+        codigo: '13104'
+        provincia: '@provincia_44'
+    comuna_262:
+        nombre: 'El Bosque'
+        codigo: '13105'
+        provincia: '@provincia_44'
+    comuna_263:
+        nombre: 'Estación Central'
+        codigo: '13106'
+        provincia: '@provincia_44'
+    comuna_264:
+        nombre: 'Huechuraba'
+        codigo: '13107'
+        provincia: '@provincia_44'
+    comuna_265:
+        nombre: 'Independencia'
+        codigo: '13108'
+        provincia: '@provincia_44'
+    comuna_266:
+        nombre: 'La Cisterna'
+        codigo: '13109'
+        provincia: '@provincia_44'
+    comuna_267:
+        nombre: 'La Florida'
+        codigo: '13110'
+        provincia: '@provincia_44'
+    comuna_268:
+        nombre: 'La Granja'
+        codigo: '13111'
+        provincia: '@provincia_44'
+    comuna_269:
+        nombre: 'La Pintana'
+        codigo: '13112'
+        provincia: '@provincia_44'
+    comuna_270:
+        nombre: 'La Reina'
+        codigo: '13113'
+        provincia: '@provincia_44'
+    comuna_271:
+        nombre: 'Las Condes'
+        codigo: '13114'
+        provincia: '@provincia_44'
+    comuna_272:
+        nombre: 'Lo Barnechea'
+        codigo: '13115'
+        provincia: '@provincia_44'
+    comuna_273:
+        nombre: 'Lo Espejo'
+        codigo: '13116'
+        provincia: '@provincia_44'
+    comuna_274:
+        nombre: 'Lo Prado'
+        codigo: '13117'
+        provincia: '@provincia_44'
+    comuna_275:
+        nombre: 'Macul'
+        codigo: '13118'
+        provincia: '@provincia_44'
+    comuna_276:
+        nombre: 'Maipú'
+        codigo: '13119'
+        provincia: '@provincia_44'
+    comuna_277:
+        nombre: 'Ñuñoa'
+        codigo: '13120'
+        provincia: '@provincia_44'
+    comuna_278:
+        nombre: 'Pedro Aguirre Cerda'
+        codigo: '13121'
+        provincia: '@provincia_44'
+    comuna_peñalolen:
+        nombre: 'Peñalolén'
+        codigo: '13122'
+        provincia: '@provincia_44'
+    comuna_providencia:
+        nombre: 'Providencia'
+        codigo: '13123'
+        provincia: '@provincia_44'
+    comuna_281:
+        nombre: 'Pudahuel'
+        codigo: '13124'
+        provincia: '@provincia_44'
+    comuna_282:
+        nombre: 'Quilicura'
+        codigo: '13125'
+        provincia: '@provincia_44'
+    comuna_283:
+        nombre: 'Quinta Normal'
+        codigo: '13126'
+        provincia: '@provincia_44'
+    comuna_284:
+        nombre: 'Recoleta'
+        codigo: '13127'
+        provincia: '@provincia_44'
+    comuna_285:
+        nombre: 'Renca'
+        codigo: '13128'
+        provincia: '@provincia_44'
+    comuna_286:
+        nombre: 'San Joaquín'
+        codigo: '13129'
+        provincia: '@provincia_44'
+    comuna_287:
+        nombre: 'San Miguel'
+        codigo: '13130'
+        provincia: '@provincia_44'
+    comuna_288:
+        nombre: 'San Ramón'
+        codigo: '13131'
+        provincia: '@provincia_44'
+    comuna_289:
+        nombre: 'Vitacura'
+        codigo: '13132'
+        provincia: '@provincia_44'
+    comuna_290:
+        nombre: 'Puente Alto'
+        codigo: '13201'
+        provincia: '@provincia_45'
+    comuna_291:
+        nombre: 'Pirque'
+        codigo: '13202'
+        provincia: '@provincia_45'
+    comuna_292:
+        nombre: 'San José de Maipo'
+        codigo: '13203'
+        provincia: '@provincia_45'
+    comuna_293:
+        nombre: 'Colina'
+        codigo: '13301'
+        provincia: '@provincia_46'
+    comuna_294:
+        nombre: 'Lampa '
+        codigo: '13302'
+        provincia: '@provincia_46'
+    comuna_295:
+        nombre: 'Tiltil'
+        codigo: '13303'
+        provincia: '@provincia_46'
+    comuna_296:
+        nombre: 'San Bernardo'
+        codigo: '13401'
+        provincia: '@provincia_47'
+    comuna_297:
+        nombre: 'Buin'
+        codigo: '13402'
+        provincia: '@provincia_47'
+    comuna_298:
+        nombre: 'Calera de Tango'
+        codigo: '13403'
+        provincia: '@provincia_47'
+    comuna_299:
+        nombre: 'Paine'
+        codigo: '13404'
+        provincia: '@provincia_47'
+    comuna_300:
+        nombre: 'Melipilla'
+        codigo: '13501'
+        provincia: '@provincia_48'
+    comuna_301:
+        nombre: 'Alhué'
+        codigo: '13502'
+        provincia: '@provincia_48'
+    comuna_302:
+        nombre: 'Curacaví'
+        codigo: '13503'
+        provincia: '@provincia_48'
+    comuna_303:
+        nombre: 'María Pinto'
+        codigo: '13504'
+        provincia: '@provincia_48'
+    comuna_304:
+        nombre: 'San Pedro'
+        codigo: '13505'
+        provincia: '@provincia_48'
+    comuna_305:
+        nombre: 'Talagante'
+        codigo: '13601'
+        provincia: '@provincia_49'
+    comuna_306:
+        nombre: 'El Monte'
+        codigo: '13602'
+        provincia: '@provincia_49'
+    comuna_307:
+        nombre: 'Isla de Maipo'
+        codigo: '13603'
+        provincia: '@provincia_49'
+    comuna_308:
+        nombre: 'Padre Hurtado'
+        codigo: '13604'
+        provincia: '@provincia_49'
+    comuna_309:
+        nombre: 'Peñaflor'
+        codigo: '13605'
+        provincia: '@provincia_49'
+    comuna_310:
+        nombre: 'Valdivia'
+        codigo: '14101'
+        provincia: '@provincia_50'
+    comuna_311:
+        nombre: 'Corral'
+        codigo: '14102'
+        provincia: '@provincia_50'
+    comuna_312:
+        nombre: 'Lanco'
+        codigo: '14103'
+        provincia: '@provincia_50'
+    comuna_313:
+        nombre: 'Los Lagos'
+        codigo: '14104'
+        provincia: '@provincia_50'
+    comuna_314:
+        nombre: 'Máfil'
+        codigo: '14105'
+        provincia: '@provincia_50'
+    comuna_315:
+        nombre: 'Mariquina'
+        codigo: '14106'
+        provincia: '@provincia_50'
+    comuna_316:
+        nombre: 'Paillaco'
+        codigo: '14107'
+        provincia: '@provincia_50'
+    comuna_317:
+        nombre: 'Panguipulli'
+        codigo: '14108'
+        provincia: '@provincia_50'
+    comuna_318:
+        nombre: 'La Unión'
+        codigo: '14201'
+        provincia: '@provincia_51'
+    comuna_319:
+        nombre: 'Futrono'
+        codigo: '14202'
+        provincia: '@provincia_51'
+    comuna_320:
+        nombre: 'Lago Ranco'
+        codigo: '14203'
+        provincia: '@provincia_51'
+    comuna_321:
+        nombre: 'Río Bueno'
+        codigo: '14204'
+        provincia: '@provincia_51'
+    comuna_322:
+        nombre: 'Arica'
+        codigo: '15101'
+        provincia: '@provincia_52'
+    comuna_323:
+        nombre: 'Camarones'
+        codigo: '15102'
+        provincia: '@provincia_52'
+    comuna_324:
+        nombre: 'Putre'
+        codigo: '15201'
+        provincia: '@provincia_53'
+    comuna_325:
+        nombre: 'General Lagos'
+        codigo: '15202'
+        provincia: '@provincia_53'
+    comuna_326:
+        nombre: 'Chillán'
+        codigo: '16101'
+        provincia: '@provincia_54'
+    comuna_327:
+        nombre: 'Bulnes'
+        codigo: '16102'
+        provincia: '@provincia_54'
+    comuna_328:
+        nombre: 'Chillán Viejo'
+        codigo: '16103'
+        provincia: '@provincia_54'
+    comuna_329:
+        nombre: 'El Carmen'
+        codigo: '16104'
+        provincia: '@provincia_54'
+    comuna_330:
+        nombre: 'Pemuco'
+        codigo: '16105'
+        provincia: '@provincia_54'
+    comuna_331:
+        nombre: 'Pinto'
+        codigo: '16106'
+        provincia: '@provincia_54'
+    comuna_332:
+        nombre: 'Quillón'
+        codigo: '16107'
+        provincia: '@provincia_54'
+    comuna_333:
+        nombre: 'San Ignacio'
+        codigo: '16108'
+        provincia: '@provincia_54'
+    comuna_334:
+        nombre: 'Yungay'
+        codigo: '16109'
+        provincia: '@provincia_54'
+    comuna_335:
+        nombre: 'Quirihue'
+        codigo: '16201'
+        provincia: '@provincia_55'
+    comuna_336:
+        nombre: 'Cobquecura'
+        codigo: '16202'
+        provincia: '@provincia_55'
+    comuna_337:
+        nombre: 'Coelemu'
+        codigo: '16203'
+        provincia: '@provincia_55'
+    comuna_338:
+        nombre: 'Ninhue'
+        codigo: '16204'
+        provincia: '@provincia_55'
+    comuna_339:
+        nombre: 'Portezuelo'
+        codigo: '16205'
+        provincia: '@provincia_55'
+    comuna_340:
+        nombre: 'Ránquil'
+        codigo: '16206'
+        provincia: '@provincia_55'
+    comuna_341:
+        nombre: 'Treguaco'
+        codigo: '16207'
+        provincia: '@provincia_55'
+    comuna_342:
+        nombre: 'San Carlos'
+        codigo: '16301'
+        provincia: '@provincia_56'
+    comuna_343:
+        nombre: 'Coihueco'
+        codigo: '16302'
+        provincia: '@provincia_56'
+    comuna_344:
+        nombre: 'Ñiquén'
+        codigo: '16303'
+        provincia: '@provincia_56'
+    comuna_345:
+        nombre: 'San Fabián'
+        codigo: '16304'
+        provincia: '@provincia_56'
+    comuna_346:
+        nombre: 'San Nicolás'
+        codigo: '16305'
+        provincia: '@provincia_56'

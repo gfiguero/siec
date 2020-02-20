@@ -1,0 +1,13 @@
+App\Entity\EstadoAccidente:
+    estado_accidente_nuevo:
+        nombre: 'Nuevo'
+        codigo: 'nuevo'
+    estado_accidente_confirmado:
+        nombre: 'Confirmado'
+        codigo: 'confirmado'
+    estado_accidente_validado:
+        nombre: 'Validado'
+        codigo: 'validado'
+    estado_accidente_objetado:
+        nombre: 'Objetado'
+        codigo: 'objetado'

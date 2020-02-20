@@ -1,0 +1,24 @@
+{% extends 'inspeccion/layout.html.twig' %}
+
+{% block title %}{{ 'inpeccion'|trans }}{% endblock %}
+
+{% block header %}
+    <h1><span class="fa fa-fw fa-search"></span> Inspección</h1>
+{% endblock %}
+
+{% block inspeccion %}
+    <div class="row">
+        <div class="col">
+            <div class="d-flex form-row">
+                <div class="col d-flex"><a href="{{ path('inspeccion_accidenteUnidad_filtrar') }}" class="btn btn-primary btn-lg flex-fill mb-2"><span class="fa fa-fw fa-car-crash fa-4x"></span><h1>Accidentes por unidad</h1></a></div>
+                <div class="col d-flex"><a href="{{ path('inspeccion_accidenteVehiculo_filtrar') }}" class="btn btn-primary btn-lg flex-fill mb-2"><span class="fa fa-fw fa-car-crash fa-4x"></span><h1>Accidentes por vehículo</h1></a></div>
+                <div class="col d-flex"><a href="{{ path('inspeccion_accidentePersona_filtrar') }}" class="btn btn-primary btn-lg flex-fill mb-2"><span class="fa fa-fw fa-car-crash fa-4x"></span><h1>Accidentes por persona</h1></a></div>
+            </div>
+            <div class="d-flex form-row">
+                <div class="col d-flex"><a href="{{ path('inspeccion_vehiculo_filtrar') }}" class="btn btn-primary btn-lg flex-fill mb-2"><span class="fa fa-fw fa-car fa-4x"></span><h1>Vehículos</h1></a></div>
+                <div class="col d-flex"><a href="{{ path('inspeccion_persona_filtrar') }}" class="btn btn-primary btn-lg flex-fill mb-2"><span class="fa fa-fw fa-walking fa-4x"></span><h1>Personas</h1></a></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

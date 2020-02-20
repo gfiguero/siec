@@ -1,0 +1,226 @@
+App\Entity\TipoAccidente:
+    tipo_accidente_transito_1:
+        nombre: 'Atropello'
+        codigo: '10'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_atropello'
+    tipo_accidente_transito_2:
+        nombre: 'Caída'
+        codigo: '20'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_caida'
+    tipo_accidente_transito_3:
+        nombre: 'Colisión Perpendicular'
+        codigo: '34'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_colision'
+    tipo_accidente_transito_4:
+        nombre: 'Impacto con Animal'
+        codigo: '40'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_otro'
+    tipo_accidente_transito_5:
+        nombre: 'Choque Frontal'
+        codigo: '51'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_transito_6:
+        nombre: 'Choque Lateral'
+        codigo: '52'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_transito_7:
+        nombre: 'Choque Posterior'
+        codigo: '53'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_transito_8:
+        nombre: 'Choque Posterior/Frente'
+        codigo: '67'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_transito_9:
+        nombre: 'Choque Posterior/Posterior'
+        codigo: '69'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_transito_10:
+        nombre: 'Volcadura'
+        codigo: '70'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_volcadura'
+    tipo_accidente_transito_11:
+        nombre: 'Incendio'
+        codigo: '80'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_incendio'
+    tipo_accidente_transito_12:
+        nombre: 'Otro Tipo'
+        codigo: '99'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_otro'
+    tipo_accidente_transito_13:
+        nombre: 'ChoqueFrente/Frente'
+        codigo: '61'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_transito_14:
+        nombre: 'Choque Frente/Lado'
+        codigo: '62'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_transito_15:
+        nombre: 'Choque Lado/Frente'
+        codigo: '64'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_transito_16:
+        nombre: 'Choque Lado/Posterior'
+        codigo: '66'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_transito_17:
+        nombre: 'Choque'
+        codigo: '50'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_transito_18:
+        nombre: 'Colisión Frontal'
+        codigo: '31'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_colision'
+    tipo_accidente_transito_19:
+        nombre: 'Colisión Lateral'
+        codigo: '32'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_colision'
+    tipo_accidente_transito_20:
+        nombre: 'Colisión por Alcance'
+        codigo: '33'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_colision'
+    tipo_accidente_transito_21:
+        nombre: 'Colisión'
+        codigo: '30'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_colision'
+    tipo_accidente_transito_22:
+        nombre: 'Choque Frente/posterior'
+        codigo: '63'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_transito_23:
+        nombre: 'Choque Lado/Lado'
+        codigo: '65'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_transito_24:
+        nombre: 'Choque Posterior/Lado'
+        codigo: '68'
+        claseAccidente: '@clase_accidente_transito'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_ferroviario_1:
+        nombre: 'Colisión Frontal'
+        codigo: '31'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_colision'
+    tipo_accidente_ferroviario_2:
+        nombre: 'Colisión Lateral'
+        codigo: '32'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_colision'
+    tipo_accidente_ferroviario_3:
+        nombre: 'Colisión por Alcance'
+        codigo: '33'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_colision'
+    tipo_accidente_ferroviario_4:
+        nombre: 'Atropello'
+        codigo: '10'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_atropello'
+    tipo_accidente_ferroviario_5:
+        nombre: 'Caida'
+        codigo: '20'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_caida'
+    tipo_accidente_ferroviario_6:
+        nombre: 'Descarrilamiento'
+        codigo: '90'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_descarrilamiento'
+    tipo_accidente_ferroviario_7:
+        nombre: 'Otro Tipo'
+        codigo: '99'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_otro'
+    tipo_accidente_ferroviario_8:
+        nombre: 'Colisión Perpendicular'
+        codigo: '34'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_colision'
+    tipo_accidente_ferroviario_9:
+        nombre: 'Choque'
+        codigo: '50'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_ferroviario_10:
+        nombre: 'Choque Frontal'
+        codigo: '51'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_ferroviario_11:
+        nombre: 'Choque Lateral'
+        codigo: '52'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_ferroviario_12:
+        nombre: 'Choque Posterior'
+        codigo: '53'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_ferroviario_13:
+        nombre: 'Choque Frente/Frente'
+        codigo: '61'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_ferroviario_14:
+        nombre: 'Choque Frente/Lado'
+        codigo: '62'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_ferroviario_15:
+        nombre: 'Choque Frente/posterior'
+        codigo: '63'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_ferroviario_16:
+        nombre: 'Choque Lado/Frente'
+        codigo: '64'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_ferroviario_17:
+        nombre: 'Choque Lado/Lado'
+        codigo: '65'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_ferroviario_18:
+        nombre: 'Choque Lado/Posterior'
+        codigo: '66'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_ferroviario_19:
+        nombre: 'Choque Posterior/Frente'
+        codigo: '67'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_ferroviario_20:
+        nombre: 'Choque Posterior/Lado'
+        codigo: '68'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'
+    tipo_accidente_ferroviario_21:
+        nombre: 'Choque Posterior/Posterior'
+        codigo: '69'
+        claseAccidente: '@clase_accidente_ferroviario'
+        tipo_accidente_conaset: '@tipo_accidenteconaset_choque'

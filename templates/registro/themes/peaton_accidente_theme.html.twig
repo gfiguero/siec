@@ -1,0 +1,56 @@
+{% block peaton_accidente_label %}{% endblock %}
+
+{% block peaton_accidente_widget %}
+    <div class="card border-secondary">
+        <div class="card-header bg-secondary text-white">
+            <div class="d-flex">
+                <h4 class="flex-grow-1 my-1"><span class="fa fa-fw fa-walking"></span> Peatón - Posición relativa: <span class="peaton-position">{{ form.vars.name }}</span></h4>
+                <button type="button" class="collection-up btn btn-primary ml-1" title="Subir"><span class="fa fa-fw fa-arrow-up"></span>Subir Peatón</button>
+                <button type="button" class="collection-down btn btn-primary ml-1" title="Bajar"><span class="fa fa-fw fa-arrow-down"></span>Bajar Peatón</button>
+                <button type="button" class="collection-remove btn btn-danger ml-1" title="Eliminar"><span class="fa fa-fw fa-times"></span>Borrar Peatón</button>
+            </div>
+        </div>
+        <div class="card-body p-2">
+            <div class="form-row">
+                <div class="col-md-6 mb-2">
+                    <div class="card bg-info border-primary h-100 mb-2">
+                        <div class="card-header">
+                            <h5 class="m-0"><span class="fa fa-fw fa-id-card"></span> Datos Personales</h5>
+                        </div>
+                        <div class="card-body">
+                        {% form_theme form.persona 'registro/themes/persona_theme.html.twig' %}
+                        {{ form_row(form.persona) }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <div class="card bg-info border-primary h-100 mb-2">
+                        <div class="card-header">
+                            <h5 class="m-0"><span class="fa fa-fw fa-info"></span> Situación Personal</h5>
+                        </div>
+                        <div class="card-body">
+                        {% form_theme form.personaEsCausanteProbable 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' 'registro/themes/checkbox_theme.html.twig' %}
+                        {{ form_row(form.personaEsCausanteProbable) }}
+
+                        {% form_theme form.personaSeFuga 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' 'registro/themes/checkbox_theme.html.twig' %}
+                        {{ form_row(form.personaSeFuga) }}
+
+                        {% form_theme form.tipoTrayecto 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+                        {{ form_row(form.tipoTrayecto) }}
+
+                        {% form_theme form.condicionFisica 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+                        {{ form_row(form.condicionFisica) }}
+
+                        {% form_theme form.cualidadEspecial 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+                        {{ form_row(form.cualidadEspecial) }}
+
+                        {% form_theme form.consecuenciaPersona 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+                        {{ form_row(form.consecuenciaPersona) }}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

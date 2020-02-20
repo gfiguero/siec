@@ -1,0 +1,10 @@
+App\Entity\ConsecuenciaVehiculo:
+    consecuencia_vehiculo_1:
+        nombre: 'Con daños al vehículo'
+        codigo: '01'
+    consecuencia_vehiculo_2:
+        nombre: 'Sin daños al vehículo'
+        codigo: '02'
+    consecuencia_vehiculo_3:
+        nombre: 'Se ignora'
+        codigo: '99'

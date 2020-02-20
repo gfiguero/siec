@@ -1,0 +1,32 @@
+App\Entity\Unidad:
+    unidad_desarrollo:
+        nombre: 'Desarrollo'
+        codigo (unique): '<randomNumber(9)>'
+        claseUnidad: '@clase_unidad_administrativa'
+        tipoUnidad: '@tipo_unidad_comisaria'
+        comuna: '@comuna_258'
+        habilitada: true
+
+    unidad_siec:
+        nombre: 'SIEC'
+        codigo (unique): '<randomNumber(9)>'
+        claseUnidad: '@clase_unidad_administrativa'
+        tipoUnidad: '@tipo_unidad_comisaria'
+        comuna: '@comuna_258'
+        habilitada: true
+
+    unidad_comisaria_iquique_1:
+        nombre: '1RA COM. IQUIQUE'
+        codigo (unique): '<randomNumber(9)>'
+        claseUnidad: '@clase_unidad_operativa'
+        tipoUnidad: '@tipo_unidad_comisaria'
+        comuna: '@comuna_1'
+        habilitada: true
+
+    unidad_comisaria_antofagasta_3:
+        nombre: '3RA COM. ANTOFAGASTA'
+        codigo (unique): '<randomNumber(9)>'
+        claseUnidad: '@clase_unidad_operativa'
+        tipoUnidad: '@tipo_unidad_comisaria'
+        comuna: '@comuna_8'
+        habilitada: true

@@ -1,0 +1,53 @@
+App\Entity\Accidente:
+    accidente (template):
+        fecha: <dateTimeBetween("-200 days", "now")>
+        hora: '<dateTime()>'
+        tipoCalzada: '@tipo_calzada_bidireccional'
+        cantidadPistasIda: '<numberBetween(1, 4)>'
+        cantidadPistasRegreso: '<numberBetween(1, 4)>'
+        numeroParte: '<numberBetween(1,10000)>'
+        concurreSiat: false
+        esMensaje: false
+        cantidadFallecidos: 0
+        claseAccidente: '@clase_accidente_transito'
+        causaBasal: '@causa_*'
+        condicionPavimentoCalzada: '@condicion_pavimento_calzada_*'
+        estadoAtmosferico: '@estado_atmosferico_*'
+        estadoLuzArtificial: '@estado_luz_artificial_*'
+        estadoPavimentoCalzada: '@estado_pavimento_calzada_*'
+        tipoAccidente: '@tipo_accidente_transito_*'
+        tipoDireccion: '@tipo_direccion_transito_*'
+        tipoLuminosidad: '@tipo_luminosidad_*'
+        tipoPavimentoCalzada: '@tipo_pavimento_calzada_*'
+        tipoUbicacionRelativaAccidente: '@tipo_ubicacion_relativa_accidente_transito_*'
+        tipoZonaAccidente: '@tipo_zona_accidente_*'
+        tribunal: '@tribunal_*'
+        demarcacionLineaCalzada: '@demarcacion_linea_calzada_*'
+        demarcacionPrioridadCalzada: '@demarcacion_prioridad_calzada_*'
+        estadoAccidente: '@estado_accidente_nuevo'
+        ubicacion: '@ubicacion_<current()>'
+        causas: ['@causa_*', '@causa_*', '@causa_*']
+
+    accidente_{1..20} (extends accidente):
+        comuna: '@comuna_santiago'
+        unidad: '@unidad_comisaria_santiago'
+        cuadrante: '@cuadrante_santiago_*'
+        funcionario: '@funcionario_santiago_*'
+        funcionarioResponsable: '@funcionario_santiago_*'
+        numeroFormulario: '<identity($current)>'
+
+    accidente_{21..40} (extends accidente):
+        comuna: '@comuna_providencia'
+        unidad: '@unidad_comisaria_providencia'
+        cuadrante: '@cuadrante_providencia_*'
+        funcionario: '@funcionario_providencia_*'
+        funcionarioResponsable: '@funcionario_providencia_*'
+        numeroFormulario: '<identity($current-20)>'
+
+    accidente_{41..60} (extends accidente):
+        comuna: '@comuna_peñalolen'
+        unidad: '@unidad_comisaria_peñalolen'
+        cuadrante: '@cuadrante_peñalolen_*'
+        funcionario: '@funcionario_peñalolen_*'
+        funcionarioResponsable: '@funcionario_peñalolen_*'
+        numeroFormulario: '<identity($current-40)>'

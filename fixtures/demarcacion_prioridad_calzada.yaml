@@ -1,0 +1,10 @@
+App\Entity\DemarcacionPrioridadCalzada:
+    demarcacion_prioridad_calzada_ceda:
+        nombre: 'Ceda el paso'
+        codigo: '01'
+    demarcacion_prioridad_calzada_pare:
+        nombre: 'Pare'
+        codigo: '02'
+    demarcacion_prioridad_calzada_inexistente:
+        nombre: 'Inexistente'
+        codigo: '99'

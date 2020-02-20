@@ -1,0 +1,43 @@
+App\Entity\CausaConaset:
+    causaconaset_imprudencia_conductor:
+        nombre: 'Imprudencia del conductor'
+        codigo: '1'
+    causaconaset_imprudencia_peaton:
+        nombre: 'Imprudencia del peatón'
+        codigo: '2'
+    causaconaset_imprudencia_pasajero:
+        nombre: 'Imprudencia del pasajero'
+        codigo: '3'
+    causaconaset_alcohol_conductor:
+        nombre: 'Alcohol en conductor'
+        codigo: '4'
+    causaconaset_alcohol_peaton:
+        nombre: 'Alcohol en peatón'
+        codigo: '5'
+    causaconaset_alcohol_pasajero:
+        nombre: 'Alcohol en pasajero'
+        codigo: '6'
+    causaconaset_velocidad_imprudente:
+        nombre: 'Velocidad imprudente'
+        codigo: '7'
+    causaconaset_drogas_conductor:
+        nombre: 'Drogas y/o fatiga del conductor'
+        codigo: '8'
+    causaconaset_perdida_control:
+        nombre: 'Pérdida de control del vehículo'
+        codigo: '9'
+    causaconaset_desobediencia:
+        nombre: 'Desobediencia a señalización'
+        codigo: '10'
+    causaconaset_deficiencias_viales:
+        nombre: 'Deficiencias viales'
+        codigo: '11'
+    causaconaset_fallas_mecanicas:
+        nombre: 'Fallas mecánicas'
+        codigo: '12'
+    causaconaset_no_determinadas:
+        nombre: 'Causas no determinadas'
+        codigo: '13'
+    causaconaset_otras:
+        nombre: 'Otras causas'
+        codigo: '14'

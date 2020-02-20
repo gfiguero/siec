@@ -1,0 +1,49 @@
+App\Entity\ServicioVehiculo:
+    servicio_vehiculo_1:
+        nombre: 'Carabineros'
+        codigo: '01'
+    servicio_vehiculo_2:
+        nombre: 'Fiscal'
+        codigo: '02'
+    servicio_vehiculo_3:
+        nombre: 'Particular'
+        codigo: '03'
+    servicio_vehiculo_4:
+        nombre: 'Transporte escolar'
+        codigo: '04'
+    servicio_vehiculo_5:
+        nombre: 'Taxi básico'
+        codigo: '05'
+    servicio_vehiculo_6:
+        nombre: 'Taxi colectivo urbano'
+        codigo: '06'
+    servicio_vehiculo_7:
+        nombre: 'Taxi colectivo rural'
+        codigo: '07'
+    servicio_vehiculo_8:
+        nombre: 'Bomberos'
+        codigo: '08'
+    servicio_vehiculo_9:
+        nombre: 'Salud'
+        codigo: '09'
+    servicio_vehiculo_10:
+        nombre: 'Locomoción colectiva urbana'
+        codigo: '10'
+    servicio_vehiculo_11:
+        nombre: 'Locomoción colectiva rural'
+        codigo: '11'
+    servicio_vehiculo_12:
+        nombre: 'Servicio interurbano'
+        codigo: '12'
+    servicio_vehiculo_13:
+        nombre: 'Servicio internacional'
+        codigo: '13'
+    servicio_vehiculo_14:
+        nombre: 'Carga normal'
+        codigo: '14'
+    servicio_vehiculo_15:
+        nombre: 'Carga peligrosa'
+        codigo: '15'
+    servicio_vehiculo_16:
+        nombre: 'Otros sin especificar'
+        codigo: '99'

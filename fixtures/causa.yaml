@@ -1,0 +1,296 @@
+App\Entity\Causa:
+    causa_1:
+        nombre: 'Fallas mecánicas - Frenos'
+        codigo: '01'
+        tipo_causa: '@tipo_causa_1'
+        causa_conaset: '@causaconaset_fallas_mecanicas'
+    causa_2:
+        nombre: 'Fallas mecánicas - Dirección'
+        codigo: '02'
+        tipo_causa: '@tipo_causa_1'
+        causa_conaset: '@causaconaset_fallas_mecanicas'
+    causa_3:
+        nombre: 'Fallas mecánicas - Eléctrico'
+        codigo: '03'
+        tipo_causa: '@tipo_causa_1'
+        causa_conaset: '@causaconaset_fallas_mecanicas'
+    causa_4:
+        nombre: 'Fallas mecánicas - Suspensión'
+        codigo: '04'
+        tipo_causa: '@tipo_causa_1'
+        causa_conaset: '@causaconaset_fallas_mecanicas'
+    causa_5:
+        nombre: 'Fallas mecánicas - Neumáticos'
+        codigo: '05'
+        tipo_causa: '@tipo_causa_1'
+        causa_conaset: '@causaconaset_fallas_mecanicas'
+    causa_6:
+        nombre: 'Fallas mecánicas - Motor'
+        codigo: '06'
+        tipo_causa: '@tipo_causa_1'
+        causa_conaset: '@causaconaset_fallas_mecanicas'
+    causa_7:
+        nombre: 'Fallas mecánicas - Carrocería'
+        codigo: '07'
+        tipo_causa: '@tipo_causa_1'
+        causa_conaset: '@causaconaset_fallas_mecanicas'
+    causa_8:
+        nombre: 'Adelantamiento sin el espacio'
+        codigo: '11'
+        tipo_causa: '@tipo_causa_2'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_9:
+        nombre: 'Adelantamiento sin efectuar señal respectiva'
+        codigo: '12'
+        tipo_causa: '@tipo_causa_2'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_10:
+        nombre: 'Adelantamiento por la berma'
+        codigo: '13'
+        tipo_causa: '@tipo_causa_2'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_11:
+        nombre: 'Adelantamiento sobrepasando línea contínua'
+        codigo: '14'
+        tipo_causa: '@tipo_causa_2'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_12:
+        nombre: 'Adelantamiento en cruce, curva, cuesta, puente'
+        codigo: '15'
+        tipo_causa: '@tipo_causa_2'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_13:
+        nombre: 'Conducción bajo influencia del alcohol'
+        codigo: '21'
+        tipo_causa: '@tipo_causa_3'
+        causa_conaset: '@causaconaset_alcohol_conductor'
+    causa_14:
+        nombre: 'Conducción bajo influencia de drogas o estupefacientes'
+        codigo: '22'
+        tipo_causa: '@tipo_causa_3'
+        causa_conaset: '@causaconaset_drogas_conductor'
+    causa_15:
+        nombre: 'Conducción contra sentido del tránsito'
+        codigo: '23'
+        tipo_causa: '@tipo_causa_3'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_16:
+        nombre: 'Conducción en estado de ebriedad'
+        codigo: '24'
+        tipo_causa: '@tipo_causa_3'
+        causa_conaset: '@causaconaset_alcohol_conductor'
+    causa_17:
+        nombre: 'Condiciones físicas deficientes (cansancio, sueño)'
+        codigo: '25'
+        tipo_causa: '@tipo_causa_3'
+        causa_conaset: '@causaconaset_drogas_conductor'
+    causa_18:
+        nombre: 'Conducción por izquierda eje calzada'
+        codigo: '26'
+        tipo_causa: '@tipo_causa_3'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_19:
+        nombre: 'Conducción no atento condiciones tránsito momento'
+        codigo: '27'
+        tipo_causa: '@tipo_causa_3'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_20:
+        nombre: 'Conducción sin mantener distancia razonable ni prudente'
+        codigo: '28'
+        tipo_causa: '@tipo_causa_3'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_21:
+        nombre: 'Conducción, cambiar sorpresivamente pista circulación'
+        codigo: '29'
+        tipo_causa: '@tipo_causa_3'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_22:
+        nombre: 'No respetar derecho preferente de paso a peatón'
+        codigo: '31'
+        tipo_causa: '@tipo_causa_4'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_23:
+        nombre: 'No respetar derecho preferente de paso a vehículo'
+        codigo: '32'
+        tipo_causa: '@tipo_causa_4'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_24:
+        nombre: 'Pasajero sube o desciende de vehículo movimiento'
+        codigo: '41'
+        tipo_causa: '@tipo_causa_5'
+        causa_conaset: '@causaconaset_imprudencia_pasajero'
+    causa_25:
+        nombre: 'Pasajero viaja en pisadera de vehículo'
+        codigo: '42'
+        tipo_causa: '@tipo_causa_5'
+        causa_conaset: '@causaconaset_imprudencia_pasajero'
+    causa_26:
+        nombre: 'Pasajero, imprudencia del'
+        codigo: '43'
+        tipo_causa: '@tipo_causa_5'
+        causa_conaset: '@causaconaset_imprudencia_pasajero'
+    causa_27:
+        nombre: 'Pasajero, ebriedad del'
+        codigo: '44'
+        tipo_causa: '@tipo_causa_5'
+        causa_conaset: '@causaconaset_alcohol_pasajero'
+    causa_28:
+        nombre: 'Peatón, permanece sobre la calzada'
+        codigo: '51'
+        tipo_causa: '@tipo_causa_6'
+        causa_conaset: '@causaconaset_imprudencia_peaton'
+    causa_29:
+        nombre: 'Peatón, cruza calzada forma sorpresiva o descuidada'
+        codigo: '52'
+        tipo_causa: '@tipo_causa_6'
+        causa_conaset: '@causaconaset_imprudencia_peaton'
+    causa_30:
+        nombre: 'Peatón, imprudencia del'
+        codigo: '53'
+        tipo_causa: '@tipo_causa_6'
+        causa_conaset: '@causaconaset_imprudencia_peaton'
+    causa_31:
+        nombre: 'Peatón, ebriedad del'
+        codigo: '54'
+        tipo_causa: '@tipo_causa_6'
+        causa_conaset: '@causaconaset_alcohol_peaton'
+    causa_32:
+        nombre: 'Peatón, cruza calzada fuera paso peatones'
+        codigo: '55'
+        tipo_causa: '@tipo_causa_6'
+        causa_conaset: '@causaconaset_imprudencia_peaton'
+    causa_33:
+        nombre: 'Peatón, cruza camino o carretera sin adoptar precauciones'
+        codigo: '56'
+        tipo_causa: '@tipo_causa_6'
+        causa_conaset: '@causaconaset_imprudencia_peaton'
+    causa_34:
+        nombre: 'Señalización, mal instalada o mantención defectuosa'
+        codigo: '61'
+        tipo_causa: '@tipo_causa_7'
+        causa_conaset: '@causaconaset_deficiencias_viales'
+    causa_35:
+        nombre: 'Señalización, desobedecer luz roja de semáforo'
+        codigo: '62'
+        tipo_causa: '@tipo_causa_7'
+        causa_conaset: '@causaconaset_desobediencia'
+    causa_36:
+        nombre: 'Señalización, desobedecer indicación carabinero servicio'
+        codigo: '63'
+        tipo_causa: '@tipo_causa_7'
+        causa_conaset: '@causaconaset_desobediencia'
+    causa_37:
+        nombre: 'Señalización, desobedecer señal ceda el paso'
+        codigo: '64'
+        tipo_causa: '@tipo_causa_7'
+        causa_conaset: '@causaconaset_desobediencia'
+    causa_38:
+        nombre: 'Señalización, desobedecer señal pare'
+        codigo: '65'
+        tipo_causa: '@tipo_causa_7'
+        causa_conaset: '@causaconaset_desobediencia'
+    causa_39:
+        nombre: 'Señalización, desobedecer otra'
+        codigo: '66'
+        tipo_causa: '@tipo_causa_7'
+        causa_conaset: '@causaconaset_desobediencia'
+    causa_40:
+        nombre: 'Señalización, semáforo mal estado o deficiente'
+        codigo: '67'
+        tipo_causa: '@tipo_causa_7'
+        causa_conaset: '@causaconaset_deficiencias_viales'
+    causa_41:
+        nombre: 'Señalización, desobedecer luz intermitente semáforo'
+        codigo: '68'
+        tipo_causa: '@tipo_causa_7'
+        causa_conaset: '@causaconaset_desobediencia'
+    causa_42:
+        nombre: 'Velocidad mayor que máxima permitida'
+        codigo: '71'
+        tipo_causa: '@tipo_causa_7'
+        causa_conaset: '@causaconaset_velocidad_imprudente'
+    causa_43:
+        nombre: 'Velocidad no razonable ni prudente'
+        codigo: '72'
+        tipo_causa: '@tipo_causa_7'
+        causa_conaset: '@causaconaset_velocidad_imprudente'
+    causa_44:
+        nombre: 'Velocidad, no reducir cruce de calles, cumbre, curva, etc.'
+        codigo: '73'
+        tipo_causa: '@tipo_causa_7'
+        causa_conaset: '@causaconaset_velocidad_imprudente'
+    causa_45:
+        nombre: 'Velocidad, exceso en zona restringida'
+        codigo: '74'
+        tipo_causa: '@tipo_causa_7'
+        causa_conaset: '@causaconaset_velocidad_imprudente'
+    causa_46:
+        nombre: 'Velocidad, menor que mínima establecida'
+        codigo: '75'
+        tipo_causa: '@tipo_causa_7'
+        causa_conaset: '@causaconaset_velocidad_imprudente'
+    causa_47:
+        nombre: 'Carga mayor que la autorizada vehículo'
+        codigo: '81'
+        tipo_causa: '@tipo_causa_9'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_48:
+        nombre: 'Carga obstruye visual conductor'
+        codigo: '82'
+        tipo_causa: '@tipo_causa_9'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_49:
+        nombre: 'Carga escurre a la calzada'
+        codigo: '83'
+        tipo_causa: '@tipo_causa_9'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_50:
+        nombre: 'Carga sobresale estructura vehículo'
+        codigo: '84'
+        tipo_causa: '@tipo_causa_9'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_51:
+        nombre: 'Virajes indebidos'
+        codigo: '91'
+        tipo_causa: '@tipo_causa_10'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_52:
+        nombre: 'Animales sueltos vía pública'
+        codigo: '92'
+        tipo_causa: '@tipo_causa_10'
+        causa_conaset: '@causaconaset_deficiencias_viales'
+    causa_53:
+        nombre: 'Vehículo en retroceso, conducir'
+        codigo: '93'
+        tipo_causa: '@tipo_causa_10'
+        causa_conaset: '@causaconaset_imprudencia_conductor'
+    causa_54:
+        nombre: 'Vehículo en panne sin señalización o deficiente'
+        codigo: '94'
+        tipo_causa: '@tipo_causa_10'
+        causa_conaset: '@causaconaset_fallas_mecanicas'
+    causa_55:
+        nombre: 'Pérdida control vehículo'
+        codigo: '95'
+        tipo_causa: '@tipo_causa_10'
+        causa_conaset: '@causaconaset_perdida_control'
+    causa_56:
+        nombre: 'Suicidio'
+        codigo: '96'
+        tipo_causa: '@tipo_causa_10'
+        causa_conaset: '@causaconaset_otras'
+    causa_57:
+        nombre: 'Causa no determinada'
+        codigo: '97'
+        tipo_causa: '@tipo_causa_10'
+        causa_conaset: '@causaconaset_no_determinadas'
+    causa_58:
+        nombre: 'Otra causa'
+        codigo: '98'
+        tipo_causa: '@tipo_causa_10'
+        causa_conaset: '@causaconaset_otras'
+    causa_59:
+        nombre: 'Hecho delictual'
+        codigo: '99'
+        tipo_causa: '@tipo_causa_10'
+        causa_conaset: '@causaconaset_otras'

@@ -1,0 +1,16 @@
+App\Entity\DireccionVehiculo:
+    direccion_vehiculo_1:
+        nombre: 'Norte'
+        codigo: '01'
+    direccion_vehiculo_2:
+        nombre: 'Sur'
+        codigo: '02'
+    direccion_vehiculo_3:
+        nombre: 'Oriente'
+        codigo: '03'
+    direccion_vehiculo_4:
+        nombre: 'Occidente'
+        codigo: '04'
+    direccion_vehiculo_5:
+        nombre: 'Sin antecedentes'
+        codigo: '99'

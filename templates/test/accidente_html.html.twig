@@ -1,0 +1,308 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12"><h3>Prueba de formulario SIEC3</h3></div>
+        </div>
+        <div class="form-row">
+            <div class="col-4">
+                <div class="card mb-2">
+                    <div class="card-header py-1">Instrucciones</div>
+                    <div class="card-body py-1">
+                        <ul>
+                            <li class="my-2">Ingresar a siec3.conaset.cl</li>
+                            <li class="my-2">Escribir su nombre de usuario</li>
+                            <li class="my-2">Password "qwerty"</li>
+                            <li class="my-2">Dentro del sistema, ir a "Accidentes"</li>
+                            <li class="my-2">En accidentes, ir a "Registrar Accidente"</li>
+                            <li class="my-2">Siga los pasos del formulario hasta finalizar</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-header py-1">Leyenda</div>
+                    <div class="card-body py-1">
+                        <dl class="form-row my-1">
+                            <dt class="col-3 text-right">CP</dt><dd class="col-9">Causante Probable</dd>
+                            <dt class="col-3 text-right">DF</dt><dd class="col-9">Dado a la Fuga</dd>
+                            <dt class="col-3 text-right">CLL</dt><dd class="col-9">Clase Licencia</dd>
+                            <dt class="col-3 text-right">DOL</dt><dd class="col-9">Comuna Licencia</dd>
+                            <dt class="col-3 text-right">TT</dt><dd class="col-9">Tipo de Trayecto</dd>
+                            <dt class="col-3 text-right">CF</dt><dd class="col-9">Condición Física</dd>
+                            <dt class="col-3 text-right">CE</dt><dd class="col-9">Cualidad Especial</dd>
+                            <dt class="col-3 text-right">CO</dt><dd class="col-9">Consecuencia</dd>
+                            <dt class="col-3 text-right">ES</dt><dd class="col-9">Elementos de Seguridad</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mb-2">
+                    <div class="card-header py-1">Identificación</div>
+                    <div class="card-body py-1">
+                        <dl class="form-row my-1">
+                            <dt class="col-5 text-right">{{ 'accidente.unidad'|trans }}</dt><dd class="col-7">{{ accidente.unidad }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.numeroParte'|trans }}</dt><dd class="col-7">{{ accidente.numeroParte }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.fecha'|trans }}</dt><dd class="col-7">{{ accidente.fecha|date('Y-m-d') }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.hora'|trans }}</dt><dd class="col-7">{{ accidente.hora|date('H:m') }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.concurreSiat'|trans }}</dt><dd class="col-7">{{ accidente.concurreSiat ? 'Si' : 'No' }}</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.claseAccidente'|trans }}</dt><dd class="col-7">{{ accidente.claseAccidente }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.tipoAccidente'|trans }}</dt><dd class="col-7">{{ accidente.tipoAccidente }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.funcionario'|trans }}</dt><dd class="col-7">{{ accidente.funcionario }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.tribunal'|trans }}</dt><dd class="col-7">{{ accidente.tribunal }}&nbsp;</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-header py-1">Ubicación</div>
+                    <div class="card-body py-1">
+                        <dl class="form-row my-1">
+                            <dt class="col-5 text-right">{{ 'accidente.comuna'|trans }}</dt><dd class="col-7">{{ accidente.comuna }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.cuadrante'|trans }}</dt><dd class="col-7">{{ accidente.cuadrante }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.tipoZonaAccidente'|trans }}</dt><dd class="col-7">{{ accidente.tipoZonaAccidente }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.tipoUbicacionRelativaAccidente'|trans }}</dt><dd class="col-7">{{ accidente.tipoUbicacionRelativaAccidente }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.tipoDireccion'|trans }}</dt><dd class="col-7">{{ accidente.tipoDireccion }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'ubicacion.glosa'|trans }}</dt><dd class="col-7">{{ accidente.ubicacion.glosa }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'ubicacion.calle'|trans }}</dt><dd class="col-7">{{ accidente.ubicacion.calle }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'ubicacion.numero'|trans }}</dt><dd class="col-7">{{ accidente.ubicacion.numero }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'ubicacion.direccion'|trans }}</dt><dd class="col-7">{{ accidente.ubicacion.direccion }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'ubicacion.latitud'|trans }}</dt><dd class="col-7">{{ accidente.ubicacion.latitud }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'ubicacion.longitud'|trans }}</dt><dd class="col-7">{{ accidente.ubicacion.longitud }}&nbsp;</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mb-2">
+                    <div class="card-header py-1">Causas</div>
+                    <div class="card-body py-1">
+                        <dl class="form-row my-1">
+                            <dt class="col-5 text-right">{{ 'accidente.causaBasal'|trans }}</dt><dd class="col-7">{{ accidente.causaBasal }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.causas'|trans }}</dt><dd class="col-7">{{ accidente.causas|join(', ') }}&nbsp;</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-header py-1">Condiciones</div>
+                    <div class="card-body py-1">
+                        <dl class="form-row my-1">
+                            <dt class="col-5 text-right">{{ 'accidente.estadoAtmosferico'|trans }}</dt><dd class="col-7">{{ accidente.estadoAtmosferico }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.tipoLuminosidad'|trans }}</dt><dd class="col-7">{{ accidente.tipoLuminosidad }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.estadoLuzArtificial'|trans }}</dt><dd class="col-7">{{ accidente.estadoLuzArtificial }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.tipoPavimentoCalzada'|trans }}</dt><dd class="col-7">{{ accidente.tipoPavimentoCalzada }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.condicionPavimentoCalzada'|trans }}</dt><dd class="col-7">{{ accidente.condicionPavimentoCalzada }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.estadoPavimentoCalzada'|trans }}</dt><dd class="col-7">{{ accidente.estadoPavimentoCalzada }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.tipoCalzada'|trans }}</dt><dd class="col-7">{{ accidente.tipoCalzada }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.cantidadPistasIda'|trans }}</dt><dd class="col-7">{{ accidente.cantidadPistasIda }} Pista(s)&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.cantidadPistasRegreso'|trans }}</dt><dd class="col-7">{{ accidente.cantidadPistasRegreso }} Pista(s)&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.demarcacionLineaCalzada'|trans }}</dt><dd class="col-7">{{ accidente.demarcacionLineaCalzada }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.demarcacionPrioridadCalzada'|trans }}</dt><dd class="col-7">{{ accidente.demarcacionPrioridadCalzada }}&nbsp;</dd>
+                            <dt class="col-5 text-right">{{ 'accidente.elementosCalzada'|trans }}</dt><dd class="col-7">{{ accidente.elementosCalzada|join(', ') }}&nbsp;</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card mb-2">
+                    <div class="card-header py-1">Vehículos</div>
+                    <table class="table table-sm table-bordered mb-0">
+                        <thead>
+                            <tr>
+                                <th>{{ 'formulario.vehiculo.placaPatenteUnica'|trans }}</th>
+                                <th>{{ 'formulario.vehiculo.marcaVehiculo'|trans }}</th>
+                                <th>{{ 'formulario.vehiculo.modeloVehiculo'|trans }}</th>
+                                <th>{{ 'formulario.vehiculo.ano'|trans }}</th>
+                                <th>{{ 'formulario.vehiculo.color'|trans }}</th>
+                                <th>{{ 'formulario.vehiculo.tipoVehiculo'|trans }}</th>
+                                <th>{{ 'formulario.vehiculo.vehiculoEsCausanteProbable'|trans }}</th>
+                                <th>{{ 'formulario.vehiculo.vehiculoSeFuga'|trans }}</th>
+                                <th>{{ 'formulario.vehiculo.servicioVehiculo'|trans }}</th>
+                                <th>{{ 'formulario.vehiculo.direccionVehiculo'|trans }}</th>
+                                <th>{{ 'formulario.vehiculo.maniobraVehiculo'|trans }}</th>
+                                <th>{{ 'formulario.vehiculo.consecuenciaVehiculo'|trans }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for k, vehiculo in accidente.vehiculosAccidente %}
+                            <tr>
+                                <td>{{ vehiculo.vehiculo.placaPatenteUnica }}&nbsp;</td>
+                                <td>{{ vehiculo.vehiculo.marcaVehiculo }}&nbsp;</td>
+                                <td>{{ vehiculo.vehiculo.modeloVehiculo }}&nbsp;</td>
+                                <td>{{ vehiculo.vehiculo.ano }}&nbsp;</td>
+                                <td>{{ vehiculo.vehiculo.color }}&nbsp;</td>
+                                <td>{{ vehiculo.vehiculo.tipoVehiculo.codigo }}&nbsp;</td>
+                                <td>{{ vehiculo.vehiculoEsCausanteProbable ? 'Si' : 'No' }}&nbsp;</td>
+                                <td>{{ vehiculo.vehiculoSeFuga ? 'Si' : 'No' }}&nbsp;</td>
+                                <td>{{ vehiculo.servicioVehiculo.codigo }}&nbsp;</td>
+                                <td>{{ vehiculo.direccionVehiculo.codigo }}&nbsp;</td>
+                                <td>{{ vehiculo.maniobraVehiculo.codigo }}&nbsp;</td>
+                                <td>{{ vehiculo.consecuenciaVehiculo.codigo }}&nbsp;</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-header py-1">Conductores</div>
+                    <table class="table table-sm table-bordered mb-0">
+                        <thead>
+                            <tr>
+                                <th>{{ 'formulario.vehiculo.placaPatenteUnica'|trans }}</th>
+                                <th>{{ 'formulario.persona.run'|trans }}</th>
+                                <th>{{ 'formulario.persona.nombres'|trans }}</th>
+                                <th>{{ 'formulario.persona.apellidoPaterno'|trans }}</th>
+                                <th>{{ 'formulario.persona.apellidoMaterno'|trans }}</th>
+                                <th>{{ 'formulario.persona.ocupacion'|trans }}</th>
+                                <th>{{ 'formulario.persona.lugarNacimiento'|trans }}</th>
+                                <th>{{ 'formulario.persona.fechaNacimiento'|trans }}</th>
+                                <th>{{ 'formulario.persona.genero'|trans }}</th>
+                                <th>{{ 'formulario.persona.estadoCivil'|trans }}</th>
+                                <th>{{ 'formulario.persona.nacionalidad'|trans }}</th>
+                                <th>{{ 'formulario.persona.personaEsCausanteProbable'|trans }}</th>
+                                <th>{{ 'formulario.persona.personaSeFuga'|trans }}</th>
+                                <th>{{ 'formulario.persona.claseLicencia'|trans }}</th>
+                                <th>{{ 'formulario.persona.comunaLicencia'|trans }}</th>
+                                <th>{{ 'formulario.persona.tipoTrayecto'|trans }}</th>
+                                <th>{{ 'formulario.persona.condicionFisica'|trans }}</th>
+                                <th>{{ 'formulario.persona.cualidadEspecial'|trans }}</th>
+                                <th>{{ 'formulario.persona.consecuenciaPersona'|trans }}</th>
+                                <th>{{ 'formulario.persona.seguridad'|trans }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for k, persona in accidente.conductoresAccidente %}
+                            <tr>
+                                <td>{{ persona.vehiculoConducidoAccidente.vehiculo.placaPatenteUnica }}</td>
+                                <td>{{ persona.persona.run }}</td>
+                                <td>{{ persona.persona.nombres }}</td>
+                                <td>{{ persona.persona.apellidoPaterno }}</td>
+                                <td>{{ persona.persona.apellidoMaterno }}</td>
+                                <td>{{ persona.persona.ocupacion }}</td>
+                                <td>{{ persona.persona.lugarNacimiento }}</td>
+                                <td>{{ persona.persona.fechaNacimiento|date('Y-m-d') }}</td>
+                                <td>{{ persona.persona.genero }}</td>
+                                <td>{{ persona.persona.estadoCivil }}</td>
+                                <td>{{ persona.persona.nacionalidad }}</td>
+                                <td>{{ persona.personaEsCausanteProbable ? 'Si' : 'No' }}</td>
+                                <td>{{ persona.personaSeFuga ? 'Si' : 'No' }}</td>
+                                <td>{{ persona.claseLicencia.codigo }}</td>
+                                <td>{{ persona.comunaLicencia.codigo }}</td>
+                                <td>{{ persona.tipoTrayecto.codigo }}</td>
+                                <td>{{ persona.condicionFisica.codigo }}</td>
+                                <td>{{ persona.cualidadEspecial.codigo }}</td>
+                                <td>{{ persona.consecuenciaPersona.codigo }}</td>
+                                <td>{{ persona.seguridad|map(s => "#{s.codigo}")|join(', ') }}</td>
+
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-header py-1">Pasajeros</div>
+                    <table class="table table-sm table-bordered mb-0">
+                        <thead>
+                            <tr>
+                                <th>{{ 'formulario.vehiculo.placaPatenteUnica'|trans }}</th>
+                                <th>{{ 'formulario.persona.run'|trans }}</th>
+                                <th>{{ 'formulario.persona.nombres'|trans }}</th>
+                                <th>{{ 'formulario.persona.apellidoPaterno'|trans }}</th>
+                                <th>{{ 'formulario.persona.apellidoMaterno'|trans }}</th>
+                                <th>{{ 'formulario.persona.ocupacion'|trans }}</th>
+                                <th>{{ 'formulario.persona.lugarNacimiento'|trans }}</th>
+                                <th>{{ 'formulario.persona.fechaNacimiento'|trans }}</th>
+                                <th>{{ 'formulario.persona.genero'|trans }}</th>
+                                <th>{{ 'formulario.persona.estadoCivil'|trans }}</th>
+                                <th>{{ 'formulario.persona.nacionalidad'|trans }}</th>
+                                <th>{{ 'formulario.persona.personaEsCausanteProbable'|trans }}</th>
+                                <th>{{ 'formulario.persona.personaSeFuga'|trans }}</th>
+                                <th>{{ 'formulario.persona.tipoTrayecto'|trans }}</th>
+                                <th>{{ 'formulario.persona.condicionFisica'|trans }}</th>
+                                <th>{{ 'formulario.persona.cualidadEspecial'|trans }}</th>
+                                <th>{{ 'formulario.persona.consecuenciaPersona'|trans }}</th>
+                                <th>{{ 'formulario.persona.seguridad'|trans }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for k, persona in accidente.pasajerosAccidente %}
+                            <tr>
+                                <td>{{ persona.vehiculoAccidente.vehiculo.placaPatenteUnica }}</td>
+                                <td>{{ persona.persona.run }}</td>
+                                <td>{{ persona.persona.nombres }}</td>
+                                <td>{{ persona.persona.apellidoPaterno }}</td>
+                                <td>{{ persona.persona.apellidoMaterno }}</td>
+                                <td>{{ persona.persona.ocupacion }}</td>
+                                <td>{{ persona.persona.lugarNacimiento }}</td>
+                                <td>{{ persona.persona.fechaNacimiento|date('Y-m-d') }}</td>
+                                <td>{{ persona.persona.genero }}</td>
+                                <td>{{ persona.persona.estadoCivil }}</td>
+                                <td>{{ persona.persona.nacionalidad }}</td>
+                                <td>{{ persona.personaEsCausanteProbable ? 'Si' : 'No' }}</td>
+                                <td>{{ persona.personaSeFuga ? 'Si' : 'No' }}</td>
+                                <td>{{ persona.tipoTrayecto.codigo }}</td>
+                                <td>{{ persona.condicionFisica.codigo }}</td>
+                                <td>{{ persona.cualidadEspecial.codigo }}</td>
+                                <td>{{ persona.consecuenciaPersona.codigo }}</td>
+                                <td>{{ persona.seguridad|map(s => "#{s.codigo}")|join(', ') }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-header py-1">Peatones</div>
+                    <table class="table table-sm table-bordered mb-0">
+                        <thead>
+                            <tr>
+                                <th>{{ 'formulario.persona.run'|trans }}</th>
+                                <th>{{ 'formulario.persona.nombres'|trans }}</th>
+                                <th>{{ 'formulario.persona.apellidoPaterno'|trans }}</th>
+                                <th>{{ 'formulario.persona.apellidoMaterno'|trans }}</th>
+                                <th>{{ 'formulario.persona.ocupacion'|trans }}</th>
+                                <th>{{ 'formulario.persona.lugarNacimiento'|trans }}</th>
+                                <th>{{ 'formulario.persona.fechaNacimiento'|trans }}</th>
+                                <th>{{ 'formulario.persona.genero'|trans }}</th>
+                                <th>{{ 'formulario.persona.estadoCivil'|trans }}</th>
+                                <th>{{ 'formulario.persona.nacionalidad'|trans }}</th>
+                                <th>{{ 'formulario.persona.personaEsCausanteProbable'|trans }}</th>
+                                <th>{{ 'formulario.persona.personaSeFuga'|trans }}</th>
+                                <th>{{ 'formulario.persona.tipoTrayecto'|trans }}</th>
+                                <th>{{ 'formulario.persona.condicionFisica'|trans }}</th>
+                                <th>{{ 'formulario.persona.cualidadEspecial'|trans }}</th>
+                                <th>{{ 'formulario.persona.consecuenciaPersona'|trans }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for k, persona in accidente.peatonesAccidente %}
+                            <tr>
+                                <td>{{ persona.persona.run }}</td>
+                                <td>{{ persona.persona.nombres }}</td>
+                                <td>{{ persona.persona.apellidoPaterno }}</td>
+                                <td>{{ persona.persona.apellidoMaterno }}</td>
+                                <td>{{ persona.persona.ocupacion }}</td>
+                                <td>{{ persona.persona.lugarNacimiento }}</td>
+                                <td>{{ persona.persona.fechaNacimiento|date('Y-m-d') }}</td>
+                                <td>{{ persona.persona.genero }}</td>
+                                <td>{{ persona.persona.estadoCivil }}</td>
+                                <td>{{ persona.persona.nacionalidad }}</td>
+                                <td>{{ persona.personaEsCausanteProbable ? 'Si' : 'No' }}</td>
+                                <td>{{ persona.personaSeFuga ? 'Si' : 'No' }}</td>
+                                <td>{{ persona.tipoTrayecto.codigo }}</td>
+                                <td>{{ persona.condicionFisica.codigo }}</td>
+                                <td>{{ persona.cualidadEspecial.codigo }}</td>
+                                <td>{{ persona.consecuenciaPersona.codigo }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style> body { font-size: 0.8rem; line-height: 1; } @media print{@page {size: landscape}}</style>
+{% endblock %}

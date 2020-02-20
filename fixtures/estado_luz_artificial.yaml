@@ -1,0 +1,13 @@
+App\Entity\EstadoLuzArtificial:
+    estado_luz_artificial_1:
+        nombre: 'Apagada'
+        codigo: '01'
+    estado_luz_artificial_2:
+        nombre: 'Encendida suficiente'
+        codigo: '02'
+    estado_luz_artificial_3:
+        nombre: 'Encendida insuficiente'
+        codigo: '03'
+    estado_luz_artificial_4:
+        nombre: 'Inexistente'
+        codigo: '99'

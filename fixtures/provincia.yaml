@@ -1,0 +1,225 @@
+App\Entity\Provincia:
+    provincia_1:
+        nombre: 'Iquique'
+        codigo: '011'
+        region: '@region_1'
+    provincia_2:
+        nombre: 'Tamarugal'
+        codigo: '014'
+        region: '@region_1'
+    provincia_3:
+        nombre: 'Antofagasta'
+        codigo: '021'
+        region: '@region_2'
+    provincia_4:
+        nombre: 'El Loa'
+        codigo: '022'
+        region: '@region_2'
+    provincia_5:
+        nombre: 'Tocopilla'
+        codigo: '023'
+        region: '@region_2'
+    provincia_6:
+        nombre: 'Copiapó'
+        codigo: '031'
+        region: '@region_3'
+    provincia_7:
+        nombre: 'Chañaral'
+        codigo: '032'
+        region: '@region_3'
+    provincia_8:
+        nombre: 'Huasco'
+        codigo: '033'
+        region: '@region_3'
+    provincia_9:
+        nombre: 'Elqui'
+        codigo: '041'
+        region: '@region_4'
+    provincia_10:
+        nombre: 'Choapa'
+        codigo: '042'
+        region: '@region_4'
+    provincia_11:
+        nombre: 'Limarí'
+        codigo: '043'
+        region: '@region_4'
+    provincia_12:
+        nombre: 'Valparaíso'
+        codigo: '051'
+        region: '@region_5'
+    provincia_13:
+        nombre: 'Isla de Pascua'
+        codigo: '052'
+        region: '@region_5'
+    provincia_14:
+        nombre: 'Los Andes'
+        codigo: '053'
+        region: '@region_5'
+    provincia_15:
+        nombre: 'Petorca'
+        codigo: '054'
+        region: '@region_5'
+    provincia_16:
+        nombre: 'Quillota'
+        codigo: '055'
+        region: '@region_5'
+    provincia_17:
+        nombre: 'San Antonio'
+        codigo: '056'
+        region: '@region_5'
+    provincia_18:
+        nombre: 'San Felipe de Aconcagua'
+        codigo: '057'
+        region: '@region_5'
+    provincia_19:
+        nombre: 'Marga Marga'
+        codigo: '058'
+        region: '@region_5'
+    provincia_20:
+        nombre: 'Cachapoal'
+        codigo: '061'
+        region: '@region_6'
+    provincia_21:
+        nombre: 'Cardenal Caro'
+        codigo: '062'
+        region: '@region_6'
+    provincia_22:
+        nombre: 'Colchagua'
+        codigo: '063'
+        region: '@region_6'
+    provincia_23:
+        nombre: 'Talca'
+        codigo: '071'
+        region: '@region_7'
+    provincia_24:
+        nombre: 'Cauquenes'
+        codigo: '072'
+        region: '@region_7'
+    provincia_25:
+        nombre: 'Curicó'
+        codigo: '073'
+        region: '@region_7'
+    provincia_26:
+        nombre: 'Linares'
+        codigo: '074'
+        region: '@region_7'
+    provincia_27:
+        nombre: 'Concepción'
+        codigo: '081'
+        region: '@region_8'
+    provincia_28:
+        nombre: 'Arauco'
+        codigo: '082'
+        region: '@region_8'
+    provincia_29:
+        nombre: 'Biobío'
+        codigo: '083'
+        region: '@region_8'
+    provincia_30:
+        nombre: 'Cautín'
+        codigo: '091'
+        region: '@region_9'
+    provincia_31:
+        nombre: 'Malleco'
+        codigo: '092'
+        region: '@region_9'
+    provincia_32:
+        nombre: 'Llanquihue'
+        codigo: '101'
+        region: '@region_10'
+    provincia_33:
+        nombre: 'Chiloé'
+        codigo: '102'
+        region: '@region_10'
+    provincia_34:
+        nombre: 'Osorno'
+        codigo: '103'
+        region: '@region_10'
+    provincia_35:
+        nombre: 'Palena'
+        codigo: '104'
+        region: '@region_10'
+    provincia_36:
+        nombre: 'Coyhaique'
+        codigo: '111'
+        region: '@region_11'
+    provincia_37:
+        nombre: 'Aysén'
+        codigo: '112'
+        region: '@region_11'
+    provincia_38:
+        nombre: 'Capitán Prat'
+        codigo: '113'
+        region: '@region_11'
+    provincia_39:
+        nombre: 'General Carrera'
+        codigo: '114'
+        region: '@region_11'
+    provincia_40:
+        nombre: 'Magallanes'
+        codigo: '121'
+        region: '@region_12'
+    provincia_41:
+        nombre: 'Antártica Chilena'
+        codigo: '122'
+        region: '@region_12'
+    provincia_42:
+        nombre: 'Tierra del Fuego'
+        codigo: '123'
+        region: '@region_12'
+    provincia_43:
+        nombre: 'Última Esperanza'
+        codigo: '124'
+        region: '@region_12'
+    provincia_44:
+        nombre: 'Santiago'
+        codigo: '131'
+        region: '@region_13'
+    provincia_45:
+        nombre: 'Cordillera'
+        codigo: '132'
+        region: '@region_13'
+    provincia_46:
+        nombre: 'Chacabuco'
+        codigo: '133'
+        region: '@region_13'
+    provincia_47:
+        nombre: 'Maipo'
+        codigo: '134'
+        region: '@region_13'
+    provincia_48:
+        nombre: 'Melipilla'
+        codigo: '135'
+        region: '@region_13'
+    provincia_49:
+        nombre: 'Talagante'
+        codigo: '136'
+        region: '@region_13'
+    provincia_50:
+        nombre: 'Valdivia'
+        codigo: '141'
+        region: '@region_14'
+    provincia_51:
+        nombre: 'Ranco'
+        codigo: '142'
+        region: '@region_14'
+    provincia_52:
+        nombre: 'Arica'
+        codigo: '151'
+        region: '@region_15'
+    provincia_53:
+        nombre: 'Parinacota'
+        codigo: '152'
+        region: '@region_15'
+    provincia_54:
+        nombre: 'Diguillín'
+        codigo: '161'
+        region: '@region_16'
+    provincia_55:
+        nombre: 'Itata'
+        codigo: '162'
+        region: '@region_16'
+    provincia_56:
+        nombre: 'Punilla'
+        codigo: '163'
+        region: '@region_16'

@@ -1,0 +1,14 @@
+App\Entity\VehiculoAccidente:
+    vehiculo_accidente (template):
+        vehiculoEsCausanteProbable: '<numberBetween(0, 1)>'
+        consecuenciaVehiculo: '@consecuencia_vehiculo_*'
+        maniobraVehiculo: '@maniobra_vehiculo_*'
+        servicioVehiculo: '@servicio_vehiculo_*'
+        direccionVehiculo: '@direccion_vehiculo_*'
+        vehiculo: '@vehiculo_<current()>'
+
+    vehiculo_accidente_{1..60} (extends vehiculo_accidente):
+        accidente: '@accidente_<current()>'
+
+    vehiculo_accidente_{61..100} (extends vehiculo_accidente):
+        accidente: '@accidente_*'

@@ -1,0 +1,127 @@
+{% block etapa %}
+    {% set route = app.request.attributes.get('_route') %}
+    {% set controller = app.request.attributes.get('_controller') %}
+    {% if 'RegistroController' in controller %}
+    <div class="d-none d-md-block">
+        <div class="row">
+            <div class="col">
+                {#}
+                <h3><span class="fa fa-fw fa-lg fa-car-crash"></span> Registrar Accidente</h3>
+                {#}
+                <ul class="list-unstyled multi-steps">
+                    <li {% if route in ['registro_identificacion','registro_new','registro_mensaje'] %}class="is-active"{% endif %}>
+                        {% if accidente.id %}
+                            <a href="{{ path('registro_identificacion', {accidente:accidente.id}) }}">{{'etapa.identificacion'|trans}}</a>
+                        {% else %}
+                            {{'etapa.identificacion'|trans}}
+                        {% endif %}
+                    </li>
+                    <li {% if route == 'registro_causas' %}class="is-active"{% endif %}>
+                        {% if accidente.id and '01' in accidente.registroEtapas|map(e => "#{e.codigo}") %}
+                            <a href="{{ path('registro_causas', {accidente:accidente.id}) }}">{{'etapa.causas'|trans}}</a>
+                        {% else %}
+                            {{'etapa.causas'|trans}}
+                        {% endif %}
+                    </li>
+                    <li {% if route == 'registro_condiciones' %}class="is-active"{% endif %}>
+                        {% if accidente.id and '02' in accidente.registroEtapas|map(e => "#{e.codigo}") %}
+                            <a href="{{ path('registro_condiciones', {accidente:accidente.id}) }}">{{'etapa.condiciones'|trans}}</a>
+                        {% else %}
+                            {{'etapa.condiciones'|trans}}
+                        {% endif %}
+                    </li>
+                    <li {% if route == 'registro_ubicacion' %}class="is-active"{% endif %}>
+                        {% if accidente.id and '03' in accidente.registroEtapas|map(e => "#{e.codigo}") %}
+                            <a href="{{ path('registro_ubicacion', {accidente:accidente.id}) }}">{{'etapa.ubicacion'|trans}}</a>
+                        {% else %}
+                            {{'etapa.ubicacion'|trans}}
+                        {% endif %}
+                    </li>
+                    <li {% if route == 'registro_vehiculos' %}class="is-active"{% endif %}>
+                        {% if accidente.id and '04' in accidente.registroEtapas|map(e => "#{e.codigo}") %}
+                            <a href="{{ path('registro_vehiculos', {accidente:accidente.id}) }}">{{'etapa.vehiculosyocupantes'|trans}}</a>
+                        {% else %}
+                            {{'etapa.vehiculosyocupantes'|trans}}
+                        {% endif %}
+                    </li>
+                    <li {% if route == 'registro_peatones' %}class="is-active"{% endif %}>
+                        {% if accidente.id and '05' in accidente.registroEtapas|map(e => "#{e.codigo}") %}
+                            <a href="{{ path('registro_peatones', {accidente:accidente.id}) }}">{{'etapa.peatones'|trans}}</a>
+                        {% else %}
+                            {{'etapa.peatones'|trans}}
+                        {% endif %}
+                    </li>
+                    <li {% if route == 'registro_resumen' %}class="is-active"{% endif %}>
+                        {% if accidente.id  and '06' in accidente.registroEtapas|map(e => "#{e.codigo}")%}
+                            <a href="{{ path('registro_resumen', {accidente:accidente.id}) }}">{{'etapa.finalizado'|trans}}</a>
+                        {% else %}
+                            {{'etapa.finalizado'|trans}}
+                        {% endif %}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+
+    {% if 'InspeccionController' in controller %}
+    <div class="d-none d-md-block">
+        <div class="row">
+            <div class="col">
+                <ul class="list-unstyled multi-steps">
+                    <li {% if route in ['inspeccion_accidente_identificacion'] %}class="is-active"{% endif %}>
+                        {% if accidente.id %}
+                            <a href="{{ path('inspeccion_accidente_identificacion', {accidente:accidente.id}) }}">{{'etapa.identificacion'|trans}}</a>
+                        {% else %}
+                            {{'etapa.identificacion'|trans}}
+                        {% endif %}
+                    </li>
+                    <li {% if route in ['inspeccion_accidente_causas'] %}class="is-active"{% endif %}>
+                        {% if accidente.id and '01' in accidente.registroEtapas|map(e => "#{e.codigo}") %}
+                            <a href="{{ path('inspeccion_accidente_causas', {accidente:accidente.id}) }}">{{'etapa.causas'|trans}}</a>
+                        {% else %}
+                            {{'etapa.causas'|trans}}
+                        {% endif %}
+                    </li>
+                    <li {% if route in ['inspeccion_accidente_condiciones'] %}class="is-active"{% endif %}>
+                        {% if accidente.id and '02' in accidente.registroEtapas|map(e => "#{e.codigo}") %}
+                            <a href="{{ path('inspeccion_accidente_condiciones', {accidente:accidente.id}) }}">{{'etapa.condiciones'|trans}}</a>
+                        {% else %}
+                            {{'etapa.condiciones'|trans}}
+                        {% endif %}
+                    </li>
+                    <li {% if route in ['inspeccion_accidente_ubicacion'] %}class="is-active"{% endif %}>
+                        {% if accidente.id and '03' in accidente.registroEtapas|map(e => "#{e.codigo}") %}
+                            <a href="{{ path('inspeccion_accidente_ubicacion', {accidente:accidente.id}) }}">{{'etapa.ubicacion'|trans}}</a>
+                        {% else %}
+                            {{'etapa.ubicacion'|trans}}
+                        {% endif %}
+                    </li>
+                    <li {% if route in ['inspeccion_accidente_vehiculos'] %}class="is-active"{% endif %}>
+                        {% if accidente.id and '04' in accidente.registroEtapas|map(e => "#{e.codigo}") %}
+                            <a href="{{ path('inspeccion_accidente_vehiculos', {accidente:accidente.id}) }}">{{'etapa.vehiculosyocupantes'|trans}}</a>
+                        {% else %}
+                            {{'etapa.vehiculosyocupantes'|trans}}
+                        {% endif %}
+                    </li>
+                    <li {% if route in ['inspeccion_accidente_peatones'] %}class="is-active"{% endif %}>
+                        {% if accidente.id and '05' in accidente.registroEtapas|map(e => "#{e.codigo}") %}
+                            <a href="{{ path('inspeccion_accidente_peatones', {accidente:accidente.id}) }}">{{'etapa.peatones'|trans}}</a>
+                        {% else %}
+                            {{'etapa.peatones'|trans}}
+                        {% endif %}
+                    </li>
+                    <li {% if route in ['inspeccion_accidente_resumen'] %}class="is-active"{% endif %}>
+                        {% if accidente.id  and '06' in accidente.registroEtapas|map(e => "#{e.codigo}")%}
+                            <a href="{{ path('inspeccion_accidente_resumen', {accidente:accidente.id}) }}">{{'etapa.finalizado'|trans}}</a>
+                        {% else %}
+                            {{'etapa.finalizado'|trans}}
+                        {% endif %}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}

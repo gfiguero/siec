@@ -1,0 +1,13 @@
+App\Entity\DemarcacionLineaCalzada:
+    demarcacion_linea_calzada_continua:
+        nombre: 'Continua'
+        codigo: '01'
+    demarcacion_linea_calzada_discontinua:
+        nombre: 'Discontinua'
+        codigo: '02'
+    demarcacion_linea_calzada_mixta:
+        nombre: 'Mixta'
+        codigo: '03'
+    demarcacion_linea_calzada_inexistente:
+        nombre: 'Inexistente'
+        codigo: '99'

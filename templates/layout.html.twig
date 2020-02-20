@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% use 'navbar.html.twig' %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-12 p-0">
+                {% block navbar %}{{ parent() }}{% endblock %}
+                <main class="col bg-faded py-3">
+                {% block content %}{% endblock %}
+                </main>
+            </div>
+        </div>
+    </div>
+{% endblock %}

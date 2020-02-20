@@ -1,0 +1,158 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-sm table-bordered">
+                    <thead>
+                        <tr>
+{#}
+                            <th style="white-space:nowrap;">{{ 'accidente.creado'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.actualizado'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.funcionarioResponsable'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.aclaratoria'|trans }}</th>
+{#}
+                            <th style="white-space:nowrap;">{{ 'accidente.id'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.fecha'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.hora'|trans }}</th>
+{#}
+
+                            <th style="white-space:nowrap;">{{ 'accidente.cuadrante'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.comuna'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.provincia'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.region'|trans }}</th>
+
+                            <th style="white-space:nowrap;">{{ 'accidente.unidad'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.funcionario'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.tribunal'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.numeroParte'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.numeroFormulario'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.concurreSiat'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.esMensaje'|trans }}</th>
+
+                            <th style="white-space:nowrap;">{{ 'accidente.cantidad.cantidadPistasIda'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.cantidad.cantidadPistasRegreso'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.cantidad.vehiculosAccidente'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.cantidad.pasajerosAccidente'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.cantidad.peatonesAccidente'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.cantidad.personasAccidente'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.cantidad.fallecidosAccidente'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.cantidad.gravesAccidente'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.cantidad.menosGravesAccidente'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.cantidad.levesAccidente'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.cantidad.ilesosAccidente'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.cantidad.seIgnoraAccidente'|trans }}</th>
+
+                            <th style="white-space:nowrap;">{{ 'ubicacion.glosa'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'ubicacion.calle'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'ubicacion.numero'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'ubicacion.direccion'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'ubicacion.latitud'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'ubicacion.longitud'|trans }}</th>
+
+                            <th style="white-space:nowrap;">{{ 'accidente.tipoDireccion'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.tipoUbicacionRelativaAccidente'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.tipoZonaAccidente'|trans }}</th>
+
+                            <th style="white-space:nowrap;">{{ 'accidente.claseAccidente'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.tipoAccidente'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.causaBasal'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.tipoCausa'|trans }}</th>
+
+                            <th style="white-space:nowrap;">{{ 'accidente.estadoAccidente'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.registroEtapas'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.incoherencias'|trans }}</th>
+
+                            <th style="white-space:nowrap;">{{ 'accidente.estadoAtmosferico'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.tipoLuminosidad'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.estadoLuzArtificial'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.tipoPavimentoCalzada'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.condicionPavimentoCalzada'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.estadoPavimentoCalzada'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.tipoCalzada'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.demarcacionLineaCalzada'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.demarcacionPrioridadCalzada'|trans }}</th>
+                            <th style="white-space:nowrap;">{{ 'accidente.elementosCalzada'|trans }}</th>
+{#}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for accidente in accidentes %}
+                        <tr>
+{#}
+                            <td style="white-space:nowrap;">{{ accidente.funcionarioResponsable }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.aclaratoria }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.creado|date('Y-m-d H:m') }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.actualizado|date('Y-m-d H:m') }}</td>
+{#}
+                            <td style="white-space:nowrap;">{{ accidente.id }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.fecha|date('Y-m-d') }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.hora|date('H:m') }}</td>
+{#}
+
+                            <td style="white-space:nowrap;">{{ accidente.cuadrante }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.comuna }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.provincia }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.region }}</td>
+
+                            <td style="white-space:nowrap;">{{ accidente.unidad }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.funcionario }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.tribunal }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.numeroParte }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.numeroFormulario }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.concurreSiat ? 'Si' : 'No' }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.esMensaje ? 'Si' : 'No' }}</td>
+
+                            <td style="white-space:nowrap;">{{ accidente.cantidadPistasIda|length }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.cantidadPistasRegreso|length }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.vehiculosAccidente|length }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.pasajerosAccidente|length }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.peatonesAccidente|length }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.personasAccidente|length }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.fallecidosAccidente|length }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.gravesAccidente|length }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.menosGravesAccidente|length }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.levesAccidente|length }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.ilesosAccidente|length }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.seIgnoraAccidente|length }}</td>
+
+                            <td style="white-space:nowrap;">{{ accidente.ubicacion.glosa }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.ubicacion.calle }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.ubicacion.numero }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.ubicacion.direccion }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.ubicacion.latitud }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.ubicacion.longitud }}</td>
+
+                            <td style="white-space:nowrap;">{{ accidente.tipoDireccion }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.tipoUbicacionRelativaAccidente }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.tipoZonaAccidente }}</td>
+
+                            <td style="white-space:nowrap;">{{ accidente.claseAccidente }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.tipoAccidente }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.causaBasal }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.tipoCausa }}</td>
+
+                            <td style="white-space:nowrap;">{{ accidente.estadoAccidente }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.registroEtapas|length }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.incoherencias|length }}</td>
+
+                            <td style="white-space:nowrap;">{{ accidente.estadoAtmosferico }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.tipoLuminosidad }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.estadoLuzArtificial }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.tipoPavimentoCalzada }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.condicionPavimentoCalzada }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.estadoPavimentoCalzada }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.tipoCalzada }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.demarcacionLineaCalzada }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.demarcacionPrioridadCalzada }}</td>
+                            <td style="white-space:nowrap;">{{ accidente.elementosCalzadaToString }}</td>
+{#}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,526 @@
+easy_admin:
+    site_name: 'Administración SIEC3'
+    design:
+        brand_color: '#1d7d4d'
+        assets:
+            css:
+                - 'css/admin.css'
+            favicon: 'img/carabineros.png'
+        menu:
+            - { label: 'Inicio', icon: 'home', route: 'main' }
+            - label: Propiedades personales
+              icon: 'user'
+              children:
+                - 'ClaseLicencia'
+                - 'TipoTrayecto'
+                - 'CondicionFisica'
+                - 'CualidadEspecial'
+                - 'ConsecuenciaPersona'
+            - label: Propiedades vehiculares
+              icon: 'car'
+              children:
+                - 'ServicioVehiculo'
+                - 'ManiobraVehiculo'
+                - 'DireccionVehiculo'
+                - 'ConsecuenciaVehiculo'
+                - 'TipoVehiculo'
+            - label: Propiedades de accidentes
+              icon: 'car-crash'
+              children:
+                - 'ClaseAccidente'
+                - 'TipoAccidente'
+                - 'TipoAccidenteConaset'
+                - 'EstadoAtmosferico'
+                - 'TipoLuminosidad'
+                - 'EstadoLuzArtificial'
+                - 'TipoPavimentoCalzada'
+                - 'CondicionPavimentoCalzada'
+                - 'EstadoPavimentoCalzada'
+                - 'DemarcacionLineaCalzada'
+                - 'DemarcacionPrioridadCalzada'
+                - 'ElementoCalzada'
+                - 'TipoUbicacionRelativaAccidente'
+                - 'TipoZonaAccidente'
+                - 'TipoDireccion'
+            - label: Propiedades de causa
+              icon: 'exclamation'
+              children:
+                - 'TipoCausa'
+                - 'Causa'
+                - 'CausaConaset'
+            - label: Propiedades organizacionales
+              icon: 'landmark'
+              children:
+                - 'TipoUnidad'
+                - 'ClaseUnidad'
+                - 'Tribunal'
+                - 'GradoCarabinero'
+                - 'Unidad'
+                - 'Funcionario'
+            - label: Configuración territorial
+              icon: 'map-marked'
+              children:
+                - 'Region'
+                - 'Provincia'
+                - 'Comuna'
+                - 'Cuadrante'
+            - label: Ver registros
+              icon: 'edit'
+              children:
+                - 'Accidente'
+                - 'PersonaAccidente'
+                - 'VehiculoAccidente'
+                - 'Persona'
+                - 'Vehiculo'
+            - { entity: 'Usuario', default: true, label: 'Usuarios', icon: 'users' }
+
+    entities:
+# Armazón sistémico
+
+# Propiedades personales
+        ClaseLicencia:
+            class: App\Entity\ClaseLicencia
+            list:
+                fields: ['id', 'codigo', 'nombre', 'descripcion']
+            edit:
+                fields: ['codigo', 'nombre', 'descripcion']
+            new:
+                fields: ['codigo', 'nombre', 'descripcion']
+        CondicionFisica:
+            class: App\Entity\CondicionFisica
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        ConsecuenciaPersona:
+            class: App\Entity\ConsecuenciaPersona
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        CualidadEspecial:
+            class: App\Entity\CualidadEspecial
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        TipoTrayecto:
+            class: App\Entity\TipoTrayecto
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+
+# Propiedades de accidente
+        ClaseAccidente:
+            class: App\Entity\ClaseAccidente
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        TipoAccidente:
+            class: App\Entity\TipoAccidente
+            list:
+                fields: ['id', 'codigo', 'nombre', 'claseAccidente', 'tipoAccidenteConaset']
+            edit:
+                fields: ['codigo', 'nombre', 'claseAccidente', 'tipoAccidenteConaset']
+            new:
+                fields: ['codigo', 'nombre', 'claseAccidente', 'tipoAccidenteConaset']
+        TipoAccidenteConaset:
+            class: App\Entity\TipoAccidenteConaset
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        TipoUbicacionRelativaAccidente:
+            class: App\Entity\TipoUbicacionRelativaAccidente
+            list:
+                fields: ['id', 'codigo', 'nombre', 'claseAccidente']
+            edit:
+                fields: ['codigo', 'nombre', 'claseAccidente']
+            new:
+                fields: ['codigo', 'nombre', 'claseAccidente']
+        TipoLuminosidad:
+            class: App\Entity\TipoLuminosidad
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        TipoPavimentoCalzada:
+            class: App\Entity\TipoPavimentoCalzada
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        EstadoAtmosferico:
+            class: App\Entity\EstadoAtmosferico
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        EstadoLuzArtificial:
+            class: App\Entity\EstadoLuzArtificial
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        CondicionPavimentoCalzada:
+            class: App\Entity\CondicionPavimentoCalzada
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        EstadoPavimentoCalzada:
+            class: App\Entity\EstadoPavimentoCalzada
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        ElementoCalzada:
+            class: App\Entity\ElementoCalzada
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        DemarcacionLineaCalzada:
+            class: App\Entity\DemarcacionLineaCalzada
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        DemarcacionPrioridadCalzada:
+            class: App\Entity\DemarcacionPrioridadCalzada
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        TipoZonaAccidente:
+            class: App\Entity\TipoZonaAccidente
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        TipoDireccion:
+            class: App\Entity\TipoDireccion
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+
+# Propiedades vehiculares
+        ServicioVehiculo:
+            class: App\Entity\ServicioVehiculo
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        ManiobraVehiculo:
+            class: App\Entity\ManiobraVehiculo
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        DireccionVehiculo:
+            class: App\Entity\DireccionVehiculo
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        ConsecuenciaVehiculo:
+            class: App\Entity\ConsecuenciaVehiculo
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        TipoVehiculo:
+            class: App\Entity\TipoVehiculo
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+
+# Propiedades causales
+        TipoCausa:
+            class: App\Entity\TipoCausa
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        CausaConaset:
+            class: App\Entity\CausaConaset
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        Causa:
+            class: App\Entity\Causa
+            list:
+                fields: ['id', 'codigo', 'nombre', 'tipoCausa', 'causaConaset']
+            edit:
+                fields: ['codigo', 'nombre', 'tipoCausa', 'causaConaset']
+            new:
+                fields: ['codigo', 'nombre', 'tipoCausa', 'causaConaset']
+
+# Propiedades organizacionales
+        TipoUnidad:
+            class: App\Entity\TipoUnidad
+            list:
+                fields: ['id', 'nombre']
+            edit:
+                fields: ['nombre']
+            new:
+                fields: ['nombre']
+        ClaseUnidad:
+            class: App\Entity\ClaseUnidad
+            list:
+                fields: ['id', 'nombre']
+            edit:
+                fields: ['nombre']
+            new:
+                fields: ['nombre']
+        Tribunal:
+            class: App\Entity\Tribunal
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        GradoCarabinero:
+            class: App\Entity\GradoCarabinero
+            list:
+                fields: ['id', 'nombre']
+            edit:
+                fields: ['nombre']
+            new:
+                fields: ['nombre']
+
+# Registros de organización
+        Funcionario:
+            class: App\Entity\Funcionario
+            list:
+                actions: ['new', 'edit', 'delete']
+                fields: ['id', 'codigo', 'apellidoPaterno', 'nombres', 'unidad', 'gradoCarabinero', 'telefono']
+            new:
+                fields: ['codigo', 'nombres', 'apellidoPaterno', 'apellidoMaterno', 'email', 'telefono', 'gradoCarabinero', 'unidad']
+            edit:
+                fields: ['codigo', 'nombres', 'apellidoPaterno', 'apellidoMaterno', 'email', 'telefono', 'gradoCarabinero', 'unidad']
+        Unidad:
+            class: App\Entity\Unidad
+            list:
+                actions: ['show', 'new', 'edit', 'delete']
+                fields: ['id', 'codigo', 'nombre', 'tipoUnidad']
+
+# Territorial
+        Region:
+            class: App\Entity\Region
+            list:
+                fields: ['id', 'codigo', 'nombre']
+            edit:
+                fields: ['codigo', 'nombre']
+            new:
+                fields: ['codigo', 'nombre']
+        Provincia:
+            class: App\Entity\Provincia
+            list:
+                fields: ['id', 'codigo', 'nombre', 'region']
+            edit:
+                fields: ['codigo', 'nombre', 'region']
+            new:
+                fields: ['codigo', 'nombre', 'region']
+        Comuna:
+            class: App\Entity\Comuna
+            list:
+                fields: ['id', 'codigo', 'nombre', 'provincia']
+            edit:
+                fields: ['codigo', 'nombre', 'provincia']
+            new:
+                fields: ['codigo', 'nombre', 'provincia']
+        Cuadrante:
+            class: App\Entity\Cuadrante
+            list:
+                fields: ['id', 'codigo', 'nombre', 'comuna']
+            edit:
+                fields: ['codigo', 'nombre', 'comuna']
+            new:
+                fields: ['codigo', 'nombre', 'comuna']
+
+# Registros de sistema
+        Persona:
+            class: App\Entity\Persona
+            disabled_actions: ['new', 'edit', 'delete']
+            list:
+                actions: ['show']
+                fields: ['id', 'run', 'nombres', 'apellidoPaterno', 'apellidoMaterno', 'genero', 'fechaNacimiento', 'lugarNacimiento']
+            show:
+                fields: ['id', 'nacionalidad', 'run', 'nombres', 'apellidoPaterno', 'apellidoMaterno', 'genero', 'fechaNacimiento', 'lugarNacimiento', 'estadoCivil', 'ocupacion', 'fechaPresuntaDefuncion', 'fechaDefuncion']
+        PersonaAccidente:
+            class: App\Entity\PersonaAccidente
+            disabled_actions: ['new', 'edit', 'delete']
+            list:
+                actions: ['show']
+                fields:
+                    - { property: 'persona', label: 'Persona' }
+                    - { property: 'consecuenciaPersona', label: 'Consecuencia' }
+                    - { property: 'claseLicencia', label: 'Licencia' }
+                    - { property: 'condicionFisica', label: 'Condición física' }
+                    - { property: 'tipoTrayecto', label: 'Tipo de trayecto' }
+                    - { property: 'personaEsCausanteProbable', label: 'Causante probable' }
+        Vehiculo:
+            class: App\Entity\Vehiculo
+            disabled_actions: ['new', 'edit', 'delete']
+            list:
+                actions: ['show']
+                fields:
+                    - { property: 'placaPatenteUnica', label: 'Placa' }
+                    - { property: 'marcaVehiculo', label: 'Marca' }
+                    - { property: 'modeloVehiculo', label: 'Modelo' }
+                    - { property: 'ano', label: 'Año' }
+                    - { property: 'color', label: 'Color' }
+                    - { property: 'tipoVehiculo', label: 'Tipo' }
+        VehiculoAccidente:
+            class: App\Entity\VehiculoAccidente
+            disabled_actions: ['new', 'edit', 'delete']
+            list:
+                actions: ['show']
+                fields:
+                    - { property: 'vehiculo', label: 'Vehiculo' }
+                    - { property: 'consecuenciaVehiculo', label: 'Consecuencia' }
+                    - { property: 'maniobraVehiculo', label: 'Maniobra' }
+                    - { property: 'servicioVehiculo', label: 'Servicio' }
+                    - { property: 'direccionVehiculo', label: 'Dirección' }
+                    - { property: 'vehiculoEsCausanteProbable', label: 'Causante probable' }
+        Accidente:
+            class: App\Entity\Accidente
+            disabled_actions: ['new', 'edit', 'delete']
+            show:
+                fields:
+                    - { property: 'numeroFormulario', label: 'Número formulario' }
+                    - { property: 'unidad', label: 'Unidad' }
+                    - { property: 'funcionarioResponsable', label: 'Responsable' }
+
+                    - { property: 'numeroParte', label: 'Numero parte' }
+                    - { property: 'fecha', label: 'Fecha' }
+                    - { property: 'hora', label: 'Hora' }
+                    - { property: 'aclaratoria', label: 'Aclaratoria' }
+                    - { property: 'concurreSiat', label: 'Concurre SIAT' }
+
+                    - { property: 'claseAccidente', label: 'Clase de Accidente' }
+                    - { property: 'tipoAccidente', label: 'Tipo de accidente' }
+                    - { property: 'tribunal', label: 'Tribunal' }
+                    - { property: 'funcionario', label: 'Funcionario' }
+
+                    - { property: 'causaBasal', label: 'Cuasa Basal' }
+                    - { property: 'causas', label: 'Causas concurrentes' }
+
+                    - { property: 'estadoAtmosferico', label: 'Estado Atmosférico' }
+                    - { property: 'tipoLuminosidad', label: 'Tipo de luminosidad' }
+                    - { property: 'estadoLuzArtificial', label: 'Estado de luz artificial' }
+                    - { property: 'tipoPavimentoCalzada', label: 'Tipo de pavimento' }
+                    - { property: 'condicionPavimentoCalzada', label: 'Condición de pavimento' }
+                    - { property: 'estadoPavimentoCalzada', label: 'Estado de pavimento' }
+                    - { property: 'cantidadPistasIda', label: 'Pistas ida' }
+                    - { property: 'cantidadPistasRegreso', label: 'Pistas regreso' }
+
+                    - { property: 'comuna', label: 'Comuna' }
+                    - { property: 'cuadrante', label: 'Cuadrante' }
+                    - { property: 'tipoZonaAccidente', label: 'Tipo de zona' }
+                    - { property: 'tipoUbicacionRelativaAccidente', label: 'Tipo de ubicación relativa' }
+                    - { property: 'glosaUbicacion', label: 'Ubicación' }
+                    - { property: 'idUbicacion', label: 'Id ubicación' }
+                    - { property: 'latitud', label: 'Latitud' }
+                    - { property: 'longitud', label: 'Longitud' }
+
+                    - { property: 'registroEtapas', label: 'Etapas completadas' }
+
+            list:
+                actions: ['show']
+                fields:
+                    - { property: 'funcionarioResponsable', label: 'Responsable' }
+                    - { property: 'comuna', label: 'Comuna' }
+                    - { property: 'unidad', label: 'Unidad' }
+                    - { property: 'claseAccidente', label: 'Clase' }
+                    - { property: 'causaBasal', label: 'Causa' }
+                    - { property: 'glosaUbicacion', label: 'Glosa' }
+        ArchivoAccidente:
+            class: App\Entity\ArchivoAccidente
+            disabled_actions: ['new', 'edit', 'delete']
+            list:
+                actions: ['show']
+                fields: ['id', 'accidente', 'nombre', 'tipo', 'datos']
+        Grupo:
+            class: App\Entity\Grupo
+            list:
+                fields: ['id', 'name', 'roles']
+        Usuario:
+            class: App\Entity\Usuario
+            list:
+                fields: ['id', 'username', 'email', 'lastLogin', 'groups', 'enabled', 'updated']
+            edit:
+                fields:
+                    - funcionario
+                    - username
+                    - email
+                    - enabled
+                    - groups
+                    - { property: 'plainPassword', type: 'password', type_options: { required: false} }
+#                    - { property: 'roles', type: 'choice', type_options: { multiple: true, choices: { 'ROLE_USER': 'ROLE_USER', 'ROLE_ADMIN': 'ROLE_ADMIN' } } }
+                form_options: { validation_groups: ['Profile'] }
+            new:
+                fields:
+                    - funcionario
+                    - username
+                    - email
+                    - enabled
+                    - groups
+                    - { property: 'plainPassword', type_options: { required: true} }
+#                    - { property: 'roles', type: 'choice', type_options: { multiple: true, choices: { 'ROLE_USER': 'ROLE_USER', 'ROLE_ADMIN': 'ROLE_ADMIN' } } }
+                form_options: { validation_groups: ['Registration'] }

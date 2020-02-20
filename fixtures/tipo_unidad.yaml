@@ -1,0 +1,9 @@
+App\Entity\TipoUnidad:
+    tipo_unidad_comisaria:
+        nombre: 'Comisaría'
+    tipo_unidad_subcomisaria:
+        nombre: 'Subcomisaría'
+    tipo_unidad_tenencia:
+        nombre: 'Tenencia'
+    tipo_unidad_reten:
+        nombre: 'Retén'

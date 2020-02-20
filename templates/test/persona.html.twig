@@ -1,0 +1,21 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Persona{% endblock %}
+
+{% block content %}
+    <h1>Persona</h1><hr>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card bg-info">
+                <div class="card-body">
+                    {% form_theme form.nacionalidad 'bootstrap_4_horizontal_layout.html.twig' 'accidente/themes/label_theme.html.twig' %}
+                    {{ form(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}

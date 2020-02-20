@@ -1,0 +1,28 @@
+App\Entity\CondicionPavimentoCalzada:
+    condicion_pavimento_calzada_1:
+        nombre: 'Seco'
+        codigo: '01'
+    condicion_pavimento_calzada_2:
+        nombre: 'Húmedo'
+        codigo: '02'
+    condicion_pavimento_calzada_3:
+        nombre: 'Mojado'
+        codigo: '03'
+    condicion_pavimento_calzada_4:
+        nombre: 'Con barro'
+        codigo: '04'
+    condicion_pavimento_calzada_5:
+        nombre: 'Con nieve'
+        codigo: '05'
+    condicion_pavimento_calzada_6:
+        nombre: 'Con aceite'
+        codigo: '06'
+    condicion_pavimento_calzada_7:
+        nombre: 'Escarcha'
+        codigo: '07'
+    condicion_pavimento_calzada_8:
+        nombre: 'Gravilla'
+        codigo: '08'
+    condicion_pavimento_calzada_9:
+        nombre: 'Otros'
+        codigo: '99'

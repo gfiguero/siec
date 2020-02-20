@@ -1,0 +1,1576 @@
+App\Entity\Tribunal:
+    tribunal_1, :
+        nombre: 'Juzgado policía local algarrobo'
+        codigo: '002501'
+    tribunal_2, :
+        nombre: 'Juzgado policía local alto del carmen'
+        codigo: '003501'
+    tribunal_3, :
+        nombre: 'Juzgado policía local ancud'
+        codigo: '004501'
+    tribunal_4, :
+        nombre: 'Fiscalía local ancud'
+        codigo: '004921'
+    tribunal_5, :
+        nombre: 'Juzgado policía local alhue'
+        codigo: '005501'
+    tribunal_6, :
+        nombre: 'Juzgado policía local alto hospicio'
+        codigo: '006501'
+    tribunal_7, :
+        nombre: 'Fiscalía local alto hospicio'
+        codigo: '006921'
+    tribunal_8, :
+        nombre: 'Juzgado policía local andacollo'
+        codigo: '008501'
+    tribunal_9, :
+        nombre: 'Fiscalía local andacollo'
+        codigo: '008921'
+    tribunal_10,:
+        nombre: 'Juzgado policía local angol'
+        codigo: '012501'
+    tribunal_11,:
+        nombre: 'Fiscalía local angol'
+        codigo: '012921'
+    tribunal_12,:
+        nombre: 'Primer juzgado policía local antofagasta'
+        codigo: '016501'
+    tribunal_13,:
+        nombre: 'Segundo juzgado policía local antofagasta'
+        codigo: '016502'
+    tribunal_14,:
+        nombre: 'Tercer juzgado policía local antofagasta'
+        codigo: '016503'
+    tribunal_15,:
+        nombre: 'Fiscalía local antofagasta'
+        codigo: '016921'
+    tribunal_16,:
+        nombre: 'Juzgado policía local antuco'
+        codigo: '018501'
+    tribunal_17,:
+        nombre: 'Juzgado policía local arauco'
+        codigo: '020501'
+    tribunal_18,:
+        nombre: 'Fiscalía local arauco'
+        codigo: '020921'
+    tribunal_19,:
+        nombre: 'Primer juzgado policía local arica'
+        codigo: '024501'
+    tribunal_20,:
+        nombre: 'Segundo juzgado policía local arica'
+        codigo: '024502'
+    tribunal_21,:
+        nombre: 'Tercer juzgado policía local arica'
+        codigo: '024503'
+    tribunal_22,:
+        nombre: 'Fiscalía local arica'
+        codigo: '024921'
+    tribunal_23,:
+        nombre: 'Juzgado policía local aysen'
+        codigo: '032501'
+    tribunal_24,:
+        nombre: 'Fiscalía local aysen'
+        codigo: '032921'
+    tribunal_25,:
+        nombre: 'Juzgado policía local lo barnechea'
+        codigo: '036501'
+    tribunal_26,:
+        nombre: 'Juzgado policía local batuco'
+        codigo: '040501'
+    tribunal_27,:
+        nombre: 'Juzgado policía local buin - maipo'
+        codigo: '044501'
+    tribunal_28,:
+        nombre: 'Juzgado policía local bulnes'
+        codigo: '048501'
+    tribunal_29,:
+        nombre: 'Fiscalía local bulnes'
+        codigo: '048921'
+    tribunal_30,:
+        nombre: 'Juzgado policía local cabildo'
+        codigo: '052501'
+    tribunal_31,:
+        nombre: 'Juzgado policía local cabrero'
+        codigo: '056501'
+    tribunal_32,:
+        nombre: 'Juzgado policía local calama'
+        codigo: '060501'
+    tribunal_33,:
+        nombre: 'Fiscalía local calama'
+        codigo: '060921'
+    tribunal_34,:
+        nombre: 'Juzgado policía local calbuco'
+        codigo: '064501'
+    tribunal_35,:
+        nombre: 'Fiscalía local calbuco'
+        codigo: '064921'
+    tribunal_36,:
+        nombre: 'Juzgado policía local caldera'
+        codigo: '066501'
+    tribunal_37,:
+        nombre: 'Fiscalía local caldera'
+        codigo: '066921'
+    tribunal_38,:
+        nombre: 'Juzgado policía local calera de tango'
+        codigo: '068501'
+    tribunal_39,:
+        nombre: 'Juzgado policía local calle larga'
+        codigo: '070501'
+    tribunal_40,:
+        nombre: 'Juzgado policía local canela'
+        codigo: '071501'
+    tribunal_41,:
+        nombre: 'Juzgado policía local cañete'
+        codigo: '072501'
+    tribunal_42,:
+        nombre: 'Fiscalía local cañete'
+        codigo: '072921'
+    tribunal_43,:
+        nombre: 'Juzgado policía local camiña'
+        codigo: '074501'
+    tribunal_44,:
+        nombre: 'Juzgado policía local carahue'
+        codigo: '076501'
+    tribunal_45,:
+        nombre: 'Fiscalía local carahue'
+        codigo: '076921'
+    tribunal_46,:
+        nombre: 'Juzgado policía local cartagena'
+        codigo: '080501'
+    tribunal_47,:
+        nombre: 'Juzgado policía local casablanca'
+        codigo: '084501'
+    tribunal_48,:
+        nombre: 'Fiscalía local casablanca'
+        codigo: '084921'
+    tribunal_49,:
+        nombre: 'Juzgado policía local castro'
+        codigo: '088501'
+    tribunal_50,:
+        nombre: 'Fiscalía local castro'
+        codigo: '088921'
+    tribunal_51,:
+        nombre: 'Juzgado policía local catemu'
+        codigo: '090501'
+    tribunal_52,:
+        nombre: 'Juzgado policía local cauquenes'
+        codigo: '092501'
+    tribunal_53,:
+        nombre: 'Fiscalía local cauquenes'
+        codigo: '092921'
+    tribunal_54,:
+        nombre: 'Juzgado policía local cerrillos'
+        codigo: '096501'
+    tribunal_55,:
+        nombre: 'Juzgado policía local cerro navia'
+        codigo: '100501'
+    tribunal_56,:
+        nombre: 'Juzgado policía local chaiten'
+        codigo: '104501'
+    tribunal_57,:
+        nombre: 'Fiscalía local chaiten'
+        codigo: '104921'
+    tribunal_58,:
+        nombre: 'Juzgado policía local chañaral'
+        codigo: '108501'
+    tribunal_59,:
+        nombre: 'Fiscalía local chañaral'
+        codigo: '108921'
+    tribunal_60,:
+        nombre: 'Juzgado policía local chanco'
+        codigo: '112501'
+    tribunal_61,:
+        nombre: 'Juzgado policía local chepica'
+        codigo: '116501'
+    tribunal_62,:
+        nombre: 'Juzgado policía local chiguayante'
+        codigo: '118501'
+    tribunal_63,:
+        nombre: 'Juzgado policía local chile chico'
+        codigo: '120501'
+    tribunal_64,:
+        nombre: 'Fiscalía local chile chico'
+        codigo: '120921'
+    tribunal_65,:
+        nombre: 'Juzgado policía local chillan viejo'
+        codigo: '122501'
+    tribunal_66,:
+        nombre: 'Primer juzgado policía local chillan'
+        codigo: '124501'
+    tribunal_67,:
+        nombre: 'Segundo juzgado policía local chillan'
+        codigo: '124502'
+    tribunal_68,:
+        nombre: 'Fiscalía local chillan'
+        codigo: '124921'
+    tribunal_69,:
+        nombre: 'Juzgado policía local chimbarongo'
+        codigo: '128501'
+    tribunal_70,:
+        nombre: 'Juzgado policía local chol chol'
+        codigo: '129501'
+    tribunal_71,:
+        nombre: 'Juzgado policía local chonchi'
+        codigo: '130501'
+    tribunal_72,:
+        nombre: 'Juzgado policía local cobquecura'
+        codigo: '131501'
+    tribunal_73,:
+        nombre: 'Juzgado policía local cochrane'
+        codigo: '132501'
+    tribunal_74,:
+        nombre: 'Fiscalía local cochrane'
+        codigo: '132921'
+    tribunal_75,:
+        nombre: 'Juzgado policía local codegua'
+        codigo: '134501'
+    tribunal_76,:
+        nombre: 'Juzgado policía local coelemu'
+        codigo: '136501'
+    tribunal_77,:
+        nombre: 'Juzgado policía local coihueco'
+        codigo: '140501'
+    tribunal_78,:
+        nombre: 'Juzgado policía local coinco'
+        codigo: '142501'
+    tribunal_79,:
+        nombre: 'Juzgado policía local colchane'
+        codigo: '143501'
+    tribunal_80,:
+        nombre: 'Juzgado policía local colina'
+        codigo: '144501'
+    tribunal_81,:
+        nombre: 'Fiscalía local colina-chacabuco'
+        codigo: '144921'
+    tribunal_82,:
+        nombre: 'Juzgado policía local colbun'
+        codigo: '146501'
+    tribunal_83,:
+        nombre: 'Juzgado policía local collipulli'
+        codigo: '148501'
+    tribunal_84,:
+        nombre: 'Fiscalía local collipulli'
+        codigo: '148921'
+    tribunal_85,:
+        nombre: 'Juzgado policía local coltauco'
+        codigo: '150501'
+    tribunal_86,:
+        nombre: 'Juzgado policía local combarbala'
+        codigo: '152501'
+    tribunal_87,:
+        nombre: 'Fiscalía local combarbala'
+        codigo: '152921'
+    tribunal_88,:
+        nombre: 'Primer juzgado policía local concepcion'
+        codigo: '156501'
+    tribunal_89,:
+        nombre: 'Segundo juzgado policía local concepcion'
+        codigo: '156502'
+    tribunal_90,:
+        nombre: 'Tercer juzgado policía local concepcion'
+        codigo: '156503'
+    tribunal_91,:
+        nombre: 'Fiscalía local concepcion'
+        codigo: '156921'
+    tribunal_92,:
+        nombre: 'Juzgado policía local conchali'
+        codigo: '160501'
+    tribunal_93,:
+        nombre: 'Juzgado policía local concon'
+        codigo: '162501'
+    tribunal_94,:
+        nombre: 'Juzgado policía local constitucion'
+        codigo: '164501'
+    tribunal_95,:
+        nombre: 'Fiscalía local constitucion'
+        codigo: '164921'
+    tribunal_96,:
+        nombre: 'jgdo.policia local de contulmo'
+        codigo: '165501'
+    tribunal_97,:
+        nombre: 'Primer juzgado policía local copiapo'
+        codigo: '168501'
+    tribunal_98,:
+        nombre: 'Segundo juzgado policía local copiapo'
+        codigo: '168502'
+    tribunal_99,:
+        nombre: 'Fiscalía local copiapo'
+        codigo: '168921'
+    tribunal_100:
+        nombre: 'Primer juzgado policía local coquimbo'
+        codigo: '172501'
+    tribunal_101:
+        nombre: 'Segundo juzgado policía local coquimbo'
+        codigo: '172502'
+    tribunal_102:
+        nombre: 'Fiscalía local coquimbo'
+        codigo: '172921'
+    tribunal_103:
+        nombre: 'Juzgado policía local coronel'
+        codigo: '176501'
+    tribunal_104:
+        nombre: 'Fiscalía local coronel'
+        codigo: '176921'
+    tribunal_105:
+        nombre: 'Juzgado policía local coyhaique'
+        codigo: '180501'
+    tribunal_106:
+        nombre: 'Fiscalía local coyhaique'
+        codigo: '180921'
+    tribunal_107:
+        nombre: 'Juzgado policía local cunco'
+        codigo: '183501'
+    tribunal_108:
+        nombre: 'Juzgado policía local curacautin'
+        codigo: '184501'
+    tribunal_109:
+        nombre: 'Fiscalía local curacautin'
+        codigo: '184921'
+    tribunal_110:
+        nombre: 'Juzgado policía local curacavi'
+        codigo: '188501'
+    tribunal_111:
+        nombre: 'Fiscalía local curacavi'
+        codigo: '188921'
+    tribunal_112:
+        nombre: 'Juzgado policía local curaco de velez'
+        codigo: '190501'
+    tribunal_113:
+        nombre: 'Juzgado policía local curanilahue'
+        codigo: '192501'
+    tribunal_114:
+        nombre: 'Juzgado policía local curarrehue'
+        codigo: '194501'
+    tribunal_115:
+        nombre: 'Juzgado policía local curepto'
+        codigo: '196501'
+    tribunal_116:
+        nombre: 'Primer juzgado policía local curico'
+        codigo: '200501'
+    tribunal_117:
+        nombre: 'Segundo juzgado policía local curico'
+        codigo: '200502'
+    tribunal_118:
+        nombre: 'Fiscalía local curico'
+        codigo: '200921'
+    tribunal_119:
+        nombre: 'Juzgado policía local dalcahue'
+        codigo: '202501'
+    tribunal_120:
+        nombre: 'Juzgado policía local diego de almagro'
+        codigo: '204501'
+    tribunal_121:
+        nombre: 'Fiscalía local diego de almagro'
+        codigo: '204921'
+    tribunal_122:
+        nombre: 'Juzgado policía local doñihue'
+        codigo: '206501'
+    tribunal_123:
+        nombre: 'Juzgado policía local el bosque'
+        codigo: '208501'
+    tribunal_124:
+        nombre: 'Juzgado policía local el salvador'
+        codigo: '209501'
+    tribunal_125:
+        nombre: 'Fiscalía local el salvador'
+        codigo: '209921'
+    tribunal_126:
+        nombre: 'Juzgado policía local el carmen'
+        codigo: '211501'
+    tribunal_127:
+        nombre: 'Juzgado policía local el monte'
+        codigo: '212501'
+    tribunal_128:
+        nombre: 'Juzgado policía local el quisco'
+        codigo: '216501'
+    tribunal_129:
+        nombre: 'Juzgado policía local el tabo'
+        codigo: '220501'
+    tribunal_130:
+        nombre: 'Juzgado policía local empedrado'
+        codigo: '222501'
+    tribunal_131:
+        nombre: 'Juzgado policía local ercilla'
+        codigo: '223501'
+    tribunal_132:
+        nombre: 'Primer juzgado policía local estacion central'
+        codigo: '224501'
+    tribunal_133:
+        nombre: 'Segundo juzgado policía local estacion central'
+        codigo: '224502'
+    tribunal_134:
+        nombre: 'Juzgado policía local florida'
+        codigo: '225501'
+    tribunal_135:
+        nombre: 'Juzgado policía local freire'
+        codigo: '226501'
+    tribunal_136:
+        nombre: 'Fiscalía local freire'
+        codigo: '226921'
+    tribunal_137:
+        nombre: 'Juzgado policía local freirina'
+        codigo: '228501'
+    tribunal_138:
+        nombre: 'Fiscalía local freirina'
+        codigo: '228921'
+    tribunal_139:
+        nombre: 'Juzgado policía local fresia'
+        codigo: '230501'
+    tribunal_140:
+        nombre: 'Juzgado policía local futrono'
+        codigo: '231501'
+    tribunal_141:
+        nombre: 'Juzgado policía local frutillar'
+        codigo: '232501'
+    tribunal_142:
+        nombre: 'Juzgado policía local galvarino'
+        codigo: '233501'
+    tribunal_143:
+        nombre: 'Juzgado policía local gorbea'
+        codigo: '234501'
+    tribunal_144:
+        nombre: 'Fiscalía local gorbea'
+        codigo: '234921'
+    tribunal_145:
+        nombre: 'Juzgado policía local La higuera'
+        codigo: '235501'
+    tribunal_146:
+        nombre: 'Juzgado policía local graneros'
+        codigo: '236501'
+    tribunal_147:
+        nombre: 'Fiscalía local graneros'
+        codigo: '236921'
+    tribunal_148:
+        nombre: 'Juzgado policía local hijuelas'
+        codigo: '237501'
+    tribunal_149:
+        nombre: 'Juzgado policía local hualane'
+        codigo: '238501'
+    tribunal_150:
+        nombre: 'Juzgado policía local huechuraba'
+        codigo: '239501'
+    tribunal_151:
+        nombre: 'Juzgado policía local isla de pascua'
+        codigo: '240501'
+    tribunal_152:
+        nombre: 'Fiscalía local isla de pascua'
+        codigo: '240921'
+    tribunal_153:
+        nombre: 'Juzgado policía local hualqui'
+        codigo: '241501'
+    tribunal_154:
+        nombre: 'Juzgado policía local huara'
+        codigo: '242501'
+    tribunal_155:
+        nombre: 'Juzgado policía local huasco'
+        codigo: '243501'
+    tribunal_156:
+        nombre: 'Juzgado policía local illapel'
+        codigo: '244501'
+    tribunal_157:
+        nombre: 'Fiscalía local illapel'
+        codigo: '244921'
+    tribunal_158:
+        nombre: 'Juzgado policía local hualaihue'
+        codigo: '245501'
+    tribunal_159:
+        nombre: 'Fiscalía local hualaihue'
+        codigo: '245921'
+    tribunal_160:
+        nombre: 'Juzgado policía local independencia'
+        codigo: '246501'
+    tribunal_161:
+        nombre: 'Juzgado policía local hualpen'
+        codigo: '247501'
+    tribunal_162:
+        nombre: 'Primer juzgado policía local iquique'
+        codigo: '248501'
+    tribunal_163:
+        nombre: 'Segundo juzgado policía local iquique'
+        codigo: '248502'
+    tribunal_164:
+        nombre: 'Tercer juzgado policía local iquique'
+        codigo: '248503'
+    tribunal_165:
+        nombre: 'Fiscalía local iquique'
+        codigo: '248921'
+    tribunal_166:
+        nombre: 'Juzgado policía local isla de maipo'
+        codigo: '252501'
+    tribunal_167:
+        nombre: 'Juzgado policía local juan fernandez'
+        codigo: '254501'
+    tribunal_168:
+        nombre: 'Juzgado policía local La calera'
+        codigo: '256501'
+    tribunal_169:
+        nombre: 'Fiscalía local La calera'
+        codigo: '256921'
+    tribunal_170:
+        nombre: 'Juzgado policía local La cisterna'
+        codigo: '260501'
+    tribunal_171:
+        nombre: 'Juzgado policía local La cruz'
+        codigo: '262501'
+    tribunal_172:
+        nombre: 'Fiscalía local La cruz'
+        codigo: '262921'
+    tribunal_173:
+        nombre: 'Juzgado policía local La estrella'
+        codigo: '263501'
+    tribunal_174:
+        nombre: 'Primer juzgado policía local La florida'
+        codigo: '264501'
+    tribunal_175:
+        nombre: 'Segundo juzgado policía local La florida'
+        codigo: '264502'
+    tribunal_176:
+        nombre: 'Tercer juzgado policía local La florida'
+        codigo: '264503'
+    tribunal_177:
+        nombre: 'Fiscalía local La florida'
+        codigo: '264921'
+    tribunal_178:
+        nombre: 'Juzgado policía local La granja'
+        codigo: '268501'
+    tribunal_179:
+        nombre: 'Juzgado policía local La ligua'
+        codigo: '272501'
+    tribunal_180:
+        nombre: 'Fiscalía local La ligua'
+        codigo: '272921'
+    tribunal_181:
+        nombre: 'Juzgado policía local La pintana'
+        codigo: '276501'
+    tribunal_182:
+        nombre: 'Juzgado policía local La reina'
+        codigo: '280501'
+    tribunal_183:
+        nombre: 'Primer juzgado policía local La serena'
+        codigo: '284501'
+    tribunal_184:
+        nombre: 'Segundo juzgado policía local La serena'
+        codigo: '284502'
+    tribunal_185:
+        nombre: 'Fiscalía local La serena'
+        codigo: '284921'
+    tribunal_186:
+        nombre: 'Juzgado policía local La union'
+        codigo: '288501'
+    tribunal_187:
+        nombre: 'Fiscalía local La union'
+        codigo: '288921'
+    tribunal_188:
+        nombre: 'Juzgado policía local lago ranco'
+        codigo: '290501'
+    tribunal_189:
+        nombre: 'Juzgado policía local lago verde'
+        codigo: '291501'
+    tribunal_190:
+        nombre: 'Juzgado policía local laja'
+        codigo: '292501'
+    tribunal_191:
+        nombre: 'Juzgado policía local lanco'
+        codigo: '294501'
+    tribunal_192:
+        nombre: 'Juzgado policía local lampa'
+        codigo: '296501'
+    tribunal_193:
+        nombre: 'Juzgado policía local las cabras'
+        codigo: '298501'
+    tribunal_194:
+        nombre: 'Primer juzgado policía local las condes'
+        codigo: '300501'
+    tribunal_195:
+        nombre: 'Segundo juzgado policía local las condes'
+        codigo: '300502'
+    tribunal_196:
+        nombre: 'Tercer juzgado policía local las condes'
+        codigo: '300503'
+    tribunal_197:
+        nombre: 'Fiscalía local las condes'
+        codigo: '300921'
+    tribunal_198:
+        nombre: 'Juzgado policía local lautaro'
+        codigo: '304501'
+    tribunal_199:
+        nombre: 'Fiscalía local lautaro'
+        codigo: '304921'
+    tribunal_200:
+        nombre: 'Juzgado policía local lebu'
+        codigo: '308501'
+    tribunal_201:
+        nombre: 'Fiscalía local lebu'
+        codigo: '308921'
+    tribunal_202:
+        nombre: 'Juzgado policía local licanten'
+        codigo: '312501'
+    tribunal_203:
+        nombre: 'Fiscalía local licanten'
+        codigo: '312921'
+    tribunal_204:
+        nombre: 'Juzgado policía local limache'
+        codigo: '316501'
+    tribunal_205:
+        nombre: 'Fiscalía local limache'
+        codigo: '316921'
+    tribunal_206:
+        nombre: 'Juzgado policía local linares'
+        codigo: '320501'
+    tribunal_207:
+        nombre: 'Fiscalía local linares'
+        codigo: '320921'
+    tribunal_208:
+        nombre: 'Juzgado policía local litueche'
+        codigo: '322501'
+    tribunal_209:
+        nombre: 'Fiscalía local litueche'
+        codigo: '322921'
+    tribunal_210:
+        nombre: 'Juzgado policía local llanquihue'
+        codigo: '324501'
+    tribunal_211:
+        nombre: 'Juzgado policía local llayllay'
+        codigo: '328501'
+    tribunal_212:
+        nombre: 'Primer juzgado policía local lo espejo'
+        codigo: '332501'
+    tribunal_213:
+        nombre: 'Segundo juzgado policía local lo espejo'
+        codigo: '332502'
+    tribunal_214:
+        nombre: 'Juzgado policía local lo prado'
+        codigo: '336501'
+    tribunal_215:
+        nombre: 'Juzgado policía local lolol'
+        codigo: '337501'
+    tribunal_216:
+        nombre: 'Juzgado policía local longavi'
+        codigo: '338501'
+    tribunal_217:
+        nombre: 'Juzgado policía local loncoche'
+        codigo: '340501'
+    tribunal_218:
+        nombre: 'Fiscalía local loncoche'
+        codigo: '340921'
+    tribunal_219:
+        nombre: 'Juzgado policía local lonquimay'
+        codigo: '341501'
+    tribunal_220:
+        nombre: 'Juzgado policía local los alamos'
+        codigo: '342501'
+    tribunal_221:
+        nombre: 'Juzgado policía local los andes'
+        codigo: '344501'
+    tribunal_222:
+        nombre: 'Fiscalía local los andes'
+        codigo: '344921'
+    tribunal_223:
+        nombre: 'Primer juzgado policía local los angeles'
+        codigo: '348501'
+    tribunal_224:
+        nombre: 'Segundo juzgado policía local los angeles'
+        codigo: '348502'
+    tribunal_225:
+        nombre: 'Fiscalía local los angeles'
+        codigo: '348921'
+    tribunal_226:
+        nombre: 'Juzgado policía local los lagos'
+        codigo: '352501'
+    tribunal_227:
+        nombre: 'Fiscalía local los lagos'
+        codigo: '352921'
+    tribunal_228:
+        nombre: 'Juzgado policía local los muermos'
+        codigo: '354501'
+    tribunal_229:
+        nombre: 'Fiscalía local los muermos'
+        codigo: '354921'
+    tribunal_230:
+        nombre: 'Juzgado policía local los sauces'
+        codigo: '355501'
+    tribunal_231:
+        nombre: 'Juzgado policía local los vilos'
+        codigo: '356501'
+    tribunal_232:
+        nombre: 'Fiscalía local los vilos'
+        codigo: '356921'
+    tribunal_233:
+        nombre: 'Juzgado policía local lota'
+        codigo: '360501'
+    tribunal_234:
+        nombre: 'Juzgado policía local lumaco'
+        codigo: '362501'
+    tribunal_235:
+        nombre: 'Juzgado policía local machali'
+        codigo: '364501'
+    tribunal_236:
+        nombre: 'Juzgado policía local macul'
+        codigo: '368501'
+    tribunal_237:
+        nombre: 'Primer juzgado policía local magallanes'
+        codigo: '372501'
+    tribunal_238:
+        nombre: 'Segundo juzgado policía local magallanes'
+        codigo: '372502'
+    tribunal_239:
+        nombre: 'Primer juzgado policía local maipu'
+        codigo: '376501'
+    tribunal_240:
+        nombre: 'Segundo juzgado policía local maipu'
+        codigo: '376502'
+    tribunal_241:
+        nombre: 'Tercer juzgado policía local maipu'
+        codigo: '376503'
+    tribunal_242:
+        nombre: 'Fiscalía local maipu'
+        codigo: '376921'
+    tribunal_243:
+        nombre: 'Juzgado policía local malloa'
+        codigo: '380501'
+    tribunal_244:
+        nombre: 'Juzgado policía local marchigue'
+        codigo: '382501'
+    tribunal_245:
+        nombre: 'Juzgado policía local maria elena'
+        codigo: '384501'
+    tribunal_246:
+        nombre: 'Fiscalía local maria elena'
+        codigo: '384921'
+    tribunal_247:
+        nombre: 'Juzgado policía local maria pinto'
+        codigo: '388501'
+    tribunal_248:
+        nombre: 'Fiscalía local maria pinto'
+        codigo: '388921'
+    tribunal_249:
+        nombre: 'Juzgado policía local maule'
+        codigo: '392501'
+    tribunal_250:
+        nombre: 'Juzgado policía local maullin'
+        codigo: '396501'
+    tribunal_251:
+        nombre: 'Fiscalía local maullin'
+        codigo: '396921'
+    tribunal_252:
+        nombre: 'Juzgado policía local mejillones'
+        codigo: '397501'
+    tribunal_253:
+        nombre: 'Juzgado policía local melinka'
+        codigo: '398501'
+    tribunal_254:
+        nombre: 'Juzgado policía local melipeuco'
+        codigo: '399501'
+    tribunal_255:
+        nombre: 'Juzgado policía local melipilla'
+        codigo: '400501'
+    tribunal_256:
+        nombre: 'Fiscalía local melipilla'
+        codigo: '400921'
+    tribunal_257:
+        nombre: 'Juzgado policía local molina'
+        codigo: '404501'
+    tribunal_258:
+        nombre: 'Fiscalía local molina'
+        codigo: '404921'
+    tribunal_259:
+        nombre: 'Juzgado policía local monte patria'
+        codigo: '406501'
+    tribunal_260:
+        nombre: 'Juzgado policía local mulchen'
+        codigo: '408501'
+    tribunal_261:
+        nombre: 'Juzgado policía local nacimiento'
+        codigo: '412501'
+    tribunal_262:
+        nombre: 'Juzgado policía local nancagua'
+        codigo: '416501'
+    tribunal_263:
+        nombre: 'Juzgado policía local negrete'
+        codigo: '417501'
+    tribunal_264:
+        nombre: 'Juzgado policía local nogales'
+        codigo: '418501'
+    tribunal_265:
+        nombre: 'Juzgado policía local navidad'
+        codigo: '419501'
+    tribunal_266:
+        nombre: 'Juzgado policía local nueva imperial'
+        codigo: '420501'
+    tribunal_267:
+        nombre: 'Fiscalía local nueva imperial'
+        codigo: '420921'
+    tribunal_268:
+        nombre: 'Juzgado policía local ninhue'
+        codigo: '422501'
+    tribunal_269:
+        nombre: 'Juzgado policía local ñiquen'
+        codigo: '423501'
+    tribunal_270:
+        nombre: 'Primer juzgado policía local ñuñoa'
+        codigo: '424501'
+    tribunal_271:
+        nombre: 'Segundo juzgado policía local ñuñoa'
+        codigo: '424502'
+    tribunal_272:
+        nombre: 'Fiscalía local ñuñoa'
+        codigo: '424921'
+    tribunal_273:
+        nombre: 'Juzgado policía local puerto octay'
+        codigo: '425501'
+    tribunal_274:
+        nombre: 'Juzgado policía local olivar'
+        codigo: '426501'
+    tribunal_275:
+        nombre: 'Juzgado policía local olmue'
+        codigo: '428501'
+    tribunal_276:
+        nombre: 'Juzgado policía local o´higgins'
+        codigo: '431501'
+    tribunal_277:
+        nombre: 'Primer juzgado policía local osorno'
+        codigo: '432501'
+    tribunal_278:
+        nombre: 'Segundo juzgado policía local osorno'
+        codigo: '432502'
+    tribunal_279:
+        nombre: 'Fiscalía local osorno'
+        codigo: '432921'
+    tribunal_280:
+        nombre: 'Juzgado policía local ovalle'
+        codigo: '436501'
+    tribunal_281:
+        nombre: 'Fiscalía local ovalle'
+        codigo: '436921'
+    tribunal_282:
+        nombre: 'Juzgado policía local paihuano'
+        codigo: '437501'
+    tribunal_283:
+        nombre: 'Juzgado policía local padre hurtado'
+        codigo: '438501'
+    tribunal_284:
+        nombre: 'Juzgado policía local padre las casas'
+        codigo: '439501'
+    tribunal_285:
+        nombre: 'Juzgado policía local paillaco'
+        codigo: '440501'
+    tribunal_286:
+        nombre: 'Fiscalía local paillaco'
+        codigo: '440921'
+    tribunal_287:
+        nombre: 'Juzgado policía local paine'
+        codigo: '444501'
+    tribunal_288:
+        nombre: 'Juzgado policía local palena'
+        codigo: '446501'
+    tribunal_289:
+        nombre: 'Juzgado policía local palmilla'
+        codigo: '447501'
+    tribunal_290:
+        nombre: 'Juzgado policía local panguipulli'
+        codigo: '448501'
+    tribunal_291:
+        nombre: 'Fiscalía local panguipulli'
+        codigo: '448921'
+    tribunal_292:
+        nombre: 'Juzgado policía local panquehue'
+        codigo: '450501'
+    tribunal_293:
+        nombre: 'Juzgado policía local papudo'
+        codigo: '452501'
+    tribunal_294:
+        nombre: 'Juzgado policía local paredones'
+        codigo: '454501'
+    tribunal_295:
+        nombre: 'Juzgado policía local parral'
+        codigo: '456501'
+    tribunal_296:
+        nombre: 'Fiscalía local parral'
+        codigo: '456921'
+    tribunal_297:
+        nombre: 'Juzgado policía local pedro aguirre cerda'
+        codigo: '460501'
+    tribunal_298:
+        nombre: 'Juzgado policía local pelarco'
+        codigo: '464501'
+    tribunal_299:
+        nombre: 'Juzgado policía local pelluhue'
+        codigo: '465501'
+    tribunal_300:
+        nombre: 'Juzgado policía local pemuco'
+        codigo: '466501'
+    tribunal_301:
+        nombre: 'Juzgado policía local peñaflor'
+        codigo: '468501'
+    tribunal_302:
+        nombre: 'Juzgado policía local peñalolen'
+        codigo: '472501'
+    tribunal_303:
+        nombre: 'Fiscalía local penalolen - macul'
+        codigo: '472921'
+    tribunal_304:
+        nombre: 'Juzgado policía local pencahue'
+        codigo: '474501'
+    tribunal_305:
+        nombre: 'Juzgado policía local penco'
+        codigo: '476501'
+    tribunal_306:
+        nombre: 'Juzgado policía local peralillo'
+        codigo: '478501'
+    tribunal_307:
+        nombre: 'Fiscalía local de peralillo'
+        codigo: '478921'
+    tribunal_308:
+        nombre: 'Juzgado policía local perquenco'
+        codigo: '479501'
+    tribunal_309:
+        nombre: 'Juzgado policía local petorca'
+        codigo: '480501'
+    tribunal_310:
+        nombre: 'Fiscalía local petorca'
+        codigo: '480921'
+    tribunal_311:
+        nombre: 'Juzgado policía local peumo'
+        codigo: '484501'
+    tribunal_312:
+        nombre: 'Fiscalía local peumo'
+        codigo: '484921'
+    tribunal_313:
+        nombre: 'Juzgado policía local pichidegua'
+        codigo: '485501'
+    tribunal_314:
+        nombre: 'Juzgado policía local pica'
+        codigo: '486501'
+    tribunal_315:
+        nombre: 'Juzgado policía local pichilemu'
+        codigo: '488501'
+    tribunal_316:
+        nombre: 'Fiscalía local pichilemu'
+        codigo: '488921'
+    tribunal_317:
+        nombre: 'Juzgado policía local pinto'
+        codigo: '490501'
+    tribunal_318:
+        nombre: 'Juzgado policía local pirque'
+        codigo: '492501'
+    tribunal_319:
+        nombre: 'Juzgado policía local pitrufquen'
+        codigo: '496501'
+    tribunal_320:
+        nombre: 'Fiscalía local pitrufquen'
+        codigo: '496921'
+    tribunal_321:
+        nombre: 'Juzgado policía local placilla santa cruz'
+        codigo: '498501'
+    tribunal_322:
+        nombre: 'Fiscalía local placilla santa cruz'
+        codigo: '498921'
+    tribunal_323:
+        nombre: 'Juzgado policía local placilla valparaiso'
+        codigo: '499501'
+    tribunal_324:
+        nombre: 'Fiscalía local placilla valparaiso'
+        codigo: '499921'
+    tribunal_325:
+        nombre: 'Juzgado policía local porvenir'
+        codigo: '500501'
+    tribunal_326:
+        nombre: 'Fiscalía local porvenir'
+        codigo: '500921'
+    tribunal_327:
+        nombre: 'Juzgado policía local portezuelo'
+        codigo: '502501'
+    tribunal_328:
+        nombre: 'Juzgado policía local pozo almonte'
+        codigo: '504501'
+    tribunal_329:
+        nombre: 'Fiscalía local pozo almonte'
+        codigo: '504921'
+    tribunal_330:
+        nombre: 'Primer juzgado policía local providencia'
+        codigo: '508501'
+    tribunal_331:
+        nombre: 'Segundo juzgado policía local providencia'
+        codigo: '508502'
+    tribunal_332:
+        nombre: 'Tercer juzgado policía local providencia'
+        codigo: '508503'
+    tribunal_333:
+        nombre: 'Juzgado policía local puchuncavi'
+        codigo: '510501'
+    tribunal_334:
+        nombre: 'Juzgado policía local pucon'
+        codigo: '512501'
+    tribunal_335:
+        nombre: 'Fiscalía local pucon'
+        codigo: '512921'
+    tribunal_336:
+        nombre: 'Primer juzgado policía local pudahuel'
+        codigo: '516501'
+    tribunal_337:
+        nombre: 'Segundo juzgado policía local pudahuel'
+        codigo: '516502'
+    tribunal_338:
+        nombre: 'Fiscalía local pudahuel'
+        codigo: '516921'
+    tribunal_339:
+        nombre: 'Primer juzgado policía local puente alto'
+        codigo: '520501'
+    tribunal_340:
+        nombre: 'Segundo juzgado policía local puente alto'
+        codigo: '520502'
+    tribunal_341:
+        nombre: 'Fiscalía local puente alto'
+        codigo: '520921'
+    tribunal_342:
+        nombre: 'Juzgado policía local puerto cisnes'
+        codigo: '521501'
+    tribunal_343:
+        nombre: 'Fiscalía local puerto cisnes'
+        codigo: '521921'
+    tribunal_344:
+        nombre: 'Primer juzgado policía local puerto montt'
+        codigo: '524501'
+    tribunal_345:
+        nombre: 'Segundo juzgado policía local puerto montt'
+        codigo: '524502'
+    tribunal_346:
+        nombre: 'Tercer juzgado policía local puerto montt'
+        codigo: '524503'
+    tribunal_347:
+        nombre: 'Fiscalía local puerto montt'
+        codigo: '524921'
+    tribunal_348:
+        nombre: 'Juzgado policía local puerto natales'
+        codigo: '528501'
+    tribunal_349:
+        nombre: 'Fiscalía local puerto natales'
+        codigo: '528921'
+    tribunal_350:
+        nombre: 'Juzgado policía local puerto saavedra'
+        codigo: '530501'
+    tribunal_351:
+        nombre: 'Juzgado policía local puerto varas'
+        codigo: '532501'
+    tribunal_352:
+        nombre: 'Fiscalía local puerto varas'
+        codigo: '532921'
+    tribunal_353:
+        nombre: 'Juzgado policía local pumanque'
+        codigo: '533501'
+    tribunal_354:
+        nombre: 'Juzgado policía local punitaqui'
+        codigo: '534501'
+    tribunal_355:
+        nombre: 'Juzgado policía local punta arenas'
+        codigo: '536501'
+    tribunal_356:
+        nombre: 'Segundo juzgado policía local punta arenas'
+        codigo: '536502'
+    tribunal_357:
+        nombre: 'Fiscalía local punta arenas'
+        codigo: '536921'
+    tribunal_358:
+        nombre: 'Juzgado policía local puren'
+        codigo: '538501'
+    tribunal_359:
+        nombre: 'Fiscalía local puren'
+        codigo: '538921'
+    tribunal_360:
+        nombre: 'Juzgado policía local purranque'
+        codigo: '540501'
+    tribunal_361:
+        nombre: 'Juzgado policía local puyehue'
+        codigo: '542501'
+    tribunal_362:
+        nombre: 'Juzgado policía local putaendo'
+        codigo: '544501'
+    tribunal_363:
+        nombre: 'Juzgado policía local putre'
+        codigo: '546501'
+    tribunal_364:
+        nombre: 'Fiscalía local putre'
+        codigo: '546921'
+    tribunal_365:
+        nombre: 'Juzgado policía local quellon'
+        codigo: '547501'
+    tribunal_366:
+        nombre: 'Fiscalía local quellon'
+        codigo: '547921'
+    tribunal_367:
+        nombre: 'Juzgado policía local quilicura'
+        codigo: '548501'
+    tribunal_368:
+        nombre: 'Juzgado policía local quilleco'
+        codigo: '549501'
+    tribunal_369:
+        nombre: 'Juzgado policía local quillon'
+        codigo: '550501'
+    tribunal_370:
+        nombre: 'Juzgado policía local quemchi'
+        codigo: '551501'
+    tribunal_371:
+        nombre: 'Juzgado policía local quillota'
+        codigo: '552501'
+    tribunal_372:
+        nombre: 'Fiscalía local quillota'
+        codigo: '552921'
+    tribunal_373:
+        nombre: 'Juzgado policía local quilaco'
+        codigo: '553501'
+    tribunal_374:
+        nombre: 'Juzgado policía local queilen'
+        codigo: '554501'
+    tribunal_375:
+        nombre: 'Juzgado policía local quilpue'
+        codigo: '556501'
+    tribunal_376:
+        nombre: 'Fiscalía local quilpue'
+        codigo: '556921'
+    tribunal_377:
+        nombre: 'Juzgado policía local quinchao'
+        codigo: '560501'
+    tribunal_378:
+        nombre: 'Fiscalía local quinchao'
+        codigo: '560921'
+    tribunal_379:
+        nombre: 'Juzgado policía local quinta de tilcoco'
+        codigo: '564501'
+    tribunal_380:
+        nombre: 'Juzgado policía local quinta normal'
+        codigo: '568501'
+    tribunal_381:
+        nombre: 'Juzgado policía local quinteros'
+        codigo: '572501'
+    tribunal_382:
+        nombre: 'Fiscalía local quinteros'
+        codigo: '572921'
+    tribunal_383:
+        nombre: 'Juzgado policía local quirihue'
+        codigo: '576501'
+    tribunal_384:
+        nombre: 'Fiscalía local quirihue'
+        codigo: '576921'
+    tribunal_385:
+        nombre: 'Juzgado policía local rauco'
+        codigo: '578501'
+    tribunal_386:
+        nombre: 'Primer juzgado policía local rancagua'
+        codigo: '580501'
+    tribunal_387:
+        nombre: 'Segundo juzgado policía local rancagua'
+        codigo: '580502'
+    tribunal_388:
+        nombre: 'Fiscalía local rancagua'
+        codigo: '580921'
+    tribunal_389:
+        nombre: 'Juzgado policía local ranquil'
+        codigo: '581501'
+    tribunal_390:
+        nombre: 'Primer juzgado policía local recoleta'
+        codigo: '582501'
+    tribunal_391:
+        nombre: 'Segundo juzgado policía local recoleta'
+        codigo: '582502'
+    tribunal_392:
+        nombre: 'Juzgado policía local renaico'
+        codigo: '583501'
+    tribunal_393:
+        nombre: 'Juzgado policía local renca'
+        codigo: '584501'
+    tribunal_394:
+        nombre: 'Juzgado policía local rengo'
+        codigo: '588501'
+    tribunal_395:
+        nombre: 'Fiscalía local rengo'
+        codigo: '588921'
+    tribunal_396:
+        nombre: 'Juzgado policía local requinoa'
+        codigo: '592501'
+    tribunal_397:
+        nombre: 'Juzgado policía local retiro'
+        codigo: '594501'
+    tribunal_398:
+        nombre: 'jgdo.policia local rinconada'
+        codigo: '595501'
+    tribunal_399:
+        nombre: 'Juzgado policía local rio bueno'
+        codigo: '596501'
+    tribunal_400:
+        nombre: 'Fiscalía local rio bueno'
+        codigo: '596921'
+    tribunal_401:
+        nombre: 'Juzgado policía local rio claro - cumpeo'
+        codigo: '600501'
+    tribunal_402:
+        nombre: 'Juzgado policía local rio hurtado'
+        codigo: '602501'
+    tribunal_403:
+        nombre: 'Juzgado policía local rio ibañez'
+        codigo: '603501'
+    tribunal_404:
+        nombre: 'Juzgado policía local rio negro'
+        codigo: '604501'
+    tribunal_405:
+        nombre: 'Fiscalía local rio negro'
+        codigo: '604921'
+    tribunal_406:
+        nombre: 'Juzgado policía local rocas santo domingo'
+        codigo: '608501'
+    tribunal_407:
+        nombre: 'Juzgado policía local romeral'
+        codigo: '612501'
+    tribunal_408:
+        nombre: 'Juzgado policía local sagrada familia'
+        codigo: '613501'
+    tribunal_409:
+        nombre: 'Juzgado policía local salamanca'
+        codigo: '614501'
+    tribunal_410:
+        nombre: 'Primer juzgado policía local San antonio'
+        codigo: '616501'
+    tribunal_411:
+        nombre: 'Segundo juzgado policía local San antonio'
+        codigo: '616502'
+    tribunal_412:
+        nombre: 'Fiscalía local San antonio'
+        codigo: '616921'
+    tribunal_413:
+        nombre: 'Primer juzgado policía local San bernardo'
+        codigo: '620501'
+    tribunal_414:
+        nombre: 'Segundo juzgado policía local San bernardo'
+        codigo: '620502'
+    tribunal_415:
+        nombre: 'Fiscalía local San bernardo'
+        codigo: '620921'
+    tribunal_416:
+        nombre: 'Juzgado policía local San carlos'
+        codigo: '624501'
+    tribunal_417:
+        nombre: 'Fiscalía local San carlos'
+        codigo: '624921'
+    tribunal_418:
+        nombre: 'Juzgado policía local San clemente'
+        codigo: '625501'
+    tribunal_419:
+        nombre: 'Juzgado policía local San esteban'
+        codigo: '626501'
+    tribunal_420:
+        nombre: 'Juzgado policía local San fabian'
+        codigo: '627501'
+    tribunal_421:
+        nombre: 'Juzgado policía local San felipe'
+        codigo: '628501'
+    tribunal_422:
+        nombre: 'Fiscalía local San felipe'
+        codigo: '628921'
+    tribunal_423:
+        nombre: 'Juzgado policía local San fernando'
+        codigo: '632501'
+    tribunal_424:
+        nombre: 'Fiscalía local San fernando'
+        codigo: '632921'
+    tribunal_425:
+        nombre: 'Juzgado policía local San francisco de mostazal'
+        codigo: '636501'
+    tribunal_426:
+        nombre: 'Juzgado policía local San gregorio'
+        codigo: '637501'
+    tribunal_427:
+        nombre: 'Juzgado policía local San ignacio'
+        codigo: '638501'
+    tribunal_428:
+        nombre: 'Juzgado policía local San javier'
+        codigo: '640501'
+    tribunal_429:
+        nombre: 'Fiscalía local San javier'
+        codigo: '640921'
+    tribunal_430:
+        nombre: 'Juzgado policía local San joaquin'
+        codigo: '648501'
+    tribunal_431:
+        nombre: 'Juzgado policía local San jose de La mariquina'
+        codigo: '652501'
+    tribunal_432:
+        nombre: 'Fiscalía local San jose de La mariquina'
+        codigo: '652921'
+    tribunal_433:
+        nombre: 'Juzgado policía local San jose de maipo'
+        codigo: '654501'
+    tribunal_434:
+        nombre: 'Juzgado policía local San juan de La costa'
+        codigo: '655501'
+    tribunal_435:
+        nombre: 'Primer juzgado policía local San miguel'
+        codigo: '656501'
+    tribunal_436:
+        nombre: 'Segundo juzgado policía local San miguel'
+        codigo: '656502'
+    tribunal_437:
+        nombre: 'Juzgado policía local San nicolas'
+        codigo: '660501'
+    tribunal_438:
+        nombre: 'Juzgado policía local San pablo'
+        codigo: '664501'
+    tribunal_439:
+        nombre: 'Juzgado policía local San pedro'
+        codigo: '665501'
+    tribunal_440:
+        nombre: 'Juzgado policía local San pedro de La paz'
+        codigo: '666501'
+    tribunal_441:
+        nombre: 'Fiscalía local San pedro de La paz'
+        codigo: '666921'
+    tribunal_442:
+        nombre: 'Juzgado policía local San rafael'
+        codigo: '667501'
+    tribunal_443:
+        nombre: 'Juzgado policía local San ramon'
+        codigo: '668501'
+    tribunal_444:
+        nombre: 'Juzgado policía local San rosendo'
+        codigo: '670501'
+    tribunal_445:
+        nombre: 'Juzgado policía local San vicente'
+        codigo: '672501'
+    tribunal_446:
+        nombre: 'Fiscalía local San vicente'
+        codigo: '672921'
+    tribunal_447:
+        nombre: 'Juzgado policía local San vicente de t.t.'
+        codigo: '676501'
+    tribunal_448:
+        nombre: 'Fiscalía local San vicente de t.t'
+        codigo: '676921'
+    tribunal_449:
+        nombre: 'Juzgado policía local santa barbara'
+        codigo: '680501'
+    tribunal_450:
+        nombre: 'Juzgado policía local santa cruz'
+        codigo: '684501'
+    tribunal_451:
+        nombre: 'Fiscalía local santa cruz'
+        codigo: '684921'
+    tribunal_452:
+        nombre: 'Juzgado policía local santa juana'
+        codigo: '688501'
+    tribunal_453:
+        nombre: 'Juzgado policía local santa maria'
+        codigo: '690501'
+    tribunal_454:
+        nombre: 'Fiscalía local santa maria'
+        codigo: '690921'
+    tribunal_455:
+        nombre: 'Primer juzgado policía local santiago'
+        codigo: '692501'
+    tribunal_456:
+        nombre: 'Segundo juzgado policía local santiago'
+        codigo: '692502'
+    tribunal_457:
+        nombre: 'Tercer juzgado policía local santiago'
+        codigo: '692503'
+    tribunal_458:
+        nombre: '4to. Juzgado policía local santiago'
+        codigo: '692504'
+    tribunal_459:
+        nombre: '5to. Juzgado policía local santiago'
+        codigo: '692505'
+    tribunal_460:
+        nombre: 'Juzgado policía local sierra gorda'
+        codigo: '694501'
+    tribunal_461:
+        nombre: 'Juzgado policía local talagante'
+        codigo: '696501'
+    tribunal_462:
+        nombre: 'Fiscalía local talagante'
+        codigo: '696921'
+    tribunal_463:
+        nombre: 'Primer juzgado policía local talca'
+        codigo: '700501'
+    tribunal_464:
+        nombre: 'Segundo juzgado policía local talca'
+        codigo: '700502'
+    tribunal_465:
+        nombre: 'Tercer juzgado policía local talca'
+        codigo: '700503'
+    tribunal_466:
+        nombre: 'Fiscalía local talca'
+        codigo: '700921'
+    tribunal_467:
+        nombre: 'Primer juzgado policía local talcahuano'
+        codigo: '704501'
+    tribunal_468:
+        nombre: 'Segundo juzgado policía local talcahuano'
+        codigo: '704502'
+    tribunal_469:
+        nombre: 'Fiscalía local talcahuano'
+        codigo: '704921'
+    tribunal_470:
+        nombre: 'Juzgado policía local taltal'
+        codigo: '708501'
+    tribunal_471:
+        nombre: 'Fiscalía local taltal'
+        codigo: '708921'
+    tribunal_472:
+        nombre: 'Juzgado policía local teodoro schmidt'
+        codigo: '710501'
+    tribunal_473:
+        nombre: 'Primer juzgado policía local temuco'
+        codigo: '712501'
+    tribunal_474:
+        nombre: 'Segundo juzgado policía local temuco'
+        codigo: '712502'
+    tribunal_475:
+        nombre: 'Tercer juzgado policía local temuco'
+        codigo: '712503'
+    tribunal_476:
+        nombre: 'Fiscalía local temuco'
+        codigo: '712921'
+    tribunal_477:
+        nombre: 'Juzgado policía local teno'
+        codigo: '714501'
+    tribunal_478:
+        nombre: 'Fiscalía local tierra del fuego'
+        codigo: '715921'
+    tribunal_479:
+        nombre: 'Juzgado policía local tiltil'
+        codigo: '716501'
+    tribunal_480:
+        nombre: 'Juzgado policía local tierra amarilla'
+        codigo: '718501'
+    tribunal_481:
+        nombre: 'Juzgado policía local tirua'
+        codigo: '719501'
+    tribunal_482:
+        nombre: 'Juzgado policía local tocopilla'
+        codigo: '720501'
+    tribunal_483:
+        nombre: 'Fiscalía local tocopilla'
+        codigo: '720921'
+    tribunal_484:
+        nombre: 'Juzgado policía local tolten'
+        codigo: '722501'
+    tribunal_485:
+        nombre: 'Fiscalía local tolten'
+        codigo: '722921'
+    tribunal_486:
+        nombre: 'Juzgado policía local tome'
+        codigo: '724501'
+    tribunal_487:
+        nombre: 'Fiscalía local tome'
+        codigo: '724921'
+    tribunal_488:
+        nombre: 'Juzgado policía local tortel'
+        codigo: '726501'
+    tribunal_489:
+        nombre: 'Juzgado policía local traiguen'
+        codigo: '728501'
+    tribunal_490:
+        nombre: 'Fiscalía local traiguen'
+        codigo: '728921'
+    tribunal_491:
+        nombre: 'Juzgado policía local trehuaco'
+        codigo: '729501'
+    tribunal_492:
+        nombre: 'Juzgado policía local tucapel'
+        codigo: '730501'
+    tribunal_493:
+        nombre: 'Primer juzgado policía local valdivia'
+        codigo: '736501'
+    tribunal_494:
+        nombre: 'Segundo juzgado policía local valdivia'
+        codigo: '736502'
+    tribunal_495:
+        nombre: 'Fiscalía local valdivia'
+        codigo: '736921'
+    tribunal_496:
+        nombre: 'Juzgado policía local vallenar'
+        codigo: '740501'
+    tribunal_497:
+        nombre: 'Fiscalía local vallenar'
+        codigo: '740921'
+    tribunal_498:
+        nombre: 'Primer juzgado policía local valparaiso'
+        codigo: '748501'
+    tribunal_499:
+        nombre: 'Segundo juzgado policía local valparaiso'
+        codigo: '748502'
+    tribunal_500:
+        nombre: 'Tercer juzgado policía local valparaiso'
+        codigo: '748503'
+    tribunal_501:
+        nombre: 'Fiscalía local valparaiso'
+        codigo: '748921'
+    tribunal_502:
+        nombre: 'Juzgado policía local victoria'
+        codigo: '752501'
+    tribunal_503:
+        nombre: 'Fiscalía local victoria'
+        codigo: '752921'
+    tribunal_504:
+        nombre: 'Juzgado policía local vicuña'
+        codigo: '760501'
+    tribunal_505:
+        nombre: 'Fiscalía local vicuña'
+        codigo: '760921'
+    tribunal_506:
+        nombre: 'Juzgado policía local vichuquen'
+        codigo: '761501'
+    tribunal_507:
+        nombre: 'Juzgado policía local villa alegre'
+        codigo: '762501'
+    tribunal_508:
+        nombre: 'Juzgado policía local villa alemana'
+        codigo: '764501'
+    tribunal_509:
+        nombre: 'Fiscalía local villa alemana'
+        codigo: '764921'
+    tribunal_510:
+        nombre: 'Juzgado policía local villarrica'
+        codigo: '768501'
+    tribunal_511:
+        nombre: 'Fiscalía local villarrica'
+        codigo: '768921'
+    tribunal_512:
+        nombre: 'Primer juzgado policía local viña del mar'
+        codigo: '772501'
+    tribunal_513:
+        nombre: 'Segundo juzgado policía local viña del mar'
+        codigo: '772502'
+    tribunal_514:
+        nombre: 'Tercer juzgado policía local viña del mar'
+        codigo: '772503'
+    tribunal_515:
+        nombre: 'Fiscalía local viña del mar'
+        codigo: '772921'
+    tribunal_516:
+        nombre: 'Juzgado policía local vilcun'
+        codigo: '774501'
+    tribunal_517:
+        nombre: 'Primer juzgado policía local vitacura'
+        codigo: '776501'
+    tribunal_518:
+        nombre: 'Segundo juzgado policía local vitacura'
+        codigo: '776502'
+    tribunal_519:
+        nombre: 'Juzgado policía local puerto williams'
+        codigo: '778501'
+    tribunal_520:
+        nombre: 'Juzgado policía local yerbas buenas'
+        codigo: '780501'
+    tribunal_521:
+        nombre: 'Juzgado policía local yumbel'
+        codigo: '784501'
+    tribunal_522:
+        nombre: 'Fiscalía local yumbel'
+        codigo: '784921'
+    tribunal_523:
+        nombre: 'Juzgado policía local yungay'
+        codigo: '788501'
+    tribunal_524:
+        nombre: 'Fiscalía local yungay'
+        codigo: '788921'
+    tribunal_525:
+        nombre: 'Juzgado policía local zapallar'
+        codigo: '792501'

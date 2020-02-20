@@ -1,0 +1,97 @@
+App\Entity\TipoUbicacionRelativaAccidente:
+    tipo_ubicacion_relativa_accidente_transito_01:
+        nombre: 'Tramo de Vía Recta'
+        codigo: '01'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_02:
+        nombre: 'Tramo de Vía Curva Horizontal'
+        codigo: '02'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_03:
+        nombre: 'Tramo de Vía Curva Vertical'
+        codigo: '03'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_04:
+        nombre: 'Acera o Berma'
+        codigo: '04'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_05:
+        nombre: 'Puente'
+        codigo: '05'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_06:
+        nombre: 'Túnel'
+        codigo: '06'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_07:
+        nombre: 'Ciclovía'
+        codigo: '07'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_11:
+        nombre: 'Cruce con Semáforo Funcionando'
+        codigo: '11'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_12:
+        nombre: 'Cruce con Semáforo Apagado'
+        codigo: '12'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_13:
+        nombre: 'Cruce Regulado por Carabinero'
+        codigo: '13'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_14:
+        nombre: 'Cruce con Señal "Pare"'
+        codigo: '14'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_15:
+        nombre: 'Cruce con Señal "Ceda el Paso"'
+        codigo: '15'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_16:
+        nombre: 'Cruce sin Señalización'
+        codigo: '16'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_17:
+        nombre: 'Cruce ciclovía con calzada'
+        codigo: '17'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_21:
+        nombre: 'Enlace a Nivel'
+        codigo: '21'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_22:
+        nombre: 'Enlace a Desnivel'
+        codigo: '22'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_23:
+        nombre: 'Acceso No Habilitado'
+        codigo: '23'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_24:
+        nombre: 'Rotonda'
+        codigo: '24'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_25:
+        nombre: 'Plaza de Peaje'
+        codigo: '25'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_transito_99:
+        nombre: 'Otros no Considerados'
+        codigo: '99'
+        claseAccidente: '@clase_accidente_transito'
+    tipo_ubicacion_relativa_accidente_ferroviario_01:
+        nombre: 'Recinto Estación'
+        codigo: '01'
+        claseAccidente: '@clase_accidente_ferroviario'
+    tipo_ubicacion_relativa_accidente_ferroviario_02:
+        nombre: 'Tramo de vía'
+        codigo: '02'
+        claseAccidente: '@clase_accidente_ferroviario'
+    tipo_ubicacion_relativa_accidente_ferroviario_03:
+        nombre: 'Cruce Habilitado'
+        codigo: '03'
+        claseAccidente: '@clase_accidente_ferroviario'
+    tipo_ubicacion_relativa_accidente_ferroviario_04:
+        nombre: 'Cruce no Habilitado'
+        codigo: '04'
+        claseAccidente: '@clase_accidente_ferroviario'

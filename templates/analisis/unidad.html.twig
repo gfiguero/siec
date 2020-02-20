@@ -1,0 +1,67 @@
+{% extends 'analisis/layout.html.twig' %}
+
+{% block title %}{{ 'Analisis'|trans }}{% endblock %}
+
+{% block analisis %}
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header"><h4 class="m-0">Tipos de accidente por unidad</h4></div>
+                <div class="card-body">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ encore_entry_script_tags('analisis') }}
+    <script>
+
+    function calculatePoint(i, intervalSize, colorRangeInfo) {
+        var { colorStart, colorEnd, useEndAsStart } = colorRangeInfo;
+        return (useEndAsStart
+            ? (colorEnd - (i * intervalSize))
+            : (colorStart + (i * intervalSize)));
+    };
+
+    function interpolateColors(dataLength, colorScale, colorRangeInfo) {
+        var { colorStart, colorEnd } = colorRangeInfo;
+        var colorRange = colorEnd - colorStart;
+        var intervalSize = colorRange / dataLength;
+        var i, colorPoint;
+        var colorArray = [];
+
+        for (i = 0; i < dataLength; i++) {
+            colorPoint = calculatePoint(i, intervalSize, colorRangeInfo);
+            colorArray.push(colorScale(colorPoint));
+        }
+
+        return colorArray;
+    };
+
+
+    const colorRangeInfo = {colorStart: 0.3, colorEnd: 0.9, useEndAsStart: true};
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var dataLength = {{ tipoAccidente|map(t => "#{t.nombre}")|length }};
+
+    var colorTipoAccidente = d3.interpolateYlGn;
+    var colors = interpolateColors(dataLength, colorTipoAccidente, colorRangeInfo);
+
+    var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: {{ tipoAccidente|map(t => "#{t.nombre}")|json_encode|raw }},
+            datasets: [{
+                label: '# de accidentes',
+                data: {{ tipoAccidente|map(t => "#{t.conteo}")|json_encode|raw }},
+                backgroundColor: colors,
+                borderColor: '#fff'
+            }]
+        },
+        options: {
+            legend: {
+                position: 'left',
+            }
+        }
+    });
+    </script>
+{% endblock %}

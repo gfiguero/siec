@@ -1,0 +1,207 @@
+{% extends 'siec/layout.html.twig' %}
+
+{% block siec %}
+    {% block header %}{% endblock %}
+    <hr>
+    {% block inspeccion %}{% endblock %}
+{% endblock %}
+
+{% block filtro %}
+<dl class="form-row">
+{% set filtro = false %}
+{% if busqueda.idMin is defined and busqueda.idMin is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.idMin'|trans }}: </dt><dd class="col-8">{{ busqueda.idMin }}</dd>{% endif %}
+{% if busqueda.idMax is defined and busqueda.idMax is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.idMax'|trans }}: </dt><dd class="col-8">{{ busqueda.idMax }}</dd>{% endif %}
+{% if busqueda.fechaMin is defined and busqueda.fechaMin is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.fechaMin'|trans }}: </dt><dd class="col-8">{{ busqueda.fechaMin|date('d-m-Y') }}</dd>{% endif %}
+{% if busqueda.fechaMax is defined and busqueda.fechaMax is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.fechaMax'|trans }}: </dt><dd class="col-8">{{ busqueda.fechaMax|date('d-m-Y') }}</dd>{% endif %}
+{% if busqueda.horaMin is defined and busqueda.horaMin is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.horaMin'|trans }}: </dt><dd class="col-8">{{ busqueda.horaMin|date('H:i') }}</dd>{% endif %}
+{% if busqueda.horaMax is defined and busqueda.horaMax is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.horaMax'|trans }}: </dt><dd class="col-8">{{ busqueda.horaMax|date('H:i') }}</dd>{% endif %}
+{# Institucional #}
+{% if busqueda.unidad is defined and busqueda.unidad is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.unidad'|trans }}: </dt><dd class="col-8">{{ busqueda.unidad|join(', ') }}</dd>{% endif %}
+{% if busqueda.funcionario is defined and busqueda.funcionario is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.funcionario'|trans }}: </dt><dd class="col-8">{{ busqueda.funcionario|join(', ') }}</dd>{% endif %}
+{% if busqueda.tribunal is defined and busqueda.tribunal is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.tribunal'|trans }}: </dt><dd class="col-8">{{ busqueda.tribunal|join(', ') }}</dd>{% endif %}
+{% if busqueda.numeroParte is defined and busqueda.numeroParte is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.numeroParte'|trans }}: </dt><dd class="col-8">{{ busqueda.numeroParte }}</dd>{% endif %}
+{% if busqueda.numeroFormulario is defined and busqueda.numeroFormulario is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.numeroFormulario'|trans }}: </dt><dd class="col-8">{{ busqueda.numeroFormulario }}</dd>{% endif %}
+{% if busqueda.esMensaje is defined and busqueda.esMensaje is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.esMensaje'|trans }}: </dt><dd class="col-8">{{ busqueda.esMensaje ? 'Si' : 'No' }}</dd>{% endif %}
+{% if busqueda.concurreSiat is defined and busqueda.concurreSiat is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.concurreSiat'|trans }}: </dt><dd class="col-8">{{ busqueda.concurreSiat ? 'Si' : 'No' }}</dd>{% endif %}
+{# Geográfica #}
+{% if busqueda.region is defined and busqueda.region is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.region'|trans }}: </dt><dd class="col-8">{{ busqueda.region|join(', ') }}</dd>{% endif %}
+{% if busqueda.provincia is defined and busqueda.provincia is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.provincia'|trans }}: </dt><dd class="col-8">{{ busqueda.provincia|join(', ') }}</dd>{% endif %}
+{% if busqueda.comuna is defined and busqueda.comuna is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.comuna'|trans }}: </dt><dd class="col-8">{{ busqueda.comuna|join(', ') }}</dd>{% endif %}
+{% if busqueda.cuadrante is defined and busqueda.cuadrante is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.cuadrante'|trans }}: </dt><dd class="col-8">{{ busqueda.cuadrante|join(', ') }}</dd>{% endif %}
+{% if busqueda.tipoDireccion is defined and busqueda.tipoDireccion is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.tipoDireccion'|trans }}: </dt><dd class="col-8">{{ busqueda.tipoDireccion|join(', ') }}</dd>{% endif %}
+{% if busqueda.tipoUbicacionRelativaAccidente is defined and busqueda.tipoUbicacionRelativaAccidente is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.tipoUbicacionRelativaAccidente'|trans }}: </dt><dd class="col-8">{{ busqueda.tipoUbicacionRelativaAccidente|join(', ') }}</dd>{% endif %}
+{% if busqueda.tipoZonaAccidente is defined and busqueda.tipoZonaAccidente is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.tipoZonaAccidente'|trans }}: </dt><dd class="col-8">{{ busqueda.tipoZonaAccidente|join(', ') }}</dd>{% endif %}
+{# Cualitativa #}
+{% if busqueda.estadoAccidente is defined and busqueda.estadoAccidente is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.estadoAccidente'|trans }}: </dt><dd class="col-8">{{ busqueda.estadoAccidente|join(', ') }}</dd>{% endif %}
+{% if busqueda.claseAccidente is defined and busqueda.claseAccidente is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.claseAccidente'|trans }}: </dt><dd class="col-8">{{ busqueda.claseAccidente|join(', ') }}</dd>{% endif %}
+{% if busqueda.tipoAccidente is defined and busqueda.tipoAccidente is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.tipoAccidente'|trans }}: </dt><dd class="col-8">{{ busqueda.tipoAccidente|join(', ') }}</dd>{% endif %}
+{% if busqueda.tipoCausa is defined and busqueda.tipoCausa is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.tipoCausa'|trans }}: </dt><dd class="col-8">{{ busqueda.tipoCausa|join(', ') }}</dd>{% endif %}
+{% if busqueda.causaBasal is defined and busqueda.causaBasal is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.causaBasal'|trans }}: </dt><dd class="col-8">{{ busqueda.causaBasal|join(', ') }}</dd>{% endif %}
+{% if busqueda.estadoAtmosferico is defined and busqueda.estadoAtmosferico is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.estadoAtmosferico'|trans }}: </dt><dd class="col-8">{{ busqueda.estadoAtmosferico|join(', ') }}</dd>{% endif %}
+{% if busqueda.tipoLuminosidad is defined and busqueda.tipoLuminosidad is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.tipoLuminosidad'|trans }}: </dt><dd class="col-8">{{ busqueda.tipoLuminosidad|join(', ') }}</dd>{% endif %}
+{% if busqueda.estadoLuzArtificial is defined and busqueda.estadoLuzArtificial is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.estadoLuzArtificial'|trans }}: </dt><dd class="col-8">{{ busqueda.estadoLuzArtificial|join(', ') }}</dd>{% endif %}
+{% if busqueda.tipoPavimentoCalzada is defined and busqueda.tipoPavimentoCalzada is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.tipoPavimentoCalzada'|trans }}: </dt><dd class="col-8">{{ busqueda.tipoPavimentoCalzada|join(', ') }}</dd>{% endif %}
+{% if busqueda.condicionPavimentoCalzada is defined and busqueda.condicionPavimentoCalzada is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.condicionPavimentoCalzada'|trans }}: </dt><dd class="col-8">{{ busqueda.condicionPavimentoCalzada|join(', ') }}</dd>{% endif %}
+{% if busqueda.estadoPavimentoCalzada is defined and busqueda.estadoPavimentoCalzada is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.estadoPavimentoCalzada'|trans }}: </dt><dd class="col-8">{{ busqueda.estadoPavimentoCalzada|join(', ') }}</dd>{% endif %}
+{% if busqueda.tipoCalzada is defined and busqueda.tipoCalzada is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.tipoCalzada'|trans }}: </dt><dd class="col-8">{{ busqueda.tipoCalzada|join(', ') }}</dd>{% endif %}
+{% if busqueda.cantidadPistasIda is defined and busqueda.cantidadPistasIda is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.cantidadPistasIda'|trans }}: </dt><dd class="col-8">{{ busqueda.cantidadPistasIda }}</dd>{% endif %}
+{% if busqueda.cantidadPistasRegreso is defined and busqueda.cantidadPistasRegreso is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.cantidadPistasRegreso'|trans }}: </dt><dd class="col-8">{{ busqueda.cantidadPistasRegreso }}</dd>{% endif %}
+{% if busqueda.demarcacionLineaCalzada is defined and busqueda.demarcacionLineaCalzada is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.demarcacionLineaCalzada'|trans }}: </dt><dd class="col-8">{{ busqueda.demarcacionLineaCalzada|join(', ') }}</dd>{% endif %}
+{% if busqueda.demarcacionPrioridadCalzada is defined and busqueda.demarcacionPrioridadCalzada is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.demarcacionPrioridadCalzada'|trans }}: </dt><dd class="col-8">{{ busqueda.demarcacionPrioridadCalzada|join(', ') }}</dd>{% endif %}
+{% if busqueda.elementoCalzada is defined and busqueda.elementoCalzada is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.accidente.elementoCalzada'|trans }}: </dt><dd class="col-8">{{ busqueda.elementoCalzada|join(', ') }}</dd>{% endif %}
+{# Vehiculares #}
+{% if busqueda.tipoVehiculo is defined and busqueda.tipoVehiculo is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.vehiculo.tipoVehiculo'|trans }}: </dt><dd class="col-8">{{ busqueda.tipoVehiculo|join(', ') }}</dd>{% endif %}
+{% if busqueda.servicioVehiculo is defined and busqueda.servicioVehiculo is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.vehiculo.servicioVehiculo'|trans }}: </dt><dd class="col-8">{{ busqueda.servicioVehiculo|join(', ') }}</dd>{% endif %}
+{% if busqueda.maniobraVehiculo is defined and busqueda.maniobraVehiculo is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.vehiculo.maniobraVehiculo'|trans }}: </dt><dd class="col-8">{{ busqueda.maniobraVehiculo|join(', ') }}</dd>{% endif %}
+{% if busqueda.direccionVehiculo is defined and busqueda.direccionVehiculo is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.vehiculo.direccionVehiculo'|trans }}: </dt><dd class="col-8">{{ busqueda.direccionVehiculo|join(', ') }}</dd>{% endif %}
+{% if busqueda.consecuenciaVehiculo is defined and busqueda.consecuenciaVehiculo is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.vehiculo.consecuenciaVehiculo'|trans }}: </dt><dd class="col-8">{{ busqueda.consecuenciaVehiculo|join(', ') }}</dd>{% endif %}
+{# Personales #}
+{% if busqueda.personaEsCausanteProbable is defined and busqueda.personaEsCausanteProbable is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.persona.personaEsCausanteProbable'|trans }}: </dt><dd class="col-8">{{ busqueda.personaEsCausanteProbable ? 'Si' : 'No' }}</dd>{% endif %}
+{% if busqueda.personaSeFuga is defined and busqueda.personaSeFuga is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.persona.personaSeFuga'|trans }}: </dt><dd class="col-8">{{ busqueda.personaSeFuga ? 'Si' : 'No' }}</dd>{% endif %}
+{% if busqueda.personaEsConductor is defined and busqueda.personaEsConductor is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.persona.personaEsConductor'|trans }}: </dt><dd class="col-8">{{ busqueda.personaEsConductor ? 'Si' : 'No' }}</dd>{% endif %}
+{% if busqueda.claseLicencia is defined and busqueda.claseLicencia is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.persona.claseLicencia'|trans }}: </dt><dd class="col-8">{{ busqueda.claseLicencia|join(', ') }}</dd>{% endif %}
+{% if busqueda.comunaLicencia is defined and busqueda.comunaLicencia is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.persona.comunaLicencia'|trans }}: </dt><dd class="col-8">{{ busqueda.comunaLicencia|join(', ') }}</dd>{% endif %}
+{% if busqueda.condicionFisica is defined and busqueda.condicionFisica is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.persona.condicionFisica'|trans }}: </dt><dd class="col-8">{{ busqueda.condicionFisica|join(', ') }}</dd>{% endif %}
+{% if busqueda.consecuenciaPersona is defined and busqueda.consecuenciaPersona is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.persona.consecuenciaPersona'|trans }}: </dt><dd class="col-8">{{ busqueda.consecuenciaPersona|join(', ') }}</dd>{% endif %}
+{% if busqueda.cualidadEspecial is defined and busqueda.cualidadEspecial is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.persona.cualidadEspecial'|trans }}: </dt><dd class="col-8">{{ busqueda.cualidadEspecial|join(', ') }}</dd>{% endif %}
+{% if busqueda.tipoTrayecto is defined and busqueda.tipoTrayecto is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.persona.tipoTrayecto'|trans }}: </dt><dd class="col-8">{{ busqueda.tipoTrayecto|join(', ') }}</dd>{% endif %}
+{% if busqueda.seguridad is defined and busqueda.seguridad is not empty %}{% set filtro = true %}<dt class="col-4 text-right">{{ 'inspeccion.persona.seguridad'|trans }}: </dt><dd class="col-8">{{ busqueda.seguridad|join(', ') }}</dd>{% endif %}
+
+
+
+{% if not filtro %}<div class="col-12"><p class="text-center">No se aplicaron filtros en la búsqueda</p></div>{% endif %}
+</dl>
+{% endblock %}
+
+{% block formularioFiltro %}
+    {% form_theme form 'bootstrap_4_horizontal_layout.html.twig' _self %}
+    {{ form_start(form) }}
+    <div class="row">
+        <div class="col-12">
+            <div class="card mb-2">
+                <div class="card-header">Rangos</div>
+                <div class="card-body">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-xl-5">
+                            <table class="table table-sm table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Mínimo</th>
+                                        <th>Máximo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>{{ form_widget(form.idMin) }}</td>
+                                        <td>{{ form_widget(form.idMax) }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fecha</td>
+                                        <td>{{ form_widget(form.fechaMin) }}</td>
+                                        <td>{{ form_widget(form.fechaMax) }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hora</td>
+                                        <td>{{ form_widget(form.horaMin) }}</td>
+                                        <td>{{ form_widget(form.horaMax) }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card mb-2">
+                <div class="card-header">Información institucional</div>
+                <div class="card-body">
+                {{ form_row(form.unidad) }}
+                {{ form_row(form.funcionario) }}
+                {{ form_row(form.tribunal) }}
+                {{ form_row(form.numeroParte) }}
+                {{ form_row(form.numeroFormulario) }}
+                {{ form_row(form.esMensaje) }}
+                {{ form_row(form.concurreSiat) }}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card mb-2">
+                <div class="card-header">Información espacial</div>
+                <div class="card-body">
+                {{ form_row(form.region) }}
+                {{ form_row(form.provincia) }}
+                {{ form_row(form.comuna) }}
+                {{ form_row(form.cuadrante) }}
+                {{ form_row(form.tipoDireccion) }}
+                {{ form_row(form.tipoUbicacionRelativaAccidente) }}
+                {{ form_row(form.tipoZonaAccidente) }}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card mb-2">
+                <div class="card-header">Información cualitativa</div>
+                <div class="card-body">
+                {{ form_row(form.estadoAccidente) }}
+                {{ form_row(form.claseAccidente) }}
+                {{ form_row(form.tipoAccidente) }}
+                {{ form_row(form.tipoCausa) }}
+                {{ form_row(form.causaBasal) }}
+                {{ form_row(form.estadoAtmosferico) }}
+                {{ form_row(form.tipoLuminosidad) }}
+                {{ form_row(form.estadoLuzArtificial) }}
+                {{ form_row(form.tipoPavimentoCalzada) }}
+                {{ form_row(form.condicionPavimentoCalzada) }}
+                {{ form_row(form.estadoPavimentoCalzada) }}
+                {{ form_row(form.tipoCalzada) }}
+                {{ form_row(form.demarcacionLineaCalzada) }}
+                {{ form_row(form.demarcacionPrioridadCalzada) }}
+                {{ form_row(form.elementoCalzada) }}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card mb-2">
+                <div class="card-header">Información vehicular</div>
+                <div class="card-body">
+                {{ form_row(form.tipoVehiculo) }}
+                {{ form_row(form.servicioVehiculo) }}
+                {{ form_row(form.maniobraVehiculo) }}
+                {{ form_row(form.direccionVehiculo) }}
+                {{ form_row(form.consecuenciaVehiculo) }}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card mb-2">
+                <div class="card-header">Información personal</div>
+                <div class="card-body">
+                {{ form_row(form.personaEsCausanteProbable) }}
+                {{ form_row(form.personaSeFuga) }}
+                {{ form_row(form.personaEsConductor) }}
+                {{ form_row(form.claseLicencia) }}
+                {{ form_row(form.comunaLicencia) }}
+                {{ form_row(form.condicionFisica) }}
+                {{ form_row(form.consecuenciaPersona) }}
+                {{ form_row(form.cualidadEspecial) }}
+                {{ form_row(form.tipoTrayecto) }}
+                {{ form_row(form.seguridad) }}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            {{ form_widget(form.submit, {attr: {'class' : 'btn btn-primary btn-block'}}) }}
+        </div>
+    </div>
+    {{ form_rest(form) }}
+{% endblock %}

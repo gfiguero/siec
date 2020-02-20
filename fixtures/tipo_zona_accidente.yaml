@@ -1,0 +1,7 @@
+App\Entity\TipoZonaAccidente:
+    tipo_zona_accidente_1:
+        nombre: 'Urbano'
+        codigo: '01'
+    tipo_zona_accidente_2:
+        nombre: 'Rural'
+        codigo: '02'

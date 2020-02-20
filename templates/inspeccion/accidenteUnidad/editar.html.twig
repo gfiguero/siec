@@ -1,0 +1,318 @@
+{% extends 'inspeccion/accidenteUnidad/layout.html.twig' %}
+
+{% block title %}Editar accidente{% endblock %}
+
+{% block header %}
+    <h1><span class="fa fa-fw fa-search"></span> Inspección - Editar accidente</h1>
+{% endblock %}
+
+{% block accidenteUnidad %}
+    {% form_theme form 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/choice_theme.html.twig' _self %}
+    {{ form_start(form) }}
+
+    <div class="card border-primary bg-info mb-2">
+        <div class="card-header">Identificación</div>
+        <div class="card-body">
+        {{ form_row(form.numeroFormulario) }}
+        {{ form_row(form.numeroParte) }}
+        {{ form_row(form.aclaratoria) }}
+        {{ form_row(form.fecha) }}
+        {{ form_row(form.hora) }}
+        {{ form_row(form.tribunal) }}
+        {{ form_row(form.concurreSiat) }}
+        </div>
+    </div>
+
+    <div class="card border-primary bg-info mb-2">
+        <div class="card-header">Clasificación</div>
+        <div class="card-body">
+        {{ form_row(form.claseAccidente) }}
+        {{ form_row(form.tipoAccidente) }}
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-6 mb-2">
+            <div class="card bg-info border-primary mb-2">
+                <div class="card-header">Ubicación</div>
+                <div class="card-body">
+                {{ form_row(form.comuna) }}
+                {{ form_row(form.cuadrante) }}
+                {{ form_row(form.tipoZonaAccidente) }}
+                {{ form_row(form.tipoUbicacionRelativaAccidente) }}
+                {{ form_row(form.tipoDireccion) }}
+                </div>
+            </div>
+            <div class="card bg-info border-primary">
+                <div class="card-header">Maestro de calles</div>
+                <div class="card-body">
+                    {{ form_widget(form.ubicacion) }}
+                    <div class="form-group row">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-8">
+                            <button type="button" id="accidente_ubicacion_limpiar" class="btn-light btn"> Limpiar búsqueda</button>
+                            <button type="reset" id="accidente_ubicacion_reset" class="btn-light btn"> Deshacer cambios</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-2">
+            <div class="card border-primary h-100">
+                <div class="card-body p-0">
+                    <div id="map" class="map h-100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="accidente_glosaUbicacion_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body" id="accidente_glosaUbicacion_modal_body">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card border-primary bg-info mb-2">
+        <div class="card-header">Organización</div>
+        <div class="card-body">
+        {{ form_row(form.unidad) }}
+        {{ form_row(form.funcionario) }}
+        {{ form_row(form.funcionarioResponsable) }}
+        </div>
+    </div>
+
+    <div class="card border-primary bg-info mb-2">
+        <div class="card-header">Causas</div>
+        <div class="card-body">
+        {{ form_row(form.causaBasal) }}
+        {{ form_row(form.causas) }}
+        </div>
+    </div>
+
+    <div class="card border-primary bg-info mb-2">
+        <div class="card-header">Condiciones</div>
+        <div class="card-body">
+        {{ form_row(form.estadoAtmosferico) }}
+        {{ form_row(form.tipoLuminosidad) }}
+        {{ form_row(form.estadoLuzArtificial) }}
+        {{ form_row(form.tipoPavimentoCalzada) }}
+        {{ form_row(form.condicionPavimentoCalzada) }}
+        {{ form_row(form.estadoPavimentoCalzada) }}
+        </div>
+    </div>
+
+    <div class="card border-primary bg-info mb-2">
+        <div class="card-header">Demarcaciones y Señales</div>
+        <div class="card-body">
+        {{ form_row(form.demarcacionLineaCalzada) }}
+        {{ form_row(form.demarcacionPrioridadCalzada) }}
+        {{ form_row(form.elementosCalzada) }}
+        </div>
+    </div>
+
+    <div class="card border-primary bg-info mb-2">
+        <div class="card-header">Pistas</div>
+        <div class="card-body">
+        {{ form_row(form.tipoCalzada) }}
+        {{ form_row(form.cantidadPistasIda) }}
+        {{ form_row(form.cantidadPistasRegreso) }}
+        </div>
+    </div>
+
+    <div class="card border-primary bg-info mb-2">
+        <div class="card-header">Vehículos</div>
+        <div class="table-responsive bg-white">
+            <table class="table table-sm table-bordered mb-0">
+                <thead>
+                    <tr class="table-info">
+                        <th>{{ 'vehiculo.placaPatenteUnica'|trans }}</th>
+                        <th>{{ 'vehiculo.marcaVehiculo'|trans }}</th>
+                        <th>{{ 'vehiculo.modeloVehiculo'|trans }}</th>
+                        <th>{{ 'vehiculo.ano'|trans }}</th>
+                        <th>{{ 'vehiculo.color'|trans }}</th>
+                        <th>{{ 'vehiculo.tipoVehiculo'|trans }}</th>
+                        <th>{{ 'accidente.servicioVehiculo'|trans }}</th>
+                        <th>{{ 'accidente.direccionVehiculo'|trans }}</th>
+                        <th>{{ 'accidente.maniobraVehiculo'|trans }}</th>
+                        <th>{{ 'accidente.consecuenciaVehiculo'|trans }}</th>
+                        <th class="text-center"><span class="fa fa-fw fa-edit"></span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for k, vehiculoAccidente in accidente.vehiculosAccidente %}
+                    <tr>
+                        <td>{{ vehiculoAccidente.vehiculo.placaPatenteUnica }}&nbsp;</td>
+                        <td>{{ vehiculoAccidente.vehiculo.marcaVehiculo }}&nbsp;</td>
+                        <td>{{ vehiculoAccidente.vehiculo.modeloVehiculo }}&nbsp;</td>
+                        <td>{{ vehiculoAccidente.vehiculo.ano }}&nbsp;</td>
+                        <td>{{ vehiculoAccidente.vehiculo.color }}&nbsp;</td>
+                        <td>{{ vehiculoAccidente.vehiculo.tipoVehiculo }}&nbsp;</td>
+                        <td>{{ vehiculoAccidente.servicioVehiculo }}&nbsp;</td>
+                        <td>{{ vehiculoAccidente.direccionVehiculo }}&nbsp;</td>
+                        <td>{{ vehiculoAccidente.maniobraVehiculo }}&nbsp;</td>
+                        <td>{{ vehiculoAccidente.consecuenciaVehiculo }}&nbsp;</td>
+                        <td class="text-center"><a href="{{ path('inspeccion_accidenteUnidad_editarVehiculo', {vehiculoAccidente:vehiculoAccidente.id}) }}" class="btn btn-sm btn-warning"><span class="fa fa-fw fa-edit"></span></a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="card border-primary bg-info mb-2">
+        <div class="card-header">Conductores</div>
+        <div class="table-responsive bg-white">
+            <table class="table table-sm table-bordered mb-0">
+                <thead>
+                    <tr class="table-info">
+                        <th>{{ 'vehiculo.placaPatenteUnica'|trans }}</th>
+                        <th>{{ 'persona.claseLicencia'|trans }}</th>
+                        <th>{{ 'persona.run'|trans }}</th>
+                        <th>{{ 'persona.nombres'|trans }}</th>
+                        <th>{{ 'persona.apellidoPaterno'|trans }}</th>
+                        <th>{{ 'persona.apellidoMaterno'|trans }}</th>
+                        <th>{{ 'persona.ocupacion'|trans }}</th>
+                        <th>{{ 'persona.lugarNacimiento'|trans }}</th>
+                        <th>{{ 'persona.fechaNacimiento'|trans }}</th>
+                        <th>{{ 'persona.genero'|trans }}</th>
+                        <th>{{ 'persona.estadoCivil'|trans }}</th>
+                        <th>{{ 'persona.nacionalidad'|trans }}</th>
+                        <th class="text-center"><span class="fa fa-fw fa-edit"></span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for k, conductorAccidente in accidente.conductoresAccidente %}
+                    <tr>
+                        <td>{{ conductorAccidente.vehiculoConducidoAccidente.vehiculo.placaPatenteUnica|default('') }}</td>
+                        <td>{{ conductorAccidente.claseLicencia.codigo|default('') }}</td>
+                        <td>{{ conductorAccidente.persona.run|default('') }}</td>
+                        <td>{{ conductorAccidente.persona.nombres|default('') }}</td>
+                        <td>{{ conductorAccidente.persona.apellidoPaterno|default('') }}</td>
+                        <td>{{ conductorAccidente.persona.apellidoMaterno|default('') }}</td>
+                        <td>{{ conductorAccidente.persona.ocupacion|default('') }}</td>
+                        <td>{{ conductorAccidente.persona.lugarNacimiento|default('') }}</td>
+                        <td>{{ conductorAccidente.persona.fechaNacimiento|date('Y-m-d')|default('') }}</td>
+                        <td>{{ conductorAccidente.persona.genero|default('') }}</td>
+                        <td>{{ conductorAccidente.persona.estadoCivil|default('') }}</td>
+                        <td>{{ conductorAccidente.persona.nacionalidad|default('') }}</td>
+                        <td class="text-center"><a href="{{ path('inspeccion_accidenteUnidad_editarConductor', {conductorAccidente:conductorAccidente.id}) }}" class="btn btn-sm btn-warning"><span class="fa fa-fw fa-edit"></span></a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="card border-primary bg-info mb-2">
+        <div class="card-header">Pasajeros</div>
+        <div class="table-responsive bg-white">
+            <table class="table table-sm table-bordered mb-0">
+                <thead>
+                    <tr class="table-info">
+                        <th>{{ 'vehiculo.placaPatenteUnica'|trans }}</th>
+                        <th>{{ 'persona.run'|trans }}</th>
+                        <th>{{ 'persona.nombres'|trans }}</th>
+                        <th>{{ 'persona.apellidoPaterno'|trans }}</th>
+                        <th>{{ 'persona.apellidoMaterno'|trans }}</th>
+                        <th>{{ 'persona.ocupacion'|trans }}</th>
+                        <th>{{ 'persona.lugarNacimiento'|trans }}</th>
+                        <th>{{ 'persona.fechaNacimiento'|trans }}</th>
+                        <th>{{ 'persona.genero'|trans }}</th>
+                        <th>{{ 'persona.estadoCivil'|trans }}</th>
+                        <th>{{ 'persona.nacionalidad'|trans }}</th>
+                        <th class="text-center"><span class="fa fa-fw fa-edit"></span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for k, pasajeroAccidente in accidente.pasajerosAccidente %}
+                    <tr>
+                        <td>{{ pasajeroAccidente.vehiculoAccidente.vehiculo.placaPatenteUnica|default('') }}</td>
+                        <td>{{ pasajeroAccidente.persona.run|default('') }}</td>
+                        <td>{{ pasajeroAccidente.persona.nombres|default('') }}</td>
+                        <td>{{ pasajeroAccidente.persona.apellidoPaterno|default('') }}</td>
+                        <td>{{ pasajeroAccidente.persona.apellidoMaterno|default('') }}</td>
+                        <td>{{ pasajeroAccidente.persona.ocupacion|default('') }}</td>
+                        <td>{{ pasajeroAccidente.persona.lugarNacimiento|default('') }}</td>
+                        <td>{{ pasajeroAccidente.persona.fechaNacimiento|date('Y-m-d')|default('') }}</td>
+                        <td>{{ pasajeroAccidente.persona.genero|default('') }}</td>
+                        <td>{{ pasajeroAccidente.persona.estadoCivil|default('') }}</td>
+                        <td>{{ pasajeroAccidente.persona.nacionalidad|default('') }}</td>
+                        <td class="text-center"><a href="{{ path('inspeccion_accidenteUnidad_editarPasajero', {pasajeroAccidente:pasajeroAccidente.id}) }}" class="btn btn-sm btn-warning"><span class="fa fa-fw fa-edit"></span></a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="card border-primary bg-info mb-2">
+        <div class="card-header">Peatones</div>
+        <div class="table-responsive bg-white">
+            <table class="table table-sm table-bordered mb-0">
+                <thead>
+                    <tr class="table-info">
+                        <th>{{ 'persona.run'|trans }}</th>
+                        <th>{{ 'persona.nombres'|trans }}</th>
+                        <th>{{ 'persona.apellidoPaterno'|trans }}</th>
+                        <th>{{ 'persona.apellidoMaterno'|trans }}</th>
+                        <th>{{ 'persona.ocupacion'|trans }}</th>
+                        <th>{{ 'persona.lugarNacimiento'|trans }}</th>
+                        <th>{{ 'persona.fechaNacimiento'|trans }}</th>
+                        <th>{{ 'persona.genero'|trans }}</th>
+                        <th>{{ 'persona.estadoCivil'|trans }}</th>
+                        <th>{{ 'persona.nacionalidad'|trans }}</th>
+                        <th class="text-center"><span class="fa fa-fw fa-edit"></span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for k, peatonAccidente in accidente.peatonesAccidente %}
+                    <tr>
+                        <td>{{ peatonAccidente.persona.run|default('') }}</td>
+                        <td>{{ peatonAccidente.persona.nombres|default('') }}</td>
+                        <td>{{ peatonAccidente.persona.apellidoPaterno|default('') }}</td>
+                        <td>{{ peatonAccidente.persona.apellidoMaterno|default('') }}</td>
+                        <td>{{ peatonAccidente.persona.ocupacion|default('') }}</td>
+                        <td>{{ peatonAccidente.persona.lugarNacimiento|default('') }}</td>
+                        <td>{{ peatonAccidente.persona.fechaNacimiento|date('Y-m-d')|default('') }}</td>
+                        <td>{{ peatonAccidente.persona.genero|default('') }}</td>
+                        <td>{{ peatonAccidente.persona.estadoCivil|default('') }}</td>
+                        <td>{{ peatonAccidente.persona.nacionalidad|default('') }}</td>
+                        <td class="text-center"><a href="{{ path('inspeccion_accidenteUnidad_editarPeaton', {peatonAccidente:peatonAccidente.id}) }}" class="btn btn-sm btn-warning"><span class="fa fa-fw fa-edit"></span></a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col">
+            <button type="submit" class="btn btn-primary btn-block">Guardar</button>
+        </div>
+    </div>
+
+    {{ form_rest(form) }}
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('identificacion') }}
+    {{ encore_entry_script_tags('organizacion') }}
+    {{ encore_entry_script_tags('condiciones') }}
+    {{ encore_entry_script_tags('causas') }}
+    {{ encore_entry_script_tags('ubicacion') }}
+    {{ encore_entry_script_tags('maestro') }}
+{% endblock %}
+
+{% block form_label_class -%}col-sm-4 text-right{%- endblock form_label_class %}
+
+{% block form_group_class -%}col-sm-8{%- endblock form_group_class %}

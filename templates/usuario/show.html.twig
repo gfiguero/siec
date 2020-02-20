@@ -1,0 +1,11 @@
+{% extends 'usuario/layout.html.twig' %}
+
+{% block title %}Usuario{% endblock %}
+
+{% block usuario %}
+    <div class="row">
+        <div class="col">
+            {{ user.username }}
+        </div>
+    </div>
+{% endblock %}

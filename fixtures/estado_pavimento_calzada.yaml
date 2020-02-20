@@ -1,0 +1,10 @@
+App\Entity\EstadoPavimentoCalzada:
+    estado_pavimento_calzada_1:
+        nombre: 'Bueno'
+        codigo: '01'
+    estado_pavimento_calzada_2:
+        nombre: 'Regular'
+        codigo: '02'
+    estado_pavimento_calzada_3:
+        nombre: 'Malo'
+        codigo: '03'

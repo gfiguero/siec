@@ -1,0 +1,49 @@
+App\Entity\Region:
+    region_1:
+        nombre: 'Región de Tarapacá'
+        codigo: '01'
+    region_2:
+        nombre: 'Región de Antofagasta'
+        codigo: '02'
+    region_3:
+        nombre: 'Región de Atacama'
+        codigo: '03'
+    region_4:
+        nombre: 'Región de Coquimbo'
+        codigo: '04'
+    region_5:
+        nombre: 'Región de Valparaíso'
+        codigo: '05'
+    region_6:
+        nombre: 'Región del Libertador Gral. Bernardo O’Higgins'
+        codigo: '06'
+    region_7:
+        nombre: 'Región del Maule'
+        codigo: '07'
+    region_8:
+        nombre: 'Región del Biobío'
+        codigo: '08'
+    region_9:
+        nombre: 'Región de La Araucanía'
+        codigo: '09'
+    region_10:
+        nombre: 'Región de Los Lagos'
+        codigo: '10'
+    region_11:
+        nombre: 'Región de Aysén del Gral. Carlos Ibáñez del Campo'
+        codigo: '11'
+    region_12:
+        nombre: 'Región de Magallanes y de la Antártica Chilena'
+        codigo: '12'
+    region_13:
+        nombre: 'Región Metropolitana de Santiago'
+        codigo: '13'
+    region_14:
+        nombre: 'Región de Los Ríos'
+        codigo: '14'
+    region_15:
+        nombre: 'Región de Arica y Parinacota'
+        codigo: '15'
+    region_16:
+        nombre: 'Región del Ñuble'
+        codigo: '16'

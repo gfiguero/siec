@@ -1,0 +1,85 @@
+{% extends 'inspeccion/vehiculo/layout.html.twig' %}
+
+{% block title %}Búsqueda de Vehículos{% endblock %}
+
+{% block header %}
+    <h1><span class="fa fa-fw fa-search"></span> Inspección - Búsqueda de vehículos</h1>
+{% endblock %}
+
+{% block vehiculo %}
+    <div class="row">
+        <div class="col">
+            <div class="card mb-2">
+                <div class="card-header">
+                    {% set menu = knp_menu_get('inspeccionVehiculos', [], {}) %}
+                    {{ knp_menu_render(menu) }}
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-2">
+                            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal"><span class="fa fa-search"></span> Ver consulta SQL</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Consulta SQL</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body"><pre class="prettyprint"><code class="language-sql">{{ sql|replace({', ': ',\n', 'LEFT JOIN': '\nLEFT JOIN', 'WHERE': '\nWHERE', 'AND': '\nAND'}) }}</code></pre></div>
+                                        {% if parameters is iterable %}{% set matrix = [] %}{% for parameter in parameters %}{% if parameter.value is iterable %}{% set array = [] %}{% for entity in parameter.value %}{% set array = array|merge([entity.id]) %}{% endfor %}{% set matrix = matrix|merge({ (parameter.name) : array} ) %}{% elseif parameter.value is instanceof('DateTime') %}{% set matrix = matrix|merge({ (parameter.name) : ('"' ~ parameter.value|date('d-m-Y') ~ '"')} ) %}{% else %}{% set matrix = matrix|merge({ (parameter.name) : ('"' ~ parameter.value ~ '"') } ) %}{% endif %}{% endfor %}{% endif %}
+                                        <div class="modal-body">
+                                            {% for key, parameter in matrix %}
+                                                {{ ('inspeccion.' ~ key)|trans }}: {{ parameter|join(', ') }}<br>
+                                            {% endfor %}
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            {{ block('filtro') }}
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-sm mb-0">
+                        <thead>
+                            <tr class="table-info">
+                                <th>{{ knp_pagination_sortable(vehiculos, 'Patente', 'vv.placaPatenteUnica') }}</th>
+                                <th>{{ knp_pagination_sortable(vehiculos, 'ID', 'a.id') }}</th>
+                                <th>{{ knp_pagination_sortable(vehiculos, '#F', 'a.numeroFormulario') }}</th>
+                                <th>{{ knp_pagination_sortable(vehiculos, '#P', 'a.numeroParte') }}</th>
+                                <th>{{ knp_pagination_sortable(vehiculos, 'Fecha', 'a.fecha') }}</th>
+                                <th>{{ knp_pagination_sortable(vehiculos, 'Hora', 'a.hora') }}</th>
+                                <th>{{ knp_pagination_sortable(vehiculos, 'Unidad', 'u.nombre') }}</th>
+                                <th class="text-center">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for vehiculo in vehiculos %}
+                            <tr>
+                                <td>{{ vehiculo.vehiculo.placaPatenteUnica }}</td>
+                                <td>{{ vehiculo.accidente.id }}</td>
+                                <td>{{ vehiculo.accidente.numeroFormulario }}</td>
+                                <td>{{ vehiculo.accidente.numeroParte }}</td>
+                                <td>{{ vehiculo.accidente.fecha ? vehiculo.accidente.fecha|date('Y-m-d') : '' }}</td>
+                                <td>{{ vehiculo.accidente.hora ? vehiculo.accidente.hora|date('H:i') : '' }}</td>
+                                <td>{{ vehiculo.accidente.unidad.nombre }}</td>
+                                <td class="text-center">
+                                    <a class="btn btn-sm btn-light border-primary" href="{{ path('inspeccion_vehiculoAccidente_editar', {'vehiculoAccidente': vehiculo.id}) }}" data-toggle="tooltip" data-placement="left" title data-original-title="Editar"><span class="fas fa-fw fa-edit"></span></a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">{{ knp_pagination_render(vehiculos) }}</div>
+        </div>
+    </div>
+{% endblock %}
+

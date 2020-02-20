@@ -1,0 +1,61 @@
+# This file is the entry point to configure your own services.
+# Files in the packages/ subdirectory configure your dependencies.
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+parameters:
+    locale: 'es'
+
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    # makes classes in src/ available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    App\:
+        resource: '../src/*'
+        exclude: '../src/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
+
+    # controllers are imported separately to make sure services can be injected
+    # as action arguments even if you don't extend any base controller class
+    App\Controller\:
+        resource: '../src/Controller'
+        tags: ['controller.service_arguments']
+
+    # add more service definitions when explicit configuration is needed
+    # please note that last definitions always *replace* previous ones
+
+    app.menu_builder:
+        class: App\Menu\MenuBuilder
+        arguments: ["@knp_menu.factory", "@security.authorization_checker", "@security.token_storage"]
+        tags:
+            - { name: knp_menu.menu_builder, method: createMainMenu, alias: main } # The alias is what is used to retrieve the menu
+            - { name: knp_menu.menu_builder, method: createTopMenu, alias: top } # The alias is what is used to retrieve the menu
+            - { name: knp_menu.menu_builder, method: createUserMenu, alias: user } # The alias is what is used to retrieve the menu
+            - { name: knp_menu.menu_builder, method: createAccidentesMenu, alias: accidentes } # The alias is what is used to retrieve the menu
+            - { name: knp_menu.menu_builder, method: createAnalisisMenu, alias: analisis } # The alias is what is used to retrieve the menu
+            - { name: knp_menu.menu_builder, method: createInspeccionAccidentesMenu, alias: inspeccionAccidentes } # The alias is what is used to retrieve the menu
+            - { name: knp_menu.menu_builder, method: createInspeccionAccidentesVehiculosMenu, alias: inspeccionAccidentesVehiculos } # The alias is what is used to retrieve the menu
+            - { name: knp_menu.menu_builder, method: createInspeccionAccidentesPersonasMenu, alias: inspeccionAccidentesPersonas } # The alias is what is used to retrieve the menu
+            - { name: knp_menu.menu_builder, method: createInspeccionAccidentesUnidadesMenu, alias: inspeccionAccidentesUnidades } # The alias is what is used to retrieve the menu
+            - { name: knp_menu.menu_builder, method: createInspeccionVehiculosMenu, alias: inspeccionVehiculos } # The alias is what is used to retrieve the menu
+            - { name: knp_menu.menu_builder, method: createInspeccionPersonasMenu, alias: inspeccionPersonas } # The alias is what is used to retrieve the menu
+            - { name: knp_menu.menu_builder, method: createSiecMenu, alias: siec } # The alias is what is used to retrieve the menu
+
+    Freshcells\SoapClientBundle\SoapClient\SoapClient:
+#        arguments: ['%soap_wsdl%', '%soap_options%']
+        arguments: ['@monolog.logger']
+        public: true
+        tags:
+            - {name: freshcells_soap_client.client}
+        calls:
+            - [ setDispatcher, [ '@event_dispatcher']]
+
+    gedmo.listener.timestampable:
+        class: Gedmo\Timestampable\TimestampableListener
+        tags:
+            - { name: doctrine.event_subscriber, connection: default }
+        calls:
+            - [ setAnnotationReader, [ "@annotation_reader" ] ]

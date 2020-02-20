@@ -1,0 +1,54 @@
+security:
+    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    encoders:
+        App\Entity\Usuario:
+            algorithm: bcrypt
+    providers:
+        fos_userbundle:
+            id: fos_user.user_provider.username
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        main:
+            pattern: ^/
+            form_login:
+                provider: fos_userbundle
+                csrf_token_generator: security.csrf.token_manager
+                always_use_default_target_path: false
+                default_target_path: /
+
+            access_denied_url: /
+            logout:       true
+            anonymous:    true
+
+
+    role_hierarchy:
+        ROLE_ADMIN: ROLE_USER
+        ROLE_SUPER_ADMIN: [ROLE_ADMIN, ROLE_USER, ROLE_CARABINERO, ROLE_MINSAL, ROLE_CONASET]
+
+            # activate different ways to authenticate
+
+            # http_basic: true
+            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
+
+            # form_login: true
+            # https://symfony.com/doc/current/security/form_login_setup.html
+
+    # Easy way to control access for large sections of your site
+    # Note: Only the *first* access control that matches will be used
+    access_control:
+        # - { path: ^/admin, roles: ROLE_ADMIN }
+        # - { path: ^/profile, roles: ROLE_USER }
+        # - { path: ^/exportacion, role: ROLE_ADMIN }
+        - { path: ^/test, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/buscar/, roles: ROLE_USER }
+        - { path: ^/instructivo/, roles: ROLE_USER }
+        - { path: ^/mensaje/, role: ROLE_CARABINERO_SIEC }
+        - { path: ^/inspeccion/, role: ROLE_CARABINERO_SIEC }
+        - { path: ^/accidente/, role: ROLE_CARABINERO }
+        - { path: ^/admin/, role: ROLE_ADMIN }
+        - { path: ^/, roles: ROLE_USER }

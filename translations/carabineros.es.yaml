@@ -1,0 +1,112 @@
+accidente:
+    form:
+        fecha: Fecha
+        hora: Hora
+        cantidadPistasIda: Cantidad de pistas ida
+        cantidadPistasRegreso: Cantidad de pistas de regreso
+        glosaUbicacion: Glosa de ubicación
+        latitud: Latitud
+        longitud: Longitud
+        numeroParte: Número de parte
+        aclaratoria: Aclaratoria
+        numeroFormulario: Número de formulario
+        numeroConstancia: Número de constancia
+        numeroDocumentoElectronico: Número de documento eletrónico
+        codigoFuncionarioSiat: Código de funconario SIAT
+        glosaTribunal: Glosa de tribunal
+        causaBasal: Causa basal
+        causas: Multicausalidad
+        demarcacionesCalzada: Demarcaciones de calzada
+        claseAccidente: Clase de accidente
+        comuna: Comuna
+        condicionPavimentoCalzada: Condición de pavimento
+        cuadrante: Cuadrante
+        estadoAtmosferico: Estado atmosférico
+        estadoLuzArtificial: Estado de luz artificial
+        estadoPavimentoCalzada: Estado de pavimento
+        estadoSiat: Estado SIAT
+        funcionario: Funcionario
+        funcionarioResponsable: Funcionario responsable
+        tipoAccidente: Tipo de accidente
+        tipoCalzada: Tipo de calzada
+        tipoDireccion: Tipo de dirección
+        tipoLuminosidad: Tipo de luminosidad
+        tipoLuzArtificial: Tipo de luz artificial
+        tipoPavimentoCalzada: Tipo de pavimento
+        tipoUbicacionRelativaAccidente: Tipo de ubicación relativa
+        tipoZonaAccidente: Tipo de zona
+        tribunal: Tribunal
+        unidad: Unidad
+        
+    show:
+        id: Id
+        fecha: Fecha
+        hora: Hora
+        cantidadPistasIda: Cantidad de pistas ida
+        cantidadPistasRegreso: Cantidad de pistas de regreso
+        glosaUbicacion: Glosa de ubicación
+        latitud: Latitud
+        longitud: Longitud
+        numeroParte: Número de parte
+        aclaratoria: Aclaratoria
+        numeroFormulario: Número de formulario
+        numeroConstancia: Número de constancia
+        numeroDocumentoElectronico: Número de documento eletrónico
+        codigoFuncionarioSiat: Código de funconario SIAT
+        glosaTribunal: Glosa de tribunal
+        causaBasal: Causa basal
+        causas: Multicausalidad
+        demarcacionesCalzada: Demarcaciones de calzada
+        claseAccidente: Clase de accidente
+        comuna: Comuna
+        condicionPavimentoCalzada: Condición de pavimento
+        cuadrante: Cuadrante
+        estadoAtmosferico: Estado atmosférico
+        estadoLuzArtificial: Estado de luz artificial
+        estadoPavimentoCalzada: Estado de pavimento
+        estadoSiat: Estado SIAT
+        funcionario: Funcionario
+        funcionarioResponsable: Funcionario responsable
+        tipoAccidente: Tipo de accidente
+        tipoCalzada: Tipo de calzada
+        tipoDireccion: Tipo de dirección
+        tipoLuminosidad: Tipo de luminosidad
+        tipoLuzArtificial: Tipo de luz artificial
+        tipoPavimentoCalzada: Tipo de pavimento
+        tipoUbicacionRelativaAccidente: Tipo de ubicación relativa
+        tipoZonaAccidente: Tipo de zona
+        tribunal: Tribunal
+        unidad: Unidad
+        personasAccidente: Personas
+        vehiculosAccidente: Vehículos
+
+vehiculo:
+    show:
+        id: Id
+        vehiculoEsCausanteProbable: Es causante probable
+        vehiculoSeFuga: Se da a la fuga
+        consecuenciaVehiculo: Consecuencia
+        direccionVehiculo: Dirección
+        maniobraVehiculo: Maniobra
+        servicioVehiculo: Servicio
+        vehiculo: Vehículo
+        pasajerosAccidente: Pasajeros
+        conductorAccidente: Conductor
+
+persona:
+    show:
+        id: Id
+        edad: Edad
+        personaEsCausanteProbable: Es causante probable
+        personaSeFuga: Se da a la fuga
+        calidadPersona: Calidad
+        claseLicencia: Clase de licencia
+        comunaLicencia: Comuna de licencia
+        condicionFisica: Condición física
+        consecuenciaPersona: Consecuencia
+        cualidadEspecial: Cualidad especial
+        persona: Persona
+        tipoTrayecto: Tipo de trayecto
+        vehiculoAccidente: Vehículo
+        vehiculoConducidoAccidente: Vehículo conducido
+        seguridad: Seguridad

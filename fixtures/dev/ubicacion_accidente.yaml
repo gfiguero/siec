@@ -1,0 +1,3 @@
+App\Entity\UbicacionAccidente:
+    ubicacion_{1..60}:
+        glosa: '<address()>'

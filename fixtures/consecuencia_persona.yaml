@@ -1,0 +1,19 @@
+App\Entity\ConsecuenciaPersona:
+    consecuencia_persona_1:
+        nombre: 'Fallecido'
+        codigo: '01'
+    consecuencia_persona_2:
+        nombre: 'Grave'
+        codigo: '02'
+    consecuencia_persona_3:
+        nombre: 'Menos grave'
+        codigo: '03'
+    consecuencia_persona_4:
+        nombre: 'Leve'
+        codigo: '04'
+    consecuencia_persona_5:
+        nombre: 'Ileso'
+        codigo: '05'
+    consecuencia_persona_6:
+        nombre: 'Se ignora'
+        codigo: '99'

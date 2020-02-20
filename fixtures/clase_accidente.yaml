@@ -1,0 +1,7 @@
+App\Entity\ClaseAccidente:
+    clase_accidente_transito:
+        nombre: 'Tránsito'
+        codigo: '01'
+    clase_accidente_ferroviario:
+        nombre: 'Ferroviario'
+        codigo: '02'

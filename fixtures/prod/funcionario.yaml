@@ -1,0 +1,90 @@
+App\Entity\Funcionario:
+    funcionario_desarrollo_gfiguero:
+        nombres: 'Garri Iván'
+        apellidoPaterno: 'Figueroa'
+        apellidoMaterno: 'Valadares'
+        codigo (unique): '001'
+        email: 'gfigueroav@mtt.gob.cl'
+        telefono: '982785909'
+        gradoCarabinero: '@grado_carabinero_*'
+        unidad: '@unidad_desarrollo'
+
+    funcionario_desarrollo_fmontero:
+        nombres: 'Fernando Enrique'
+        apellidoPaterno: 'Montero'
+        apellidoMaterno: 'González'
+        codigo (unique): '002'
+        email: 'fmontero@mtt.gob.cl'
+        telefono: ''
+        gradoCarabinero: '@grado_carabinero_*'
+        unidad: '@unidad_desarrollo'
+
+    funcionario_desarrollo_jaburto:
+        nombres: 'Jessica'
+        apellidoPaterno: 'Aburto'
+        apellidoMaterno: 'Eissmann'
+        codigo (unique): '003'
+        email: 'jaburto@mtt.gob.cl'
+        telefono: ''
+        gradoCarabinero: '@grado_carabinero_*'
+        unidad: '@unidad_desarrollo'
+
+    funcionario_msanchez:
+        nombres: 'Mauricio'
+        apellidoPaterno: 'Sánchez'
+        apellidoMaterno: 'roa'
+        codigo (unique): '004'
+        email: 'msanchez@mtt.gob.cl'
+        telefono: ''
+        gradoCarabinero: '@grado_carabinero_pni_sargento_1'
+        unidad: '@unidad_comisaria_antofagasta_3'
+
+    funcionario_msilva:
+        nombres: 'Mauricio'
+        apellidoPaterno: 'Silva'
+        apellidoMaterno: 'Durán'
+        codigo (unique): '005'
+        email: 'msilva@mtt.gob.cl'
+        telefono: ''
+        gradoCarabinero: '@grado_carabinero_pni_sargento_1'
+        unidad: '@unidad_comisaria_antofagasta_3'
+
+    funcionario_gmistral:
+        nombres: 'Gabriela'
+        apellidoPaterno: 'Mistral'
+        apellidoMaterno: ''
+        codigo (unique): '<randomNumber(9)>'
+        email: '<safeEmail()>'
+        telefono: '<randomNumber(9)>'
+        gradoCarabinero: '@grado_carabinero_pni_cabo_1'
+        unidad: '@unidad_comisaria_iquique_1'
+
+    funcionario_pneruda:
+        nombres: 'Pablo'
+        apellidoPaterno: 'Neruda'
+        apellidoMaterno: ''
+        codigo (unique): '<randomNumber(9)>'
+        email: '<safeEmail()>'
+        telefono: '<randomNumber(9)>'
+        gradoCarabinero: '@grado_carabinero_pni_cabo_1'
+        unidad: '@unidad_comisaria_iquique_1'
+
+    funcionario_jsandoval:
+        nombres: 'Jorge'
+        apellidoPaterno: 'Sandoval'
+        apellidoMaterno: ''
+        codigo (unique): '<randomNumber(9)>'
+        email: '<safeEmail()>'
+        telefono: '<randomNumber(9)>'
+        gradoCarabinero: '@grado_carabinero_pni_cabo_1'
+        unidad: '@unidad_comisaria_iquique_1'
+
+#    funcionario_{1..200}:
+#        nombres: '<es_ES:firstName()>'
+#        codigo (unique): '<randomNumber(9)>'
+#        apellidoPaterno: '<es_ES:lastName()>'
+#        apellidoMaterno: '<es_ES:lastName()>'
+#        email: '<safeEmail()>'
+#        telefono: '<randomNumber(9)>'
+#        gradoCarabinero: '@grado_carabinero_pni_*'
+#        unidad: '@unidad_*'

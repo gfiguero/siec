@@ -1,0 +1,16 @@
+App\Entity\TipoDireccion:
+    tipo_direccion_transito_calle_numero:
+        nombre: 'Calle y Número'
+        codigo: '01'
+    tipo_direccion_transito_ruta_kilometro:
+        nombre: 'Ruta kilómetro'
+        codigo: '02'
+    tipo_direccion_ferroviario:
+        nombre: 'Vía férrea kilómetro'
+        codigo: '03'
+    tipo_direccion_transito_interseccion:
+        nombre: 'Intersección'
+        codigo: '04'
+    tipo_direccion_otra:
+        nombre: 'Otra'
+        codigo: '05'

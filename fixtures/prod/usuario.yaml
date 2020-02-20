@@ -1,0 +1,120 @@
+App\Entity\Usuario:
+    usuario_gfiguero:
+        username: gfigueroav
+        username_canonical: gfigueroav
+        email: gfigueroav@mtt.gob.cl
+        email_canonical: gfigueroav@mtt.gob.cl
+        enabled: true
+        salt: null
+        plain_password: qwerty
+        last_login: <dateTimeBetween("-5 years", "now")>
+        confirmation_token: null
+        password_requested_at: null
+        roles: [ROLE_SUPER_ADMIN]
+        groups: ['@grupo_admin','@grupo_carabineros']
+        funcionario: '@funcionario_desarrollo_gfiguero'
+
+    usuario_fmontero:
+        username: fmontero
+        username_canonical: fmontero
+        email: fmontero@mtt.gob.cl
+        email_canonical: fmontero@mtt.gob.cl
+        enabled: true
+        salt: null
+        plain_password: qwerty
+        last_login: <dateTimeBetween("-5 years", "now")>
+        confirmation_token: null
+        password_requested_at: null
+        roles: []
+        groups: ['@grupo_admin']
+        funcionario: '@funcionario_desarrollo_fmontero'
+
+    usuario_jaburto:
+        username: jaburto
+        username_canonical: jaburto
+        email: jaburto@mtt.gob.cl
+        email_canonical: jaburto@mtt.gob.cl
+        enabled: true
+        salt: null
+        plain_password: qwerty
+        last_login: <dateTimeBetween("-5 years", "now")>
+        confirmation_token: null
+        password_requested_at: null
+        roles: []
+        groups: ['@grupo_carabineros']
+        funcionario: '@funcionario_desarrollo_jaburto'
+
+    usuario_msilva:
+        username: msilva
+        username_canonical: msilva
+        email: msilva@mtt.gob.cl
+        email_canonical: msilva@mtt.gob.cl
+        enabled: true
+        salt: null
+        plain_password: qwerty
+        last_login: <dateTimeBetween("-5 years", "now")>
+        confirmation_token: null
+        password_requested_at: null
+        roles: []
+        groups: ['@grupo_carabineros']
+        funcionario: '@funcionario_msilva'
+
+    usuario_msanchez:
+        username: msanchez
+        username_canonical: msanchez
+        email: msanchez@mtt.gob.cl
+        email_canonical: msanchez@mtt.gob.cl
+        enabled: true
+        salt: null
+        plain_password: qwerty
+        last_login: <dateTimeBetween("-5 years", "now")>
+        confirmation_token: null
+        password_requested_at: null
+        roles: []
+        groups: ['@grupo_carabineros']
+        funcionario: '@funcionario_msanchez'
+
+    usuario_gmistral:
+        username: gmistral
+        username_canonical: gmistral
+        email: gmistral@mtt.gob.cl
+        email_canonical: gmistral@mtt.gob.cl
+        enabled: true
+        salt: null
+        plain_password: qwerty
+        last_login: <dateTimeBetween("-5 years", "now")>
+        confirmation_token: null
+        password_requested_at: null
+        roles: []
+        groups: ['@grupo_carabineros']
+        funcionario: '@funcionario_gmistral'
+
+    usuario_pneruda:
+        username: pneruda
+        username_canonical: pneruda
+        email: pneruda@mtt.gob.cl
+        email_canonical: pneruda@mtt.gob.cl
+        enabled: true
+        salt: null
+        plain_password: qwerty
+        last_login: <dateTimeBetween("-5 years", "now")>
+        confirmation_token: null
+        password_requested_at: null
+        roles: []
+        groups: ['@grupo_carabineros']
+        funcionario: '@funcionario_pneruda'
+
+    usuario_jsandoval:
+        username: jsandoval
+        username_canonical: jsandoval
+        email: jsandoval@mtt.gob.cl
+        email_canonical: jsandoval@mtt.gob.cl
+        enabled: true
+        salt: null
+        plain_password: qwerty
+        last_login: <dateTimeBetween("-5 years", "now")>
+        confirmation_token: null
+        password_requested_at: null
+        roles: []
+        groups: ['@grupo_carabineros_siec']
+        funcionario: '@funcionario_jsandoval'

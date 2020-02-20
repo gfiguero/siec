@@ -1,0 +1,52 @@
+App\Entity\ManiobraVehiculo:
+    maniobra_vehiculo_1:
+        nombre: 'Viaja derecho'
+        codigo: '01'
+    maniobra_vehiculo_2:
+        nombre: 'Vira a la izquierda'
+        codigo: '02'
+    maniobra_vehiculo_3:
+        nombre: 'Vira a la derecha'
+        codigo: '03'
+    maniobra_vehiculo_4:
+        nombre: 'Adelanta'
+        codigo: '04'
+    maniobra_vehiculo_5:
+        nombre: 'Sobrepasa'
+        codigo: '05'
+    maniobra_vehiculo_6:
+        nombre: 'Detenido'
+        codigo: '06'
+    maniobra_vehiculo_7:
+        nombre: 'Retrocede'
+        codigo: '07'
+    maniobra_vehiculo_8:
+        nombre: 'Vira en "U"'
+        codigo: '08'
+    maniobra_vehiculo_9:
+        nombre: 'Entra'
+        codigo: '09'
+    maniobra_vehiculo_10:
+        nombre: 'Sale'
+        codigo: '10'
+    maniobra_vehiculo_11:
+        nombre: 'Estacionado en calzada'
+        codigo: '11'
+    maniobra_vehiculo_12:
+        nombre: 'Estacionado en berma'
+        codigo: '12'
+    maniobra_vehiculo_13:
+        nombre: 'Cambia de pista'
+        codigo: '13'
+    maniobra_vehiculo_14:
+        nombre: 'Reinicia marcha'
+        codigo: '14'
+    maniobra_vehiculo_15:
+        nombre: 'Cruza'
+        codigo: '15'
+    maniobra_vehiculo_16:
+        nombre: 'Frena de emergencia'
+        codigo: '16'
+    maniobra_vehiculo_17:
+        nombre: 'Otras sin especificar'
+        codigo: '99'

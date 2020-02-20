@@ -1,0 +1,69 @@
+App\Entity\ClaseLicencia:
+    clase_licencia_1:
+        nombre: 'Profesional'
+        codigo: 'A1'
+        descripcion: 'Edad mínima 20'
+    clase_licencia_2:
+        nombre: 'Profesional'
+        codigo: 'A2'
+        descripcion: 'Edad mínima 20'
+    clase_licencia_3:
+        nombre: 'Profesional'
+        codigo: 'A3'
+        descripcion: 'Edad mínima 20'
+    clase_licencia_4:
+        nombre: 'Carga superior 3500 Kg'
+        codigo: 'A4'
+        descripcion: 'Edad mínima 20'
+    clase_licencia_5:
+        nombre: 'Carga superior a 3500 Kg articulado'
+        codigo: 'A5'
+        descripcion: 'Edad mínima 20'
+    clase_licencia_6:
+        nombre: 'No profesional'
+        codigo: 'B'
+        descripcion: 'Edad mínima 18'
+    clase_licencia_7:
+        nombre: 'Maquinarias automotrices'
+        codigo: 'D'
+        descripcion: 'Edad mínima 18'
+    clase_licencia_8:
+        nombre: 'Tracción animal'
+        codigo: 'E'
+        descripcion: 'Edad mínima 18'
+    clase_licencia_9:
+        nombre: 'Vehiculos especial FFAA'
+        codigo: 'F'
+        descripcion: ''
+    clase_licencia_10:
+        nombre: 'Permiso provisiorio'
+        codigo: 'PP'
+        descripcion: ''
+    clase_licencia_11:
+        nombre: 'Boleta de Citación'
+        codigo: 'BC'
+        descripcion: ''
+    clase_licencia_12:
+        nombre: 'Sin licencia'
+        codigo: 'SL'
+        descripcion: ''
+    clase_licencia_13:
+        nombre: 'Fecha de control vencida'
+        codigo: 'FV'
+        descripcion: ''
+    clase_licencia_14:
+        nombre: 'Permiso extrajero'
+        codigo: 'PE'
+        descripcion: ''
+    clase_licencia_15:
+        nombre: 'Otras Licencias'
+        codigo: 'OT'
+        descripcion: ''
+    clase_licencia_16:
+        nombre: 'No requiere'
+        codigo: 'NR'
+        descripcion: ''
+    clase_licencia_17:
+        nombre: 'Motocicletas y similares'
+        codigo: 'C'
+        descripcion: 'Edad mínima 18'

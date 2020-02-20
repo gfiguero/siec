@@ -1,0 +1,80 @@
+{% block control %}
+    {% set route = app.request.attributes.get('_route') %}
+    {% set controller = app.request.attributes.get('_controller') %}
+    {% if 'RegistroController' in controller %}
+    <div class="form-row mb-2">
+        {% if route == 'registro_identificacion' or route == 'registro_new' or route == 'registro_mensaje' %}
+            <div class="col-6"><a href="{{ path('registro_unidad_index') }}" class="btn btn-light btn-block border-primary"><span class="fa fa-list"></span> {{ button_label|default('Volver a la lista') }}</a></div>
+            <div class="col-6"><button type="submit" class="btn btn-primary btn-block">{{ button_label|default('Guardar Cambios y Continuar') }} <span class="fa fa-arrow-right"></span></button></div>
+        {% endif %}
+        {% if route == 'registro_causas' %}
+            <div class="col-4"><a href="{{ path('registro_identificacion', {accidente: form.vars['value'].id}) }}" class="btn btn-light btn-block border-primary"><span class="fa fa-arrow-left"></span> {{ button_label|default('Cancelar cambios y volver') }}</a></div>
+            <div class="col-4"><a href="{{ path('registro_unidad_index') }}" class="btn btn-light btn-block border-primary"><span class="fa fa-list"></span> {{ button_label|default('Volver a accidentes') }}</a></div>
+            <div class="col-4"><button type="submit" class="btn btn-primary btn-block">{{ button_label|default('Guardar Cambios y Continuar') }} <span class="fa fa-arrow-right"></span></button></div>
+        {% endif %}
+        {% if route == 'registro_condiciones' %}
+            <div class="col-4"><a href="{{ path('registro_causas', {accidente: form.vars['value'].id}) }}" class="btn btn-light btn-block border-primary"> <span class="fa fa-arrow-left"></span> {{ button_label|default('Cancelar cambios y volver') }}</a></div>
+            <div class="col-4"><a href="{{ path('registro_unidad_index') }}" class="btn btn-light btn-block border-primary"><span class="fa fa-list"></span> {{ button_label|default('Volver a accidentes') }}</a></div>
+            <div class="col-4"><button type="submit" class="btn btn-primary btn-block">{{ button_label|default('Guardar Cambios y Continuar') }} <span class="fa fa-arrow-right"></span></button></div>
+        {% endif %}
+        {% if route == 'registro_ubicacion' %}
+            <div class="col-4"><a href="{{ path('registro_condiciones', {accidente: form.vars['value'].id}) }}" class="btn btn-light btn-block border-primary"> <span class="fa fa-arrow-left"></span> {{ button_label|default('Cancelar cambios y volver') }}</a></div>
+            <div class="col-4"><a href="{{ path('registro_unidad_index') }}" class="btn btn-light btn-block border-primary"><span class="fa fa-list"></span> {{ button_label|default('Volver a accidentes') }}</a></div>
+            <div class="col-4"><button type="submit" class="btn btn-primary btn-block">{{ button_label|default('Guardar Cambios y Continuar') }} <span class="fa fa-arrow-right"></span></button></div>
+        {% endif %}
+        {% if route == 'registro_vehiculos' %}
+            <div class="col-4"><a href="{{ path('registro_ubicacion', {accidente: form.vars['value'].id}) }}" class="btn btn-light btn-block border-primary"> <span class="fa fa-arrow-left"></span> {{ button_label|default('Cancelar cambios y volver') }}</a></div>
+            <div class="col-4"><a href="{{ path('registro_unidad_index') }}" class="btn btn-light btn-block border-primary"><span class="fa fa-list"></span> {{ button_label|default('Volver a accidentes') }}</a></div>
+            <div class="col-4"><button type="submit" class="btn btn-primary btn-block">{{ button_label|default('Guardar Cambios y Continuar') }} <span class="fa fa-arrow-right"></span></button></div>
+        {% endif %}
+        {% if route == 'registro_peatones' %}
+            <div class="col-4"><a href="{{ path('registro_vehiculos', {accidente: form.vars['value'].id}) }}" class="btn btn-light btn-block border-primary"> <span class="fa fa-arrow-left"></span> {{ button_label|default('Cancelar cambios y volver') }}</a></div>
+            <div class="col-4"><a href="{{ path('registro_unidad_index') }}" class="btn btn-light btn-block border-primary"><span class="fa fa-list"></span> {{ button_label|default('Volver a accidentes') }}</a></div>
+            <div class="col-4"><button type="submit" class="btn btn-primary btn-block">{{ button_label|default('Guardar Cambios y Finalizar') }} <span class="fa fa-arrow-right"></span></button></div>
+        {% endif %}
+        {% if route == 'registro_resumen' %}
+            <div class="col-6"><a href="{{ path('registro_peatones', {accidente: accidente.id}) }}" class="btn btn-light btn-block border-primary"> <span class="fa fa-arrow-left"></span> {{ button_label|default('Volver') }}</a></div>
+            <div class="col-6"><a href="{{ path('registro_unidad_index') }}" class="btn btn-primary btn-block"><span class="fa fa-list"></span> {{ button_label|default('Volver a accidentes') }}</a></div>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    {% if 'InspeccionController' in controller %}
+    <div class="form-row mb-2">
+        {% if route in ['inspeccion_accidente_identificacion'] %}
+            <div class="col-6"><a href="{{ path('registro_unidad_index') }}" class="btn btn-light btn-block border-primary"><span class="fa fa-list"></span> {{ button_label|default('Volver a la lista') }}</a></div>
+            <div class="col-6"><button type="submit" class="btn btn-primary btn-block">{{ button_label|default('Guardar Cambios y Continuar') }} <span class="fa fa-arrow-right"></span></button></div>
+        {% endif %}
+        {% if route in ['inspeccion_accidente_causas'] %}
+            <div class="col-4"><a href="{{ path('registro_identificacion', {id: form.vars['value'].id}) }}" class="btn btn-light btn-block border-primary"><span class="fa fa-arrow-left"></span> {{ button_label|default('Cancelar cambios y volver') }}</a></div>
+            <div class="col-4"><a href="{{ path('registro_unidad_index') }}" class="btn btn-light btn-block border-primary"><span class="fa fa-list"></span> {{ button_label|default('Volver a accidentes') }}</a></div>
+            <div class="col-4"><button type="submit" class="btn btn-primary btn-block">{{ button_label|default('Guardar Cambios y Continuar') }} <span class="fa fa-arrow-right"></span></button></div>
+        {% endif %}
+        {% if route in ['inspeccion_accidente_condiciones'] %}
+            <div class="col-4"><a href="{{ path('registro_causas', {id: form.vars['value'].id}) }}" class="btn btn-light btn-block border-primary"> <span class="fa fa-arrow-left"></span> {{ button_label|default('Cancelar cambios y volver') }}</a></div>
+            <div class="col-4"><a href="{{ path('registro_unidad_index') }}" class="btn btn-light btn-block border-primary"><span class="fa fa-list"></span> {{ button_label|default('Volver a accidentes') }}</a></div>
+            <div class="col-4"><button type="submit" class="btn btn-primary btn-block">{{ button_label|default('Guardar Cambios y Continuar') }} <span class="fa fa-arrow-right"></span></button></div>
+        {% endif %}
+        {% if route in ['inspeccion_accidente_ubicacion'] %}
+            <div class="col-4"><a href="{{ path('registro_condiciones', {id: form.vars['value'].id}) }}" class="btn btn-light btn-block border-primary"> <span class="fa fa-arrow-left"></span> {{ button_label|default('Cancelar cambios y volver') }}</a></div>
+            <div class="col-4"><a href="{{ path('registro_unidad_index') }}" class="btn btn-light btn-block border-primary"><span class="fa fa-list"></span> {{ button_label|default('Volver a accidentes') }}</a></div>
+            <div class="col-4"><button type="submit" class="btn btn-primary btn-block">{{ button_label|default('Guardar Cambios y Continuar') }} <span class="fa fa-arrow-right"></span></button></div>
+        {% endif %}
+        {% if route in ['inspeccion_accidente_vehiculos'] %}
+            <div class="col-4"><a href="{{ path('registro_ubicacion', {id: form.vars['value'].id}) }}" class="btn btn-light btn-block border-primary"> <span class="fa fa-arrow-left"></span> {{ button_label|default('Cancelar cambios y volver') }}</a></div>
+            <div class="col-4"><a href="{{ path('registro_unidad_index') }}" class="btn btn-light btn-block border-primary"><span class="fa fa-list"></span> {{ button_label|default('Volver a accidentes') }}</a></div>
+            <div class="col-4"><button type="submit" class="btn btn-primary btn-block">{{ button_label|default('Guardar Cambios y Continuar') }} <span class="fa fa-arrow-right"></span></button></div>
+        {% endif %}
+        {% if route in ['inspeccion_accidente_peatones'] %}
+            <div class="col-4"><a href="{{ path('registro_vehiculos', {id: form.vars['value'].id}) }}" class="btn btn-light btn-block border-primary"> <span class="fa fa-arrow-left"></span> {{ button_label|default('Cancelar cambios y volver') }}</a></div>
+            <div class="col-4"><a href="{{ path('registro_unidad_index') }}" class="btn btn-light btn-block border-primary"><span class="fa fa-list"></span> {{ button_label|default('Volver a accidentes') }}</a></div>
+            <div class="col-4"><button type="submit" class="btn btn-primary btn-block">{{ button_label|default('Guardar Cambios y Finalizar') }} <span class="fa fa-arrow-right"></span></button></div>
+        {% endif %}
+        {% if route in ['inspeccion_accidente_resumen'] %}
+            <div class="col-6"><a href="{{ path('registro_peatones', {id: accidente.id}) }}" class="btn btn-light btn-block border-primary"> <span class="fa fa-arrow-left"></span> {{ button_label|default('Volver') }}</a></div>
+            <div class="col-6"><a href="{{ path('registro_unidad_index') }}" class="btn btn-primary btn-block"><span class="fa fa-list"></span> {{ button_label|default('Volver a accidentes') }}</a></div>
+        {% endif %}
+    </div>
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,6369 @@
+App\Entity\Cuadrante:
+    cuadrante_1:
+        nombre: 'Cuadrante 01'
+        codigo: '1'
+        comuna: '@comuna_1'
+    cuadrante_2:
+        nombre: 'Cuadrante 02'
+        codigo: '2'
+        comuna: '@comuna_1'
+    cuadrante_3:
+        nombre: 'Cuadrante 03'
+        codigo: '3'
+        comuna: '@comuna_1'
+    cuadrante_4:
+        nombre: 'Cuadrante 04'
+        codigo: '4'
+        comuna: '@comuna_1'
+    cuadrante_5:
+        nombre: 'Cuadrante 05'
+        codigo: '5'
+        comuna: '@comuna_1'
+    cuadrante_6:
+        nombre: 'Sector Rural A'
+        codigo: '6'
+        comuna: '@comuna_1'
+    cuadrante_7:
+        nombre: 'Sector Rural B'
+        codigo: '7'
+        comuna: '@comuna_1'
+    cuadrante_8:
+        nombre: 'Sector Rural C'
+        codigo: '8'
+        comuna: '@comuna_1'
+    cuadrante_9:
+        nombre: 'Sector Rural D'
+        codigo: '9'
+        comuna: '@comuna_1'
+    cuadrante_10:
+        nombre: 'Cuadrante 06'
+        codigo: '10'
+        comuna: '@comuna_2'
+    cuadrante_11:
+        nombre: 'Cuadrante 07'
+        codigo: '11'
+        comuna: '@comuna_2'
+    cuadrante_12:
+        nombre: 'Cuadrante 08'
+        codigo: '12'
+        comuna: '@comuna_2'
+    cuadrante_13:
+        nombre: 'Sector Rural A'
+        codigo: '13'
+        comuna: '@comuna_2'
+    cuadrante_14:
+        nombre: 'Subsector 11'
+        codigo: '14'
+        comuna: '@comuna_3'
+    cuadrante_15:
+        nombre: 'Subsector 06'
+        codigo: '15'
+        comuna: '@comuna_3'
+    cuadrante_16:
+        nombre: 'Subsector 10'
+        codigo: '16'
+        comuna: '@comuna_3'
+    cuadrante_17:
+        nombre: 'Subsector 01'
+        codigo: '17'
+        comuna: '@comuna_3'
+    cuadrante_18:
+        nombre: 'Subsector 09'
+        codigo: '18'
+        comuna: '@comuna_3'
+    cuadrante_19:
+        nombre: 'Subsector 08'
+        codigo: '19'
+        comuna: '@comuna_4'
+    cuadrante_20:
+        nombre: 'Subsector 05'
+        codigo: '20'
+        comuna: '@comuna_5'
+    cuadrante_21:
+        nombre: 'Subsector 12'
+        codigo: '21'
+        comuna: '@comuna_6'
+    cuadrante_22:
+        nombre: 'Subsector 07'
+        codigo: '22'
+        comuna: '@comuna_6'
+    cuadrante_23:
+        nombre: 'Subsector 04'
+        codigo: '23'
+        comuna: '@comuna_7'
+    cuadrante_24:
+        nombre: 'Subsector 02'
+        codigo: '24'
+        comuna: '@comuna_7'
+    cuadrante_25:
+        nombre: 'Subsector 03'
+        codigo: '25'
+        comuna: '@comuna_7'
+    cuadrante_26:
+        nombre: 'Cuadrante 08'
+        codigo: '26'
+        comuna: '@comuna_8'
+    cuadrante_27:
+        nombre: 'Cuadrante 09'
+        codigo: '27'
+        comuna: '@comuna_8'
+    cuadrante_28:
+        nombre: 'Cuadrante 10'
+        codigo: '28'
+        comuna: '@comuna_8'
+    cuadrante_29:
+        nombre: 'Sector Rural B'
+        codigo: '29'
+        comuna: '@comuna_8'
+    cuadrante_30:
+        nombre: 'Cuadrante 11'
+        codigo: '30'
+        comuna: '@comuna_8'
+    cuadrante_31:
+        nombre: 'Cuadrante 12'
+        codigo: '31'
+        comuna: '@comuna_8'
+    cuadrante_32:
+        nombre: 'Cuadrante 13'
+        codigo: '32'
+        comuna: '@comuna_8'
+    cuadrante_33:
+        nombre: 'Sector Rural C'
+        codigo: '33'
+        comuna: '@comuna_8'
+    cuadrante_34:
+        nombre: 'Cuadrante 01'
+        codigo: '34'
+        comuna: '@comuna_8'
+    cuadrante_35:
+        nombre: 'Cuadrante 02'
+        codigo: '35'
+        comuna: '@comuna_8'
+    cuadrante_36:
+        nombre: 'Cuadrante 03'
+        codigo: '36'
+        comuna: '@comuna_8'
+    cuadrante_37:
+        nombre: 'Cuadrante 04'
+        codigo: '37'
+        comuna: '@comuna_8'
+    cuadrante_38:
+        nombre: 'Sector Rural A'
+        codigo: '38'
+        comuna: '@comuna_8'
+    cuadrante_39:
+        nombre: 'Cuadrante 05'
+        codigo: '39'
+        comuna: '@comuna_8'
+    cuadrante_40:
+        nombre: 'Cuadrante 06'
+        codigo: '40'
+        comuna: '@comuna_8'
+    cuadrante_41:
+        nombre: 'Cuadrante 07'
+        codigo: '41'
+        comuna: '@comuna_8'
+    cuadrante_42:
+        nombre: 'Sector Rural D'
+        codigo: '42'
+        comuna: '@comuna_8'
+    cuadrante_43:
+        nombre: 'Sector Rural E'
+        codigo: '43'
+        comuna: '@comuna_8'
+    cuadrante_44:
+        nombre: 'Subsector 07'
+        codigo: '44'
+        comuna: '@comuna_9'
+    cuadrante_45:
+        nombre: 'Subsector 08'
+        codigo: '45'
+        comuna: '@comuna_9'
+    cuadrante_46:
+        nombre: 'Subsector 09'
+        codigo: '46'
+        comuna: '@comuna_9'
+    cuadrante_47:
+        nombre: 'Subsector 10'
+        codigo: '47'
+        comuna: '@comuna_9'
+    cuadrante_48:
+        nombre: 'Subsector 11'
+        codigo: '48'
+        comuna: '@comuna_10'
+    cuadrante_49:
+        nombre: 'Subsector 13'
+        codigo: '49'
+        comuna: '@comuna_10'
+    cuadrante_50:
+        nombre: 'Subsector 01'
+        codigo: '50'
+        comuna: '@comuna_11'
+    cuadrante_51:
+        nombre: 'Subsector 03'
+        codigo: '51'
+        comuna: '@comuna_11'
+    cuadrante_52:
+        nombre: 'Subsector 02'
+        codigo: '52'
+        comuna: '@comuna_11'
+    cuadrante_53:
+        nombre: 'Sector Rural E'
+        codigo: '53'
+        comuna: '@comuna_12'
+    cuadrante_54:
+        nombre: 'Cuadrante 01'
+        codigo: '54'
+        comuna: '@comuna_12'
+    cuadrante_55:
+        nombre: 'Cuadrante 02'
+        codigo: '55'
+        comuna: '@comuna_12'
+    cuadrante_56:
+        nombre: 'Cuadrante 03'
+        codigo: '56'
+        comuna: '@comuna_12'
+    cuadrante_57:
+        nombre: 'Cuadrante 04'
+        codigo: '57'
+        comuna: '@comuna_12'
+    cuadrante_58:
+        nombre: 'Cuadrante 05'
+        codigo: '58'
+        comuna: '@comuna_12'
+    cuadrante_59:
+        nombre: 'Sector Rural A'
+        codigo: '59'
+        comuna: '@comuna_12'
+    cuadrante_60:
+        nombre: 'Sector Rural C'
+        codigo: '60'
+        comuna: '@comuna_12'
+    cuadrante_61:
+        nombre: 'Sector Rural B'
+        codigo: '61'
+        comuna: '@comuna_12'
+    cuadrante_62:
+        nombre: 'Sector Rural F'
+        codigo: '62'
+        comuna: '@comuna_12'
+    cuadrante_63:
+        nombre: 'Sector Rural D'
+        codigo: '63'
+        comuna: '@comuna_12'
+    cuadrante_64:
+        nombre: 'Subsector 17'
+        codigo: '64'
+        comuna: '@comuna_13'
+    cuadrante_65:
+        nombre: 'Subsector 16'
+        codigo: '65'
+        comuna: '@comuna_13'
+    cuadrante_66:
+        nombre: 'Subsector 21'
+        codigo: '66'
+        comuna: '@comuna_14'
+    cuadrante_67:
+        nombre: 'Subsector 22'
+        codigo: '67'
+        comuna: '@comuna_14'
+    cuadrante_68:
+        nombre: 'Subsector 20'
+        codigo: '68'
+        comuna: '@comuna_14'
+    cuadrante_69:
+        nombre: 'Subsector 26'
+        codigo: '69'
+        comuna: '@comuna_14'
+    cuadrante_70:
+        nombre: 'Cuadrante 01'
+        codigo: '70'
+        comuna: '@comuna_15'
+    cuadrante_71:
+        nombre: 'Cuadrante 02'
+        codigo: '71'
+        comuna: '@comuna_15'
+    cuadrante_72:
+        nombre: 'Sector Rural A'
+        codigo: '72'
+        comuna: '@comuna_15'
+    cuadrante_73:
+        nombre: 'Subsector 08'
+        codigo: '73'
+        comuna: '@comuna_16'
+    cuadrante_74:
+        nombre: 'Subsector 09'
+        codigo: '74'
+        comuna: '@comuna_16'
+    cuadrante_75:
+        nombre: 'Subsector 10'
+        codigo: '75'
+        comuna: '@comuna_16'
+    cuadrante_76:
+        nombre: 'Subsector 11'
+        codigo: '76'
+        comuna: '@comuna_16'
+    cuadrante_77:
+        nombre: 'Subsector 12'
+        codigo: '77'
+        comuna: '@comuna_16'
+    cuadrante_78:
+        nombre: 'Subsector 13'
+        codigo: '78'
+        comuna: '@comuna_16'
+    cuadrante_79:
+        nombre: 'Subsector 14'
+        codigo: '79'
+        comuna: '@comuna_16'
+    cuadrante_80:
+        nombre: 'Cuadrante 03'
+        codigo: '80'
+        comuna: '@comuna_17'
+    cuadrante_81:
+        nombre: 'Cuadrante 05'
+        codigo: '81'
+        comuna: '@comuna_17'
+    cuadrante_82:
+        nombre: 'Cuadrante 01'
+        codigo: '82'
+        comuna: '@comuna_17'
+    cuadrante_83:
+        nombre: 'Cuadrante 02'
+        codigo: '83'
+        comuna: '@comuna_17'
+    cuadrante_84:
+        nombre: 'Cuadrante 03'
+        codigo: '84'
+        comuna: '@comuna_17'
+    cuadrante_85:
+        nombre: 'Cuadrante 04'
+        codigo: '85'
+        comuna: '@comuna_17'
+    cuadrante_86:
+        nombre: 'Cuadrante 05'
+        codigo: '86'
+        comuna: '@comuna_17'
+    cuadrante_87:
+        nombre: 'Sector Rural A'
+        codigo: '87'
+        comuna: '@comuna_17'
+    cuadrante_88:
+        nombre: 'Cuadrante 08'
+        codigo: '88'
+        comuna: '@comuna_17'
+    cuadrante_89:
+        nombre: 'Cuadrante 06'
+        codigo: '89'
+        comuna: '@comuna_17'
+    cuadrante_90:
+        nombre: 'Cuadrante 07'
+        codigo: '90'
+        comuna: '@comuna_17'
+    cuadrante_91:
+        nombre: 'Sector Rural B'
+        codigo: '91'
+        comuna: '@comuna_17'
+    cuadrante_92:
+        nombre: 'Subsector 09'
+        codigo: '92'
+        comuna: '@comuna_18'
+    cuadrante_93:
+        nombre: 'Subsector 11'
+        codigo: '93'
+        comuna: '@comuna_18'
+    cuadrante_94:
+        nombre: 'Subsector 13'
+        codigo: '94'
+        comuna: '@comuna_19'
+    cuadrante_95:
+        nombre: 'Subsector 14'
+        codigo: '95'
+        comuna: '@comuna_19'
+    cuadrante_96:
+        nombre: 'Subsector 15'
+        codigo: '96'
+        comuna: '@comuna_19'
+    cuadrante_97:
+        nombre: 'Subsector 01'
+        codigo: '97'
+        comuna: '@comuna_20'
+    cuadrante_98:
+        nombre: 'Subsector 02'
+        codigo: '98'
+        comuna: '@comuna_20'
+    cuadrante_99:
+        nombre: 'Subsector 03'
+        codigo: '99'
+        comuna: '@comuna_20'
+    cuadrante_100:
+        nombre: 'Subsector 04'
+        codigo: '100'
+        comuna: '@comuna_20'
+    cuadrante_101:
+        nombre: 'Subsector 05'
+        codigo: '101'
+        comuna: '@comuna_20'
+    cuadrante_102:
+        nombre: 'Subsector 06'
+        codigo: '102'
+        comuna: '@comuna_20'
+    cuadrante_103:
+        nombre: 'Subsector 11'
+        codigo: '103'
+        comuna: '@comuna_21'
+    cuadrante_104:
+        nombre: 'Subsector 12'
+        codigo: '104'
+        comuna: '@comuna_21'
+    cuadrante_105:
+        nombre: 'Subsector 07'
+        codigo: '105'
+        comuna: '@comuna_21'
+    cuadrante_106:
+        nombre: 'Subsector 08'
+        codigo: '106'
+        comuna: '@comuna_21'
+    cuadrante_107:
+        nombre: 'Subsector 09'
+        codigo: '107'
+        comuna: '@comuna_21'
+    cuadrante_108:
+        nombre: 'Subsector 10'
+        codigo: '108'
+        comuna: '@comuna_21'
+    cuadrante_109:
+        nombre: 'Subsector 01'
+        codigo: '109'
+        comuna: '@comuna_21'
+    cuadrante_110:
+        nombre: 'Subsector 02'
+        codigo: '110'
+        comuna: '@comuna_21'
+    cuadrante_111:
+        nombre: 'Subsector 03'
+        codigo: '111'
+        comuna: '@comuna_21'
+    cuadrante_112:
+        nombre: 'Cuadrante 01'
+        codigo: '112'
+        comuna: '@comuna_22'
+    cuadrante_113:
+        nombre: 'Cuadrante 02'
+        codigo: '113'
+        comuna: '@comuna_22'
+    cuadrante_114:
+        nombre: 'Sector Rural A'
+        codigo: '114'
+        comuna: '@comuna_22'
+    cuadrante_115:
+        nombre: 'Sector Rural B'
+        codigo: '115'
+        comuna: '@comuna_22'
+    cuadrante_116:
+        nombre: 'Cuadrante 03'
+        codigo: '116'
+        comuna: '@comuna_22'
+    cuadrante_117:
+        nombre: 'Sector Rural C'
+        codigo: '117'
+        comuna: '@comuna_22'
+    cuadrante_118:
+        nombre: 'Cuadrante 01'
+        codigo: '118'
+        comuna: '@comuna_22'
+    cuadrante_119:
+        nombre: 'Subsector 04'
+        codigo: '119'
+        comuna: '@comuna_23'
+    cuadrante_120:
+        nombre: 'Subsector 05'
+        codigo: '120'
+        comuna: '@comuna_23'
+    cuadrante_121:
+        nombre: 'Subsector 07'
+        codigo: '121'
+        comuna: '@comuna_23'
+    cuadrante_122:
+        nombre: 'Subsector 06'
+        codigo: '122'
+        comuna: '@comuna_23'
+    cuadrante_123:
+        nombre: 'Subsector 02'
+        codigo: '123'
+        comuna: '@comuna_24'
+    cuadrante_124:
+        nombre: 'Subsector 01'
+        codigo: '124'
+        comuna: '@comuna_25'
+    cuadrante_125:
+        nombre: 'Cuadrante 04'
+        codigo: '125'
+        comuna: '@comuna_26'
+    cuadrante_126:
+        nombre: 'Cuadrante 05'
+        codigo: '126'
+        comuna: '@comuna_26'
+    cuadrante_127:
+        nombre: 'Cuadrante 06'
+        codigo: '127'
+        comuna: '@comuna_26'
+    cuadrante_128:
+        nombre: 'Cuadrante 07'
+        codigo: '128'
+        comuna: '@comuna_26'
+    cuadrante_129:
+        nombre: 'Cuadrante 08'
+        codigo: '129'
+        comuna: '@comuna_26'
+    cuadrante_130:
+        nombre: 'Cuadrante 09'
+        codigo: '130'
+        comuna: '@comuna_26'
+    cuadrante_131:
+        nombre: 'Cuadrante 10'
+        codigo: '131'
+        comuna: '@comuna_26'
+    cuadrante_132:
+        nombre: 'Sector Rural C'
+        codigo: '132'
+        comuna: '@comuna_26'
+    cuadrante_133:
+        nombre: 'Cuadrante 07'
+        codigo: '133'
+        comuna: '@comuna_26'
+    cuadrante_134:
+        nombre: 'Cuadrante 05'
+        codigo: '134'
+        comuna: '@comuna_26'
+    cuadrante_135:
+        nombre: 'Cuadrante 01'
+        codigo: '135'
+        comuna: '@comuna_26'
+    cuadrante_136:
+        nombre: 'Cuadrante 02'
+        codigo: '136'
+        comuna: '@comuna_26'
+    cuadrante_137:
+        nombre: 'Cuadrante 03'
+        codigo: '137'
+        comuna: '@comuna_26'
+    cuadrante_138:
+        nombre: 'Sector Rural A'
+        codigo: '138'
+        comuna: '@comuna_26'
+    cuadrante_139:
+        nombre: 'Sector Rural B'
+        codigo: '139'
+        comuna: '@comuna_26'
+    cuadrante_140:
+        nombre: 'Cuadrante 10'
+        codigo: '140'
+        comuna: '@comuna_27'
+    cuadrante_141:
+        nombre: 'Cuadrante 01'
+        codigo: '141'
+        comuna: '@comuna_27'
+    cuadrante_142:
+        nombre: 'Cuadrante 03'
+        codigo: '142'
+        comuna: '@comuna_27'
+    cuadrante_143:
+        nombre: 'Cuadrante 05'
+        codigo: '143'
+        comuna: '@comuna_27'
+    cuadrante_144:
+        nombre: 'Cuadrante 06'
+        codigo: '144'
+        comuna: '@comuna_27'
+    cuadrante_145:
+        nombre: 'Sector Rural A'
+        codigo: '145'
+        comuna: '@comuna_27'
+    cuadrante_146:
+        nombre: 'Sector Rural C'
+        codigo: '146'
+        comuna: '@comuna_27'
+    cuadrante_147:
+        nombre: 'Sector Rural B'
+        codigo: '147'
+        comuna: '@comuna_27'
+    cuadrante_148:
+        nombre: 'Cuadrante 07'
+        codigo: '148'
+        comuna: '@comuna_27'
+    cuadrante_149:
+        nombre: 'Cuadrante 08'
+        codigo: '149'
+        comuna: '@comuna_27'
+    cuadrante_150:
+        nombre: 'Cuadrante 10'
+        codigo: '150'
+        comuna: '@comuna_27'
+    cuadrante_151:
+        nombre: 'Sector Rural D'
+        codigo: '151'
+        comuna: '@comuna_27'
+    cuadrante_152:
+        nombre: 'Cuadrante 09'
+        codigo: '152'
+        comuna: '@comuna_27'
+    cuadrante_153:
+        nombre: 'Cuadrante 11'
+        codigo: '153'
+        comuna: '@comuna_27'
+    cuadrante_154:
+        nombre: 'Cuadrante 04'
+        codigo: '154'
+        comuna: '@comuna_27'
+    cuadrante_155:
+        nombre: 'Cuadrante 02'
+        codigo: '155'
+        comuna: '@comuna_27'
+    cuadrante_156:
+        nombre: 'Subsector 14'
+        codigo: '156'
+        comuna: '@comuna_28'
+    cuadrante_157:
+        nombre: 'Subsector 11'
+        codigo: '157'
+        comuna: '@comuna_29'
+    cuadrante_158:
+        nombre: 'Subsector 11'
+        codigo: '158'
+        comuna: '@comuna_29'
+    cuadrante_159:
+        nombre: 'Subsector 06'
+        codigo: '159'
+        comuna: '@comuna_30'
+    cuadrante_160:
+        nombre: 'Subsector 07'
+        codigo: '160'
+        comuna: '@comuna_30'
+    cuadrante_161:
+        nombre: 'Cuadrante 01'
+        codigo: '161'
+        comuna: '@comuna_31'
+    cuadrante_162:
+        nombre: 'Cuadrante 02'
+        codigo: '162'
+        comuna: '@comuna_31'
+    cuadrante_163:
+        nombre: 'Sector Rural A'
+        codigo: '163'
+        comuna: '@comuna_31'
+    cuadrante_164:
+        nombre: 'Sector Rural B'
+        codigo: '164'
+        comuna: '@comuna_31'
+    cuadrante_165:
+        nombre: 'Sector Rural C'
+        codigo: '165'
+        comuna: '@comuna_31'
+    cuadrante_166:
+        nombre: 'Sector Rural D'
+        codigo: '166'
+        comuna: '@comuna_31'
+    cuadrante_167:
+        nombre: 'Cuadrante 01'
+        codigo: '167'
+        comuna: '@comuna_32'
+    cuadrante_168:
+        nombre: 'Cuadrante 02'
+        codigo: '168'
+        comuna: '@comuna_32'
+    cuadrante_169:
+        nombre: 'Sector Rural A'
+        codigo: '169'
+        comuna: '@comuna_32'
+    cuadrante_170:
+        nombre: 'Sector Rural B'
+        codigo: '170'
+        comuna: '@comuna_32'
+    cuadrante_171:
+        nombre: 'Subsector 06'
+        codigo: '171'
+        comuna: '@comuna_33'
+    cuadrante_172:
+        nombre: 'Subsector 05'
+        codigo: '172'
+        comuna: '@comuna_34'
+    cuadrante_173:
+        nombre: 'Subsector 07'
+        codigo: '173'
+        comuna: '@comuna_34'
+    cuadrante_174:
+        nombre: 'Subsector 03'
+        codigo: '174'
+        comuna: '@comuna_35'
+    cuadrante_175:
+        nombre: 'Subsector 04'
+        codigo: '175'
+        comuna: '@comuna_35'
+    cuadrante_176:
+        nombre: 'Sector Rural B'
+        codigo: '176'
+        comuna: '@comuna_36'
+    cuadrante_177:
+        nombre: 'Cuadrante 01'
+        codigo: '177'
+        comuna: '@comuna_36'
+    cuadrante_178:
+        nombre: 'Cuadrante 02'
+        codigo: '178'
+        comuna: '@comuna_36'
+    cuadrante_179:
+        nombre: 'Cuadrante 03'
+        codigo: '179'
+        comuna: '@comuna_36'
+    cuadrante_180:
+        nombre: 'Cuadrante 04'
+        codigo: '180'
+        comuna: '@comuna_36'
+    cuadrante_181:
+        nombre: 'Sector Rural A'
+        codigo: '181'
+        comuna: '@comuna_36'
+    cuadrante_182:
+        nombre: 'Sector Rural C'
+        codigo: '182'
+        comuna: '@comuna_36'
+    cuadrante_183:
+        nombre: 'Subsector 38'
+        codigo: '183'
+        comuna: '@comuna_37'
+    cuadrante_184:
+        nombre: 'Subsector 39'
+        codigo: '184'
+        comuna: '@comuna_37'
+    cuadrante_185:
+        nombre: 'Subsector 40'
+        codigo: '185'
+        comuna: '@comuna_38'
+    cuadrante_186:
+        nombre: 'Subsector 41'
+        codigo: '186'
+        comuna: '@comuna_38'
+    cuadrante_187:
+        nombre: 'Subsector 42'
+        codigo: '187'
+        comuna: '@comuna_38'
+    cuadrante_188:
+        nombre: 'Subsector 45'
+        codigo: '188'
+        comuna: '@comuna_38'
+    cuadrante_189:
+        nombre: 'Subsector 43'
+        codigo: '189'
+        comuna: '@comuna_38'
+    cuadrante_190:
+        nombre: 'Subsector 44'
+        codigo: '190'
+        comuna: '@comuna_38'
+    cuadrante_191:
+        nombre: 'Subsector 49'
+        codigo: '191'
+        comuna: '@comuna_38'
+    cuadrante_192:
+        nombre: 'Subsector 50'
+        codigo: '192'
+        comuna: '@comuna_38'
+    cuadrante_193:
+        nombre: 'Subsector 46'
+        codigo: '193'
+        comuna: '@comuna_39'
+    cuadrante_194:
+        nombre: 'Subsector 48'
+        codigo: '194'
+        comuna: '@comuna_40'
+    cuadrante_195:
+        nombre: 'Subsector 47'
+        codigo: '195'
+        comuna: '@comuna_40'
+    cuadrante_196:
+        nombre: 'Cuadrante 01'
+        codigo: '196'
+        comuna: '@comuna_41'
+    cuadrante_197:
+        nombre: 'Cuadrante 02'
+        codigo: '197'
+        comuna: '@comuna_41'
+    cuadrante_198:
+        nombre: 'Sector Rural A'
+        codigo: '198'
+        comuna: '@comuna_41'
+    cuadrante_199:
+        nombre: 'Cuadrante 03'
+        codigo: '199'
+        comuna: '@comuna_41'
+    cuadrante_200:
+        nombre: 'Cuadrante 04'
+        codigo: '200'
+        comuna: '@comuna_41'
+    cuadrante_201:
+        nombre: 'Cuadrante 05'
+        codigo: '201'
+        comuna: '@comuna_41'
+    cuadrante_202:
+        nombre: 'Cuadrante 06'
+        codigo: '202'
+        comuna: '@comuna_41'
+    cuadrante_203:
+        nombre: 'Cuadrante 07'
+        codigo: '203'
+        comuna: '@comuna_41'
+    cuadrante_204:
+        nombre: 'Cuadrante 08'
+        codigo: '204'
+        comuna: '@comuna_41'
+    cuadrante_205:
+        nombre: 'Cuadrante 13'
+        codigo: '205'
+        comuna: '@comuna_41'
+    cuadrante_206:
+        nombre: 'Cuadrante 14'
+        codigo: '206'
+        comuna: '@comuna_41'
+    cuadrante_207:
+        nombre: 'Sector Rural B'
+        codigo: '207'
+        comuna: '@comuna_41'
+    cuadrante_208:
+        nombre: 'Cuadrante 15'
+        codigo: '208'
+        comuna: '@comuna_41'
+    cuadrante_209:
+        nombre: 'Cuadrante 10'
+        codigo: '209'
+        comuna: '@comuna_41'
+    cuadrante_210:
+        nombre: 'Cuadrante 11'
+        codigo: '210'
+        comuna: '@comuna_41'
+    cuadrante_211:
+        nombre: 'Cuadrante 12'
+        codigo: '211'
+        comuna: '@comuna_41'
+    cuadrante_212:
+        nombre: 'Cuadrante 09'
+        codigo: '212'
+        comuna: '@comuna_41'
+    cuadrante_213:
+        nombre: 'Cuadrante 13'
+        codigo: '213'
+        comuna: '@comuna_41'
+    cuadrante_214:
+        nombre: 'Cuadrante 14'
+        codigo: '214'
+        comuna: '@comuna_41'
+    cuadrante_215:
+        nombre: 'Cuadrante 16'
+        codigo: '215'
+        comuna: '@comuna_41'
+    cuadrante_216:
+        nombre: 'Cuadrante 17'
+        codigo: '216'
+        comuna: '@comuna_41'
+    cuadrante_217:
+        nombre: 'Cuadrante 18'
+        codigo: '217'
+        comuna: '@comuna_41'
+    cuadrante_218:
+        nombre: 'Cuadrante 1'
+        codigo: '218'
+        comuna: '@comuna_42'
+    cuadrante_219:
+        nombre: 'Cuadrante 01'
+        codigo: '219'
+        comuna: '@comuna_42'
+    cuadrante_220:
+        nombre: 'Cuadrante 02'
+        codigo: '220'
+        comuna: '@comuna_42'
+    cuadrante_221:
+        nombre: 'Sector Rural A'
+        codigo: '221'
+        comuna: '@comuna_42'
+    cuadrante_222:
+        nombre: 'Sector Rural B'
+        codigo: '222'
+        comuna: '@comuna_42'
+    cuadrante_223:
+        nombre: 'Sector Rural C'
+        codigo: '223'
+        comuna: '@comuna_42'
+    cuadrante_224:
+        nombre: 'Sector Rural D'
+        codigo: '224'
+        comuna: '@comuna_42'
+    cuadrante_225:
+        nombre: 'Cuadrante 01'
+        codigo: '225'
+        comuna: '@comuna_43'
+    cuadrante_226:
+        nombre: 'Cuadrante 02'
+        codigo: '226'
+        comuna: '@comuna_43'
+    cuadrante_227:
+        nombre: 'Sector Rural A'
+        codigo: '227'
+        comuna: '@comuna_43'
+    cuadrante_228:
+        nombre: 'Subsector 27'
+        codigo: '228'
+        comuna: '@comuna_44'
+    cuadrante_229:
+        nombre: 'Subsector 13'
+        codigo: '229'
+        comuna: '@comuna_45'
+    cuadrante_230:
+        nombre: 'Subsector 16'
+        codigo: '230'
+        comuna: '@comuna_45'
+    cuadrante_231:
+        nombre: 'Subsector 11'
+        codigo: '231'
+        comuna: '@comuna_45'
+    cuadrante_232:
+        nombre: 'Subsector 15'
+        codigo: '232'
+        comuna: '@comuna_45'
+    cuadrante_233:
+        nombre: 'Subsector 14'
+        codigo: '233'
+        comuna: '@comuna_45'
+    cuadrante_234:
+        nombre: 'Cuadrante 01'
+        codigo: '234'
+        comuna: '@comuna_46'
+    cuadrante_235:
+        nombre: 'Cuadrante 02'
+        codigo: '235'
+        comuna: '@comuna_46'
+    cuadrante_236:
+        nombre: 'Sector Rural A'
+        codigo: '236'
+        comuna: '@comuna_46'
+    cuadrante_237:
+        nombre: 'Sector Rural B'
+        codigo: '237'
+        comuna: '@comuna_46'
+    cuadrante_238:
+        nombre: 'Cuadrante 01'
+        codigo: '238'
+        comuna: '@comuna_47'
+    cuadrante_239:
+        nombre: 'Cuadrante 02'
+        codigo: '239'
+        comuna: '@comuna_47'
+    cuadrante_240:
+        nombre: 'Cuadrante 03'
+        codigo: '240'
+        comuna: '@comuna_47'
+    cuadrante_241:
+        nombre: 'Cuadrante 05'
+        codigo: '241'
+        comuna: '@comuna_47'
+    cuadrante_242:
+        nombre: 'Cuadrante 06'
+        codigo: '242'
+        comuna: '@comuna_47'
+    cuadrante_243:
+        nombre: 'Cuadrante 08'
+        codigo: '243'
+        comuna: '@comuna_47'
+    cuadrante_244:
+        nombre: 'Cuadrante 09'
+        codigo: '244'
+        comuna: '@comuna_47'
+    cuadrante_245:
+        nombre: 'Cuadrante 07'
+        codigo: '245'
+        comuna: '@comuna_47'
+    cuadrante_246:
+        nombre: 'Cuadrante 04'
+        codigo: '246'
+        comuna: '@comuna_47'
+    cuadrante_247:
+        nombre: 'Cuadrante 13'
+        codigo: '247'
+        comuna: '@comuna_47'
+    cuadrante_248:
+        nombre: 'Sector Rural A'
+        codigo: '248'
+        comuna: '@comuna_47'
+    cuadrante_249:
+        nombre: 'Cuadrante 12'
+        codigo: '249'
+        comuna: '@comuna_47'
+    cuadrante_250:
+        nombre: 'Cuadrante 10'
+        codigo: '250'
+        comuna: '@comuna_47'
+    cuadrante_251:
+        nombre: 'Cuadrante 11'
+        codigo: '251'
+        comuna: '@comuna_47'
+    cuadrante_252:
+        nombre: 'Subsector 01'
+        codigo: '252'
+        comuna: '@comuna_48'
+    cuadrante_253:
+        nombre: 'Cuadrante 01'
+        codigo: '253'
+        comuna: '@comuna_49'
+    cuadrante_254:
+        nombre: 'Cuadrante 02'
+        codigo: '254'
+        comuna: '@comuna_49'
+    cuadrante_255:
+        nombre: 'Cuadrante 03'
+        codigo: '255'
+        comuna: '@comuna_49'
+    cuadrante_256:
+        nombre: 'Cuadrante 04'
+        codigo: '256'
+        comuna: '@comuna_49'
+    cuadrante_257:
+        nombre: 'Sector Rural A'
+        codigo: '257'
+        comuna: '@comuna_49'
+    cuadrante_258:
+        nombre: 'Sector Rural B'
+        codigo: '258'
+        comuna: '@comuna_49'
+    cuadrante_259:
+        nombre: 'Subsector 05'
+        codigo: '259'
+        comuna: '@comuna_50'
+    cuadrante_260:
+        nombre: 'Subsector 06'
+        codigo: '260'
+        comuna: '@comuna_51'
+    cuadrante_261:
+        nombre: 'Subsector 09'
+        codigo: '261'
+        comuna: '@comuna_52'
+    cuadrante_262:
+        nombre: 'Cuadrante 03'
+        codigo: '262'
+        comuna: '@comuna_53'
+    cuadrante_263:
+        nombre: 'Sector Rural B'
+        codigo: '263'
+        comuna: '@comuna_53'
+    cuadrante_264:
+        nombre: 'Cuadrante 01'
+        codigo: '264'
+        comuna: '@comuna_53'
+    cuadrante_265:
+        nombre: 'Sector Rural C'
+        codigo: '265'
+        comuna: '@comuna_53'
+    cuadrante_266:
+        nombre: 'Cuadrante 02'
+        codigo: '266'
+        comuna: '@comuna_53'
+    cuadrante_267:
+        nombre: 'Sector Rural A'
+        codigo: '267'
+        comuna: '@comuna_53'
+    cuadrante_268:
+        nombre: 'Sector Rural A'
+        codigo: '268'
+        comuna: '@comuna_53'
+    cuadrante_269:
+        nombre: 'Subsector 05'
+        codigo: '269'
+        comuna: '@comuna_54'
+    cuadrante_270:
+        nombre: 'Subsector 06'
+        codigo: '270'
+        comuna: '@comuna_54'
+    cuadrante_271:
+        nombre: 'Subsector 07'
+        codigo: '271'
+        comuna: '@comuna_54'
+    cuadrante_272:
+        nombre: 'Subsector 08'
+        codigo: '272'
+        comuna: '@comuna_54'
+    cuadrante_273:
+        nombre: 'Subsector 09'
+        codigo: '273'
+        comuna: '@comuna_54'
+    cuadrante_274:
+        nombre: 'Subsector 18'
+        codigo: '274'
+        comuna: '@comuna_55'
+    cuadrante_275:
+        nombre: 'Subsector 18'
+        codigo: '275'
+        comuna: '@comuna_55'
+    cuadrante_276:
+        nombre: 'Subsector 12'
+        codigo: '276'
+        comuna: '@comuna_56'
+    cuadrante_277:
+        nombre: 'Subsector 13'
+        codigo: '277'
+        comuna: '@comuna_56'
+    cuadrante_278:
+        nombre: 'Subsector 10'
+        codigo: '278'
+        comuna: '@comuna_56'
+    cuadrante_279:
+        nombre: 'Subsector 11'
+        codigo: '279'
+        comuna: '@comuna_56'
+    cuadrante_280:
+        nombre: 'Subsector 21'
+        codigo: '280'
+        comuna: '@comuna_57'
+    cuadrante_281:
+        nombre: 'Subsector 19'
+        codigo: '281'
+        comuna: '@comuna_57'
+    cuadrante_282:
+        nombre: 'Subsector 20'
+        codigo: '282'
+        comuna: '@comuna_57'
+    cuadrante_283:
+        nombre: 'Subsector 21'
+        codigo: '283'
+        comuna: '@comuna_57'
+    cuadrante_284:
+        nombre: 'Cuadrante 01'
+        codigo: '284'
+        comuna: '@comuna_58'
+    cuadrante_285:
+        nombre: 'Cuadrante 02'
+        codigo: '285'
+        comuna: '@comuna_58'
+    cuadrante_286:
+        nombre: 'Sector Rural A'
+        codigo: '286'
+        comuna: '@comuna_58'
+    cuadrante_287:
+        nombre: 'Sector Rural B'
+        codigo: '287'
+        comuna: '@comuna_58'
+    cuadrante_288:
+        nombre: 'Sector Rural C'
+        codigo: '288'
+        comuna: '@comuna_58'
+    cuadrante_289:
+        nombre: 'Subsector 18'
+        codigo: '289'
+        comuna: '@comuna_59'
+    cuadrante_290:
+        nombre: 'Subsector 19'
+        codigo: '290'
+        comuna: '@comuna_59'
+    cuadrante_291:
+        nombre: 'Sector Rural A'
+        codigo: '291'
+        comuna: '@comuna_59'
+    cuadrante_292:
+        nombre: 'Sector Rural B'
+        codigo: '292'
+        comuna: '@comuna_59'
+    cuadrante_293:
+        nombre: 'Cuadrante 01'
+        codigo: '293'
+        comuna: '@comuna_59'
+    cuadrante_294:
+        nombre: 'Cuadrante 02'
+        codigo: '294'
+        comuna: '@comuna_59'
+    cuadrante_295:
+        nombre: 'Sector Rural A'
+        codigo: '295'
+        comuna: '@comuna_59'
+    cuadrante_296:
+        nombre: 'Sector Rural B'
+        codigo: '296'
+        comuna: '@comuna_59'
+    cuadrante_297:
+        nombre: 'Subsector 18'
+        codigo: '297'
+        comuna: '@comuna_60'
+    cuadrante_298:
+        nombre: 'Subsector 19'
+        codigo: '298'
+        comuna: '@comuna_60'
+    cuadrante_299:
+        nombre: 'Subsector 05'
+        codigo: '299'
+        comuna: '@comuna_61'
+    cuadrante_300:
+        nombre: 'Subsector 09'
+        codigo: '300'
+        comuna: '@comuna_62'
+    cuadrante_301:
+        nombre: 'Subsector 10'
+        codigo: '301'
+        comuna: '@comuna_62'
+    cuadrante_302:
+        nombre: 'Subsector 11'
+        codigo: '302'
+        comuna: '@comuna_62'
+    cuadrante_303:
+        nombre: 'Subsector 12'
+        codigo: '303'
+        comuna: '@comuna_62'
+    cuadrante_304:
+        nombre: 'Subsector 13'
+        codigo: '304'
+        comuna: '@comuna_62'
+    cuadrante_305:
+        nombre: 'Subsector 14'
+        codigo: '305'
+        comuna: '@comuna_62'
+    cuadrante_306:
+        nombre: 'Subsector 15'
+        codigo: '306'
+        comuna: '@comuna_62'
+    cuadrante_307:
+        nombre: 'Subsector 16'
+        codigo: '307'
+        comuna: '@comuna_62'
+    cuadrante_308:
+        nombre: 'Subsector 17'
+        codigo: '308'
+        comuna: '@comuna_62'
+    cuadrante_309:
+        nombre: 'Subsector 12'
+        codigo: '309'
+        comuna: '@comuna_62'
+    cuadrante_310:
+        nombre: 'Subsector 15'
+        codigo: '310'
+        comuna: '@comuna_62'
+    cuadrante_311:
+        nombre: 'Subsector 17'
+        codigo: '311'
+        comuna: '@comuna_62'
+    cuadrante_312:
+        nombre: 'Cuadrante 01'
+        codigo: '312'
+        comuna: '@comuna_63'
+    cuadrante_313:
+        nombre: 'Cuadrante 02'
+        codigo: '313'
+        comuna: '@comuna_63'
+    cuadrante_314:
+        nombre: 'Cuadrante 03'
+        codigo: '314'
+        comuna: '@comuna_63'
+    cuadrante_315:
+        nombre: 'Cuadrante 04'
+        codigo: '315'
+        comuna: '@comuna_63'
+    cuadrante_316:
+        nombre: 'Sector Rural A'
+        codigo: '316'
+        comuna: '@comuna_63'
+    cuadrante_317:
+        nombre: 'Sector Rural A'
+        codigo: '317'
+        comuna: '@comuna_63'
+    cuadrante_318:
+        nombre: 'Subsector 01'
+        codigo: '318'
+        comuna: '@comuna_64'
+    cuadrante_319:
+        nombre: 'Subsector 02'
+        codigo: '319'
+        comuna: '@comuna_64'
+    cuadrante_320:
+        nombre: 'Cuadrante 01'
+        codigo: '320'
+        comuna: '@comuna_65'
+    cuadrante_321:
+        nombre: 'Cuadrante 02'
+        codigo: '321'
+        comuna: '@comuna_65'
+    cuadrante_322:
+        nombre: 'Cuadrante 03'
+        codigo: '322'
+        comuna: '@comuna_65'
+    cuadrante_323:
+        nombre: 'Sector Rural A'
+        codigo: '323'
+        comuna: '@comuna_65'
+    cuadrante_324:
+        nombre: 'Sector Rural B'
+        codigo: '324'
+        comuna: '@comuna_65'
+    cuadrante_325:
+        nombre: 'Subsector 03'
+        codigo: '325'
+        comuna: '@comuna_66'
+    cuadrante_326:
+        nombre: 'Subsector 03'
+        codigo: '326'
+        comuna: '@comuna_67'
+    cuadrante_327:
+        nombre: 'Subsector 02'
+        codigo: '327'
+        comuna: '@comuna_67'
+    cuadrante_328:
+        nombre: 'Subsector 06'
+        codigo: '328'
+        comuna: '@comuna_68'
+    cuadrante_329:
+        nombre: 'Subsector 07'
+        codigo: '329'
+        comuna: '@comuna_68'
+    cuadrante_330:
+        nombre: 'Cuadrante 01'
+        codigo: '330'
+        comuna: '@comuna_69'
+    cuadrante_331:
+        nombre: 'Cuadrante 02'
+        codigo: '331'
+        comuna: '@comuna_69'
+    cuadrante_332:
+        nombre: 'Cuadrante 03'
+        codigo: '332'
+        comuna: '@comuna_69'
+    cuadrante_333:
+        nombre: 'Sector Rural A'
+        codigo: '333'
+        comuna: '@comuna_69'
+    cuadrante_334:
+        nombre: 'Cuadrante 04'
+        codigo: '334'
+        comuna: '@comuna_69'
+    cuadrante_335:
+        nombre: 'Subsector 08'
+        codigo: '335'
+        comuna: '@comuna_70'
+    cuadrante_336:
+        nombre: 'Cuadrante 01'
+        codigo: '336'
+        comuna: '@comuna_71'
+    cuadrante_337:
+        nombre: 'Cuadrante 02'
+        codigo: '337'
+        comuna: '@comuna_71'
+    cuadrante_338:
+        nombre: 'Cuadrante 03'
+        codigo: '338'
+        comuna: '@comuna_71'
+    cuadrante_339:
+        nombre: 'Sector Rural A'
+        codigo: '339'
+        comuna: '@comuna_71'
+    cuadrante_340:
+        nombre: 'Sector Rural B'
+        codigo: '340'
+        comuna: '@comuna_71'
+    cuadrante_341:
+        nombre: 'Sector Rural C'
+        codigo: '341'
+        comuna: '@comuna_71'
+    cuadrante_342:
+        nombre: 'Sector Rural A'
+        codigo: '342'
+        comuna: '@comuna_71'
+    cuadrante_343:
+        nombre: 'Sector Rural B'
+        codigo: '343'
+        comuna: '@comuna_71'
+    cuadrante_344:
+        nombre: 'Sector Rural C'
+        codigo: '344'
+        comuna: '@comuna_71'
+    cuadrante_345:
+        nombre: 'Subsector 05'
+        codigo: '345'
+        comuna: '@comuna_72'
+    cuadrante_346:
+        nombre: 'Subsector 09'
+        codigo: '346'
+        comuna: '@comuna_73'
+    cuadrante_347:
+        nombre: 'Subsector 10'
+        codigo: '347'
+        comuna: '@comuna_73'
+    cuadrante_348:
+        nombre: 'Subsector 11'
+        codigo: '348'
+        comuna: '@comuna_73'
+    cuadrante_349:
+        nombre: 'Subsector 12'
+        codigo: '349'
+        comuna: '@comuna_73'
+    cuadrante_350:
+        nombre: 'Subsector 13'
+        codigo: '350'
+        comuna: '@comuna_74'
+    cuadrante_351:
+        nombre: 'Cuadrante 06'
+        codigo: '351'
+        comuna: '@comuna_75'
+    cuadrante_352:
+        nombre: 'Cuadrante 07'
+        codigo: '352'
+        comuna: '@comuna_75'
+    cuadrante_353:
+        nombre: 'Cuadrante 08'
+        codigo: '353'
+        comuna: '@comuna_75'
+    cuadrante_354:
+        nombre: 'Sector Rural A'
+        codigo: '354'
+        comuna: '@comuna_75'
+    cuadrante_355:
+        nombre: 'Sector Rural B'
+        codigo: '355'
+        comuna: '@comuna_75'
+    cuadrante_356:
+        nombre: 'Cuadrante 09'
+        codigo: '356'
+        comuna: '@comuna_75'
+    cuadrante_357:
+        nombre: 'Sector Rural C'
+        codigo: '357'
+        comuna: '@comuna_75'
+    cuadrante_358:
+        nombre: 'Sector Rural D'
+        codigo: '358'
+        comuna: '@comuna_75'
+    cuadrante_359:
+        nombre: 'Cuadrante 01'
+        codigo: '359'
+        comuna: '@comuna_76'
+    cuadrante_360:
+        nombre: 'Cuadrante 02'
+        codigo: '360'
+        comuna: '@comuna_76'
+    cuadrante_361:
+        nombre: 'Sector Rural A'
+        codigo: '361'
+        comuna: '@comuna_76'
+    cuadrante_362:
+        nombre: 'Sector Rural B'
+        codigo: '362'
+        comuna: '@comuna_76'
+    cuadrante_363:
+        nombre: 'Subsector 06'
+        codigo: '363'
+        comuna: '@comuna_77'
+    cuadrante_364:
+        nombre: 'Subsector 07'
+        codigo: '364'
+        comuna: '@comuna_77'
+    cuadrante_365:
+        nombre: 'Subsector 08'
+        codigo: '365'
+        comuna: '@comuna_77'
+    cuadrante_366:
+        nombre: 'Cuadrante 18'
+        codigo: '366'
+        comuna: '@comuna_78'
+    cuadrante_367:
+        nombre: 'Cuadrante 19'
+        codigo: '367'
+        comuna: '@comuna_78'
+    cuadrante_368:
+        nombre: 'Cuadrante 20'
+        codigo: '368'
+        comuna: '@comuna_78'
+    cuadrante_369:
+        nombre: 'Cuadrante 21'
+        codigo: '369'
+        comuna: '@comuna_78'
+    cuadrante_370:
+        nombre: 'Sector Rural A'
+        codigo: '370'
+        comuna: '@comuna_78'
+    cuadrante_371:
+        nombre: 'Cuadrante 01'
+        codigo: '371'
+        comuna: '@comuna_79'
+    cuadrante_372:
+        nombre: 'Cuadrante 02'
+        codigo: '372'
+        comuna: '@comuna_79'
+    cuadrante_373:
+        nombre: 'Cuadrante 03'
+        codigo: '373'
+        comuna: '@comuna_79'
+    cuadrante_374:
+        nombre: 'Cuadrante 04'
+        codigo: '374'
+        comuna: '@comuna_79'
+    cuadrante_375:
+        nombre: 'Cuadrante 05'
+        codigo: '375'
+        comuna: '@comuna_79'
+    cuadrante_376:
+        nombre: 'Cuadrante 01'
+        codigo: '376'
+        comuna: '@comuna_79'
+    cuadrante_377:
+        nombre: 'Cuadrante 02'
+        codigo: '377'
+        comuna: '@comuna_79'
+    cuadrante_378:
+        nombre: 'Cuadrante 03'
+        codigo: '378'
+        comuna: '@comuna_79'
+    cuadrante_379:
+        nombre: 'Cuadrante 04'
+        codigo: '379'
+        comuna: '@comuna_79'
+    cuadrante_380:
+        nombre: 'Cuadrante 05'
+        codigo: '380'
+        comuna: '@comuna_79'
+    cuadrante_381:
+        nombre: 'Cuadrante 07'
+        codigo: '381'
+        comuna: '@comuna_79'
+    cuadrante_382:
+        nombre: 'Cuadrante 10'
+        codigo: '382'
+        comuna: '@comuna_79'
+    cuadrante_383:
+        nombre: 'Cuadrante 06'
+        codigo: '383'
+        comuna: '@comuna_79'
+    cuadrante_384:
+        nombre: 'Cuadrante 07'
+        codigo: '384'
+        comuna: '@comuna_79'
+    cuadrante_385:
+        nombre: 'Cuadrante 08'
+        codigo: '385'
+        comuna: '@comuna_79'
+    cuadrante_386:
+        nombre: 'Cuadrante 09'
+        codigo: '386'
+        comuna: '@comuna_79'
+    cuadrante_387:
+        nombre: 'Cuadrante 10'
+        codigo: '387'
+        comuna: '@comuna_79'
+    cuadrante_388:
+        nombre: 'Subsector 02'
+        codigo: '388'
+        comuna: '@comuna_80'
+    cuadrante_389:
+        nombre: 'Subsector 02'
+        codigo: '389'
+        comuna: '@comuna_80'
+    cuadrante_390:
+        nombre: 'Subsector 04'
+        codigo: '390'
+        comuna: '@comuna_80'
+    cuadrante_391:
+        nombre: 'Subsector 07'
+        codigo: '391'
+        comuna: '@comuna_81'
+    cuadrante_392:
+        nombre: 'Subsector 08'
+        codigo: '392'
+        comuna: '@comuna_81'
+    cuadrante_393:
+        nombre: 'Subsector 06'
+        codigo: '393'
+        comuna: '@comuna_82'
+    cuadrante_394:
+        nombre: 'Subsector 07'
+        codigo: '394'
+        comuna: '@comuna_82'
+    cuadrante_395:
+        nombre: 'Subsector 21'
+        codigo: '395'
+        comuna: '@comuna_83'
+    cuadrante_396:
+        nombre: 'Subsector 22'
+        codigo: '396'
+        comuna: '@comuna_83'
+    cuadrante_397:
+        nombre: 'Subsector 23'
+        codigo: '397'
+        comuna: '@comuna_83'
+    cuadrante_398:
+        nombre: 'Subsector 24'
+        codigo: '398'
+        comuna: '@comuna_83'
+    cuadrante_399:
+        nombre: 'Subsector 25'
+        codigo: '399'
+        comuna: '@comuna_83'
+    cuadrante_400:
+        nombre: 'Subsector 26'
+        codigo: '400'
+        comuna: '@comuna_83'
+    cuadrante_401:
+        nombre: 'Subsector 27'
+        codigo: '401'
+        comuna: '@comuna_83'
+    cuadrante_402:
+        nombre: 'Cuadrante 01'
+        codigo: '402'
+        comuna: '@comuna_84'
+    cuadrante_403:
+        nombre: 'Cuadrante 02'
+        codigo: '403'
+        comuna: '@comuna_84'
+    cuadrante_404:
+        nombre: 'Sector Rural A'
+        codigo: '404'
+        comuna: '@comuna_84'
+    cuadrante_405:
+        nombre: 'Sector Rural A'
+        codigo: '405'
+        comuna: '@comuna_84'
+    cuadrante_406:
+        nombre: 'Cuadrante 01'
+        codigo: '406'
+        comuna: '@comuna_85'
+    cuadrante_407:
+        nombre: 'Cuadrante 02'
+        codigo: '407'
+        comuna: '@comuna_85'
+    cuadrante_408:
+        nombre: 'Sector Rural A'
+        codigo: '408'
+        comuna: '@comuna_85'
+    cuadrante_409:
+        nombre: 'Sector Rural B'
+        codigo: '409'
+        comuna: '@comuna_85'
+    cuadrante_410:
+        nombre: 'Sector Rural C'
+        codigo: '410'
+        comuna: '@comuna_85'
+    cuadrante_411:
+        nombre: 'Cuadrante 01'
+        codigo: '411'
+        comuna: '@comuna_86'
+    cuadrante_412:
+        nombre: 'Cuadrante 02'
+        codigo: '412'
+        comuna: '@comuna_86'
+    cuadrante_413:
+        nombre: 'Sector Rural A'
+        codigo: '413'
+        comuna: '@comuna_86'
+    cuadrante_414:
+        nombre: 'Sector Rural B'
+        codigo: '414'
+        comuna: '@comuna_86'
+    cuadrante_415:
+        nombre: 'Sector Rural C'
+        codigo: '415'
+        comuna: '@comuna_86'
+    cuadrante_416:
+        nombre: 'Cuadrante 02'
+        codigo: '416'
+        comuna: '@comuna_86'
+    cuadrante_417:
+        nombre: 'Sector Rural A'
+        codigo: '417'
+        comuna: '@comuna_86'
+    cuadrante_418:
+        nombre: 'Subsector 02'
+        codigo: '418'
+        comuna: '@comuna_87'
+    cuadrante_419:
+        nombre: 'Subsector 11'
+        codigo: '419'
+        comuna: '@comuna_87'
+    cuadrante_420:
+        nombre: 'Subsector 02'
+        codigo: '420'
+        comuna: '@comuna_87'
+    cuadrante_421:
+        nombre: 'Subsector 11'
+        codigo: '421'
+        comuna: '@comuna_87'
+    cuadrante_422:
+        nombre: 'Sector Rural B'
+        codigo: '422'
+        comuna: '@comuna_88'
+    cuadrante_423:
+        nombre: 'Cuadrante 01'
+        codigo: '423'
+        comuna: '@comuna_88'
+    cuadrante_424:
+        nombre: 'Cuadrante 02'
+        codigo: '424'
+        comuna: '@comuna_88'
+    cuadrante_425:
+        nombre: 'Sector Rural A'
+        codigo: '425'
+        comuna: '@comuna_88'
+    cuadrante_426:
+        nombre: 'Cuadrante 01'
+        codigo: '426'
+        comuna: '@comuna_88'
+    cuadrante_427:
+        nombre: 'Cuadrante 12'
+        codigo: '427'
+        comuna: '@comuna_89'
+    cuadrante_428:
+        nombre: 'Subsector 12'
+        codigo: '428'
+        comuna: '@comuna_89'
+    cuadrante_429:
+        nombre: 'Subsector 01'
+        codigo: '429'
+        comuna: '@comuna_90'
+    cuadrante_430:
+        nombre: 'Subsector 02'
+        codigo: '430'
+        comuna: '@comuna_91'
+    cuadrante_431:
+        nombre: 'Subsector 05'
+        codigo: '431'
+        comuna: '@comuna_91'
+    cuadrante_432:
+        nombre: 'Subsector 09'
+        codigo: '432'
+        comuna: '@comuna_92'
+    cuadrante_433:
+        nombre: 'Subsector 10'
+        codigo: '433'
+        comuna: '@comuna_92'
+    cuadrante_434:
+        nombre: 'Sector Rural C'
+        codigo: '434'
+        comuna: '@comuna_93'
+    cuadrante_435:
+        nombre: 'Cuadrante 01'
+        codigo: '435'
+        comuna: '@comuna_93'
+    cuadrante_436:
+        nombre: 'Cuadrante 02'
+        codigo: '436'
+        comuna: '@comuna_93'
+    cuadrante_437:
+        nombre: 'Sector Rural A'
+        codigo: '437'
+        comuna: '@comuna_93'
+    cuadrante_438:
+        nombre: 'Sector Rural B'
+        codigo: '438'
+        comuna: '@comuna_93'
+    cuadrante_439:
+        nombre: 'Sector Rural D'
+        codigo: '439'
+        comuna: '@comuna_93'
+    cuadrante_440:
+        nombre: 'Cuadrante 01'
+        codigo: '440'
+        comuna: '@comuna_93'
+    cuadrante_441:
+        nombre: 'Cuadrante 02'
+        codigo: '441'
+        comuna: '@comuna_93'
+    cuadrante_442:
+        nombre: 'Sector Rural C'
+        codigo: '442'
+        comuna: '@comuna_93'
+    cuadrante_443:
+        nombre: 'Cuadrante 01'
+        codigo: '443'
+        comuna: '@comuna_94'
+    cuadrante_444:
+        nombre: 'Cuadrante 02'
+        codigo: '444'
+        comuna: '@comuna_94'
+    cuadrante_445:
+        nombre: 'Sector Rural C'
+        codigo: '445'
+        comuna: '@comuna_94'
+    cuadrante_446:
+        nombre: 'Cuadrante 01'
+        codigo: '446'
+        comuna: '@comuna_94'
+    cuadrante_447:
+        nombre: 'Cuadrante 02'
+        codigo: '447'
+        comuna: '@comuna_94'
+    cuadrante_448:
+        nombre: 'Sector Rural A'
+        codigo: '448'
+        comuna: '@comuna_94'
+    cuadrante_449:
+        nombre: 'Sector Rural B'
+        codigo: '449'
+        comuna: '@comuna_94'
+    cuadrante_450:
+        nombre: 'Sector Rural C'
+        codigo: '450'
+        comuna: '@comuna_94'
+    cuadrante_451:
+        nombre: 'Cuadrante 01'
+        codigo: '451'
+        comuna: '@comuna_95'
+    cuadrante_452:
+        nombre: 'Cuadrante 02'
+        codigo: '452'
+        comuna: '@comuna_95'
+    cuadrante_453:
+        nombre: 'Sector Rural B'
+        codigo: '453'
+        comuna: '@comuna_95'
+    cuadrante_454:
+        nombre: 'Sector Rural E'
+        codigo: '454'
+        comuna: '@comuna_95'
+    cuadrante_455:
+        nombre: 'Sector Rural C'
+        codigo: '455'
+        comuna: '@comuna_95'
+    cuadrante_456:
+        nombre: 'Sector Rural D'
+        codigo: '456'
+        comuna: '@comuna_95'
+    cuadrante_457:
+        nombre: 'Sector Rural A'
+        codigo: '457'
+        comuna: '@comuna_95'
+    cuadrante_458:
+        nombre: 'Subsector 01'
+        codigo: '458'
+        comuna: '@comuna_96'
+    cuadrante_459:
+        nombre: 'Subsector 02'
+        codigo: '459'
+        comuna: '@comuna_96'
+    cuadrante_460:
+        nombre: 'Subsector 03'
+        codigo: '460'
+        comuna: '@comuna_96'
+    cuadrante_461:
+        nombre: 'Subsector 07'
+        codigo: '461'
+        comuna: '@comuna_97'
+    cuadrante_462:
+        nombre: 'Subsector 08'
+        codigo: '462'
+        comuna: '@comuna_98'
+    cuadrante_463:
+        nombre: 'Subsector 09'
+        codigo: '463'
+        comuna: '@comuna_98'
+    cuadrante_464:
+        nombre: 'Subsector 06'
+        codigo: '464'
+        comuna: '@comuna_99'
+    cuadrante_465:
+        nombre: 'Subsector 11'
+        codigo: '465'
+        comuna: '@comuna_100'
+    cuadrante_466:
+        nombre: 'Subsector 10'
+        codigo: '466'
+        comuna: '@comuna_100'
+    cuadrante_467:
+        nombre: 'Subsector 04'
+        codigo: '467'
+        comuna: '@comuna_101'
+    cuadrante_468:
+        nombre: 'Subsector 05'
+        codigo: '468'
+        comuna: '@comuna_101'
+    cuadrante_469:
+        nombre: 'Cuadrante 01'
+        codigo: '469'
+        comuna: '@comuna_102'
+    cuadrante_470:
+        nombre: 'Cuadrante 02'
+        codigo: '470'
+        comuna: '@comuna_102'
+    cuadrante_471:
+        nombre: 'Cuadrante 03'
+        codigo: '471'
+        comuna: '@comuna_102'
+    cuadrante_472:
+        nombre: 'Sector Rural A'
+        codigo: '472'
+        comuna: '@comuna_102'
+    cuadrante_473:
+        nombre: 'Sector Rural B'
+        codigo: '473'
+        comuna: '@comuna_102'
+    cuadrante_474:
+        nombre: 'Sector Rural C'
+        codigo: '474'
+        comuna: '@comuna_102'
+    cuadrante_475:
+        nombre: 'Sector Rural D'
+        codigo: '475'
+        comuna: '@comuna_102'
+    cuadrante_476:
+        nombre: 'Cuadrante 03'
+        codigo: '476'
+        comuna: '@comuna_102'
+    cuadrante_477:
+        nombre: 'Subsector 02'
+        codigo: '477'
+        comuna: '@comuna_103'
+    cuadrante_478:
+        nombre: 'Cuadrante 01'
+        codigo: '478'
+        comuna: '@comuna_104'
+    cuadrante_479:
+        nombre: 'Cuadrante 02'
+        codigo: '479'
+        comuna: '@comuna_104'
+    cuadrante_480:
+        nombre: 'Sector Rural A'
+        codigo: '480'
+        comuna: '@comuna_104'
+    cuadrante_481:
+        nombre: 'Sector Rural B'
+        codigo: '481'
+        comuna: '@comuna_104'
+    cuadrante_482:
+        nombre: 'Cuadrante 02'
+        codigo: '482'
+        comuna: '@comuna_104'
+    cuadrante_483:
+        nombre: 'Subsector 06'
+        codigo: '483'
+        comuna: '@comuna_105'
+    cuadrante_484:
+        nombre: 'Subsector 04'
+        codigo: '484'
+        comuna: '@comuna_106'
+    cuadrante_485:
+        nombre: 'Subsector 07'
+        codigo: '485'
+        comuna: '@comuna_107'
+    cuadrante_486:
+        nombre: 'Subsector 03'
+        codigo: '486'
+        comuna: '@comuna_108'
+    cuadrante_487:
+        nombre: 'Subsector 04'
+        codigo: '487'
+        comuna: '@comuna_108'
+    cuadrante_488:
+        nombre: 'Subsector 13'
+        codigo: '488'
+        comuna: '@comuna_109'
+    cuadrante_489:
+        nombre: 'Subsector 05'
+        codigo: '489'
+        comuna: '@comuna_110'
+    cuadrante_490:
+        nombre: 'Cuadrante 01'
+        codigo: '490'
+        comuna: '@comuna_111'
+    cuadrante_491:
+        nombre: 'Cuadrante 02'
+        codigo: '491'
+        comuna: '@comuna_111'
+    cuadrante_492:
+        nombre: 'Sector Rural A'
+        codigo: '492'
+        comuna: '@comuna_111'
+    cuadrante_493:
+        nombre: 'Sector Rural B'
+        codigo: '493'
+        comuna: '@comuna_111'
+    cuadrante_494:
+        nombre: 'Sector Rural C'
+        codigo: '494'
+        comuna: '@comuna_111'
+    cuadrante_495:
+        nombre: 'Cuadrante 01'
+        codigo: '495'
+        comuna: '@comuna_112'
+    cuadrante_496:
+        nombre: 'Cuadrante 02'
+        codigo: '496'
+        comuna: '@comuna_112'
+    cuadrante_497:
+        nombre: 'Cuadrante 03'
+        codigo: '497'
+        comuna: '@comuna_112'
+    cuadrante_498:
+        nombre: 'Cuadrante 04'
+        codigo: '498'
+        comuna: '@comuna_112'
+    cuadrante_499:
+        nombre: 'Cuadrante 05'
+        codigo: '499'
+        comuna: '@comuna_112'
+    cuadrante_500:
+        nombre: 'Cuadrante 06'
+        codigo: '500'
+        comuna: '@comuna_112'
+    cuadrante_501:
+        nombre: 'Cuadrante 07'
+        codigo: '501'
+        comuna: '@comuna_112'
+    cuadrante_502:
+        nombre: 'Cuadrante 08'
+        codigo: '502'
+        comuna: '@comuna_112'
+    cuadrante_503:
+        nombre: 'Sector Rural A'
+        codigo: '503'
+        comuna: '@comuna_112'
+    cuadrante_504:
+        nombre: 'Sector Rural B'
+        codigo: '504'
+        comuna: '@comuna_112'
+    cuadrante_505:
+        nombre: 'Cuadrante 01'
+        codigo: '505'
+        comuna: '@comuna_112'
+    cuadrante_506:
+        nombre: 'Cuadrante 09'
+        codigo: '506'
+        comuna: '@comuna_112'
+    cuadrante_507:
+        nombre: 'Sector Rural C'
+        codigo: '507'
+        comuna: '@comuna_112'
+    cuadrante_508:
+        nombre: 'Cuadrante 01'
+        codigo: '508'
+        comuna: '@comuna_113'
+    cuadrante_509:
+        nombre: 'Cuadrante 02'
+        codigo: '509'
+        comuna: '@comuna_113'
+    cuadrante_510:
+        nombre: 'Sector Rural A'
+        codigo: '510'
+        comuna: '@comuna_113'
+    cuadrante_511:
+        nombre: 'Sector Rural C'
+        codigo: '511'
+        comuna: '@comuna_113'
+    cuadrante_512:
+        nombre: 'Sector Rural B'
+        codigo: '512'
+        comuna: '@comuna_113'
+    cuadrante_513:
+        nombre: 'Subsector 18'
+        codigo: '513'
+        comuna: '@comuna_114'
+    cuadrante_514:
+        nombre: 'Subsector 19'
+        codigo: '514'
+        comuna: '@comuna_114'
+    cuadrante_515:
+        nombre: 'Subsector 20'
+        codigo: '515'
+        comuna: '@comuna_114'
+    cuadrante_516:
+        nombre: 'Subsector 04'
+        codigo: '516'
+        comuna: '@comuna_115'
+    cuadrante_517:
+        nombre: 'Cuadrante 01'
+        codigo: '517'
+        comuna: '@comuna_116'
+    cuadrante_518:
+        nombre: 'Sector Rural A'
+        codigo: '518'
+        comuna: '@comuna_116'
+    cuadrante_519:
+        nombre: 'Cuadrante 02'
+        codigo: '519'
+        comuna: '@comuna_116'
+    cuadrante_520:
+        nombre: 'Cuadrante 03'
+        codigo: '520'
+        comuna: '@comuna_116'
+    cuadrante_521:
+        nombre: 'Sector Rural B'
+        codigo: '521'
+        comuna: '@comuna_116'
+    cuadrante_522:
+        nombre: 'Sector Rural C'
+        codigo: '522'
+        comuna: '@comuna_116'
+    cuadrante_523:
+        nombre: 'Cuadrante 01'
+        codigo: '523'
+        comuna: '@comuna_116'
+    cuadrante_524:
+        nombre: 'Subsector 07'
+        codigo: '524'
+        comuna: '@comuna_117'
+    cuadrante_525:
+        nombre: 'Subsector 07'
+        codigo: '525'
+        comuna: '@comuna_117'
+    cuadrante_526:
+        nombre: 'Subsector 15'
+        codigo: '526'
+        comuna: '@comuna_118'
+    cuadrante_527:
+        nombre: 'Subsector 17'
+        codigo: '527'
+        comuna: '@comuna_118'
+    cuadrante_528:
+        nombre: 'Subsector 16'
+        codigo: '528'
+        comuna: '@comuna_118'
+    cuadrante_529:
+        nombre: 'Subsector 09'
+        codigo: '529'
+        comuna: '@comuna_119'
+    cuadrante_530:
+        nombre: 'Subsector 21'
+        codigo: '530'
+        comuna: '@comuna_119'
+    cuadrante_531:
+        nombre: 'Subsector 11'
+        codigo: '531'
+        comuna: '@comuna_119'
+    cuadrante_532:
+        nombre: 'Subsector 09'
+        codigo: '532'
+        comuna: '@comuna_119'
+    cuadrante_533:
+        nombre: 'Cuadrante 01'
+        codigo: '533'
+        comuna: '@comuna_120'
+    cuadrante_534:
+        nombre: 'Cuadrante 02'
+        codigo: '534'
+        comuna: '@comuna_120'
+    cuadrante_535:
+        nombre: 'Sector Rural A'
+        codigo: '535'
+        comuna: '@comuna_120'
+    cuadrante_536:
+        nombre: 'Sector Rural E'
+        codigo: '536'
+        comuna: '@comuna_120'
+    cuadrante_537:
+        nombre: 'Sector Rural D'
+        codigo: '537'
+        comuna: '@comuna_120'
+    cuadrante_538:
+        nombre: 'Sector Rural C'
+        codigo: '538'
+        comuna: '@comuna_120'
+    cuadrante_539:
+        nombre: 'Sector Rural B'
+        codigo: '539'
+        comuna: '@comuna_120'
+    cuadrante_540:
+        nombre: 'Sector Rural G'
+        codigo: '540'
+        comuna: '@comuna_120'
+    cuadrante_541:
+        nombre: 'Sector Rural H'
+        codigo: '541'
+        comuna: '@comuna_120'
+    cuadrante_542:
+        nombre: 'Sector Rural F'
+        codigo: '542'
+        comuna: '@comuna_120'
+    cuadrante_543:
+        nombre: 'Subsector 08'
+        codigo: '543'
+        comuna: '@comuna_121'
+    cuadrante_544:
+        nombre: 'Subsector 08'
+        codigo: '544'
+        comuna: '@comuna_121'
+    cuadrante_545:
+        nombre: 'Cuadrante 01'
+        codigo: '545'
+        comuna: '@comuna_122'
+    cuadrante_546:
+        nombre: 'Cuadrante 02'
+        codigo: '546'
+        comuna: '@comuna_122'
+    cuadrante_547:
+        nombre: 'Sector Rural A'
+        codigo: '547'
+        comuna: '@comuna_122'
+    cuadrante_548:
+        nombre: 'Sector Rural C'
+        codigo: '548'
+        comuna: '@comuna_122'
+    cuadrante_549:
+        nombre: 'Sector Rural D'
+        codigo: '549'
+        comuna: '@comuna_122'
+    cuadrante_550:
+        nombre: 'Sector Rural E'
+        codigo: '550'
+        comuna: '@comuna_122'
+    cuadrante_551:
+        nombre: 'Cuadrante 03'
+        codigo: '551'
+        comuna: '@comuna_122'
+    cuadrante_552:
+        nombre: 'Sector Rural B'
+        codigo: '552'
+        comuna: '@comuna_122'
+    cuadrante_553:
+        nombre: 'Sector Rural F'
+        codigo: '553'
+        comuna: '@comuna_122'
+    cuadrante_554:
+        nombre: 'Subsector 01'
+        codigo: '554'
+        comuna: '@comuna_123'
+    cuadrante_555:
+        nombre: 'Subsector 03'
+        codigo: '555'
+        comuna: '@comuna_124'
+    cuadrante_556:
+        nombre: 'Subsector 02'
+        codigo: '556'
+        comuna: '@comuna_124'
+    cuadrante_557:
+        nombre: 'Cuadrante 01'
+        codigo: '557'
+        comuna: '@comuna_125'
+    cuadrante_558:
+        nombre: 'Cuadrabte 02'
+        codigo: '558'
+        comuna: '@comuna_125'
+    cuadrante_559:
+        nombre: 'Cuadrante 01'
+        codigo: '559'
+        comuna: '@comuna_125'
+    cuadrante_560:
+        nombre: 'Cuadrante 02'
+        codigo: '560'
+        comuna: '@comuna_125'
+    cuadrante_561:
+        nombre: 'Cuadrante 06'
+        codigo: '561'
+        comuna: '@comuna_125'
+    cuadrante_562:
+        nombre: 'Sector Rural B'
+        codigo: '562'
+        comuna: '@comuna_125'
+    cuadrante_563:
+        nombre: 'Cuadrante 05'
+        codigo: '563'
+        comuna: '@comuna_125'
+    cuadrante_564:
+        nombre: 'Sector Rural A'
+        codigo: '564'
+        comuna: '@comuna_125'
+    cuadrante_565:
+        nombre: 'Sector Rural A'
+        codigo: '565'
+        comuna: '@comuna_125'
+    cuadrante_566:
+        nombre: 'Cuadrante 07'
+        codigo: '566'
+        comuna: '@comuna_125'
+    cuadrante_567:
+        nombre: 'Sector Rural C'
+        codigo: '567'
+        comuna: '@comuna_125'
+    cuadrante_568:
+        nombre: 'Cuadrante 03'
+        codigo: '568'
+        comuna: '@comuna_125'
+    cuadrante_569:
+        nombre: 'Cuadrante 04'
+        codigo: '569'
+        comuna: '@comuna_125'
+    cuadrante_570:
+        nombre: 'Subsector 06'
+        codigo: '570'
+        comuna: '@comuna_126'
+    cuadrante_571:
+        nombre: 'Subsector 07'
+        codigo: '571'
+        comuna: '@comuna_126'
+    cuadrante_572:
+        nombre: 'Subsector 01'
+        codigo: '572'
+        comuna: '@comuna_127'
+    cuadrante_573:
+        nombre: 'Subsector 02'
+        codigo: '573'
+        comuna: '@comuna_127'
+    cuadrante_574:
+        nombre: 'Cuadrante 01'
+        codigo: '574'
+        comuna: '@comuna_128'
+    cuadrante_575:
+        nombre: 'Cuadrabte 02'
+        codigo: '575'
+        comuna: '@comuna_128'
+    cuadrante_576:
+        nombre: 'Cuadrante 01'
+        codigo: '576'
+        comuna: '@comuna_128'
+    cuadrante_577:
+        nombre: 'Cuadrante 02'
+        codigo: '577'
+        comuna: '@comuna_128'
+    cuadrante_578:
+        nombre: 'Sector Rural A'
+        codigo: '578'
+        comuna: '@comuna_128'
+    cuadrante_579:
+        nombre: 'Cuadrante 03'
+        codigo: '579'
+        comuna: '@comuna_128'
+    cuadrante_580:
+        nombre: 'Cuadrante 04'
+        codigo: '580'
+        comuna: '@comuna_128'
+    cuadrante_581:
+        nombre: 'Sector Rural B'
+        codigo: '581'
+        comuna: '@comuna_128'
+    cuadrante_582:
+        nombre: 'Sector Rural D'
+        codigo: '582'
+        comuna: '@comuna_128'
+    cuadrante_583:
+        nombre: 'Sector Rural E'
+        codigo: '583'
+        comuna: '@comuna_128'
+    cuadrante_584:
+        nombre: 'Sector Rural F'
+        codigo: '584'
+        comuna: '@comuna_128'
+    cuadrante_585:
+        nombre: 'Sector Rural C'
+        codigo: '585'
+        comuna: '@comuna_128'
+    cuadrante_586:
+        nombre: 'Subsector 12'
+        codigo: '586'
+        comuna: '@comuna_129'
+    cuadrante_587:
+        nombre: 'Subsector 06'
+        codigo: '587'
+        comuna: '@comuna_130'
+    cuadrante_588:
+        nombre: 'Subsector 07'
+        codigo: '588'
+        comuna: '@comuna_130'
+    cuadrante_589:
+        nombre: 'Subsector 06'
+        codigo: '589'
+        comuna: '@comuna_130'
+    cuadrante_590:
+        nombre: 'Subsector 09'
+        codigo: '590'
+        comuna: '@comuna_131'
+    cuadrante_591:
+        nombre: 'Subsector 10'
+        codigo: '591'
+        comuna: '@comuna_131'
+    cuadrante_592:
+        nombre: 'Subsector 08'
+        codigo: '592'
+        comuna: '@comuna_131'
+    cuadrante_593:
+        nombre: 'Subsector 08'
+        codigo: '593'
+        comuna: '@comuna_131'
+    cuadrante_594:
+        nombre: 'Subsector 09'
+        codigo: '594'
+        comuna: '@comuna_131'
+    cuadrante_595:
+        nombre: 'Cuadrante 01'
+        codigo: '595'
+        comuna: '@comuna_132'
+    cuadrante_596:
+        nombre: 'Cuadrabte 02'
+        codigo: '596'
+        comuna: '@comuna_132'
+    cuadrante_597:
+        nombre: 'Cuadrante 01'
+        codigo: '597'
+        comuna: '@comuna_132'
+    cuadrante_598:
+        nombre: 'Cuadrante 02'
+        codigo: '598'
+        comuna: '@comuna_132'
+    cuadrante_599:
+        nombre: 'Sector Rural A'
+        codigo: '599'
+        comuna: '@comuna_132'
+    cuadrante_600:
+        nombre: 'Sector Rural D'
+        codigo: '600'
+        comuna: '@comuna_132'
+    cuadrante_601:
+        nombre: 'Sector Rural C'
+        codigo: '601'
+        comuna: '@comuna_132'
+    cuadrante_602:
+        nombre: 'Sector Rural B'
+        codigo: '602'
+        comuna: '@comuna_132'
+    cuadrante_603:
+        nombre: 'Subsector 04'
+        codigo: '603'
+        comuna: '@comuna_133'
+    cuadrante_604:
+        nombre: 'Subsector 03'
+        codigo: '604'
+        comuna: '@comuna_133'
+    cuadrante_605:
+        nombre: 'Subsector 05'
+        codigo: '605'
+        comuna: '@comuna_133'
+    cuadrante_606:
+        nombre: 'Sector Rural B'
+        codigo: '606'
+        comuna: '@comuna_134'
+    cuadrante_607:
+        nombre: 'Cuadrante 04'
+        codigo: '607'
+        comuna: '@comuna_134'
+    cuadrante_608:
+        nombre: 'Cuadrante 05'
+        codigo: '608'
+        comuna: '@comuna_134'
+    cuadrante_609:
+        nombre: 'Sector Rural A'
+        codigo: '609'
+        comuna: '@comuna_134'
+    cuadrante_610:
+        nombre: 'Sector Rural A'
+        codigo: '610'
+        comuna: '@comuna_134'
+    cuadrante_611:
+        nombre: 'Sector Rural A'
+        codigo: '611'
+        comuna: '@comuna_134'
+    cuadrante_612:
+        nombre: 'Cuadrante 02'
+        codigo: '612'
+        comuna: '@comuna_134'
+    cuadrante_613:
+        nombre: 'Cuadrante 03'
+        codigo: '613'
+        comuna: '@comuna_134'
+    cuadrante_614:
+        nombre: 'Cuadrante 01'
+        codigo: '614'
+        comuna: '@comuna_134'
+    cuadrante_615:
+        nombre: 'Cuadrante 02'
+        codigo: '615'
+        comuna: '@comuna_134'
+    cuadrante_616:
+        nombre: 'Cuadrante 03'
+        codigo: '616'
+        comuna: '@comuna_134'
+    cuadrante_617:
+        nombre: 'Subsector 08'
+        codigo: '617'
+        comuna: '@comuna_135'
+    cuadrante_618:
+        nombre: 'Subsector 20'
+        codigo: '618'
+        comuna: '@comuna_135'
+    cuadrante_619:
+        nombre: 'Cuadrante 01'
+        codigo: '619'
+        comuna: '@comuna_136'
+    cuadrante_620:
+        nombre: 'Cuadrante 02'
+        codigo: '620'
+        comuna: '@comuna_136'
+    cuadrante_621:
+        nombre: 'Sector Rural A'
+        codigo: '621'
+        comuna: '@comuna_136'
+    cuadrante_622:
+        nombre: 'Sector Rural B'
+        codigo: '622'
+        comuna: '@comuna_136'
+    cuadrante_623:
+        nombre: 'Subsector 09'
+        codigo: '623'
+        comuna: '@comuna_136'
+    cuadrante_624:
+        nombre: 'Cuadrante 01'
+        codigo: '624'
+        comuna: '@comuna_137'
+    cuadrante_625:
+        nombre: 'Cuadrante 02'
+        codigo: '625'
+        comuna: '@comuna_137'
+    cuadrante_626:
+        nombre: 'Sector Rural D'
+        codigo: '626'
+        comuna: '@comuna_137'
+    cuadrante_627:
+        nombre: 'Sector Rural C'
+        codigo: '627'
+        comuna: '@comuna_137'
+    cuadrante_628:
+        nombre: 'Sector Rural B'
+        codigo: '628'
+        comuna: '@comuna_137'
+    cuadrante_629:
+        nombre: 'Cuadrante 01'
+        codigo: '629'
+        comuna: '@comuna_137'
+    cuadrante_630:
+        nombre: 'Cuadrante 03'
+        codigo: '630'
+        comuna: '@comuna_137'
+    cuadrante_631:
+        nombre: 'Sector Rural A'
+        codigo: '631'
+        comuna: '@comuna_137'
+    cuadrante_632:
+        nombre: 'Subsector 06'
+        codigo: '632'
+        comuna: '@comuna_138'
+    cuadrante_633:
+        nombre: 'Subsector 07'
+        codigo: '633'
+        comuna: '@comuna_138'
+    cuadrante_634:
+        nombre: 'Subsector 08'
+        codigo: '634'
+        comuna: '@comuna_138'
+    cuadrante_635:
+        nombre: 'Subsector 09'
+        codigo: '635'
+        comuna: '@comuna_138'
+    cuadrante_636:
+        nombre: 'Subsector 06'
+        codigo: '636'
+        comuna: '@comuna_138'
+    cuadrante_637:
+        nombre: 'Cuadrante 01'
+        codigo: '637'
+        comuna: '@comuna_139'
+    cuadrante_638:
+        nombre: 'Cuadrante 01'
+        codigo: '638'
+        comuna: '@comuna_139'
+    cuadrante_639:
+        nombre: 'Cuadrante 02'
+        codigo: '639'
+        comuna: '@comuna_139'
+    cuadrante_640:
+        nombre: 'Sector Rural A'
+        codigo: '640'
+        comuna: '@comuna_139'
+    cuadrante_641:
+        nombre: 'Sector Rural B'
+        codigo: '641'
+        comuna: '@comuna_139'
+    cuadrante_642:
+        nombre: 'Sector Rural D'
+        codigo: '642'
+        comuna: '@comuna_139'
+    cuadrante_643:
+        nombre: 'Sector Rural C'
+        codigo: '643'
+        comuna: '@comuna_139'
+    cuadrante_644:
+        nombre: 'Sector Rural E'
+        codigo: '644'
+        comuna: '@comuna_139'
+    cuadrante_645:
+        nombre: 'Subsector 08'
+        codigo: '645'
+        comuna: '@comuna_140'
+    cuadrante_646:
+        nombre: 'Subsector 10'
+        codigo: '646'
+        comuna: '@comuna_140'
+    cuadrante_647:
+        nombre: 'Subsector 09'
+        codigo: '647'
+        comuna: '@comuna_140'
+    cuadrante_648:
+        nombre: 'Subsector 08'
+        codigo: '648'
+        comuna: '@comuna_140'
+    cuadrante_649:
+        nombre: 'Subsector 10'
+        codigo: '649'
+        comuna: '@comuna_141'
+    cuadrante_650:
+        nombre: 'Subsector 18'
+        codigo: '650'
+        comuna: '@comuna_141'
+    cuadrante_651:
+        nombre: 'Subsector 17'
+        codigo: '651'
+        comuna: '@comuna_141'
+    cuadrante_652:
+        nombre: 'Cuadrante 01'
+        codigo: '652'
+        comuna: '@comuna_142'
+    cuadrante_653:
+        nombre: 'Cuadrante 02'
+        codigo: '653'
+        comuna: '@comuna_142'
+    cuadrante_654:
+        nombre: 'Cuadrante 03'
+        codigo: '654'
+        comuna: '@comuna_142'
+    cuadrante_655:
+        nombre: 'Cuadrante 04'
+        codigo: '655'
+        comuna: '@comuna_142'
+    cuadrante_656:
+        nombre: 'Cuadrante 05'
+        codigo: '656'
+        comuna: '@comuna_142'
+    cuadrante_657:
+        nombre: 'Cuadrante 03'
+        codigo: '657'
+        comuna: '@comuna_142'
+    cuadrante_658:
+        nombre: 'Cuadrante 01'
+        codigo: '658'
+        comuna: '@comuna_143'
+    cuadrante_659:
+        nombre: 'Cuadrante 02'
+        codigo: '659'
+        comuna: '@comuna_143'
+    cuadrante_660:
+        nombre: 'Sector Rural A'
+        codigo: '660'
+        comuna: '@comuna_143'
+    cuadrante_661:
+        nombre: 'Cuadrante 03'
+        codigo: '661'
+        comuna: '@comuna_143'
+    cuadrante_662:
+        nombre: 'Cuadrante 04'
+        codigo: '662'
+        comuna: '@comuna_143'
+    cuadrante_663:
+        nombre: 'Sector Rural B'
+        codigo: '663'
+        comuna: '@comuna_143'
+    cuadrante_664:
+        nombre: 'Cuadrante 05'
+        codigo: '664'
+        comuna: '@comuna_143'
+    cuadrante_665:
+        nombre: 'Sector Rural C'
+        codigo: '665'
+        comuna: '@comuna_143'
+    cuadrante_666:
+        nombre: 'Sector Rural D'
+        codigo: '666'
+        comuna: '@comuna_143'
+    cuadrante_667:
+        nombre: 'Cuadrante 06'
+        codigo: '667'
+        comuna: '@comuna_143'
+    cuadrante_668:
+        nombre: 'Cuadrante 06'
+        codigo: '668'
+        comuna: '@comuna_144'
+    cuadrante_669:
+        nombre: 'Cuadrante 07'
+        codigo: '669'
+        comuna: '@comuna_144'
+    cuadrante_670:
+        nombre: 'Subsector 05'
+        codigo: '670'
+        comuna: '@comuna_145'
+    cuadrante_671:
+        nombre: 'Subsector 04'
+        codigo: '671'
+        comuna: '@comuna_145'
+    cuadrante_672:
+        nombre: 'Subsector 13'
+        codigo: '672'
+        comuna: '@comuna_146'
+    cuadrante_673:
+        nombre: 'Subsector 14'
+        codigo: '673'
+        comuna: '@comuna_146'
+    cuadrante_674:
+        nombre: 'Subsector 12'
+        codigo: '674'
+        comuna: '@comuna_146'
+    cuadrante_675:
+        nombre: 'Cuadrante 01'
+        codigo: '675'
+        comuna: '@comuna_147'
+    cuadrante_676:
+        nombre: 'Cuadrante 02'
+        codigo: '676'
+        comuna: '@comuna_147'
+    cuadrante_677:
+        nombre: 'Sector Rural A'
+        codigo: '677'
+        comuna: '@comuna_147'
+    cuadrante_678:
+        nombre: 'Cuadrante 01'
+        codigo: '678'
+        comuna: '@comuna_148'
+    cuadrante_679:
+        nombre: 'Sector Rural A'
+        codigo: '679'
+        comuna: '@comuna_148'
+    cuadrante_680:
+        nombre: 'Cuadrante 02'
+        codigo: '680'
+        comuna: '@comuna_148'
+    cuadrante_681:
+        nombre: 'Sector Rural B'
+        codigo: '681'
+        comuna: '@comuna_148'
+    cuadrante_682:
+        nombre: 'Cuadrante 01'
+        codigo: '682'
+        comuna: '@comuna_149'
+    cuadrante_683:
+        nombre: 'Cuadrante 02'
+        codigo: '683'
+        comuna: '@comuna_149'
+    cuadrante_684:
+        nombre: 'Cuadrante 03'
+        codigo: '684'
+        comuna: '@comuna_149'
+    cuadrante_685:
+        nombre: 'Cuadrante 04'
+        codigo: '685'
+        comuna: '@comuna_149'
+    cuadrante_686:
+        nombre: 'Subsector 08'
+        codigo: '686'
+        comuna: '@comuna_150'
+    cuadrante_687:
+        nombre: 'Subsector 09'
+        codigo: '687'
+        comuna: '@comuna_150'
+    cuadrante_688:
+        nombre: 'Subsector 10'
+        codigo: '688'
+        comuna: '@comuna_150'
+    cuadrante_689:
+        nombre: 'Cuadrante 01'
+        codigo: '689'
+        comuna: '@comuna_151'
+    cuadrante_690:
+        nombre: 'Cuadrante 02'
+        codigo: '690'
+        comuna: '@comuna_151'
+    cuadrante_691:
+        nombre: 'Cuadrante 03'
+        codigo: '691'
+        comuna: '@comuna_151'
+    cuadrante_692:
+        nombre: 'Cuadrante 05'
+        codigo: '692'
+        comuna: '@comuna_151'
+    cuadrante_693:
+        nombre: 'Cuadrante 06'
+        codigo: '693'
+        comuna: '@comuna_151'
+    cuadrante_694:
+        nombre: 'Cuadrante 07'
+        codigo: '694'
+        comuna: '@comuna_151'
+    cuadrante_695:
+        nombre: 'Sector Rural A'
+        codigo: '695'
+        comuna: '@comuna_151'
+    cuadrante_696:
+        nombre: 'Sector Rural B'
+        codigo: '696'
+        comuna: '@comuna_151'
+    cuadrante_697:
+        nombre: 'Cuadrante 04'
+        codigo: '697'
+        comuna: '@comuna_151'
+    cuadrante_698:
+        nombre: 'Cuadrante 01'
+        codigo: '698'
+        comuna: '@comuna_152'
+    cuadrante_699:
+        nombre: 'Cuadrante 02'
+        codigo: '699'
+        comuna: '@comuna_152'
+    cuadrante_700:
+        nombre: 'Sector Rural A'
+        codigo: '700'
+        comuna: '@comuna_152'
+    cuadrante_701:
+        nombre: 'Sector Rural C'
+        codigo: '701'
+        comuna: '@comuna_152'
+    cuadrante_702:
+        nombre: 'Sector Rural B'
+        codigo: '702'
+        comuna: '@comuna_152'
+    cuadrante_703:
+        nombre: 'Cuadrante 01'
+        codigo: '703'
+        comuna: '@comuna_153'
+    cuadrante_704:
+        nombre: 'Cuadrante 02'
+        codigo: '704'
+        comuna: '@comuna_153'
+    cuadrante_705:
+        nombre: 'Cuadrante 03'
+        codigo: '705'
+        comuna: '@comuna_153'
+    cuadrante_706:
+        nombre: 'Cuadrante 04'
+        codigo: '706'
+        comuna: '@comuna_153'
+    cuadrante_707:
+        nombre: 'Sector Rural B'
+        codigo: '707'
+        comuna: '@comuna_154'
+    cuadrante_708:
+        nombre: 'Cuadrante 01'
+        codigo: '708'
+        comuna: '@comuna_154'
+    cuadrante_709:
+        nombre: 'Cuadrante 02'
+        codigo: '709'
+        comuna: '@comuna_154'
+    cuadrante_710:
+        nombre: 'Sector Rural A'
+        codigo: '710'
+        comuna: '@comuna_154'
+    cuadrante_711:
+        nombre: 'Cuadrante 01'
+        codigo: '711'
+        comuna: '@comuna_155'
+    cuadrante_712:
+        nombre: 'Cuadrante 02'
+        codigo: '712'
+        comuna: '@comuna_155'
+    cuadrante_713:
+        nombre: 'Sector Rural A'
+        codigo: '713'
+        comuna: '@comuna_155'
+    cuadrante_714:
+        nombre: 'Cuadrante 04'
+        codigo: '714'
+        comuna: '@comuna_155'
+    cuadrante_715:
+        nombre: 'Sector Rural C'
+        codigo: '715'
+        comuna: '@comuna_155'
+    cuadrante_716:
+        nombre: 'Cuadrante 03'
+        codigo: '716'
+        comuna: '@comuna_155'
+    cuadrante_717:
+        nombre: 'Sector Rural B'
+        codigo: '717'
+        comuna: '@comuna_155'
+    cuadrante_718:
+        nombre: 'Cuadrante 01'
+        codigo: '718'
+        comuna: '@comuna_156'
+    cuadrante_719:
+        nombre: 'Cuadrante 02'
+        codigo: '719'
+        comuna: '@comuna_156'
+    cuadrante_720:
+        nombre: 'Sector Rural A'
+        codigo: '720'
+        comuna: '@comuna_156'
+    cuadrante_721:
+        nombre: 'Subsector 09'
+        codigo: '721'
+        comuna: '@comuna_157'
+    cuadrante_722:
+        nombre: 'Subsector 10'
+        codigo: '722'
+        comuna: '@comuna_157'
+    cuadrante_723:
+        nombre: 'Subsector 11'
+        codigo: '723'
+        comuna: '@comuna_157'
+    cuadrante_724:
+        nombre: 'Subsector 12'
+        codigo: '724'
+        comuna: '@comuna_157'
+    cuadrante_725:
+        nombre: 'Cuadrante 01'
+        codigo: '725'
+        comuna: '@comuna_158'
+    cuadrante_726:
+        nombre: 'Cuadrante 02'
+        codigo: '726'
+        comuna: '@comuna_158'
+    cuadrante_727:
+        nombre: 'Sector Rural A'
+        codigo: '727'
+        comuna: '@comuna_158'
+    cuadrante_728:
+        nombre: 'Cuadrante 01'
+        codigo: '728'
+        comuna: '@comuna_159'
+    cuadrante_729:
+        nombre: 'Cuadrante 02'
+        codigo: '729'
+        comuna: '@comuna_159'
+    cuadrante_730:
+        nombre: 'Sector Rural A'
+        codigo: '730'
+        comuna: '@comuna_159'
+    cuadrante_731:
+        nombre: 'Cuadrante 03'
+        codigo: '731'
+        comuna: '@comuna_159'
+    cuadrante_732:
+        nombre: 'Sector Rural B'
+        codigo: '732'
+        comuna: '@comuna_159'
+    cuadrante_733:
+        nombre: 'Subsector 13'
+        codigo: '733'
+        comuna: '@comuna_160'
+    cuadrante_734:
+        nombre: 'Subsector 14'
+        codigo: '734'
+        comuna: '@comuna_160'
+    cuadrante_735:
+        nombre: 'Subsector 15'
+        codigo: '735'
+        comuna: '@comuna_160'
+    cuadrante_736:
+        nombre: 'Subsector 16'
+        codigo: '736'
+        comuna: '@comuna_160'
+    cuadrante_737:
+        nombre: 'Cuadrante 01'
+        codigo: '737'
+        comuna: '@comuna_161'
+    cuadrante_738:
+        nombre: 'Cuadrante 02'
+        codigo: '738'
+        comuna: '@comuna_161'
+    cuadrante_739:
+        nombre: 'Cuadrante 03'
+        codigo: '739'
+        comuna: '@comuna_161'
+    cuadrante_740:
+        nombre: 'Sector Rural C'
+        codigo: '740'
+        comuna: '@comuna_161'
+    cuadrante_741:
+        nombre: 'Sector Rural E'
+        codigo: '741'
+        comuna: '@comuna_161'
+    cuadrante_742:
+        nombre: 'Sector Rural D'
+        codigo: '742'
+        comuna: '@comuna_161'
+    cuadrante_743:
+        nombre: 'Cuadrante 06'
+        codigo: '743'
+        comuna: '@comuna_161'
+    cuadrante_744:
+        nombre: 'Sector Rural B'
+        codigo: '744'
+        comuna: '@comuna_161'
+    cuadrante_745:
+        nombre: 'Cuadrante 05'
+        codigo: '745'
+        comuna: '@comuna_161'
+    cuadrante_746:
+        nombre: 'Cuadrante 04'
+        codigo: '746'
+        comuna: '@comuna_161'
+    cuadrante_747:
+        nombre: 'Sector Rural A'
+        codigo: '747'
+        comuna: '@comuna_161'
+    cuadrante_748:
+        nombre: 'Subsector 09'
+        codigo: '748'
+        comuna: '@comuna_162'
+    cuadrante_749:
+        nombre: 'Cuadrante 01'
+        codigo: '749'
+        comuna: '@comuna_163'
+    cuadrante_750:
+        nombre: 'Cuadrante 02'
+        codigo: '750'
+        comuna: '@comuna_163'
+    cuadrante_751:
+        nombre: 'Sector Rural A'
+        codigo: '751'
+        comuna: '@comuna_163'
+    cuadrante_752:
+        nombre: 'Sector Rural B'
+        codigo: '752'
+        comuna: '@comuna_163'
+    cuadrante_753:
+        nombre: 'Sector Rural C'
+        codigo: '753'
+        comuna: '@comuna_163'
+    cuadrante_754:
+        nombre: 'Sector Rural D'
+        codigo: '754'
+        comuna: '@comuna_163'
+    cuadrante_755:
+        nombre: 'Cuadrante 03'
+        codigo: '755'
+        comuna: '@comuna_163'
+    cuadrante_756:
+        nombre: 'Cuadrante 01'
+        codigo: '756'
+        comuna: '@comuna_164'
+    cuadrante_757:
+        nombre: 'Cuadrante 02'
+        codigo: '757'
+        comuna: '@comuna_164'
+    cuadrante_758:
+        nombre: 'Sector Rural A'
+        codigo: '758'
+        comuna: '@comuna_164'
+    cuadrante_759:
+        nombre: 'Cuadrante 01'
+        codigo: '759'
+        comuna: '@comuna_165'
+    cuadrante_760:
+        nombre: 'Cuadrante 02'
+        codigo: '760'
+        comuna: '@comuna_165'
+    cuadrante_761:
+        nombre: 'Sector Rural A'
+        codigo: '761'
+        comuna: '@comuna_165'
+    cuadrante_762:
+        nombre: 'Sector Rural B'
+        codigo: '762'
+        comuna: '@comuna_165'
+    cuadrante_763:
+        nombre: 'Cuadrante 01'
+        codigo: '763'
+        comuna: '@comuna_166'
+    cuadrante_764:
+        nombre: 'Cuadrante 02'
+        codigo: '764'
+        comuna: '@comuna_166'
+    cuadrante_765:
+        nombre: 'Sector Rural A'
+        codigo: '765'
+        comuna: '@comuna_166'
+    cuadrante_766:
+        nombre: 'Sector Rural B'
+        codigo: '766'
+        comuna: '@comuna_166'
+    cuadrante_767:
+        nombre: 'Subsector 03'
+        codigo: '767'
+        comuna: '@comuna_167'
+    cuadrante_768:
+        nombre: 'Subsector 04'
+        codigo: '768'
+        comuna: '@comuna_167'
+    cuadrante_769:
+        nombre: 'Subsector 04'
+        codigo: '769'
+        comuna: '@comuna_168'
+    cuadrante_770:
+        nombre: 'Subsector 06'
+        codigo: '770'
+        comuna: '@comuna_168'
+    cuadrante_771:
+        nombre: 'Subsector 05'
+        codigo: '771'
+        comuna: '@comuna_168'
+    cuadrante_772:
+        nombre: 'Subsector 03'
+        codigo: '772'
+        comuna: '@comuna_169'
+    cuadrante_773:
+        nombre: 'Subsector 04'
+        codigo: '773'
+        comuna: '@comuna_169'
+    cuadrante_774:
+        nombre: 'Subsector 09'
+        codigo: '774'
+        comuna: '@comuna_170'
+    cuadrante_775:
+        nombre: 'Subsector 08'
+        codigo: '775'
+        comuna: '@comuna_171'
+    cuadrante_776:
+        nombre: 'Subsector 01'
+        codigo: '776'
+        comuna: '@comuna_171'
+    cuadrante_777:
+        nombre: 'Subsector 07'
+        codigo: '777'
+        comuna: '@comuna_172'
+    cuadrante_778:
+        nombre: 'Subsector 05'
+        codigo: '778'
+        comuna: '@comuna_172'
+    cuadrante_779:
+        nombre: 'Subsector 06'
+        codigo: '779'
+        comuna: '@comuna_172'
+    cuadrante_780:
+        nombre: 'Subsector 10'
+        codigo: '780'
+        comuna: '@comuna_172'
+    cuadrante_781:
+        nombre: 'Cuadrante 01'
+        codigo: '781'
+        comuna: '@comuna_173'
+    cuadrante_782:
+        nombre: 'Cuadrante 02'
+        codigo: '782'
+        comuna: '@comuna_173'
+    cuadrante_783:
+        nombre: 'Sector Rural A'
+        codigo: '783'
+        comuna: '@comuna_173'
+    cuadrante_784:
+        nombre: 'Cuadrante 03'
+        codigo: '784'
+        comuna: '@comuna_173'
+    cuadrante_785:
+        nombre: 'Sector Rural B'
+        codigo: '785'
+        comuna: '@comuna_173'
+    cuadrante_786:
+        nombre: 'Sector Rural C'
+        codigo: '786'
+        comuna: '@comuna_173'
+    cuadrante_787:
+        nombre: 'Sector Rural D'
+        codigo: '787'
+        comuna: '@comuna_173'
+    cuadrante_788:
+        nombre: 'Subsector 12'
+        codigo: '788'
+        comuna: '@comuna_173'
+    cuadrante_789:
+        nombre: 'Sector Rural E'
+        codigo: '789'
+        comuna: '@comuna_173'
+    cuadrante_790:
+        nombre: 'Subsector 02'
+        codigo: '790'
+        comuna: '@comuna_174'
+    cuadrante_791:
+        nombre: 'Cuadrante 01'
+        codigo: '791'
+        comuna: '@comuna_326'
+    cuadrante_792:
+        nombre: 'Cuadrante 02'
+        codigo: '792'
+        comuna: '@comuna_326'
+    cuadrante_793:
+        nombre: 'Cuadrante 03'
+        codigo: '793'
+        comuna: '@comuna_326'
+    cuadrante_794:
+        nombre: 'Sector Rural A'
+        codigo: '794'
+        comuna: '@comuna_326'
+    cuadrante_795:
+        nombre: 'Cuadrante 07'
+        codigo: '795'
+        comuna: '@comuna_326'
+    cuadrante_796:
+        nombre: 'Cuadrante 05'
+        codigo: '796'
+        comuna: '@comuna_326'
+    cuadrante_797:
+        nombre: 'Cuadrante 06'
+        codigo: '797'
+        comuna: '@comuna_326'
+    cuadrante_798:
+        nombre: 'Cuadrante 01'
+        codigo: '798'
+        comuna: '@comuna_327'
+    cuadrante_799:
+        nombre: 'Cuadrante 02'
+        codigo: '799'
+        comuna: '@comuna_327'
+    cuadrante_800:
+        nombre: 'Sector Rural A'
+        codigo: '800'
+        comuna: '@comuna_327'
+    cuadrante_801:
+        nombre: 'Sector Rural B'
+        codigo: '801'
+        comuna: '@comuna_327'
+    cuadrante_802:
+        nombre: 'Cuadrante 03'
+        codigo: '802'
+        comuna: '@comuna_327'
+    cuadrante_803:
+        nombre: 'Sector Rural C'
+        codigo: '803'
+        comuna: '@comuna_327'
+    cuadrante_804:
+        nombre: 'Subsector 02'
+        codigo: '804'
+        comuna: '@comuna_336'
+    cuadrante_805:
+        nombre: 'Subsector 06'
+        codigo: '805'
+        comuna: '@comuna_337'
+    cuadrante_806:
+        nombre: 'Subsector 09'
+        codigo: '806'
+        comuna: '@comuna_337'
+    cuadrante_807:
+        nombre: 'Subsector 08'
+        codigo: '807'
+        comuna: '@comuna_337'
+    cuadrante_808:
+        nombre: 'Subsector 04'
+        codigo: '808'
+        comuna: '@comuna_343'
+    cuadrante_809:
+        nombre: 'Subsector 07'
+        codigo: '809'
+        comuna: '@comuna_343'
+    cuadrante_810:
+        nombre: 'Subsector 06'
+        codigo: '810'
+        comuna: '@comuna_343'
+    cuadrante_811:
+        nombre: 'Cuadrante 01'
+        codigo: '811'
+        comuna: '@comuna_328'
+    cuadrante_812:
+        nombre: 'Cuadrante 02'
+        codigo: '812'
+        comuna: '@comuna_328'
+    cuadrante_813:
+        nombre: 'Sector Rural A'
+        codigo: '813'
+        comuna: '@comuna_328'
+    cuadrante_814:
+        nombre: 'Subsector 05'
+        codigo: '814'
+        comuna: '@comuna_329'
+    cuadrante_815:
+        nombre: 'Subsector 04'
+        codigo: '815'
+        comuna: '@comuna_338'
+    cuadrante_816:
+        nombre: 'Subsector 03'
+        codigo: '816'
+        comuna: '@comuna_344'
+    cuadrante_817:
+        nombre: 'Subsector 04'
+        codigo: '817'
+        comuna: '@comuna_344'
+    cuadrante_818:
+        nombre: 'Subsector 04'
+        codigo: '818'
+        comuna: '@comuna_330'
+    cuadrante_819:
+        nombre: 'Subsector 12'
+        codigo: '819'
+        comuna: '@comuna_331'
+    cuadrante_820:
+        nombre: 'Subsector 11'
+        codigo: '820'
+        comuna: '@comuna_331'
+    cuadrante_821:
+        nombre: 'Subsector 05'
+        codigo: '821'
+        comuna: '@comuna_331'
+    cuadrante_822:
+        nombre: 'Subsector 03'
+        codigo: '822'
+        comuna: '@comuna_339'
+    cuadrante_823:
+        nombre: 'Subsector 02'
+        codigo: '823'
+        comuna: '@comuna_332'
+    cuadrante_824:
+        nombre: 'Subsector 01'
+        codigo: '824'
+        comuna: '@comuna_335'
+    cuadrante_825:
+        nombre: 'Subsector 07'
+        codigo: '825'
+        comuna: '@comuna_340'
+    cuadrante_826:
+        nombre: 'Sector Rural C'
+        codigo: '826'
+        comuna: '@comuna_342'
+    cuadrante_827:
+        nombre: 'Cuadrante 01'
+        codigo: '827'
+        comuna: '@comuna_342'
+    cuadrante_828:
+        nombre: 'Cuadrante 02'
+        codigo: '828'
+        comuna: '@comuna_342'
+    cuadrante_829:
+        nombre: 'Cuadrante 03'
+        codigo: '829'
+        comuna: '@comuna_342'
+    cuadrante_830:
+        nombre: 'Sector Rural A'
+        codigo: '830'
+        comuna: '@comuna_342'
+    cuadrante_831:
+        nombre: 'Sector Rural B'
+        codigo: '831'
+        comuna: '@comuna_342'
+    cuadrante_832:
+        nombre: 'Sector Rural D'
+        codigo: '832'
+        comuna: '@comuna_342'
+    cuadrante_833:
+        nombre: 'Subsector 02'
+        codigo: '833'
+        comuna: '@comuna_345'
+    cuadrante_834:
+        nombre: 'Subsector 08'
+        codigo: '834'
+        comuna: '@comuna_345'
+    cuadrante_835:
+        nombre: 'Subsector 05'
+        codigo: '835'
+        comuna: '@comuna_333'
+    cuadrante_836:
+        nombre: 'Subsector 06'
+        codigo: '836'
+        comuna: '@comuna_333'
+    cuadrante_837:
+        nombre: 'Subsector 03'
+        codigo: '837'
+        comuna: '@comuna_333'
+    cuadrante_838:
+        nombre: 'Subsector 07'
+        codigo: '838'
+        comuna: '@comuna_346'
+    cuadrante_839:
+        nombre: 'Subsector 05'
+        codigo: '839'
+        comuna: '@comuna_341'
+    cuadrante_840:
+        nombre: 'Subsector 01'
+        codigo: '840'
+        comuna: '@comuna_334'
+    cuadrante_841:
+        nombre: 'Subsector 02'
+        codigo: '841'
+        comuna: '@comuna_334'
+    cuadrante_842:
+        nombre: 'Subsector 03'
+        codigo: '842'
+        comuna: '@comuna_334'
+    cuadrante_843:
+        nombre: 'Cuadrante 01'
+        codigo: '843'
+        comuna: '@comuna_175'
+    cuadrante_844:
+        nombre: 'Cuadrante 02'
+        codigo: '844'
+        comuna: '@comuna_175'
+    cuadrante_845:
+        nombre: 'Cuadrante 03'
+        codigo: '845'
+        comuna: '@comuna_175'
+    cuadrante_846:
+        nombre: 'Cuadrante 04'
+        codigo: '846'
+        comuna: '@comuna_175'
+    cuadrante_847:
+        nombre: 'Cuadrante 05'
+        codigo: '847'
+        comuna: '@comuna_175'
+    cuadrante_848:
+        nombre: 'Sector Rural A'
+        codigo: '848'
+        comuna: '@comuna_175'
+    cuadrante_849:
+        nombre: 'Sector Rural B'
+        codigo: '849'
+        comuna: '@comuna_175'
+    cuadrante_850:
+        nombre: 'Cuadrante 06'
+        codigo: '850'
+        comuna: '@comuna_175'
+    cuadrante_851:
+        nombre: 'Subsector 04'
+        codigo: '851'
+        comuna: '@comuna_175'
+    cuadrante_852:
+        nombre: 'Subsector 05'
+        codigo: '852'
+        comuna: '@comuna_175'
+    cuadrante_853:
+        nombre: 'Cuadrante 07'
+        codigo: '853'
+        comuna: '@comuna_175'
+    cuadrante_854:
+        nombre: 'Cuadrante 08'
+        codigo: '854'
+        comuna: '@comuna_175'
+    cuadrante_855:
+        nombre: 'Cuadrante 09'
+        codigo: '855'
+        comuna: '@comuna_175'
+    cuadrante_856:
+        nombre: 'Cuadrante 10'
+        codigo: '856'
+        comuna: '@comuna_175'
+    cuadrante_857:
+        nombre: 'Sector Rural C'
+        codigo: '857'
+        comuna: '@comuna_175'
+    cuadrante_858:
+        nombre: 'Cuadrante 06'
+        codigo: '858'
+        comuna: '@comuna_175'
+    cuadrante_859:
+        nombre: 'Subsector 10'
+        codigo: '859'
+        comuna: '@comuna_176'
+    cuadrante_860:
+        nombre: 'Subsector 06'
+        codigo: '860'
+        comuna: '@comuna_176'
+    cuadrante_861:
+        nombre: 'Subsector 07'
+        codigo: '861'
+        comuna: '@comuna_176'
+    cuadrante_862:
+        nombre: 'Subsector 08'
+        codigo: '862'
+        comuna: '@comuna_176'
+    cuadrante_863:
+        nombre: 'Subsector 09'
+        codigo: '863'
+        comuna: '@comuna_176'
+    cuadrante_864:
+        nombre: 'Subsector 12'
+        codigo: '864'
+        comuna: '@comuna_177'
+    cuadrante_865:
+        nombre: 'Subsector 13'
+        codigo: '865'
+        comuna: '@comuna_177'
+    cuadrante_866:
+        nombre: 'Subsector 14'
+        codigo: '866'
+        comuna: '@comuna_177'
+    cuadrante_867:
+        nombre: 'Subsector 15'
+        codigo: '867'
+        comuna: '@comuna_177'
+    cuadrante_868:
+        nombre: 'Subsector 14'
+        codigo: '868'
+        comuna: '@comuna_178'
+    cuadrante_869:
+        nombre: 'Subsector 13'
+        codigo: '869'
+        comuna: '@comuna_178'
+    cuadrante_870:
+        nombre: 'Subsector 15'
+        codigo: '870'
+        comuna: '@comuna_178'
+    cuadrante_871:
+        nombre: 'Subsector 10'
+        codigo: '871'
+        comuna: '@comuna_179'
+    cuadrante_872:
+        nombre: 'Subsector 11'
+        codigo: '872'
+        comuna: '@comuna_179'
+    cuadrante_873:
+        nombre: 'Subsector 08'
+        codigo: '873'
+        comuna: '@comuna_179'
+    cuadrante_874:
+        nombre: 'Subsector 09'
+        codigo: '874'
+        comuna: '@comuna_179'
+    cuadrante_875:
+        nombre: 'Subsector 10'
+        codigo: '875'
+        comuna: '@comuna_179'
+    cuadrante_876:
+        nombre: 'Subsector 15'
+        codigo: '876'
+        comuna: '@comuna_179'
+    cuadrante_877:
+        nombre: 'Subsector 02'
+        codigo: '877'
+        comuna: '@comuna_180'
+    cuadrante_878:
+        nombre: 'Subsector 04'
+        codigo: '878'
+        comuna: '@comuna_181'
+    cuadrante_879:
+        nombre: 'Subsector 05'
+        codigo: '879'
+        comuna: '@comuna_181'
+    cuadrante_880:
+        nombre: 'Subsector 06'
+        codigo: '880'
+        comuna: '@comuna_181'
+    cuadrante_881:
+        nombre: 'Subsector 11'
+        codigo: '881'
+        comuna: '@comuna_181'
+    cuadrante_882:
+        nombre: 'Subsector 12'
+        codigo: '882'
+        comuna: '@comuna_181'
+    cuadrante_883:
+        nombre: 'Cuadrante 01'
+        codigo: '883'
+        comuna: '@comuna_182'
+    cuadrante_884:
+        nombre: 'Cuadrante 02'
+        codigo: '884'
+        comuna: '@comuna_182'
+    cuadrante_885:
+        nombre: 'Sector Rural A'
+        codigo: '885'
+        comuna: '@comuna_182'
+    cuadrante_886:
+        nombre: 'Sector Rural B'
+        codigo: '886'
+        comuna: '@comuna_182'
+    cuadrante_887:
+        nombre: 'Sector Rural C'
+        codigo: '887'
+        comuna: '@comuna_182'
+    cuadrante_888:
+        nombre: 'Sector Rural D'
+        codigo: '888'
+        comuna: '@comuna_182'
+    cuadrante_889:
+        nombre: 'Cuadrante 01'
+        codigo: '889'
+        comuna: '@comuna_183'
+    cuadrante_890:
+        nombre: 'Cuadrante 02'
+        codigo: '890'
+        comuna: '@comuna_183'
+    cuadrante_891:
+        nombre: 'Sector Rural B'
+        codigo: '891'
+        comuna: '@comuna_183'
+    cuadrante_892:
+        nombre: 'Sector Rural A'
+        codigo: '892'
+        comuna: '@comuna_183'
+    cuadrante_893:
+        nombre: 'Sector Rural C'
+        codigo: '893'
+        comuna: '@comuna_183'
+    cuadrante_894:
+        nombre: 'Sector Rural B'
+        codigo: '894'
+        comuna: '@comuna_183'
+    cuadrante_895:
+        nombre: 'Subsector 16'
+        codigo: '895'
+        comuna: '@comuna_184'
+    cuadrante_896:
+        nombre: 'Cuadrante 01'
+        codigo: '896'
+        comuna: '@comuna_185'
+    cuadrante_897:
+        nombre: 'Cuadrante 02'
+        codigo: '897'
+        comuna: '@comuna_185'
+    cuadrante_898:
+        nombre: 'Sector Rural A'
+        codigo: '898'
+        comuna: '@comuna_185'
+    cuadrante_899:
+        nombre: 'Sector Rural B'
+        codigo: '899'
+        comuna: '@comuna_185'
+    cuadrante_900:
+        nombre: 'Sector Rural C'
+        codigo: '900'
+        comuna: '@comuna_185'
+    cuadrante_901:
+        nombre: 'Cuadrante 01'
+        codigo: '901'
+        comuna: '@comuna_186'
+    cuadrante_902:
+        nombre: 'Cuadrante 02'
+        codigo: '902'
+        comuna: '@comuna_186'
+    cuadrante_903:
+        nombre: 'Cuadrante 03'
+        codigo: '903'
+        comuna: '@comuna_186'
+    cuadrante_904:
+        nombre: 'Sector Rural A'
+        codigo: '904'
+        comuna: '@comuna_186'
+    cuadrante_905:
+        nombre: 'Sector Rural B'
+        codigo: '905'
+        comuna: '@comuna_186'
+    cuadrante_906:
+        nombre: 'Sector Rural C'
+        codigo: '906'
+        comuna: '@comuna_186'
+    cuadrante_907:
+        nombre: 'Subsector 03'
+        codigo: '907'
+        comuna: '@comuna_187'
+    cuadrante_908:
+        nombre: 'Subsector 01'
+        codigo: '908'
+        comuna: '@comuna_188'
+    cuadrante_909:
+        nombre: 'Subsector 02'
+        codigo: '909'
+        comuna: '@comuna_188'
+    cuadrante_910:
+        nombre: 'Subsector 03'
+        codigo: '910'
+        comuna: '@comuna_188'
+    cuadrante_911:
+        nombre: 'Subsector 14'
+        codigo: '911'
+        comuna: '@comuna_188'
+    cuadrante_912:
+        nombre: 'Sector Rural B'
+        codigo: '912'
+        comuna: '@comuna_189'
+    cuadrante_913:
+        nombre: 'Sector Rural C'
+        codigo: '913'
+        comuna: '@comuna_189'
+    cuadrante_914:
+        nombre: 'Cuadrante 01'
+        codigo: '914'
+        comuna: '@comuna_189'
+    cuadrante_915:
+        nombre: 'Cuadrante 02'
+        codigo: '915'
+        comuna: '@comuna_189'
+    cuadrante_916:
+        nombre: 'Sector Rural A'
+        codigo: '916'
+        comuna: '@comuna_189'
+    cuadrante_917:
+        nombre: 'Sector Rural D'
+        codigo: '917'
+        comuna: '@comuna_189'
+    cuadrante_918:
+        nombre: 'Subsector 12'
+        codigo: '918'
+        comuna: '@comuna_190'
+    cuadrante_919:
+        nombre: 'Subsector 11'
+        codigo: '919'
+        comuna: '@comuna_190'
+    cuadrante_920:
+        nombre: 'Subsector 13'
+        codigo: '920'
+        comuna: '@comuna_191'
+    cuadrante_921:
+        nombre: 'Subsector 15'
+        codigo: '921'
+        comuna: '@comuna_191'
+    cuadrante_922:
+        nombre: 'Subsector 14'
+        codigo: '922'
+        comuna: '@comuna_191'
+    cuadrante_923:
+        nombre: 'Subsector 07'
+        codigo: '923'
+        comuna: '@comuna_192'
+    cuadrante_924:
+        nombre: 'Subsector 13'
+        codigo: '924'
+        comuna: '@comuna_192'
+    cuadrante_925:
+        nombre: 'Subsector 05'
+        codigo: '925'
+        comuna: '@comuna_193'
+    cuadrante_926:
+        nombre: 'Subsector 07'
+        codigo: '926'
+        comuna: '@comuna_193'
+    cuadrante_927:
+        nombre: 'Subsector 08'
+        codigo: '927'
+        comuna: '@comuna_193'
+    cuadrante_928:
+        nombre: 'Subsector 09'
+        codigo: '928'
+        comuna: '@comuna_193'
+    cuadrante_929:
+        nombre: 'Subsector 17'
+        codigo: '929'
+        comuna: '@comuna_193'
+    cuadrante_930:
+        nombre: 'Cuadrante 01'
+        codigo: '930'
+        comuna: '@comuna_194'
+    cuadrante_931:
+        nombre: 'Cuadrante 02'
+        codigo: '931'
+        comuna: '@comuna_194'
+    cuadrante_932:
+        nombre: 'Sector Rural A'
+        codigo: '932'
+        comuna: '@comuna_194'
+    cuadrante_933:
+        nombre: 'Sector Rural B'
+        codigo: '933'
+        comuna: '@comuna_194'
+    cuadrante_934:
+        nombre: 'Sector Rural C'
+        codigo: '934'
+        comuna: '@comuna_194'
+    cuadrante_935:
+        nombre: 'Subsector 04'
+        codigo: '935'
+        comuna: '@comuna_195'
+    cuadrante_936:
+        nombre: 'Cuadrante 01'
+        codigo: '936'
+        comuna: '@comuna_196'
+    cuadrante_937:
+        nombre: 'Cuadrante 02'
+        codigo: '937'
+        comuna: '@comuna_196'
+    cuadrante_938:
+        nombre: 'Cuadrante 03'
+        codigo: '938'
+        comuna: '@comuna_196'
+    cuadrante_939:
+        nombre: 'Sector Rural A'
+        codigo: '939'
+        comuna: '@comuna_196'
+    cuadrante_940:
+        nombre: 'Sector Rural B'
+        codigo: '940'
+        comuna: '@comuna_196'
+    cuadrante_941:
+        nombre: 'Sector Rural C'
+        codigo: '941'
+        comuna: '@comuna_196'
+    cuadrante_942:
+        nombre: 'Cuadrante 01'
+        codigo: '942'
+        comuna: '@comuna_197'
+    cuadrante_943:
+        nombre: 'Cuadrante 02'
+        codigo: '943'
+        comuna: '@comuna_197'
+    cuadrante_944:
+        nombre: 'Sector Rural A'
+        codigo: '944'
+        comuna: '@comuna_197'
+    cuadrante_945:
+        nombre: 'Sector Rural D'
+        codigo: '945'
+        comuna: '@comuna_197'
+    cuadrante_946:
+        nombre: 'Sector Rural C'
+        codigo: '946'
+        comuna: '@comuna_197'
+    cuadrante_947:
+        nombre: 'Sector Rural B'
+        codigo: '947'
+        comuna: '@comuna_197'
+    cuadrante_948:
+        nombre: 'Cuadrante 01'
+        codigo: '948'
+        comuna: '@comuna_197'
+    cuadrante_949:
+        nombre: 'Cuadrante 02'
+        codigo: '949'
+        comuna: '@comuna_197'
+    cuadrante_950:
+        nombre: 'Subsector 01'
+        codigo: '950'
+        comuna: '@comuna_198'
+    cuadrante_951:
+        nombre: 'Subsector 02'
+        codigo: '951'
+        comuna: '@comuna_198'
+    cuadrante_952:
+        nombre: 'Subsector 03'
+        codigo: '952'
+        comuna: '@comuna_198'
+    cuadrante_953:
+        nombre: 'Subsector 05'
+        codigo: '953'
+        comuna: '@comuna_198'
+    cuadrante_954:
+        nombre: 'Subsector 04'
+        codigo: '954'
+        comuna: '@comuna_198'
+    cuadrante_955:
+        nombre: 'Subsector 03'
+        codigo: '955'
+        comuna: '@comuna_199'
+    cuadrante_956:
+        nombre: 'Subsector 04'
+        codigo: '956'
+        comuna: '@comuna_199'
+    cuadrante_957:
+        nombre: 'Subsector 03'
+        codigo: '957'
+        comuna: '@comuna_199'
+    cuadrante_958:
+        nombre: 'Subsector 10'
+        codigo: '958'
+        comuna: '@comuna_200'
+    cuadrante_959:
+        nombre: 'Subsector 06'
+        codigo: '959'
+        comuna: '@comuna_200'
+    cuadrante_960:
+        nombre: 'Subsector 09'
+        codigo: '960'
+        comuna: '@comuna_200'
+    cuadrante_961:
+        nombre: 'Subsector 07'
+        codigo: '961'
+        comuna: '@comuna_200'
+    cuadrante_962:
+        nombre: 'Subsector 08'
+        codigo: '962'
+        comuna: '@comuna_200'
+    cuadrante_963:
+        nombre: 'Subsector 04'
+        codigo: '963'
+        comuna: '@comuna_201'
+    cuadrante_964:
+        nombre: 'Subsector 05'
+        codigo: '964'
+        comuna: '@comuna_202'
+    cuadrante_965:
+        nombre: 'Subsector 04'
+        codigo: '965'
+        comuna: '@comuna_202'
+    cuadrante_966:
+        nombre: 'Subsector 03'
+        codigo: '966'
+        comuna: '@comuna_202'
+    cuadrante_967:
+        nombre: 'Subsector 05'
+        codigo: '967'
+        comuna: '@comuna_203'
+    cuadrante_968:
+        nombre: 'Subsector 06'
+        codigo: '968'
+        comuna: '@comuna_204'
+    cuadrante_969:
+        nombre: 'Subsector 07'
+        codigo: '969'
+        comuna: '@comuna_204'
+    cuadrante_970:
+        nombre: 'Subsector 01'
+        codigo: '970'
+        comuna: '@comuna_205'
+    cuadrante_971:
+        nombre: 'Subsector 02'
+        codigo: '971'
+        comuna: '@comuna_205'
+    cuadrante_972:
+        nombre: 'Subsector 06'
+        codigo: '972'
+        comuna: '@comuna_205'
+    cuadrante_973:
+        nombre: 'Cuadrante 02'
+        codigo: '973'
+        comuna: '@comuna_206'
+    cuadrante_974:
+        nombre: 'Cuadrante 01'
+        codigo: '974'
+        comuna: '@comuna_206'
+    cuadrante_975:
+        nombre: 'Cuadrante 02'
+        codigo: '975'
+        comuna: '@comuna_206'
+    cuadrante_976:
+        nombre: 'Sector Rural A'
+        codigo: '976'
+        comuna: '@comuna_206'
+    cuadrante_977:
+        nombre: 'Sector Rural B'
+        codigo: '977'
+        comuna: '@comuna_206'
+    cuadrante_978:
+        nombre: 'Sector Rural D'
+        codigo: '978'
+        comuna: '@comuna_206'
+    cuadrante_979:
+        nombre: 'Sector Rural C'
+        codigo: '979'
+        comuna: '@comuna_206'
+    cuadrante_980:
+        nombre: 'Cuadrante 01'
+        codigo: '980'
+        comuna: '@comuna_207'
+    cuadrante_981:
+        nombre: 'Sector Rural C'
+        codigo: '981'
+        comuna: '@comuna_207'
+    cuadrante_982:
+        nombre: 'Cuadrante 02'
+        codigo: '982'
+        comuna: '@comuna_207'
+    cuadrante_983:
+        nombre: 'Sector Rural B'
+        codigo: '983'
+        comuna: '@comuna_207'
+    cuadrante_984:
+        nombre: 'Sector Rural E'
+        codigo: '984'
+        comuna: '@comuna_207'
+    cuadrante_985:
+        nombre: 'Sector Rural D1'
+        codigo: '985'
+        comuna: '@comuna_207'
+    cuadrante_986:
+        nombre: 'Sector Rural D2'
+        codigo: '986'
+        comuna: '@comuna_207'
+    cuadrante_987:
+        nombre: 'Cuadrante 03'
+        codigo: '987'
+        comuna: '@comuna_207'
+    cuadrante_988:
+        nombre: 'Sector Rural A'
+        codigo: '988'
+        comuna: '@comuna_207'
+    cuadrante_989:
+        nombre: 'Cuadrante 04'
+        codigo: '989'
+        comuna: '@comuna_207'
+    cuadrante_990:
+        nombre: 'Cuadrante 05'
+        codigo: '990'
+        comuna: '@comuna_207'
+    cuadrante_991:
+        nombre: 'Cuadrante 06'
+        codigo: '991'
+        comuna: '@comuna_207'
+    cuadrante_992:
+        nombre: 'Sector Rural F'
+        codigo: '992'
+        comuna: '@comuna_207'
+    cuadrante_993:
+        nombre: 'Sector Rural H'
+        codigo: '993'
+        comuna: '@comuna_207'
+    cuadrante_994:
+        nombre: 'Cuadrante 07'
+        codigo: '994'
+        comuna: '@comuna_207'
+    cuadrante_995:
+        nombre: 'Sector Rural G'
+        codigo: '995'
+        comuna: '@comuna_207'
+    cuadrante_996:
+        nombre: 'Cuadrante 01'
+        codigo: '996'
+        comuna: '@comuna_208'
+    cuadrante_997:
+        nombre: 'Cuadrante 02'
+        codigo: '997'
+        comuna: '@comuna_208'
+    cuadrante_998:
+        nombre: 'Sector Rural A1'
+        codigo: '998'
+        comuna: '@comuna_208'
+    cuadrante_999:
+        nombre: 'Sector Rural A2'
+        codigo: '999'
+        comuna: '@comuna_208'
+    cuadrante_1000:
+        nombre: 'Sector Rural A3'
+        codigo: '1000'
+        comuna: '@comuna_208'
+    cuadrante_1001:
+        nombre: 'Sector Rural A4'
+        codigo: '1001'
+        comuna: '@comuna_208'
+    cuadrante_1002:
+        nombre: 'Sector Rural A5'
+        codigo: '1002'
+        comuna: '@comuna_208'
+    cuadrante_1003:
+        nombre: 'Sector Rural B'
+        codigo: '1003'
+        comuna: '@comuna_208'
+    cuadrante_1004:
+        nombre: 'Sector Rural C1'
+        codigo: '1004'
+        comuna: '@comuna_208'
+    cuadrante_1005:
+        nombre: 'Sector Rural C2'
+        codigo: '1005'
+        comuna: '@comuna_208'
+    cuadrante_1006:
+        nombre: 'Sector Rural D1'
+        codigo: '1006'
+        comuna: '@comuna_208'
+    cuadrante_1007:
+        nombre: 'Sector Rural D2'
+        codigo: '1007'
+        comuna: '@comuna_208'
+    cuadrante_1008:
+        nombre: 'Sector Rural D3'
+        codigo: '1008'
+        comuna: '@comuna_208'
+    cuadrante_1009:
+        nombre: 'Subsector 19'
+        codigo: '1009'
+        comuna: '@comuna_209'
+    cuadrante_1010:
+        nombre: 'Subsector 20'
+        codigo: '1010'
+        comuna: '@comuna_209'
+    cuadrante_1011:
+        nombre: 'Subsector 18'
+        codigo: '1011'
+        comuna: '@comuna_209'
+    cuadrante_1012:
+        nombre: 'Subsector 16'
+        codigo: '1012'
+        comuna: '@comuna_209'
+    cuadrante_1013:
+        nombre: 'Subsector 17'
+        codigo: '1013'
+        comuna: '@comuna_209'
+    cuadrante_1014:
+        nombre: 'Subsector 18'
+        codigo: '1014'
+        comuna: '@comuna_209'
+    cuadrante_1015:
+        nombre: 'Subsector 12'
+        codigo: '1015'
+        comuna: '@comuna_210'
+    cuadrante_1016:
+        nombre: 'Subsector 13'
+        codigo: '1016'
+        comuna: '@comuna_210'
+    cuadrante_1017:
+        nombre: 'Subsector 14'
+        codigo: '1017'
+        comuna: '@comuna_210'
+    cuadrante_1018:
+        nombre: 'Subsector 09'
+        codigo: '1018'
+        comuna: '@comuna_211'
+    cuadrante_1019:
+        nombre: 'Subsector 10'
+        codigo: '1019'
+        comuna: '@comuna_211'
+    cuadrante_1020:
+        nombre: 'Subsector 11'
+        codigo: '1020'
+        comuna: '@comuna_211'
+    cuadrante_1021:
+        nombre: 'Subsector 22'
+        codigo: '1021'
+        comuna: '@comuna_212'
+    cuadrante_1022:
+        nombre: 'Subsector 07'
+        codigo: '1022'
+        comuna: '@comuna_212'
+    cuadrante_1023:
+        nombre: 'Subsector 08'
+        codigo: '1023'
+        comuna: '@comuna_212'
+    cuadrante_1024:
+        nombre: 'Subsector 09'
+        codigo: '1024'
+        comuna: '@comuna_212'
+    cuadrante_1025:
+        nombre: 'Subsector 07'
+        codigo: '1025'
+        comuna: '@comuna_213'
+    cuadrante_1026:
+        nombre: 'Subsector 08'
+        codigo: '1026'
+        comuna: '@comuna_213'
+    cuadrante_1027:
+        nombre: 'Subsector 15'
+        codigo: '1027'
+        comuna: '@comuna_213'
+    cuadrante_1028:
+        nombre: 'Subsector 03'
+        codigo: '1028'
+        comuna: '@comuna_214'
+    cuadrante_1029:
+        nombre: 'Subsector 01'
+        codigo: '1029'
+        comuna: '@comuna_214'
+    cuadrante_1030:
+        nombre: 'Subsector 02'
+        codigo: '1030'
+        comuna: '@comuna_214'
+    cuadrante_1031:
+        nombre: 'Subsector 05'
+        codigo: '1031'
+        comuna: '@comuna_214'
+    cuadrante_1032:
+        nombre: 'Subsector 04'
+        codigo: '1032'
+        comuna: '@comuna_214'
+    cuadrante_1033:
+        nombre: 'Subsector 06'
+        codigo: '1033'
+        comuna: '@comuna_214'
+    cuadrante_1034:
+        nombre: 'Sector Rural D'
+        codigo: '1034'
+        comuna: '@comuna_215'
+    cuadrante_1035:
+        nombre: 'Cuadrante 01'
+        codigo: '1035'
+        comuna: '@comuna_215'
+    cuadrante_1036:
+        nombre: 'Cuadrante 02'
+        codigo: '1036'
+        comuna: '@comuna_215'
+    cuadrante_1037:
+        nombre: 'Sector Rural A'
+        codigo: '1037'
+        comuna: '@comuna_215'
+    cuadrante_1038:
+        nombre: 'Sector Rural B'
+        codigo: '1038'
+        comuna: '@comuna_215'
+    cuadrante_1039:
+        nombre: 'Sector Rural C'
+        codigo: '1039'
+        comuna: '@comuna_215'
+    cuadrante_1040:
+        nombre: 'Sector Rural E'
+        codigo: '1040'
+        comuna: '@comuna_215'
+    cuadrante_1041:
+        nombre: 'Cuadrante 01'
+        codigo: '1041'
+        comuna: '@comuna_216'
+    cuadrante_1042:
+        nombre: 'Cuadrante 02'
+        codigo: '1042'
+        comuna: '@comuna_216'
+    cuadrante_1043:
+        nombre: 'Sector Rural A'
+        codigo: '1043'
+        comuna: '@comuna_216'
+    cuadrante_1044:
+        nombre: 'Sector Rural B'
+        codigo: '1044'
+        comuna: '@comuna_216'
+    cuadrante_1045:
+        nombre: 'Sector Rural C1'
+        codigo: '1045'
+        comuna: '@comuna_216'
+    cuadrante_1046:
+        nombre: 'Sector Rural C2'
+        codigo: '1046'
+        comuna: '@comuna_216'
+    cuadrante_1047:
+        nombre: 'Sector Rural C3'
+        codigo: '1047'
+        comuna: '@comuna_216'
+    cuadrante_1048:
+        nombre: 'Sector Rural C1'
+        codigo: '1048'
+        comuna: '@comuna_217'
+    cuadrante_1049:
+        nombre: 'Sector Rural C2'
+        codigo: '1049'
+        comuna: '@comuna_217'
+    cuadrante_1050:
+        nombre: 'Cuadrante 01'
+        codigo: '1050'
+        comuna: '@comuna_217'
+    cuadrante_1051:
+        nombre: 'Cuadrante 02'
+        codigo: '1051'
+        comuna: '@comuna_217'
+    cuadrante_1052:
+        nombre: 'Sector Rural A'
+        codigo: '1052'
+        comuna: '@comuna_217'
+    cuadrante_1053:
+        nombre: 'Sector Rural B1'
+        codigo: '1053'
+        comuna: '@comuna_217'
+    cuadrante_1054:
+        nombre: 'Sector Rural B2'
+        codigo: '1054'
+        comuna: '@comuna_217'
+    cuadrante_1055:
+        nombre: 'Subsector 08'
+        codigo: '1055'
+        comuna: '@comuna_218'
+    cuadrante_1056:
+        nombre: 'Subsector 12'
+        codigo: '1056'
+        comuna: '@comuna_219'
+    cuadrante_1057:
+        nombre: 'Subsector 09'
+        codigo: '1057'
+        comuna: '@comuna_220'
+    cuadrante_1058:
+        nombre: 'Subsector 11'
+        codigo: '1058'
+        comuna: '@comuna_221'
+    cuadrante_1059:
+        nombre: 'Subsector 10'
+        codigo: '1059'
+        comuna: '@comuna_222'
+    cuadrante_1060:
+        nombre: 'Cuadrante 01'
+        codigo: '1060'
+        comuna: '@comuna_223'
+    cuadrante_1061:
+        nombre: 'Cuadrante 02'
+        codigo: '1061'
+        comuna: '@comuna_223'
+    cuadrante_1062:
+        nombre: 'Sector Rural A1'
+        codigo: '1062'
+        comuna: '@comuna_223'
+    cuadrante_1063:
+        nombre: 'Sector Rural A2'
+        codigo: '1063'
+        comuna: '@comuna_223'
+    cuadrante_1064:
+        nombre: 'Sector Rural A3'
+        codigo: '1064'
+        comuna: '@comuna_223'
+    cuadrante_1065:
+        nombre: 'Sector Rural A4'
+        codigo: '1065'
+        comuna: '@comuna_223'
+    cuadrante_1066:
+        nombre: 'Sector Rural A5'
+        codigo: '1066'
+        comuna: '@comuna_223'
+    cuadrante_1067:
+        nombre: 'Sector Rural A6'
+        codigo: '1067'
+        comuna: '@comuna_223'
+    cuadrante_1068:
+        nombre: 'Sector Rural A7'
+        codigo: '1068'
+        comuna: '@comuna_223'
+    cuadrante_1069:
+        nombre: 'Sector Rural A8'
+        codigo: '1069'
+        comuna: '@comuna_223'
+    cuadrante_1070:
+        nombre: 'Subsector 09'
+        codigo: '1070'
+        comuna: '@comuna_224'
+    cuadrante_1071:
+        nombre: 'Subsector 10'
+        codigo: '1071'
+        comuna: '@comuna_224'
+    cuadrante_1072:
+        nombre: 'Subsector 11'
+        codigo: '1072'
+        comuna: '@comuna_224'
+    cuadrante_1073:
+        nombre: 'Subsector 12'
+        codigo: '1073'
+        comuna: '@comuna_224'
+    cuadrante_1074:
+        nombre: 'Subsector 07'
+        codigo: '1074'
+        comuna: '@comuna_225'
+    cuadrante_1075:
+        nombre: 'Subsector 13'
+        codigo: '1075'
+        comuna: '@comuna_225'
+    cuadrante_1076:
+        nombre: 'Cuadrante 04'
+        codigo: '1076'
+        comuna: '@comuna_226'
+    cuadrante_1077:
+        nombre: 'Sector Rural D'
+        codigo: '1077'
+        comuna: '@comuna_226'
+    cuadrante_1078:
+        nombre: 'Sector Rural C'
+        codigo: '1078'
+        comuna: '@comuna_226'
+    cuadrante_1079:
+        nombre: 'Sector Rural B'
+        codigo: '1079'
+        comuna: '@comuna_226'
+    cuadrante_1080:
+        nombre: 'Cuadrante 05'
+        codigo: '1080'
+        comuna: '@comuna_226'
+    cuadrante_1081:
+        nombre: 'Sector Rural E'
+        codigo: '1081'
+        comuna: '@comuna_226'
+    cuadrante_1082:
+        nombre: 'Cuadrante 01'
+        codigo: '1082'
+        comuna: '@comuna_226'
+    cuadrante_1083:
+        nombre: 'Cuadrante 02'
+        codigo: '1083'
+        comuna: '@comuna_226'
+    cuadrante_1084:
+        nombre: 'Cuadrante 03'
+        codigo: '1084'
+        comuna: '@comuna_226'
+    cuadrante_1085:
+        nombre: 'Sector Rural A'
+        codigo: '1085'
+        comuna: '@comuna_226'
+    cuadrante_1086:
+        nombre: 'Cuadrante 06'
+        codigo: '1086'
+        comuna: '@comuna_226'
+    cuadrante_1087:
+        nombre: 'Sector Rural F'
+        codigo: '1087'
+        comuna: '@comuna_226'
+    cuadrante_1088:
+        nombre: 'Subsector 04'
+        codigo: '1088'
+        comuna: '@comuna_227'
+    cuadrante_1089:
+        nombre: 'Subsector 10'
+        codigo: '1089'
+        comuna: '@comuna_227'
+    cuadrante_1090:
+        nombre: 'Subsector 11'
+        codigo: '1090'
+        comuna: '@comuna_227'
+    cuadrante_1091:
+        nombre: 'Subsector 03'
+        codigo: '1091'
+        comuna: '@comuna_228'
+    cuadrante_1092:
+        nombre: 'Subsector 09'
+        codigo: '1092'
+        comuna: '@comuna_228'
+    cuadrante_1093:
+        nombre: 'Subsector 06'
+        codigo: '1093'
+        comuna: '@comuna_228'
+    cuadrante_1094:
+        nombre: 'Subsector 07'
+        codigo: '1094'
+        comuna: '@comuna_228'
+    cuadrante_1095:
+        nombre: 'Subsector 18'
+        codigo: '1095'
+        comuna: '@comuna_229'
+    cuadrante_1096:
+        nombre: 'Subsector 17'
+        codigo: '1096'
+        comuna: '@comuna_229'
+    cuadrante_1097:
+        nombre: 'Subsector 01'
+        codigo: '1097'
+        comuna: '@comuna_230'
+    cuadrante_1098:
+        nombre: 'Subsector 02'
+        codigo: '1098'
+        comuna: '@comuna_230'
+    cuadrante_1099:
+        nombre: 'Subsector 05'
+        codigo: '1099'
+        comuna: '@comuna_230'
+    cuadrante_1100:
+        nombre: 'Subsector 08'
+        codigo: '1100'
+        comuna: '@comuna_230'
+    cuadrante_1101:
+        nombre: 'Subsector 14'
+        codigo: '1101'
+        comuna: '@comuna_231'
+    cuadrante_1102:
+        nombre: 'Subsector 15'
+        codigo: '1102'
+        comuna: '@comuna_231'
+    cuadrante_1103:
+        nombre: 'Subsector 16'
+        codigo: '1103'
+        comuna: '@comuna_232'
+    cuadrante_1104:
+        nombre: 'Subsector 13'
+        codigo: '1104'
+        comuna: '@comuna_232'
+    cuadrante_1105:
+        nombre: 'Subsector 12'
+        codigo: '1105'
+        comuna: '@comuna_232'
+    cuadrante_1106:
+        nombre: 'Subsector 01'
+        codigo: '1106'
+        comuna: '@comuna_233'
+    cuadrante_1107:
+        nombre: 'Subsector 02'
+        codigo: '1107'
+        comuna: '@comuna_233'
+    cuadrante_1108:
+        nombre: 'Subsector 03'
+        codigo: '1108'
+        comuna: '@comuna_233'
+    cuadrante_1109:
+        nombre: 'Subsector 05'
+        codigo: '1109'
+        comuna: '@comuna_233'
+    cuadrante_1110:
+        nombre: 'Subsector 06'
+        codigo: '1110'
+        comuna: '@comuna_233'
+    cuadrante_1111:
+        nombre: 'Subsector 04'
+        codigo: '1111'
+        comuna: '@comuna_233'
+    cuadrante_1112:
+        nombre: 'Subsector 01'
+        codigo: '1112'
+        comuna: '@comuna_234'
+    cuadrante_1113:
+        nombre: 'Subsector 02'
+        codigo: '1113'
+        comuna: '@comuna_234'
+    cuadrante_1114:
+        nombre: 'Subsector 21'
+        codigo: '1114'
+        comuna: '@comuna_235'
+    cuadrante_1115:
+        nombre: 'Subsector 16'
+        codigo: '1115'
+        comuna: '@comuna_235'
+    cuadrante_1116:
+        nombre: 'Subsector 17'
+        codigo: '1116'
+        comuna: '@comuna_235'
+    cuadrante_1117:
+        nombre: 'Subsector 01'
+        codigo: '1117'
+        comuna: '@comuna_236'
+    cuadrante_1118:
+        nombre: 'Subsector 02'
+        codigo: '1118'
+        comuna: '@comuna_236'
+    cuadrante_1119:
+        nombre: 'Subsector 03'
+        codigo: '1119'
+        comuna: '@comuna_236'
+    cuadrante_1120:
+        nombre: 'Cuadrante 01'
+        codigo: '1120'
+        comuna: '@comuna_237'
+    cuadrante_1121:
+        nombre: 'Cuadrante 02'
+        codigo: '1121'
+        comuna: '@comuna_237'
+    cuadrante_1122:
+        nombre: 'Cuadrante 03'
+        codigo: '1122'
+        comuna: '@comuna_237'
+    cuadrante_1123:
+        nombre: 'Sector Rural A'
+        codigo: '1123'
+        comuna: '@comuna_237'
+    cuadrante_1124:
+        nombre: 'Sector Rural C'
+        codigo: '1124'
+        comuna: '@comuna_237'
+    cuadrante_1125:
+        nombre: 'Sector Rural B'
+        codigo: '1125'
+        comuna: '@comuna_237'
+    cuadrante_1126:
+        nombre: 'Sector Rural E'
+        codigo: '1126'
+        comuna: '@comuna_237'
+    cuadrante_1127:
+        nombre: 'Sector Rural D'
+        codigo: '1127'
+        comuna: '@comuna_237'
+    cuadrante_1128:
+        nombre: 'Sector Rural F'
+        codigo: '1128'
+        comuna: '@comuna_237'
+    cuadrante_1129:
+        nombre: 'Sector Rural G'
+        codigo: '1129'
+        comuna: '@comuna_237'
+    cuadrante_1130:
+        nombre: 'Subsector 13'
+        codigo: '1130'
+        comuna: '@comuna_238'
+    cuadrante_1131:
+        nombre: 'Subsector 14'
+        codigo: '1131'
+        comuna: '@comuna_238'
+    cuadrante_1132:
+        nombre: 'Subsector 12'
+        codigo: '1132'
+        comuna: '@comuna_238'
+    cuadrante_1133:
+        nombre: 'Cuadrante 01'
+        codigo: '1133'
+        comuna: '@comuna_239'
+    cuadrante_1134:
+        nombre: 'Sector Rural A'
+        codigo: '1134'
+        comuna: '@comuna_239'
+    cuadrante_1135:
+        nombre: 'Cuadrante 02'
+        codigo: '1135'
+        comuna: '@comuna_239'
+    cuadrante_1136:
+        nombre: 'Sector Rural D'
+        codigo: '1136'
+        comuna: '@comuna_239'
+    cuadrante_1137:
+        nombre: 'Sector Rural B'
+        codigo: '1137'
+        comuna: '@comuna_239'
+    cuadrante_1138:
+        nombre: 'Sector Rural C'
+        codigo: '1138'
+        comuna: '@comuna_239'
+    cuadrante_1139:
+        nombre: 'Subsector 06'
+        codigo: '1139'
+        comuna: '@comuna_240'
+    cuadrante_1140:
+        nombre: 'Subsector 07'
+        codigo: '1140'
+        comuna: '@comuna_240'
+    cuadrante_1141:
+        nombre: 'Subsector 05'
+        codigo: '1141'
+        comuna: '@comuna_240'
+    cuadrante_1142:
+        nombre: 'Subsector 11'
+        codigo: '1142'
+        comuna: '@comuna_240'
+    cuadrante_1143:
+        nombre: 'Subsector 08'
+        codigo: '1143'
+        comuna: '@comuna_241'
+    cuadrante_1144:
+        nombre: 'Subsector 01'
+        codigo: '1144'
+        comuna: '@comuna_242'
+    cuadrante_1145:
+        nombre: 'Subsector 02'
+        codigo: '1145'
+        comuna: '@comuna_242'
+    cuadrante_1146:
+        nombre: 'Subsector 07'
+        codigo: '1146'
+        comuna: '@comuna_242'
+    cuadrante_1147:
+        nombre: 'Subsector 05'
+        codigo: '1147'
+        comuna: '@comuna_243'
+    cuadrante_1148:
+        nombre: 'Subsector 03'
+        codigo: '1148'
+        comuna: '@comuna_243'
+    cuadrante_1149:
+        nombre: 'Subsector 04'
+        codigo: '1149'
+        comuna: '@comuna_243'
+    cuadrante_1150:
+        nombre: 'Subsector 06'
+        codigo: '1150'
+        comuna: '@comuna_243'
+    cuadrante_1151:
+        nombre: 'Subsector 08'
+        codigo: '1151'
+        comuna: '@comuna_244'
+    cuadrante_1152:
+        nombre: 'Subsector 01'
+        codigo: '1152'
+        comuna: '@comuna_245'
+    cuadrante_1153:
+        nombre: 'Subsector 02'
+        codigo: '1153'
+        comuna: '@comuna_245'
+    cuadrante_1154:
+        nombre: 'Subsector 03'
+        codigo: '1154'
+        comuna: '@comuna_245'
+    cuadrante_1155:
+        nombre: 'Subsector 04'
+        codigo: '1155'
+        comuna: '@comuna_245'
+    cuadrante_1156:
+        nombre: 'Subsector 11'
+        codigo: '1156'
+        comuna: '@comuna_246'
+    cuadrante_1157:
+        nombre: 'Subsector 12'
+        codigo: '1157'
+        comuna: '@comuna_246'
+    cuadrante_1158:
+        nombre: 'Subsector 13'
+        codigo: '1158'
+        comuna: '@comuna_246'
+    cuadrante_1159:
+        nombre: 'Subsector 14'
+        codigo: '1159'
+        comuna: '@comuna_246'
+    cuadrante_1160:
+        nombre: 'Cuadrante 01'
+        codigo: '1160'
+        comuna: '@comuna_247'
+    cuadrante_1161:
+        nombre: 'Cuadrante 02'
+        codigo: '1161'
+        comuna: '@comuna_247'
+    cuadrante_1162:
+        nombre: 'Cuadrante 03'
+        codigo: '1162'
+        comuna: '@comuna_247'
+    cuadrante_1163:
+        nombre: 'Cuadrante 04'
+        codigo: '1163'
+        comuna: '@comuna_247'
+    cuadrante_1164:
+        nombre: 'Cuadrante 05'
+        codigo: '1164'
+        comuna: '@comuna_247'
+    cuadrante_1165:
+        nombre: 'Sector Rural A'
+        codigo: '1165'
+        comuna: '@comuna_247'
+    cuadrante_1166:
+        nombre: 'Sector Rural C'
+        codigo: '1166'
+        comuna: '@comuna_247'
+    cuadrante_1167:
+        nombre: 'Sector Rural B'
+        codigo: '1167'
+        comuna: '@comuna_247'
+    cuadrante_1168:
+        nombre: 'Sector Rural D1'
+        codigo: '1168'
+        comuna: '@comuna_247'
+    cuadrante_1169:
+        nombre: 'Sector Rural D2'
+        codigo: '1169'
+        comuna: '@comuna_247'
+    cuadrante_1170:
+        nombre: 'Subsector 14'
+        codigo: '1170'
+        comuna: '@comuna_248'
+    cuadrante_1171:
+        nombre: 'Subsector 15'
+        codigo: '1171'
+        comuna: '@comuna_248'
+    cuadrante_1172:
+        nombre: 'Subsector 08'
+        codigo: '1172'
+        comuna: '@comuna_249'
+    cuadrante_1173:
+        nombre: 'Subsector 16'
+        codigo: '1173'
+        comuna: '@comuna_250'
+    cuadrante_1174:
+        nombre: 'Subsector 12'
+        codigo: '1174'
+        comuna: '@comuna_250'
+    cuadrante_1175:
+        nombre: 'Subsector 13'
+        codigo: '1175'
+        comuna: '@comuna_250'
+    cuadrante_1176:
+        nombre: 'Subsector 19'
+        codigo: '1176'
+        comuna: '@comuna_251'
+    cuadrante_1177:
+        nombre: 'Subsector 17'
+        codigo: '1177'
+        comuna: '@comuna_251'
+    cuadrante_1178:
+        nombre: 'Subsector 18'
+        codigo: '1178'
+        comuna: '@comuna_251'
+    cuadrante_1179:
+        nombre: 'Subsector 01'
+        codigo: '1179'
+        comuna: '@comuna_253'
+    cuadrante_1180:
+        nombre: 'Subsector 02'
+        codigo: '1180'
+        comuna: '@comuna_253'
+    cuadrante_1181:
+        nombre: 'Subsector 04'
+        codigo: '1181'
+        comuna: '@comuna_253'
+    cuadrante_1182:
+        nombre: 'Subsector 03'
+        codigo: '1182'
+        comuna: '@comuna_254'
+    cuadrante_1183:
+        nombre: 'Subsector 05'
+        codigo: '1183'
+        comuna: '@comuna_255'
+    cuadrante_1184:
+        nombre: 'Sector Rural E'
+        codigo: '1184'
+        comuna: '@comuna_256'
+    cuadrante_1185:
+        nombre: 'Sector Rural C'
+        codigo: '1185'
+        comuna: '@comuna_256'
+    cuadrante_1186:
+        nombre: 'Cuadrante 01'
+        codigo: '1186'
+        comuna: '@comuna_256'
+    cuadrante_1187:
+        nombre: 'Cuadrante 02'
+        codigo: '1187'
+        comuna: '@comuna_256'
+    cuadrante_1188:
+        nombre: 'Sector Rural A'
+        codigo: '1188'
+        comuna: '@comuna_256'
+    cuadrante_1189:
+        nombre: 'Sector Rural D'
+        codigo: '1189'
+        comuna: '@comuna_256'
+    cuadrante_1190:
+        nombre: 'Sector Rural B'
+        codigo: '1190'
+        comuna: '@comuna_256'
+    cuadrante_1191:
+        nombre: 'Subsector 05'
+        codigo: '1191'
+        comuna: '@comuna_257'
+    cuadrante_1192:
+        nombre: 'Subsector 07'
+        codigo: '1192'
+        comuna: '@comuna_257'
+    cuadrante_1193:
+        nombre: 'Subsector 06'
+        codigo: '1193'
+        comuna: '@comuna_257'
+    cuadrante_santiago_1194:
+        nombre: 'Cuadrante 01'
+        codigo: '1194'
+        comuna: '@comuna_santiago'
+    cuadrante_santiago_1195:
+        nombre: 'Cuadrante 02'
+        codigo: '1195'
+        comuna: '@comuna_santiago'
+    cuadrante_santiago_1196:
+        nombre: 'Cuadrante 03'
+        codigo: '1196'
+        comuna: '@comuna_santiago'
+    cuadrante_santiago_1197:
+        nombre: 'Cuadrante 04'
+        codigo: '1197'
+        comuna: '@comuna_santiago'
+    cuadrante_santiago_1198:
+        nombre: 'Cuadrante 06'
+        codigo: '1198'
+        comuna: '@comuna_santiago'
+    cuadrante_santiago_1199:
+        nombre: 'Cuadrante 08'
+        codigo: '1199'
+        comuna: '@comuna_santiago'
+    cuadrante_santiago_1200:
+        nombre: 'Cuadrante 09'
+        codigo: '1200'
+        comuna: '@comuna_santiago'
+    cuadrante_santiago_1201:
+        nombre: 'Cuadrante 10'
+        codigo: '1201'
+        comuna: '@comuna_santiago'
+    cuadrante_santiago_1202:
+        nombre: 'Cuadrante 11'
+        codigo: '1202'
+        comuna: '@comuna_santiago'
+    cuadrante_santiago_1203:
+        nombre: 'Cuadrante 12'
+        codigo: '1203'
+        comuna: '@comuna_santiago'
+    cuadrante_santiago_1204:
+        nombre: 'Cuadrante 13'
+        codigo: '1204'
+        comuna: '@comuna_santiago'
+    cuadrante_santiago_1205:
+        nombre: 'Cuadrante 07'
+        codigo: '1205'
+        comuna: '@comuna_santiago'
+    cuadrante_santiago_1206:
+        nombre: 'Cuadrante 05'
+        codigo: '1206'
+        comuna: '@comuna_santiago'
+    cuadrante_1207:
+        nombre: 'Cuadrante 224'
+        codigo: '1207'
+        comuna: '@comuna_259'
+    cuadrante_1208:
+        nombre: 'Cuadrante 225'
+        codigo: '1208'
+        comuna: '@comuna_259'
+    cuadrante_1209:
+        nombre: 'Cuadrante 226'
+        codigo: '1209'
+        comuna: '@comuna_259'
+    cuadrante_1210:
+        nombre: 'Cuadrante 227'
+        codigo: '1210'
+        comuna: '@comuna_259'
+    cuadrante_1211:
+        nombre: 'Cuadrante 228'
+        codigo: '1211'
+        comuna: '@comuna_259'
+    cuadrante_1212:
+        nombre: 'Cuadrante 229'
+        codigo: '1212'
+        comuna: '@comuna_259'
+    cuadrante_1213:
+        nombre: 'Cuadrante 251'
+        codigo: '1213'
+        comuna: '@comuna_260'
+    cuadrante_1214:
+        nombre: 'Cuadrante 247'
+        codigo: '1214'
+        comuna: '@comuna_260'
+    cuadrante_1215:
+        nombre: 'Cuadrante 248'
+        codigo: '1215'
+        comuna: '@comuna_260'
+    cuadrante_1216:
+        nombre: 'Cuadrante 249'
+        codigo: '1216'
+        comuna: '@comuna_260'
+    cuadrante_1217:
+        nombre: 'Cuadrante 250'
+        codigo: '1217'
+        comuna: '@comuna_260'
+    cuadrante_1218:
+        nombre: 'Cuadrante 19'
+        codigo: '1218'
+        comuna: '@comuna_261'
+    cuadrante_1219:
+        nombre: 'Cuadrante 22'
+        codigo: '1219'
+        comuna: '@comuna_261'
+    cuadrante_1220:
+        nombre: 'Cuadrante 23'
+        codigo: '1220'
+        comuna: '@comuna_261'
+    cuadrante_1221:
+        nombre: 'Cuadrante 20'
+        codigo: '1221'
+        comuna: '@comuna_261'
+    cuadrante_1222:
+        nombre: 'Cuadrante 21'
+        codigo: '1222'
+        comuna: '@comuna_261'
+    cuadrante_1223:
+        nombre: 'Cuadrante 56'
+        codigo: '1223'
+        comuna: '@comuna_262'
+    cuadrante_1224:
+        nombre: 'Cuadrante 57'
+        codigo: '1224'
+        comuna: '@comuna_262'
+    cuadrante_1225:
+        nombre: 'Cuadrante 58'
+        codigo: '1225'
+        comuna: '@comuna_262'
+    cuadrante_1226:
+        nombre: 'Cuadrante 60'
+        codigo: '1226'
+        comuna: '@comuna_262'
+    cuadrante_1227:
+        nombre: 'Cuadrante 191'
+        codigo: '1227'
+        comuna: '@comuna_263'
+    cuadrante_1228:
+        nombre: 'Cuadrante 192'
+        codigo: '1228'
+        comuna: '@comuna_263'
+    cuadrante_1229:
+        nombre: 'Cuadrante 193'
+        codigo: '1229'
+        comuna: '@comuna_263'
+    cuadrante_1230:
+        nombre: 'Cuadrante 194'
+        codigo: '1230'
+        comuna: '@comuna_263'
+    cuadrante_1231:
+        nombre: 'Cuadrante 199'
+        codigo: '1231'
+        comuna: '@comuna_263'
+    cuadrante_1232:
+        nombre: 'Cuadrante 195'
+        codigo: '1232'
+        comuna: '@comuna_263'
+    cuadrante_1233:
+        nombre: 'Cuadrante 197'
+        codigo: '1233'
+        comuna: '@comuna_263'
+    cuadrante_1234:
+        nombre: 'Cuadrante 198'
+        codigo: '1234'
+        comuna: '@comuna_263'
+    cuadrante_1235:
+        nombre: 'Cuadrante 200'
+        codigo: '1235'
+        comuna: '@comuna_263'
+    cuadrante_1236:
+        nombre: 'Cuadrante 26'
+        codigo: '1236'
+        comuna: '@comuna_264'
+    cuadrante_1237:
+        nombre: 'Cuadrante 27'
+        codigo: '1237'
+        comuna: '@comuna_264'
+    cuadrante_1238:
+        nombre: 'Cuadrante 44'
+        codigo: '1238'
+        comuna: '@comuna_265'
+    cuadrante_1239:
+        nombre: 'Cuadrante 47'
+        codigo: '1239'
+        comuna: '@comuna_265'
+    cuadrante_1240:
+        nombre: 'Cuadrante 46'
+        codigo: '1240'
+        comuna: '@comuna_265'
+    cuadrante_1241:
+        nombre: 'Cuadrante 45'
+        codigo: '1241'
+        comuna: '@comuna_265'
+    cuadrante_1242:
+        nombre: 'Cuadrante 53'
+        codigo: '1242'
+        comuna: '@comuna_266'
+    cuadrante_1243:
+        nombre: 'Cuadrante 54'
+        codigo: '1243'
+        comuna: '@comuna_266'
+    cuadrante_1244:
+        nombre: 'Cuadrante 55'
+        codigo: '1244'
+        comuna: '@comuna_266'
+    cuadrante_1245:
+        nombre: 'Cuadrante 59B'
+        codigo: '1245'
+        comuna: '@comuna_266'
+    cuadrante_1246:
+        nombre: 'Cuadrante 59A'
+        codigo: '1246'
+        comuna: '@comuna_266'
+    cuadrante_1247:
+        nombre: 'Cuadrante 162'
+        codigo: '1247'
+        comuna: '@comuna_267'
+    cuadrante_1248:
+        nombre: 'Cuadrante 163'
+        codigo: '1248'
+        comuna: '@comuna_267'
+    cuadrante_1249:
+        nombre: 'Cuadrante 164'
+        codigo: '1249'
+        comuna: '@comuna_267'
+    cuadrante_1250:
+        nombre: 'Cuadrante 170A'
+        codigo: '1250'
+        comuna: '@comuna_267'
+    cuadrante_1251:
+        nombre: 'Cuadrante 165'
+        codigo: '1251'
+        comuna: '@comuna_267'
+    cuadrante_1252:
+        nombre: 'Cuadrante 166'
+        codigo: '1252'
+        comuna: '@comuna_267'
+    cuadrante_1253:
+        nombre: 'Cuadrante 167'
+        codigo: '1253'
+        comuna: '@comuna_267'
+    cuadrante_1254:
+        nombre: 'Cuadrante 168'
+        codigo: '1254'
+        comuna: '@comuna_267'
+    cuadrante_1255:
+        nombre: 'Cuadrante 169'
+        codigo: '1255'
+        comuna: '@comuna_267'
+    cuadrante_1256:
+        nombre: 'Cuadrante 272'
+        codigo: '1256'
+        comuna: '@comuna_267'
+    cuadrante_1257:
+        nombre: 'Cuadrante 171'
+        codigo: '1257'
+        comuna: '@comuna_267'
+    cuadrante_1258:
+        nombre: 'Cuadrante 172'
+        codigo: '1258'
+        comuna: '@comuna_267'
+    cuadrante_1259:
+        nombre: 'Cuadrante 170B'
+        codigo: '1259'
+        comuna: '@comuna_267'
+    cuadrante_1260:
+        nombre: 'Sector Rural A'
+        codigo: '1260'
+        comuna: '@comuna_267'
+    cuadrante_1261:
+        nombre: 'Cuadrante 273'
+        codigo: '1261'
+        comuna: '@comuna_267'
+    cuadrante_1262:
+        nombre: 'Cuadrante 75'
+        codigo: '1262'
+        comuna: '@comuna_268'
+    cuadrante_1263:
+        nombre: 'Cuadrante 76'
+        codigo: '1263'
+        comuna: '@comuna_268'
+    cuadrante_1264:
+        nombre: 'Cuadrante 71'
+        codigo: '1264'
+        comuna: '@comuna_268'
+    cuadrante_1265:
+        nombre: 'Cuadrante 72'
+        codigo: '1265'
+        comuna: '@comuna_268'
+    cuadrante_1266:
+        nombre: 'Cuadrante 73'
+        codigo: '1266'
+        comuna: '@comuna_268'
+    cuadrante_1267:
+        nombre: 'Cuadrante 74'
+        codigo: '1267'
+        comuna: '@comuna_268'
+    cuadrante_1268:
+        nombre: 'Cuadrante 173'
+        codigo: '1268'
+        comuna: '@comuna_269'
+    cuadrante_1269:
+        nombre: 'Cuadrante 174'
+        codigo: '1269'
+        comuna: '@comuna_269'
+    cuadrante_1270:
+        nombre: 'Cuadrante 176'
+        codigo: '1270'
+        comuna: '@comuna_269'
+    cuadrante_1271:
+        nombre: 'Cuadrante 177'
+        codigo: '1271'
+        comuna: '@comuna_269'
+    cuadrante_1272:
+        nombre: 'Cuadrante 178'
+        codigo: '1272'
+        comuna: '@comuna_269'
+    cuadrante_1273:
+        nombre: 'Cuadrante 175'
+        codigo: '1273'
+        comuna: '@comuna_269'
+    cuadrante_1274:
+        nombre: 'Cuadrante 101'
+        codigo: '1274'
+        comuna: '@comuna_270'
+    cuadrante_1275:
+        nombre: 'Cuadrante 102'
+        codigo: '1275'
+        comuna: '@comuna_270'
+    cuadrante_1276:
+        nombre: 'Cuadrante 103'
+        codigo: '1276'
+        comuna: '@comuna_270'
+    cuadrante_1277:
+        nombre: 'Cuadrante 104'
+        codigo: '1277'
+        comuna: '@comuna_270'
+    cuadrante_1278:
+        nombre: 'Cuadrante 105'
+        codigo: '1278'
+        comuna: '@comuna_270'
+    cuadrante_1279:
+        nombre: 'Cuadrante 106'
+        codigo: '1279'
+        comuna: '@comuna_270'
+    cuadrante_1280:
+        nombre: 'Cuadrante 107'
+        codigo: '1280'
+        comuna: '@comuna_271'
+    cuadrante_1281:
+        nombre: 'Cuadrante 108'
+        codigo: '1281'
+        comuna: '@comuna_271'
+    cuadrante_1282:
+        nombre: 'Cuadrante 109'
+        codigo: '1282'
+        comuna: '@comuna_271'
+    cuadrante_1283:
+        nombre: 'Cuadrante 110'
+        codigo: '1283'
+        comuna: '@comuna_271'
+    cuadrante_1284:
+        nombre: 'Cuadrante 111'
+        codigo: '1284'
+        comuna: '@comuna_271'
+    cuadrante_1285:
+        nombre: 'Cuadrante 112'
+        codigo: '1285'
+        comuna: '@comuna_271'
+    cuadrante_1286:
+        nombre: 'Cuadrante 149'
+        codigo: '1286'
+        comuna: '@comuna_271'
+    cuadrante_1287:
+        nombre: 'Cuadrante 143'
+        codigo: '1287'
+        comuna: '@comuna_271'
+    cuadrante_1288:
+        nombre: 'Cuadrante 144'
+        codigo: '1288'
+        comuna: '@comuna_271'
+    cuadrante_1289:
+        nombre: 'Cuadrante 145'
+        codigo: '1289'
+        comuna: '@comuna_271'
+    cuadrante_1290:
+        nombre: 'Cuadrante 146'
+        codigo: '1290'
+        comuna: '@comuna_271'
+    cuadrante_1291:
+        nombre: 'Cuadrante 147'
+        codigo: '1291'
+        comuna: '@comuna_271'
+    cuadrante_1292:
+        nombre: 'Cuadrante 148'
+        codigo: '1292'
+        comuna: '@comuna_271'
+    cuadrante_1293:
+        nombre: 'Sector Rural A'
+        codigo: '1293'
+        comuna: '@comuna_271'
+    cuadrante_1294:
+        nombre: 'Cuadrante 116'
+        codigo: '1294'
+        comuna: '@comuna_272'
+    cuadrante_1295:
+        nombre: 'Cuadrante 115'
+        codigo: '1295'
+        comuna: '@comuna_272'
+    cuadrante_1296:
+        nombre: 'Cuadrante 114'
+        codigo: '1296'
+        comuna: '@comuna_272'
+    cuadrante_1297:
+        nombre: 'Cuadrante 113'
+        codigo: '1297'
+        comuna: '@comuna_272'
+    cuadrante_1298:
+        nombre: 'Cuadrante 117'
+        codigo: '1298'
+        comuna: '@comuna_272'
+    cuadrante_1299:
+        nombre: 'Sector Rural A'
+        codigo: '1299'
+        comuna: '@comuna_272'
+    cuadrante_1300:
+        nombre: 'Sector Rural B'
+        codigo: '1300'
+        comuna: '@comuna_272'
+    cuadrante_1301:
+        nombre: 'Cuadrante 66'
+        codigo: '1301'
+        comuna: '@comuna_273'
+    cuadrante_1302:
+        nombre: 'Cuadrante 67'
+        codigo: '1302'
+        comuna: '@comuna_273'
+    cuadrante_1303:
+        nombre: 'Cuadrante 61'
+        codigo: '1303'
+        comuna: '@comuna_273'
+    cuadrante_1304:
+        nombre: 'Cuadrante 277'
+        codigo: '1304'
+        comuna: '@comuna_273'
+    cuadrante_1305:
+        nombre: 'Cuadrante 243'
+        codigo: '1305'
+        comuna: '@comuna_274'
+    cuadrante_1306:
+        nombre: 'Cuadrante 244'
+        codigo: '1306'
+        comuna: '@comuna_274'
+    cuadrante_1307:
+        nombre: 'Cuadrante 245'
+        codigo: '1307'
+        comuna: '@comuna_274'
+    cuadrante_1308:
+        nombre: 'Cuadrante 246'
+        codigo: '1308'
+        comuna: '@comuna_274'
+    cuadrante_1309:
+        nombre: 'Cuadrante 187'
+        codigo: '1309'
+        comuna: '@comuna_275'
+    cuadrante_1310:
+        nombre: 'Cuadrante 188'
+        codigo: '1310'
+        comuna: '@comuna_275'
+    cuadrante_1311:
+        nombre: 'Cuadrante 190'
+        codigo: '1311'
+        comuna: '@comuna_275'
+    cuadrante_1312:
+        nombre: 'Cuadrante 189'
+        codigo: '1312'
+        comuna: '@comuna_275'
+    cuadrante_1313:
+        nombre: 'Cuadrante 219'
+        codigo: '1313'
+        comuna: '@comuna_276'
+    cuadrante_1314:
+        nombre: 'Cuadrante 220'
+        codigo: '1314'
+        comuna: '@comuna_276'
+    cuadrante_1315:
+        nombre: 'Cuadrante 221'
+        codigo: '1315'
+        comuna: '@comuna_276'
+    cuadrante_1316:
+        nombre: 'Sector Rural A'
+        codigo: '1316'
+        comuna: '@comuna_276'
+    cuadrante_1317:
+        nombre: 'Cuadrante 223'
+        codigo: '1317'
+        comuna: '@comuna_276'
+    cuadrante_1318:
+        nombre: 'Cuadrante 215'
+        codigo: '1318'
+        comuna: '@comuna_276'
+    cuadrante_1319:
+        nombre: 'Cuadrante 216'
+        codigo: '1319'
+        comuna: '@comuna_276'
+    cuadrante_1320:
+        nombre: 'Cuadrante 217'
+        codigo: '1320'
+        comuna: '@comuna_276'
+    cuadrante_1321:
+        nombre: 'Cuadrante 218'
+        codigo: '1321'
+        comuna: '@comuna_276'
+    cuadrante_1322:
+        nombre: 'Cuadrante 222'
+        codigo: '1322'
+        comuna: '@comuna_276'
+    cuadrante_1323:
+        nombre: 'Cuadrante 129'
+        codigo: '1323'
+        comuna: '@comuna_277'
+    cuadrante_1324:
+        nombre: 'Cuadrante 130'
+        codigo: '1324'
+        comuna: '@comuna_277'
+    cuadrante_1325:
+        nombre: 'Cuadrante 131'
+        codigo: '1325'
+        comuna: '@comuna_277'
+    cuadrante_1326:
+        nombre: 'Cuadrante 132'
+        codigo: '1326'
+        comuna: '@comuna_277'
+    cuadrante_1327:
+        nombre: 'Cuadrante 133'
+        codigo: '1327'
+        comuna: '@comuna_277'
+    cuadrante_1328:
+        nombre: 'Cuadrante 118'
+        codigo: '1328'
+        comuna: '@comuna_277'
+    cuadrante_1329:
+        nombre: 'Cuadrante 119'
+        codigo: '1329'
+        comuna: '@comuna_277'
+    cuadrante_1330:
+        nombre: 'Cuadrante 120'
+        codigo: '1330'
+        comuna: '@comuna_277'
+    cuadrante_1331:
+        nombre: 'Cuadrante 121'
+        codigo: '1331'
+        comuna: '@comuna_277'
+    cuadrante_1332:
+        nombre: 'Cuadrante 64'
+        codigo: '1332'
+        comuna: '@comuna_278'
+    cuadrante_1333:
+        nombre: 'Cuadrante 63'
+        codigo: '1333'
+        comuna: '@comuna_278'
+    cuadrante_1334:
+        nombre: 'Cuadrante 65'
+        codigo: '1334'
+        comuna: '@comuna_278'
+    cuadrante_1335:
+        nombre: 'Cuadrante 62'
+        codigo: '1335'
+        comuna: '@comuna_278'
+    cuadrante_1336:
+        nombre: 'Cuadrante 278'
+        codigo: '1336'
+        comuna: '@comuna_278'
+    cuadrante_peñalolen_1337:
+        nombre: 'Cuadrante 182'
+        codigo: '1337'
+        comuna: '@comuna_peñalolen'
+    cuadrante_peñalolen_1338:
+        nombre: 'Cuadrante 183'
+        codigo: '1338'
+        comuna: '@comuna_peñalolen'
+    cuadrante_peñalolen_1339:
+        nombre: 'Cuadrante 184'
+        codigo: '1339'
+        comuna: '@comuna_peñalolen'
+    cuadrante_peñalolen_1340:
+        nombre: 'Cuadrante 186'
+        codigo: '1340'
+        comuna: '@comuna_peñalolen'
+    cuadrante_peñalolen_1341:
+        nombre: 'Sector Rural A'
+        codigo: '1341'
+        comuna: '@comuna_peñalolen'
+    cuadrante_peñalolen_1342:
+        nombre: 'Cuadrante 181'
+        codigo: '1342'
+        comuna: '@comuna_peñalolen'
+    cuadrante_peñalolen_1343:
+        nombre: 'Cuadrante 185'
+        codigo: '1343'
+        comuna: '@comuna_peñalolen'
+    cuadrante_peñalolen_1344:
+        nombre: 'Cuadrante 179'
+        codigo: '1344'
+        comuna: '@comuna_peñalolen'
+    cuadrante_peñalolen_1345:
+        nombre: 'Cuadrante 180'
+        codigo: '1345'
+        comuna: '@comuna_peñalolen'
+    cuadrante_providencia_1346:
+        nombre: 'Cuadrante 122'
+        codigo: '1346'
+        comuna: '@comuna_providencia'
+    cuadrante_providencia_1347:
+        nombre: 'Cuadrante 123'
+        codigo: '1347'
+        comuna: '@comuna_providencia'
+    cuadrante_providencia_1348:
+        nombre: 'Cuadrante 124'
+        codigo: '1348'
+        comuna: '@comuna_providencia'
+    cuadrante_providencia_1349:
+        nombre: 'Cuadrante 125'
+        codigo: '1349'
+        comuna: '@comuna_providencia'
+    cuadrante_providencia_1350:
+        nombre: 'Cuadrante 126'
+        codigo: '1350'
+        comuna: '@comuna_providencia'
+    cuadrante_providencia_1351:
+        nombre: 'Cuadrante 127'
+        codigo: '1351'
+        comuna: '@comuna_providencia'
+    cuadrante_providencia_1352:
+        nombre: 'Cuadrante 128'
+        codigo: '1352'
+        comuna: '@comuna_providencia'
+    cuadrante_1353:
+        nombre: 'Cuadrante 230A'
+        codigo: '1353'
+        comuna: '@comuna_281'
+    cuadrante_1354:
+        nombre: 'Cuadrante 231'
+        codigo: '1354'
+        comuna: '@comuna_281'
+    cuadrante_1355:
+        nombre: 'Cuadrante 232A'
+        codigo: '1355'
+        comuna: '@comuna_281'
+    cuadrante_1356:
+        nombre: 'Cuadrante 234A'
+        codigo: '1356'
+        comuna: '@comuna_281'
+    cuadrante_1357:
+        nombre: 'Sector Rural A'
+        codigo: '1357'
+        comuna: '@comuna_281'
+    cuadrante_1358:
+        nombre: 'Cuadrante 234B'
+        codigo: '1358'
+        comuna: '@comuna_281'
+    cuadrante_1359:
+        nombre: 'Cuadrante 234C'
+        codigo: '1359'
+        comuna: '@comuna_281'
+    cuadrante_1360:
+        nombre: 'Cuadrante 234D'
+        codigo: '1360'
+        comuna: '@comuna_281'
+    cuadrante_1361:
+        nombre: 'Cuadrante 234E'
+        codigo: '1361'
+        comuna: '@comuna_281'
+    cuadrante_1362:
+        nombre: 'Cuadrante 236A'
+        codigo: '1362'
+        comuna: '@comuna_281'
+    cuadrante_1363:
+        nombre: 'Cuadrante 237A'
+        codigo: '1363'
+        comuna: '@comuna_281'
+    cuadrante_1364:
+        nombre: 'Cuadrante 242'
+        codigo: '1364'
+        comuna: '@comuna_281'
+    cuadrante_1365:
+        nombre: 'Cuadrante 239'
+        codigo: '1365'
+        comuna: '@comuna_281'
+    cuadrante_1366:
+        nombre: 'Cuadrante 240'
+        codigo: '1366'
+        comuna: '@comuna_281'
+    cuadrante_1367:
+        nombre: 'Cuadrante 241'
+        codigo: '1367'
+        comuna: '@comuna_281'
+    cuadrante_1368:
+        nombre: 'Cuadrante 49'
+        codigo: '1368'
+        comuna: '@comuna_282'
+    cuadrante_1369:
+        nombre: 'Cuadrante 50'
+        codigo: '1369'
+        comuna: '@comuna_282'
+    cuadrante_1370:
+        nombre: 'Cuadrante 51'
+        codigo: '1370'
+        comuna: '@comuna_282'
+    cuadrante_1371:
+        nombre: 'Cuadrante 52'
+        codigo: '1371'
+        comuna: '@comuna_282'
+    cuadrante_1372:
+        nombre: 'Cuadrante 201'
+        codigo: '1372'
+        comuna: '@comuna_283'
+    cuadrante_1373:
+        nombre: 'Cuadrante 202'
+        codigo: '1373'
+        comuna: '@comuna_283'
+    cuadrante_1374:
+        nombre: 'Cuadrante 203'
+        codigo: '1374'
+        comuna: '@comuna_283'
+    cuadrante_1375:
+        nombre: 'Cuadrante 204'
+        codigo: '1375'
+        comuna: '@comuna_283'
+    cuadrante_1376:
+        nombre: 'Cuadrante 205'
+        codigo: '1376'
+        comuna: '@comuna_283'
+    cuadrante_1377:
+        nombre: 'Cuadrante 25A'
+        codigo: '1377'
+        comuna: '@comuna_284'
+    cuadrante_1378:
+        nombre: 'Cuadrante 28'
+        codigo: '1378'
+        comuna: '@comuna_284'
+    cuadrante_1379:
+        nombre: 'Cuadrante 25B'
+        codigo: '1379'
+        comuna: '@comuna_284'
+    cuadrante_1380:
+        nombre: 'Cuadrante 29B'
+        codigo: '1380'
+        comuna: '@comuna_284'
+    cuadrante_1381:
+        nombre: 'Cuadrante 30'
+        codigo: '1381'
+        comuna: '@comuna_284'
+    cuadrante_1382:
+        nombre: 'Cuadrante 29A'
+        codigo: '1382'
+        comuna: '@comuna_284'
+    cuadrante_1383:
+        nombre: 'Cuadrante 24'
+        codigo: '1383'
+        comuna: '@comuna_284'
+    cuadrante_1384:
+        nombre: 'Cuadrante 31'
+        codigo: '1384'
+        comuna: '@comuna_285'
+    cuadrante_1385:
+        nombre: 'Cuadrante 32'
+        codigo: '1385'
+        comuna: '@comuna_285'
+    cuadrante_1386:
+        nombre: 'Cuadrante 33'
+        codigo: '1386'
+        comuna: '@comuna_285'
+    cuadrante_1387:
+        nombre: 'Cuadrante 34'
+        codigo: '1387'
+        comuna: '@comuna_285'
+    cuadrante_1388:
+        nombre: 'Cuadrante 35'
+        codigo: '1388'
+        comuna: '@comuna_285'
+    cuadrante_1389:
+        nombre: 'Cuadrante 98'
+        codigo: '1389'
+        comuna: '@comuna_286'
+    cuadrante_1390:
+        nombre: 'Cuadrante 99'
+        codigo: '1390'
+        comuna: '@comuna_286'
+    cuadrante_1391:
+        nombre: 'Cuadrante 100'
+        codigo: '1391'
+        comuna: '@comuna_286'
+    cuadrante_1392:
+        nombre: 'Cuadrante 68'
+        codigo: '1392'
+        comuna: '@comuna_287'
+    cuadrante_1393:
+        nombre: 'Cuadrante 69'
+        codigo: '1393'
+        comuna: '@comuna_287'
+    cuadrante_1394:
+        nombre: 'Cuadrante 70'
+        codigo: '1394'
+        comuna: '@comuna_287'
+    cuadrante_1395:
+        nombre: 'Cuadrante 77'
+        codigo: '1395'
+        comuna: '@comuna_288'
+    cuadrante_1396:
+        nombre: 'Cuadrante 78'
+        codigo: '1396'
+        comuna: '@comuna_288'
+    cuadrante_1397:
+        nombre: 'Cuadrante 79'
+        codigo: '1397'
+        comuna: '@comuna_288'
+    cuadrante_1398:
+        nombre: 'Cuadrante 134'
+        codigo: '1398'
+        comuna: '@comuna_289'
+    cuadrante_1399:
+        nombre: 'Cuadrante 135'
+        codigo: '1399'
+        comuna: '@comuna_289'
+    cuadrante_1400:
+        nombre: 'Cuadrante 137'
+        codigo: '1400'
+        comuna: '@comuna_289'
+    cuadrante_1401:
+        nombre: 'Cuadrante 139'
+        codigo: '1401'
+        comuna: '@comuna_289'
+    cuadrante_1402:
+        nombre: 'Cuadrante 141'
+        codigo: '1402'
+        comuna: '@comuna_289'
+    cuadrante_1403:
+        nombre: 'Cuadrante 150'
+        codigo: '1403'
+        comuna: '@comuna_290'
+    cuadrante_1404:
+        nombre: 'Cuadrante 160'
+        codigo: '1404'
+        comuna: '@comuna_290'
+    cuadrante_1405:
+        nombre: 'Cuadrante 268'
+        codigo: '1405'
+        comuna: '@comuna_290'
+    cuadrante_1406:
+        nombre: 'Cuadrante 269'
+        codigo: '1406'
+        comuna: '@comuna_290'
+    cuadrante_1407:
+        nombre: 'Cuadrante 271'
+        codigo: '1407'
+        comuna: '@comuna_290'
+    cuadrante_1408:
+        nombre: 'Cuadrante 154'
+        codigo: '1408'
+        comuna: '@comuna_290'
+    cuadrante_1409:
+        nombre: 'Cuadrante 155'
+        codigo: '1409'
+        comuna: '@comuna_290'
+    cuadrante_1410:
+        nombre: 'Cuadrante 151'
+        codigo: '1410'
+        comuna: '@comuna_290'
+    cuadrante_1411:
+        nombre: 'Cuadrante 152'
+        codigo: '1411'
+        comuna: '@comuna_290'
+    cuadrante_1412:
+        nombre: 'Cuadrante 153'
+        codigo: '1412'
+        comuna: '@comuna_290'
+    cuadrante_1413:
+        nombre: 'Cuadrante 159'
+        codigo: '1413'
+        comuna: '@comuna_290'
+    cuadrante_1414:
+        nombre: 'Cuadrante 270'
+        codigo: '1414'
+        comuna: '@comuna_290'
+    cuadrante_1415:
+        nombre: 'Cuadrante 158'
+        codigo: '1415'
+        comuna: '@comuna_291'
+    cuadrante_1416:
+        nombre: 'Cuadrante 156'
+        codigo: '1416'
+        comuna: '@comuna_292'
+    cuadrante_1417:
+        nombre: 'Cuadrante 157'
+        codigo: '1417'
+        comuna: '@comuna_292'
+    cuadrante_1418:
+        nombre: 'Cuadrante 161'
+        codigo: '1418'
+        comuna: '@comuna_292'
+    cuadrante_1419:
+        nombre: 'Sector Rural A'
+        codigo: '1419'
+        comuna: '@comuna_292'
+    cuadrante_1420:
+        nombre: 'Cuadrante 37'
+        codigo: '1420'
+        comuna: '@comuna_293'
+    cuadrante_1421:
+        nombre: 'Cuadrante 38'
+        codigo: '1421'
+        comuna: '@comuna_293'
+    cuadrante_1422:
+        nombre: 'Cuadrante 39'
+        codigo: '1422'
+        comuna: '@comuna_293'
+    cuadrante_1423:
+        nombre: 'Cuadrante 36'
+        codigo: '1423'
+        comuna: '@comuna_293'
+    cuadrante_1424:
+        nombre: 'Cuadrante 40A'
+        codigo: '1424'
+        comuna: '@comuna_294'
+    cuadrante_1425:
+        nombre: 'Cuadrante 40C'
+        codigo: '1425'
+        comuna: '@comuna_294'
+    cuadrante_1426:
+        nombre: 'Cuadrante 40B'
+        codigo: '1426'
+        comuna: '@comuna_294'
+    cuadrante_1427:
+        nombre: 'Cuadrante 41'
+        codigo: '1427'
+        comuna: '@comuna_295'
+    cuadrante_1428:
+        nombre: 'Cuadrante 41'
+        codigo: '1428'
+        comuna: '@comuna_295'
+    cuadrante_1429:
+        nombre: 'Cuadrante 41'
+        codigo: '1429'
+        comuna: '@comuna_295'
+    cuadrante_1430:
+        nombre: 'Cuadrante 41'
+        codigo: '1430'
+        comuna: '@comuna_295'
+    cuadrante_1431:
+        nombre: 'Cuadrante 80A'
+        codigo: '1431'
+        comuna: '@comuna_296'
+    cuadrante_1432:
+        nombre: 'Cuadrante 81'
+        codigo: '1432'
+        comuna: '@comuna_296'
+    cuadrante_1433:
+        nombre: 'Cuadrante 82A'
+        codigo: '1433'
+        comuna: '@comuna_296'
+    cuadrante_1434:
+        nombre: 'Cuadrante 83A'
+        codigo: '1434'
+        comuna: '@comuna_296'
+    cuadrante_1435:
+        nombre: 'Cuadrante 84A'
+        codigo: '1435'
+        comuna: '@comuna_296'
+    cuadrante_1436:
+        nombre: 'Cuadrante 86A'
+        codigo: '1436'
+        comuna: '@comuna_296'
+    cuadrante_1437:
+        nombre: 'Cuadrante 80B'
+        codigo: '1437'
+        comuna: '@comuna_296'
+    cuadrante_1438:
+        nombre: 'Cuadrante 82B'
+        codigo: '1438'
+        comuna: '@comuna_296'
+    cuadrante_1439:
+        nombre: 'Cuadrante 83B'
+        codigo: '1439'
+        comuna: '@comuna_296'
+    cuadrante_1440:
+        nombre: 'Cuadrante 83C'
+        codigo: '1440'
+        comuna: '@comuna_296'
+    cuadrante_1441:
+        nombre: 'Cuadrante 84B'
+        codigo: '1441'
+        comuna: '@comuna_296'
+    cuadrante_1442:
+        nombre: 'Sector Rural A'
+        codigo: '1442'
+        comuna: '@comuna_296'
+    cuadrante_1443:
+        nombre: 'Sector Rural B'
+        codigo: '1443'
+        comuna: '@comuna_296'
+    cuadrante_1444:
+        nombre: 'Sector Rural C'
+        codigo: '1444'
+        comuna: '@comuna_296'
+    cuadrante_1445:
+        nombre: 'Cuadrante 87'
+        codigo: '1445'
+        comuna: '@comuna_297'
+    cuadrante_1446:
+        nombre: 'Cuadrante 88'
+        codigo: '1446'
+        comuna: '@comuna_297'
+    cuadrante_1447:
+        nombre: 'Cuadrante 89'
+        codigo: '1447'
+        comuna: '@comuna_297'
+    cuadrante_1448:
+        nombre: 'Cuadrante 90'
+        codigo: '1448'
+        comuna: '@comuna_297'
+    cuadrante_1449:
+        nombre: 'Cuadrante 94'
+        codigo: '1449'
+        comuna: '@comuna_297'
+    cuadrante_1450:
+        nombre: 'Cuadrante 92'
+        codigo: '1450'
+        comuna: '@comuna_297'
+    cuadrante_1451:
+        nombre: 'Cuadrante 93'
+        codigo: '1451'
+        comuna: '@comuna_297'
+    cuadrante_1452:
+        nombre: 'Cuadrante 85'
+        codigo: '1452'
+        comuna: '@comuna_298'
+    cuadrante_1453:
+        nombre: 'Cuadrante 91'
+        codigo: '1453'
+        comuna: '@comuna_299'
+    cuadrante_1454:
+        nombre: 'Cuadrante 96'
+        codigo: '1454'
+        comuna: '@comuna_299'
+    cuadrante_1455:
+        nombre: 'Cuadrante 97'
+        codigo: '1455'
+        comuna: '@comuna_299'
+    cuadrante_1456:
+        nombre: 'Cuadrante 95'
+        codigo: '1456'
+        comuna: '@comuna_299'
+    cuadrante_1457:
+        nombre: 'Cuadrante 264'
+        codigo: '1457'
+        comuna: '@comuna_300'
+    cuadrante_1458:
+        nombre: 'Cuadrante 263'
+        codigo: '1458'
+        comuna: '@comuna_300'
+    cuadrante_1459:
+        nombre: 'Cuadrante 211'
+        codigo: '1459'
+        comuna: '@comuna_300'
+    cuadrante_1460:
+        nombre: 'Cuadrante 212'
+        codigo: '1460'
+        comuna: '@comuna_300'
+    cuadrante_1461:
+        nombre: 'Cuadrante 213'
+        codigo: '1461'
+        comuna: '@comuna_300'
+    cuadrante_1462:
+        nombre: 'Cuadrante 214'
+        codigo: '1462'
+        comuna: '@comuna_300'
+    cuadrante_1463:
+        nombre: 'Sector Rural A'
+        codigo: '1463'
+        comuna: '@comuna_300'
+    cuadrante_1464:
+        nombre: 'Cuadrante 265'
+        codigo: '1464'
+        comuna: '@comuna_300'
+    cuadrante_1465:
+        nombre: 'Cuadrante 266'
+        codigo: '1465'
+        comuna: '@comuna_300'
+    cuadrante_1466:
+        nombre: 'Cuadrante 261'
+        codigo: '1466'
+        comuna: '@comuna_301'
+    cuadrante_1467:
+        nombre: 'Cuadrante 259'
+        codigo: '1467'
+        comuna: '@comuna_302'
+    cuadrante_1468:
+        nombre: 'Cuadrante 281'
+        codigo: '1468'
+        comuna: '@comuna_302'
+    cuadrante_1469:
+        nombre: 'Sector Rural A2'
+        codigo: '1469'
+        comuna: '@comuna_302'
+    cuadrante_1470:
+        nombre: 'Sector Rural B'
+        codigo: '1470'
+        comuna: '@comuna_302'
+    cuadrante_1471:
+        nombre: 'Cuadrante 260'
+        codigo: '1471'
+        comuna: '@comuna_303'
+    cuadrante_1472:
+        nombre: 'Cuadrante 262'
+        codigo: '1472'
+        comuna: '@comuna_304'
+    cuadrante_1473:
+        nombre: 'Cuadrante 267'
+        codigo: '1473'
+        comuna: '@comuna_304'
+    cuadrante_1474:
+        nombre: 'Cuadrante 208'
+        codigo: '1474'
+        comuna: '@comuna_305'
+    cuadrante_1475:
+        nombre: 'Cuadrante 209'
+        codigo: '1475'
+        comuna: '@comuna_305'
+    cuadrante_1476:
+        nombre: 'Cuadrante 210'
+        codigo: '1476'
+        comuna: '@comuna_305'
+    cuadrante_1477:
+        nombre: 'Cuadrante 254'
+        codigo: '1477'
+        comuna: '@comuna_306'
+    cuadrante_1478:
+        nombre: 'Cuadrante 280'
+        codigo: '1478'
+        comuna: '@comuna_306'
+    cuadrante_1479:
+        nombre: 'Sector Rural A1'
+        codigo: '1479'
+        comuna: '@comuna_306'
+    cuadrante_1480:
+        nombre: 'Cuadrante 257'
+        codigo: '1480'
+        comuna: '@comuna_306'
+    cuadrante_1481:
+        nombre: 'Sector Rural B1'
+        codigo: '1481'
+        comuna: '@comuna_306'
+    cuadrante_1482:
+        nombre: 'Cuadrante 256'
+        codigo: '1482'
+        comuna: '@comuna_307'
+    cuadrante_1483:
+        nombre: 'Cuadrante 258'
+        codigo: '1483'
+        comuna: '@comuna_307'
+    cuadrante_1484:
+        nombre: 'Sector Rural A2'
+        codigo: '1484'
+        comuna: '@comuna_307'
+    cuadrante_1485:
+        nombre: 'Sector Rural B2'
+        codigo: '1485'
+        comuna: '@comuna_307'
+    cuadrante_1486:
+        nombre: 'Cuadrante 279'
+        codigo: '1486'
+        comuna: '@comuna_307'
+    cuadrante_1487:
+        nombre: 'Sector Rural C'
+        codigo: '1487'
+        comuna: '@comuna_307'
+    cuadrante_1488:
+        nombre: 'Sector Rural D'
+        codigo: '1488'
+        comuna: '@comuna_307'
+    cuadrante_1489:
+        nombre: 'Cuadrante 274'
+        codigo: '1489'
+        comuna: '@comuna_308'
+    cuadrante_1490:
+        nombre: 'Cuadrante 275'
+        codigo: '1490'
+        comuna: '@comuna_308'
+    cuadrante_1491:
+        nombre: 'Cuadrante 276'
+        codigo: '1491'
+        comuna: '@comuna_308'
+    cuadrante_1492:
+        nombre: 'Sector Rural A'
+        codigo: '1492'
+        comuna: '@comuna_308'
+    cuadrante_1493:
+        nombre: 'Cuadrante 252A'
+        codigo: '1493'
+        comuna: '@comuna_309'
+    cuadrante_1494:
+        nombre: 'Sector Rural A'
+        codigo: '1494'
+        comuna: '@comuna_309'
+    cuadrante_1495:
+        nombre: 'Cuadrante 252B'
+        codigo: '1495'
+        comuna: '@comuna_309'
+    cuadrante_1496:
+        nombre: 'Cuadrante 252C'
+        codigo: '1496'
+        comuna: '@comuna_309'
+    cuadrante_1497:
+        nombre: 'Cuadrante 253B'
+        codigo: '1497'
+        comuna: '@comuna_309'
+    cuadrante_1498:
+        nombre: 'Sector Rural C'
+        codigo: '1498'
+        comuna: '@comuna_309'
+    cuadrante_1499:
+        nombre: 'Cuadrante 253A'
+        codigo: '1499'
+        comuna: '@comuna_309'
+    cuadrante_1500:
+        nombre: 'Sector Rural B'
+        codigo: '1500'
+        comuna: '@comuna_309'
+    cuadrante_1501:
+        nombre: 'Cuadrante 01'
+        codigo: '1501'
+        comuna: '@comuna_310'
+    cuadrante_1502:
+        nombre: 'Cuadrante 02'
+        codigo: '1502'
+        comuna: '@comuna_310'
+    cuadrante_1503:
+        nombre: 'Cuadrante 03'
+        codigo: '1503'
+        comuna: '@comuna_310'
+    cuadrante_1504:
+        nombre: 'Sector Rural A'
+        codigo: '1504'
+        comuna: '@comuna_310'
+    cuadrante_1505:
+        nombre: 'Sector Rural E'
+        codigo: '1505'
+        comuna: '@comuna_310'
+    cuadrante_1506:
+        nombre: 'Cuadrante 07'
+        codigo: '1506'
+        comuna: '@comuna_310'
+    cuadrante_1507:
+        nombre: 'Sector Rural G'
+        codigo: '1507'
+        comuna: '@comuna_310'
+    cuadrante_1508:
+        nombre: 'Sector Rural F'
+        codigo: '1508'
+        comuna: '@comuna_310'
+    cuadrante_1509:
+        nombre: 'Cuadrante 04'
+        codigo: '1509'
+        comuna: '@comuna_310'
+    cuadrante_1510:
+        nombre: 'Sector Rural B'
+        codigo: '1510'
+        comuna: '@comuna_310'
+    cuadrante_1511:
+        nombre: 'Cuadrante 05'
+        codigo: '1511'
+        comuna: '@comuna_310'
+    cuadrante_1512:
+        nombre: 'Sector Rural C'
+        codigo: '1512'
+        comuna: '@comuna_310'
+    cuadrante_1513:
+        nombre: 'Cuadrante 06'
+        codigo: '1513'
+        comuna: '@comuna_310'
+    cuadrante_1514:
+        nombre: 'Sector Rural D'
+        codigo: '1514'
+        comuna: '@comuna_310'
+    cuadrante_1515:
+        nombre: 'Subsector 11'
+        codigo: '1515'
+        comuna: '@comuna_311'
+    cuadrante_1516:
+        nombre: 'Subsector 10'
+        codigo: '1516'
+        comuna: '@comuna_312'
+    cuadrante_1517:
+        nombre: 'Subsector 09'
+        codigo: '1517'
+        comuna: '@comuna_312'
+    cuadrante_1518:
+        nombre: 'Subsector 01'
+        codigo: '1518'
+        comuna: '@comuna_313'
+    cuadrante_1519:
+        nombre: 'Subsector 02'
+        codigo: '1519'
+        comuna: '@comuna_313'
+    cuadrante_1520:
+        nombre: 'Subsector 03'
+        codigo: '1520'
+        comuna: '@comuna_313'
+    cuadrante_1521:
+        nombre: 'Subsector 04'
+        codigo: '1521'
+        comuna: '@comuna_313'
+    cuadrante_1522:
+        nombre: 'Subsector 13'
+        codigo: '1522'
+        comuna: '@comuna_313'
+    cuadrante_1523:
+        nombre: 'Subsector 05'
+        codigo: '1523'
+        comuna: '@comuna_313'
+    cuadrante_1524:
+        nombre: 'Subsector 11'
+        codigo: '1524'
+        comuna: '@comuna_313'
+    cuadrante_1525:
+        nombre: 'Subsector 12'
+        codigo: '1525'
+        comuna: '@comuna_313'
+    cuadrante_1526:
+        nombre: 'Subsector 13'
+        codigo: '1526'
+        comuna: '@comuna_314'
+    cuadrante_1527:
+        nombre: 'Subsector 11'
+        codigo: '1527'
+        comuna: '@comuna_315'
+    cuadrante_1528:
+        nombre: 'Subsector 12'
+        codigo: '1528'
+        comuna: '@comuna_315'
+    cuadrante_1529:
+        nombre: 'Subsector 11'
+        codigo: '1529'
+        comuna: '@comuna_316'
+    cuadrante_1530:
+        nombre: 'Subsector 12'
+        codigo: '1530'
+        comuna: '@comuna_316'
+    cuadrante_1531:
+        nombre: 'Subsector 13'
+        codigo: '1531'
+        comuna: '@comuna_316'
+    cuadrante_1532:
+        nombre: 'Subsector 14'
+        codigo: '1532'
+        comuna: '@comuna_316'
+    cuadrante_1533:
+        nombre: 'Subsector 15'
+        codigo: '1533'
+        comuna: '@comuna_316'
+    cuadrante_1534:
+        nombre: 'Subsector 16'
+        codigo: '1534'
+        comuna: '@comuna_316'
+    cuadrante_1535:
+        nombre: 'Cuadrante 01'
+        codigo: '1535'
+        comuna: '@comuna_317'
+    cuadrante_1536:
+        nombre: 'Cuadrante 02'
+        codigo: '1536'
+        comuna: '@comuna_317'
+    cuadrante_1537:
+        nombre: 'Sector Rural A'
+        codigo: '1537'
+        comuna: '@comuna_317'
+    cuadrante_1538:
+        nombre: 'Sector Rural G'
+        codigo: '1538'
+        comuna: '@comuna_317'
+    cuadrante_1539:
+        nombre: 'Sector Rural B'
+        codigo: '1539'
+        comuna: '@comuna_317'
+    cuadrante_1540:
+        nombre: 'Sector Rural C'
+        codigo: '1540'
+        comuna: '@comuna_317'
+    cuadrante_1541:
+        nombre: 'Sector Rural F'
+        codigo: '1541'
+        comuna: '@comuna_317'
+    cuadrante_1542:
+        nombre: 'Sector Rural E'
+        codigo: '1542'
+        comuna: '@comuna_317'
+    cuadrante_1543:
+        nombre: 'Sector Rural D'
+        codigo: '1543'
+        comuna: '@comuna_317'
+    cuadrante_1544:
+        nombre: 'Cuadrante 01'
+        codigo: '1544'
+        comuna: '@comuna_318'
+    cuadrante_1545:
+        nombre: 'Cuadrante 02'
+        codigo: '1545'
+        comuna: '@comuna_318'
+    cuadrante_1546:
+        nombre: 'Sector Rural A'
+        codigo: '1546'
+        comuna: '@comuna_318'
+    cuadrante_1547:
+        nombre: 'Sector Rural B'
+        codigo: '1547'
+        comuna: '@comuna_318'
+    cuadrante_1548:
+        nombre: 'Sector Rural C'
+        codigo: '1548'
+        comuna: '@comuna_318'
+    cuadrante_1549:
+        nombre: 'Sector Rural D'
+        codigo: '1549'
+        comuna: '@comuna_318'
+    cuadrante_1550:
+        nombre: 'Sector Rural E'
+        codigo: '1550'
+        comuna: '@comuna_318'
+    cuadrante_1551:
+        nombre: 'Subsector 06'
+        codigo: '1551'
+        comuna: '@comuna_319'
+    cuadrante_1552:
+        nombre: 'Subsector 07'
+        codigo: '1552'
+        comuna: '@comuna_319'
+    cuadrante_1553:
+        nombre: 'Subsector 08'
+        codigo: '1553'
+        comuna: '@comuna_319'
+    cuadrante_1554:
+        nombre: 'Subsector 09'
+        codigo: '1554'
+        comuna: '@comuna_319'
+    cuadrante_1555:
+        nombre: 'Subsector 10'
+        codigo: '1555'
+        comuna: '@comuna_319'
+    cuadrante_1556:
+        nombre: 'Subsector 10'
+        codigo: '1556'
+        comuna: '@comuna_320'
+    cuadrante_1557:
+        nombre: 'Subsector 09'
+        codigo: '1557'
+        comuna: '@comuna_320'
+    cuadrante_1558:
+        nombre: 'Sector Rural D'
+        codigo: '1558'
+        comuna: '@comuna_321'
+    cuadrante_1559:
+        nombre: 'Sector Rural B'
+        codigo: '1559'
+        comuna: '@comuna_321'
+    cuadrante_1560:
+        nombre: 'Cuadrante 01'
+        codigo: '1560'
+        comuna: '@comuna_321'
+    cuadrante_1561:
+        nombre: 'Cuadrante 02'
+        codigo: '1561'
+        comuna: '@comuna_321'
+    cuadrante_1562:
+        nombre: 'Sector Rural A'
+        codigo: '1562'
+        comuna: '@comuna_321'
+    cuadrante_1563:
+        nombre: 'Sector Rural C'
+        codigo: '1563'
+        comuna: '@comuna_321'
+    cuadrante_1564:
+        nombre: 'Sector Rural E'
+        codigo: '1564'
+        comuna: '@comuna_321'
+    cuadrante_1565:
+        nombre: 'Sector Rural F'
+        codigo: '1565'
+        comuna: '@comuna_322'
+    cuadrante_1566:
+        nombre: 'Sector Rural E'
+        codigo: '1566'
+        comuna: '@comuna_322'
+    cuadrante_1567:
+        nombre: 'Sector Rural B'
+        codigo: '1567'
+        comuna: '@comuna_322'
+    cuadrante_1568:
+        nombre: 'Sector Rural D'
+        codigo: '1568'
+        comuna: '@comuna_322'
+    cuadrante_1569:
+        nombre: 'Sector Rural C'
+        codigo: '1569'
+        comuna: '@comuna_322'
+    cuadrante_1570:
+        nombre: 'Subsector 11'
+        codigo: '1570'
+        comuna: '@comuna_322'
+    cuadrante_1571:
+        nombre: 'Cuadrante 01'
+        codigo: '1571'
+        comuna: '@comuna_322'
+    cuadrante_1572:
+        nombre: 'Cuadrante 02'
+        codigo: '1572'
+        comuna: '@comuna_322'
+    cuadrante_1573:
+        nombre: 'Cuadrante 03'
+        codigo: '1573'
+        comuna: '@comuna_322'
+    cuadrante_1574:
+        nombre: 'Cuadrante 04'
+        codigo: '1574'
+        comuna: '@comuna_322'
+    cuadrante_1575:
+        nombre: 'Sector Rural A'
+        codigo: '1575'
+        comuna: '@comuna_322'
+    cuadrante_1576:
+        nombre: 'Cuadrante 05'
+        codigo: '1576'
+        comuna: '@comuna_322'
+    cuadrante_1577:
+        nombre: 'Cuadrante 06'
+        codigo: '1577'
+        comuna: '@comuna_322'
+    cuadrante_1578:
+        nombre: 'Cuadrante 07'
+        codigo: '1578'
+        comuna: '@comuna_322'
+    cuadrante_1579:
+        nombre: 'Cuadrante 08'
+        codigo: '1579'
+        comuna: '@comuna_322'
+    cuadrante_1580:
+        nombre: 'Cuadrante 09'
+        codigo: '1580'
+        comuna: '@comuna_322'
+    cuadrante_1581:
+        nombre: 'Cuadrante 10'
+        codigo: '1581'
+        comuna: '@comuna_322'
+    cuadrante_1582:
+        nombre: 'Subsector 11'
+        codigo: '1582'
+        comuna: '@comuna_323'
+    cuadrante_1583:
+        nombre: 'Subsector 11'
+        codigo: '1583'
+        comuna: '@comuna_323'
+    cuadrante_1584:
+        nombre: 'Subsector 01'
+        codigo: '1584'
+        comuna: '@comuna_324'
+    cuadrante_1585:
+        nombre: 'Subsector 02'
+        codigo: '1585'
+        comuna: '@comuna_324'
+    cuadrante_1586:
+        nombre: 'Subsector 06'
+        codigo: '1586'
+        comuna: '@comuna_324'
+    cuadrante_1587:
+        nombre: 'Subsector 07'
+        codigo: '1587'
+        comuna: '@comuna_324'
+    cuadrante_1588:
+        nombre: 'Subsector 09'
+        codigo: '1588'
+        comuna: '@comuna_324'
+    cuadrante_1589:
+        nombre: 'Subsector 08'
+        codigo: '1589'
+        comuna: '@comuna_324'
+    cuadrante_1590:
+        nombre: 'Subsector 03'
+        codigo: '1590'
+        comuna: '@comuna_325'
+    cuadrante_1591:
+        nombre: 'Subsector 05'
+        codigo: '1591'
+        comuna: '@comuna_325'
+    cuadrante_1592:
+        nombre: 'Subsector 04'
+        codigo: '1592'
+        comuna: '@comuna_325'

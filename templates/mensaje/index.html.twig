@@ -1,0 +1,78 @@
+{% extends 'mensaje/layout.html.twig' %}
+
+{% block title %}Mensajes{% endblock %}
+
+{% block header %}
+    <h1><span class="fa fa-fw fa-envelope"></span> Mensaje - Editar mensaje</h1>
+{% endblock %}
+
+{% block mensaje %}
+    <div class="row">
+        <div class="col">
+            <div class="card mb-2">
+                <div class="card-header">
+                    <div class="d-flex">
+                        <div class="flex-grow-1 mr-2"><a class="btn btn-primary" href="{{ path('mensaje_new') }}"><span class="fa fa-fw fa-edit"></span> Registrar mensaje</a></div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-sm mb-0">
+                        <thead>
+                            <tr class="table-info">
+                                <th>{{ knp_pagination_sortable(mensajes, '#F', 'a.numeroFormulario') }}</th>
+                                <th>{{ knp_pagination_sortable(mensajes, '#P', 'a.numeroParte') }}</th>
+                                <th>{{ knp_pagination_sortable(mensajes, 'Fecha', 'a.fecha') }}</th>
+                                <th>{{ knp_pagination_sortable(mensajes, 'Hora', 'a.hora') }}</th>
+                                <th>{{ knp_pagination_sortable(mensajes, 'Unidad', 'a.unidad') }}</th>
+                                <th>{{ knp_pagination_sortable(mensajes, 'Comuna', 'a.comuna') }}</th>
+                                <th>{{ knp_pagination_sortable(mensajes, 'Clase', 'ca.codigo') }}</th>
+                                <th>{{ knp_pagination_sortable(mensajes, 'Tipo', 'ta.codigo') }}</th>
+                                <th class="text-center"><span class="fa fa-fw fa-lg fa-clipboard-check" data-toggle="tooltip" data-placement="left" title data-original-title="Proceso de registro"></span></th>
+                                <th class="text-center"><span class="fa fa-fw fa-lg fa-question-circle" data-toggle="tooltip" data-placement="left" title data-original-title="Coherencia lógica"></span></th>
+                                <th class="text-center"><span class="fa fa-fw fa-lg fa-envelope" data-toggle="tooltip" data-placement="left" title data-original-title="Cantidad de fallecidos"></span></th>
+                                <th class="text-center">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for mensaje in mensajes %}
+                            <tr>
+                                <td>{{ mensaje.numeroFormulario }}</td>
+                                <td>{{ mensaje.numeroParte }}</td>
+                                <td>{{ mensaje.fecha ? mensaje.fecha|date('Y-m-d') : '' }}</td>
+                                <td>{{ mensaje.hora ? mensaje.hora|date('H:i') : '' }}</td>
+                                <td>{{ mensaje.unidad }}</td>
+                                <td>{{ mensaje.comuna }}</td>
+                                <td>{{ mensaje.claseAccidente }}</td>
+                                <td>{{ mensaje.tipoAccidente }}</td>
+                                <td class="text-center">
+                                    {% if mensaje.registroEtapas|length < 6 %}
+                                        <span class="fa fa-lg fa-exclamation-triangle text-warning" data-toggle="tooltip" data-placement="right" title data-original-title="Registro incompleto"></span>
+                                    {% else %}
+                                        <span class="fa fa-lg fa-check text-primary" data-toggle="tooltip" data-placement="right" title data-original-title="Registro terminado"></span>
+                                    {% endif %}
+                                </td>
+                                <td class="text-center">
+                                    {% if mensaje.registroEtapas|length > 0 %}
+                                        {% if mensaje.incoherencias|length > 0 %}
+                                            <span class="fa fa-lg fa-times-circle text-danger" data-toggle="tooltip" data-placement="left" data-html="true" title data-original-title="{% for incoherencia in mensaje.incoherencias %}<p>Incoherencia {{ loop.index }}: {{ incoherencia.descripcion }}</p>{% endfor %}"></span>
+                                        {% else %}
+                                            <span class="fa fa-lg fa-check-circle text-primary" data-toggle="tooltip" data-placement="left" title data-original-title="Coherencia comprobada"></span>
+                                        {% endif %}
+                                    {% else %}
+                                        <span class="fa fa-lg fa-question-circle" data-toggle="tooltip" data-placement="left" title data-original-title="Formulario no ingresado"></span>
+                                    {% endif %}
+                                </td>
+                                <td class="text-center">{{ mensaje.cantidadFallecidos }}</td>
+                                <td class="text-center">
+                                    <a class="btn btn-sm btn-light border-primary" href="{{ path('mensaje_edit', {'id': mensaje.id}) }}" data-toggle="tooltip" data-placement="bottom" title data-original-title="Editar mensaje"><span class="fa fa-fw fa-edit"></span></a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">{{ knp_pagination_render(mensajes) }}</div>
+        </div>
+    </div>
+{% endblock %}

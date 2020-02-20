@@ -1,0 +1,65 @@
+{% extends 'registro/edit_layout.html.twig' %}
+{% use 'registro/etapa.html.twig' %}
+{% use 'registro/control.html.twig' %}
+
+{% block title %}Editar Accidente{% endblock %}
+
+{% block header %}
+    <h1><span class="fa fa-fw fa-car-crash"></span> Registrar accidente - Condiciones</h1>
+{% endblock %}
+
+{% block edit_registro %}
+    {% block etapa %}{{ parent() }}{% endblock %}
+    {% form_theme form 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' _self %}
+    {{ form(form) }}
+{% endblock %}
+
+{% block accidente_widget %}
+    <div class="row">
+        <div class="col">
+            {{ block('control') }}
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="m-0">Formulario N° {{ form.vars.value.numeroFormulario }} - {{ 'etapa.condiciones'|trans }}</h4>
+                    </div>
+                </div>
+                <div class="card-body p-2">
+                    <div class="form-row">
+                        <div class="col-md-6 mb-2">
+                            <div class="card bg-info border-primary mb-2 h-100">
+                                <div class="card-body">
+                                {{ form_row(form.estadoAtmosferico) }}
+                                {{ form_row(form.tipoLuminosidad) }}
+                                {{ form_row(form.estadoLuzArtificial) }}
+                                {{ form_row(form.tipoPavimentoCalzada) }}
+                                {{ form_row(form.condicionPavimentoCalzada) }}
+                                {{ form_row(form.estadoPavimentoCalzada) }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <div class="card bg-info border-primary mb-2 h-100">
+                                <div class="card-body">
+                                {{ form_row(form.tipoCalzada) }}
+                                {{ form_row(form.cantidadPistasIda) }}
+                                {{ form_row(form.cantidadPistasRegreso) }}
+                                {{ form_row(form.demarcacionLineaCalzada) }}
+                                {{ form_row(form.demarcacionPrioridadCalzada) }}
+                                {% form_theme form.elementosCalzada 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' 'registro/themes/choice_theme.html.twig' %}
+                                {{ form_row(form.elementosCalzada) }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ block('control') }}
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('condiciones') }}
+{% endblock %}

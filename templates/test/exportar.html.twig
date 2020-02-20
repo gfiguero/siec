@@ -1,0 +1,83 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <div class="card">
+        <div class="table-responsive">
+            <table class="table table-sm table-bordered">
+                <thead>
+                    <tr>
+                        <th style="white-space:nowrap;">HTML</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.unidad'|trans }}</th>
+
+                        <th style="white-space:nowrap;">{{ 'accidente.numeroParte'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.fecha'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.hora'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.concurreSiat'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.claseAccidente'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.tipoAccidente'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.funcionario'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.tribunal'|trans }}</th>
+
+                        <th style="white-space:nowrap;">{{ 'accidente.causaBasal'|trans }}</th>
+
+                        <th style="white-space:nowrap;">{{ 'accidente.estadoAtmosferico'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.tipoLuminosidad'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.estadoLuzArtificial'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.tipoPavimentoCalzada'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.condicionPavimentoCalzada'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.estadoPavimentoCalzada'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.tipoCalzada'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.cantidadPistasIda'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.cantidadPistasRegreso'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.demarcacionLineaCalzada'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.demarcacionPrioridadCalzada'|trans }}</th>
+
+                        <th style="white-space:nowrap;">{{ 'accidente.comuna'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.cuadrante'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.tipoZonaAccidente'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.tipoUbicacionRelativaAccidente'|trans }}</th>
+                        <th style="white-space:nowrap;">{{ 'accidente.tipoDireccion'|trans }}</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for accidente in accidentes %}
+                    <tr>
+                        <td style="white-space:nowrap;"><a class="btn btn-sm btn-primary" href="{{ path('accidente_html', {accidente: accidente.id}) }}"><span class="fa fa-fw fa-share"></span></a></td>
+
+                        <td style="white-space:nowrap;">{{ accidente.unidad }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.numeroParte }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.fecha|date('Y-m-d') }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.hora|date('H:m') }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.concurreSiat ? 'Si' : 'No' }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.claseAccidente }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.tipoAccidente }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.funcionario }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.tribunal }}</td>
+
+                        <td style="white-space:nowrap;">{{ accidente.causaBasal }}</td>
+
+                        <td style="white-space:nowrap;">{{ accidente.estadoAtmosferico }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.tipoLuminosidad }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.estadoLuzArtificial }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.tipoPavimentoCalzada }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.condicionPavimentoCalzada }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.estadoPavimentoCalzada }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.tipoCalzada }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.cantidadPistasIda|length }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.cantidadPistasRegreso|length }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.demarcacionLineaCalzada }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.demarcacionPrioridadCalzada }}</td>
+
+                        <td style="white-space:nowrap;">{{ accidente.comuna }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.cuadrante }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.tipoZonaAccidente }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.tipoUbicacionRelativaAccidente }}</td>
+                        <td style="white-space:nowrap;">{{ accidente.tipoDireccion }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

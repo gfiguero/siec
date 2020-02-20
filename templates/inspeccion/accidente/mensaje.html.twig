@@ -1,0 +1,86 @@
+{% extends 'inspeccion/accidente/layout.html.twig' %}
+
+{% block title %}Adjuntar mensaje{% endblock %}
+
+{% block header %}
+    <h1><span class="fa fa-fw fa-search"></span> Inspección - Adjuntar mensaje</h1>
+{% endblock %}
+
+{% block accidente %}
+    {% form_theme form 'bootstrap_4_horizontal_layout.html.twig' _self %}
+    {{ form_start(form) }}
+    <div class="row">
+        <div class="col">
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="m-0"><span class="fa fa-fw fa-envelope-open-text"></span> Mensaje adjunto</h4>
+                    </div>
+                </div>
+                <div class="card-body p-2">
+                    <div class="form-row">
+                        <div class="col-6 pb-2">
+                            <div class="card bg-info border-primary h-100">
+                                <div class="card-body">
+                                {{ form_row(form.fecha) }}
+                                {{ form_row(form.hora) }}
+                                {{ form_row(form.numeroParte) }}
+                                {{ form_row(form.cantidadFallecidos) }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pb-2">
+                            <div class="card bg-info border-primary h-100">
+                                <div class="card-body">
+                                {{ form_row(form.claseAccidente) }}
+                                {{ form_row(form.tipoAccidente) }}
+                                {{ form_row(form.causaBasal) }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="m-0"><span class="fa fa-fw fa-map-marker-alt"></span> {{ 'mensaje.ubicacion'|trans }}</h4>
+                    </div>
+                </div>
+                <div class="card-body p-2">
+                    <div class="form-row">
+                        <div class="col-6 pb-2">
+                            <div class="card bg-info border-primary h-100">
+                                <div class="card-body">
+                                {{ form_row(form.comuna) }}
+                                {{ form_row(form.unidad) }}
+                                {{ form_row(form.tipoZonaAccidente) }}
+                                {{ form_row(form.tipoDireccion) }}
+                                {{ form_widget(form.ubicacion) }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pb-2">
+                            <div class="card border-primary h-100">
+                                <div class="card-body p-0">
+                                    <div id="map" class="map h-100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Enviar</button>
+        </div>
+    </div>
+    {{ form_end(form) }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('adjunto') }}
+{% endblock %}
+
+{% block form_label_class -%}col-sm-4{%- endblock form_label_class %}
+
+{% block form_group_class -%}col-sm-8{%- endblock form_group_class %}

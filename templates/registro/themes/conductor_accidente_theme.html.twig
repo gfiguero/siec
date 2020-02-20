@@ -1,0 +1,55 @@
+{% block conductor_accidente_label %}{% endblock %}
+
+{% block conductor_accidente_widget %}
+    <div class="card border-secondary">
+        <div class="card-header bg-secondary text-white">
+            <h5 class="m-0"><span class="fa fa-fw fa-address-card"></span> Conductor del vehículo</h5>
+        </div>
+        <div class="card-body p-2">
+            <div class="form-row">
+                <div class="col-md-6 mb-2">
+                    <div class="card bg-info border-primary h-100 mb-2">
+                        <div class="card-header"><h5 class="m-0"><span class="fa fa-fw fa-id-card"></span> Datos Personales</h5></div>
+                        <div class="card-body">
+                        {% form_theme form.persona 'registro/themes/persona_theme.html.twig' %}
+                        {{ form_row(form.persona) }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <div class="card bg-info border-primary h-100 mb-2">
+                        <div class="card-header"><h5 class="m-0"><span class="fa fa-fw fa-info"></span> Situación Personal</h5></div>
+                        <div class="card-body">
+                        {% form_theme form.personaEsCausanteProbable 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' 'registro/themes/checkbox_theme.html.twig' %}
+                        {{ form_row(form.personaEsCausanteProbable) }}
+
+                        {% form_theme form.personaSeFuga 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' 'registro/themes/checkbox_theme.html.twig' %}
+                        {{ form_row(form.personaSeFuga) }}
+
+                        {% form_theme form.claseLicencia 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+                        {{ form_row(form.claseLicencia) }}
+
+                        {% form_theme form.comunaLicencia 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+                        {{ form_row(form.comunaLicencia) }}
+
+                        {% form_theme form.tipoTrayecto 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+                        {{ form_row(form.tipoTrayecto) }}
+
+                        {% form_theme form.condicionFisica 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+                        {{ form_row(form.condicionFisica) }}
+
+                        {% form_theme form.cualidadEspecial 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+                        {{ form_row(form.cualidadEspecial) }}
+
+                        {% form_theme form.consecuenciaPersona 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+                        {{ form_row(form.consecuenciaPersona) }}
+
+                        {% form_theme form.seguridad 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' 'registro/themes/choice_theme.html.twig' %}
+                        {{ form_row(form.seguridad) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

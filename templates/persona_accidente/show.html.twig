@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}PersonaAccidente{% endblock %}
+
+{% block body %}
+    <h1>PersonaAccidente</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ persona_accidente.id }}</td>
+            </tr>
+            <tr>
+                <th>Edad</th>
+                <td>{{ persona_accidente.edad }}</td>
+            </tr>
+            <tr>
+                <th>CorrelativoVehiculo</th>
+                <td>{{ persona_accidente.correlativoVehiculo }}</td>
+            </tr>
+            <tr>
+                <th>PersonaEsCausanteProbable</th>
+                <td>{{ persona_accidente.personaEsCausanteProbable ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>UsoCinturon</th>
+                <td>{{ persona_accidente.usoCinturon ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>UsoCasco</th>
+                <td>{{ persona_accidente.usoCasco ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>UsoSistemaRetencionInfantil</th>
+                <td>{{ persona_accidente.usoSistemaRetencionInfantil ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>UsoCelular</th>
+                <td>{{ persona_accidente.usoCelular ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>UsoChalecoReflectante</th>
+                <td>{{ persona_accidente.usoChalecoReflectante ? 'Yes' : 'No' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('persona_accidente_index') }}">back to list</a>
+
+    <a href="{{ path('persona_accidente_edit', {'id': persona_accidente.id}) }}">edit</a>
+
+    {{ include('persona_accidente/_delete_form.html.twig') }}
+{% endblock %}

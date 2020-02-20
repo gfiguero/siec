@@ -1,0 +1,43 @@
+html,body {
+  height: 100%;
+}
+
+$white:   #ffffff !default;
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$primary:       #1d7d4d !default;
+$secondary:     #2b5a42 !default;
+$success:       #8cc63f !default;
+$light:         #e5e7e6 !default;
+$info:          lighten(desaturate($success, 20%), 20%) !default;
+$warning:       lighten(desaturate($yellow, 10%), 10%) !default;
+$danger:        lighten(desaturate($red, 10%), 10%) !default;
+$dark:          darken(desaturate($primary, 40%), 10%) !default;
+
+$form-check-input-gutter: 0px !default;
+
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~bootstrap-select/sass/bootstrap-select";
+@import "~jquery-ui/themes/base/theme";
+@import "steps.scss";
+@import "~ol/ol";
+@import "~bootstrap4-toggle/css/bootstrap4-toggle.min";
+@import "~select2/dist/css/select2.min";
+
+.table {
+  th,
+  td {
+    vertical-align: middle;
+  }
+}
+

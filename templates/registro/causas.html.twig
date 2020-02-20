@@ -1,0 +1,48 @@
+{% extends 'registro/edit_layout.html.twig' %}
+{% use 'registro/etapa.html.twig' %}
+{% use 'registro/control.html.twig' %}
+
+{% block title %}Editar Accidente{% endblock %}
+
+{% block header %}
+    <h1><span class="fa fa-fw fa-car-crash"></span> Registrar accidente - Causas</h1>
+{% endblock %}
+
+{% block edit_registro %}
+    {% block etapa %}{{ parent() }}{% endblock %}
+    {% form_theme form 'bootstrap_4_horizontal_layout.html.twig' _self %}
+    {{ form(form) }}
+{% endblock %}
+
+{% block accidente_widget %}
+    <div class="row">
+        <div class="col">
+            {{ block('control') }}
+            <div class="card border-primary mb-2">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex">
+                        <h4 class="m-0">Formulario N° {{ form.vars.value.numeroFormulario }} - {{ 'etapa.causas'|trans }}</h4>
+                    </div>
+                </div>
+                <div class="card-body p-2">
+                    <div class="form-row">
+                        <div class="col mb-2">
+                            <div class="card bg-info border-primary">
+                                <div class="card-body">
+                                {{ form_row(form.causaBasal) }}
+                                {{ form_row(form.causas) }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ block('control') }}
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('causas') }}
+{% endblock %}

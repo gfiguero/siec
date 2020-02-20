@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}VehiculoAccidente{% endblock %}
+
+{% block body %}
+    <h1>VehiculoAccidente</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ vehiculo_accidente.id }}</td>
+            </tr>
+            <tr>
+                <th>VehiculoEsCausanteProbable</th>
+                <td>{{ vehiculo_accidente.vehiculoEsCausanteProbable ? 'Yes' : 'No' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('vehiculo_accidente_index') }}">back to list</a>
+
+    <a href="{{ path('vehiculo_accidente_edit', {'id': vehiculo_accidente.id}) }}">edit</a>
+
+    {{ include('vehiculo_accidente/_delete_form.html.twig') }}
+{% endblock %}

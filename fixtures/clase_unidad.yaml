@@ -1,0 +1,7 @@
+App\Entity\ClaseUnidad:
+    clase_unidad_administrativa:
+        nombre: 'Administrativa'
+    clase_unidad_operativa:
+        nombre: 'Operativa'
+    clase_unidad_especializada:
+        nombre: 'Operativa especializada'

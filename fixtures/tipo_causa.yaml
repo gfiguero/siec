@@ -1,0 +1,31 @@
+App\Entity\TipoCausa:
+    tipo_causa_1:
+        nombre: 'Fallas mecánicas'
+        codigo: '00'
+    tipo_causa_2:
+        nombre: 'Adelantamientos'
+        codigo: '10'
+    tipo_causa_3:
+        nombre: 'Conducción'
+        codigo: '20'
+    tipo_causa_4:
+        nombre: 'No respetar preferencia'
+        codigo: '30'
+    tipo_causa_5:
+        nombre: 'Pasajero'
+        codigo: '40'
+    tipo_causa_6:
+        nombre: 'Otras peatón'
+        codigo: '50'
+    tipo_causa_7:
+        nombre: 'Señalización'
+        codigo: '60'
+    tipo_causa_8:
+        nombre: 'Velocidad'
+        codigo: '70'
+    tipo_causa_9:
+        nombre: 'Carga y/o descarga'
+        codigo: '80'
+    tipo_causa_10:
+        nombre: 'Otras infracciones'
+        codigo: '90'

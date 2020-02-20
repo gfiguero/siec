@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}PersonaAccidente index{% endblock %}
+
+{% block body %}
+    <h1>PersonaAccidente index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Edad</th>
+                <th>CorrelativoVehiculo</th>
+                <th>PersonaEsCausanteProbable</th>
+                <th>UsoCinturon</th>
+                <th>UsoCasco</th>
+                <th>UsoSistemaRetencionInfantil</th>
+                <th>UsoCelular</th>
+                <th>UsoChalecoReflectante</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for persona_accidente in persona_accidentes %}
+            <tr>
+                <td>{{ persona_accidente.id }}</td>
+                <td>{{ persona_accidente.edad }}</td>
+                <td>{{ persona_accidente.correlativoVehiculo }}</td>
+                <td>{{ persona_accidente.personaEsCausanteProbable ? 'Yes' : 'No' }}</td>
+                <td>{{ persona_accidente.usoCinturon ? 'Yes' : 'No' }}</td>
+                <td>{{ persona_accidente.usoCasco ? 'Yes' : 'No' }}</td>
+                <td>{{ persona_accidente.usoSistemaRetencionInfantil ? 'Yes' : 'No' }}</td>
+                <td>{{ persona_accidente.usoCelular ? 'Yes' : 'No' }}</td>
+                <td>{{ persona_accidente.usoChalecoReflectante ? 'Yes' : 'No' }}</td>
+                <td>
+                    <a href="{{ path('persona_accidente_show', {'id': persona_accidente.id}) }}">show</a>
+                    <a href="{{ path('persona_accidente_edit', {'id': persona_accidente.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="10">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('persona_accidente_new') }}">Create new</a>
+{% endblock %}

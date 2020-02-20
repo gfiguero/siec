@@ -1,0 +1,87 @@
+{% extends 'inspeccion/accidenteVehiculo/layout.html.twig' %}
+
+{% block title %}Búsqueda de accidentes{% endblock %}
+
+{% block header %}
+    <h1><span class="fa fa-fw fa-search"></span> Inspección - Búsqueda de accidentes por vehículos</h1>
+{% endblock %}
+
+{% block accidente %}
+    <div class="row">
+        <div class="col">
+            <div class="card mb-2">
+                <div class="card-header">
+                    {% set menu = knp_menu_get('inspeccionAccidentesVehiculos', [], {}) %}
+                    {{ knp_menu_render(menu) }}
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-2">
+                            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal"><span class="fa fa-search"></span> Ver consulta SQL</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Consulta SQL</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body"><pre class="prettyprint"><code class="language-sql">{{ sql|replace({', ': ',\n', 'LEFT JOIN': '\nLEFT JOIN', 'WHERE': '\nWHERE', 'AND': '\nAND'}) }}</code></pre></div>
+                                        {% if parameters is iterable %}{% set matrix = [] %}{% for parameter in parameters %}{% if parameter.value is iterable %}{% set array = [] %}{% for entity in parameter.value %}{% set array = array|merge([entity.id]) %}{% endfor %}{% set matrix = matrix|merge({ (parameter.name) : array} ) %}{% elseif parameter.value is instanceof('DateTime') %}{% set matrix = matrix|merge({ (parameter.name) : ('"' ~ parameter.value|date('d-m-Y') ~ '"')} ) %}{% else %}{% set matrix = matrix|merge({ (parameter.name) : ('"' ~ parameter.value ~ '"') } ) %}{% endif %}{% endfor %}{% endif %}
+                                        <div class="modal-body">
+                                            {% for key, parameter in matrix %}
+                                                {{ ('inspeccion.' ~ key)|trans }}: {{ parameter|join(', ') }}<br>
+                                            {% endfor %}
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            {{ block('filtro') }}
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-sm mb-0">
+                        <thead>
+                            <tr class="table-info">
+                                <th>{{ knp_pagination_sortable(accidentes, 'ID', 'a.id') }}</th>
+                                <th>{{ knp_pagination_sortable(accidentes, '#F', 'a.numeroFormulario') }}</th>
+                                <th>{{ knp_pagination_sortable(accidentes, '#P', 'a.numeroParte') }}</th>
+                                <th>{{ knp_pagination_sortable(accidentes, 'Fecha', 'a.fecha') }}</th>
+                                <th>{{ knp_pagination_sortable(accidentes, 'Hora', 'a.hora') }}</th>
+                                <th>{{ knp_pagination_sortable(accidentes, 'Tipo', 'tipoAccidente.codigo') }}</th>
+                                <th>{{ knp_pagination_sortable(accidentes, 'Causa', 'causaBasal.codigo') }}</th>
+                                <th class="text-center"><span class="fa fa-fw fa-lg fa-car-alt" data-toggle="tooltip" data-placement="left" title data-original-title="Cantidad de vehículos"></span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for accidente in accidentes %}
+                            <tr>
+                                <td>{{ accidente.id }}</td>
+                                <td>{{ accidente.numeroFormulario }}</td>
+                                <td>{{ accidente.numeroParte }}</td>
+                                <td>{{ accidente.fecha ? accidente.fecha|date('Y-m-d') : '' }}</td>
+                                <td>{{ accidente.hora ? accidente.hora|date('H:i') : '' }}</td>
+                                <td>{{ accidente.tipoAccidente }}</td>
+                                <td>{{ accidente.causaBasal }}</td>
+                                <td class="text-center">{{ accidente.vehiculosAccidente|length }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">{{ knp_pagination_render(accidentes) }}</div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+{% endblock %}

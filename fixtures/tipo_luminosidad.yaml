@@ -1,0 +1,13 @@
+App\Entity\TipoLuminosidad:
+    tipo_luminosidad_1:
+        nombre: 'Diurna'
+        codigo: '01 '
+    tipo_luminosidad_2:
+        nombre: 'Nocturna'
+        codigo: '02 '
+    tipo_luminosidad_3:
+        nombre: 'Amanecer'
+        codigo: '03 '
+    tipo_luminosidad_4:
+        nombre: 'Atardecer'
+        codigo: '04 '

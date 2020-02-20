@@ -1,0 +1,49 @@
+{% extends 'unidad/layout.html.twig' %}
+
+{% block title %}Unidad index{% endblock %}
+
+{% block unidad %}
+    <div class="row">
+        <div class="col">
+            <div class="card mb-2">
+                <div class="card-header">
+                    <div class="d-flex">
+                        <div class="flex-grow-1 mr-2">
+                            <a class="btn btn-primary" href="{{ path('unidad_new') }}"><span class="fa fa-fw fa-edit"></span> Registrar unidad</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-sm mb-0">
+                        <thead>
+                            <tr class="table-info">
+                                <th>Id</th>
+                                <th>Código</th>
+                                <th>Nombre</th>
+                                <th>Habilitado</th>
+                                <th>Comuna</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for unidad in unidades %}
+                            <tr>
+                                <td>{{ unidad.id }}</td>
+                                <td>{{ unidad.codigo }}</td>
+                                <td>{{ unidad.nombre }}</td>
+                                <td>{{ unidad.habilitada ? 'Si' : 'No' }}</td>
+                                <td>{{ unidad.comuna ? unidad.comuna.nombre : '' }}</td>
+                                <td>
+                                    <a href="{{ path('unidad_show', {'id': unidad.id}) }}">show</a>
+                                    <a href="{{ path('unidad_edit', {'id': unidad.id}) }}">edit</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

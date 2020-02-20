@@ -1,0 +1,59 @@
+{% block vehiculo_accidente_label %}{% endblock %}
+
+{% block vehiculo_accidente_widget %}
+    <div class="card border-secondary">
+        <div class="card-header bg-secondary text-white">
+            <div class="d-flex">
+                <h5 class="flex-grow-1 my-2"><span class="fa fa-fw fa-car"></span> Vehículo - Posición relativa: <span class="vehiculo-position">{{ form.vars.name }}</span></h5>
+                <button type="button" class="collection-up btn btn-primary ml-1" title="Subir"><span class="fa fa-fw fa-arrow-up"></span>Subir Vehículo</button>
+                <button type="button" class="collection-down btn btn-primary ml-1" title="Bajar"><span class="fa fa-fw fa-arrow-down"></span>Bajar Vehículo</button>
+                <button type="button" class="collection-remove btn btn-danger ml-1" title="Eliminar"><span class="fa fa-fw fa-times"></span>Borrar Vehículo</button>
+            </div>
+        </div>
+        <div class="card-body p-2">
+            <div class="form-row">
+                <div class="col-md-6 mb-2">
+                    <div class="card border-primary h-100 mb-2">
+                        <div class="card-header bg-secondary text-white">
+                            <h5 class="m-0"><span class="fa fa-fw fa-clipboard-check"></span> Datos del padrón</h5>
+                        </div>
+                        <div class="card-body bg-info">
+                        {% form_theme form.vehiculo 'registro/themes/vehiculo_theme.html.twig' 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+                        {{ form_widget(form.vehiculo) }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <div class="card border-primary h-100 mb-2">
+                        <div class="card-header bg-secondary text-white">
+                            <h5 class="m-0"><span class="fa fa-fw fa-info"></span> Situación Vehicular</h5>
+                        </div>
+                        <div class="card-body bg-info">
+                        {% form_theme form.vehiculoEsCausanteProbable 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' 'registro/themes/checkbox_theme.html.twig' %}
+                        {{ form_row(form.vehiculoEsCausanteProbable) }}
+
+                        {% form_theme form.vehiculoSeFuga 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' 'registro/themes/checkbox_theme.html.twig' %}
+                        {{ form_row(form.vehiculoSeFuga) }}
+
+                        {% form_theme form.servicioVehiculo 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+                        {{ form_row(form.servicioVehiculo) }}
+
+                        {% form_theme form.direccionVehiculo 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+                        {{ form_row(form.direccionVehiculo) }}
+
+                        {% form_theme form.maniobraVehiculo 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+                        {{ form_row(form.maniobraVehiculo) }}
+
+                        {% form_theme form.consecuenciaVehiculo 'bootstrap_4_horizontal_layout.html.twig' 'registro/themes/label_theme.html.twig' %}
+                        {{ form_row(form.consecuenciaVehiculo) }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                {{ form_widget(form.conductorAccidente) }}
+                {{ form_widget(form.pasajerosAccidente) }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

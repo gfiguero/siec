@@ -1,0 +1,47 @@
+{% extends 'usuario/layout.html.twig' %}
+
+{% block usuario %}
+    <div class="row">
+        <div class="col">
+            <div class="card mb-2">
+                <div class="card-header">
+                    <div class="d-flex">
+                        <div class="flex-grow-1 mr-2">
+                            <a class="btn btn-primary" href="{{ path('usuario_new') }}"><span class="fa fa-fw fa-edit"></span> Registrar usuario</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-sm mb-0">
+                        <thead>
+                            <tr class="table-info">
+                                <th>{{ knp_pagination_sortable(usuarios, 'Id', 'u.id') }}</th>
+                                <th>{{ knp_pagination_sortable(usuarios, 'Usuario', 'u.username') }}</th>
+                                <th>{{ knp_pagination_sortable(usuarios, 'Creado', 'u.created') }}</th>
+                                <th>{{ knp_pagination_sortable(usuarios, 'Actualizado', 'u.updated') }}</th>
+                                <th>Funcionario</th>
+                                <th>Unidad</th>
+                                <th class="text-center">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for usuario in usuarios %}
+                            <tr>
+                                <td>{{ usuario.id }}</td>
+                                <td>{{ usuario.username }}</td>
+                                <td>{{ usuario.created ? usuario.created|date('Y-m-d') : '' }}</td>
+                                <td>{{ usuario.updated ? usuario.updated|date('Y-m-d') : '' }}</td>
+                                <td>{{ usuario.funcionario }}</td>
+                                <td>{% if usuario.funcionario %}{{ usuario.funcionario.unidad }}{% endif %}</td>
+                                <td></td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">{{ knp_pagination_render(usuarios) }}</div>
+        </div>
+    </div>
+
+{% endblock %}

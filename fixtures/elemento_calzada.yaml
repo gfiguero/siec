@@ -1,0 +1,10 @@
+App\Entity\ElementoCalzada:
+    elemento_calzada_paso:
+        nombre: 'Paso peatonal'
+        codigo: '01'
+    elemento_calzada_resalto:
+        nombre: 'Resalto vial'
+        codigo: '02'
+    elemento_calzada_semaforo:
+        nombre: 'Semáforo'
+        codigo: '03'

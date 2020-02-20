@@ -1,0 +1,56 @@
+{% extends 'funcionario/layout.html.twig' %}
+
+{% block title %}Funcionarios{% endblock %}
+
+{% block funcionario %}
+    <div class="row">
+        <div class="col">
+            <div class="card mb-2">
+                <div class="card-header">
+                    <div class="d-flex">
+                        <div class="flex-grow-1 mr-2">
+                            <a class="btn btn-primary" href="{{ path('funcionario_new') }}"><span class="fa fa-fw fa-edit"></span> Registrar funcionario</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-sm mb-0">
+                        <thead>
+                            <tr class="table-info">
+                                <th>Id</th>
+                                <th>Codigo</th>
+                                <th>Nombres</th>
+                                <th>ApellidoPaterno</th>
+                                <th>ApellidoMaterno</th>
+                                <th>Email</th>
+                                <th>Telefono</th>
+                                <th>Grado</th>
+                                <th>Unidad</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for funcionario in funcionarios %}
+                            <tr>
+                                <td>{{ funcionario.id }}</td>
+                                <td>{{ funcionario.codigo }}</td>
+                                <td>{{ funcionario.nombres }}</td>
+                                <td>{{ funcionario.apellidoPaterno }}</td>
+                                <td>{{ funcionario.apellidoMaterno }}</td>
+                                <td>{{ funcionario.email }}</td>
+                                <td>{{ funcionario.telefono }}</td>
+                                <td>{{ funcionario.gradoCarabinero.nombre }}</td>
+                                <td>{{ funcionario.unidad.nombre }}</td>
+                                <td>
+                                    <a href="{{ path('funcionario_show', {'id': funcionario.id}) }}">show</a>
+                                    <a href="{{ path('funcionario_edit', {'id': funcionario.id}) }}">edit</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

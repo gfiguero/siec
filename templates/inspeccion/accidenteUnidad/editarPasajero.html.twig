@@ -1,0 +1,50 @@
+{% extends 'inspeccion/accidenteUnidad/layout.html.twig' %}
+
+{% block title %}{{ 'Inspeccion - Editar pasajero'|trans }}{% endblock %}
+
+{% block header %}
+    <h1><span class="fa fa-fw fa-search"></span> Inspección - Editar pasajero</h1>
+{% endblock %}
+
+{% block accidenteUnidad %}
+    <div class="card">
+        <div class="card-header bg-primary text-white"><h4 class="m-0">Pasajero ID: {{ pasajeroAccidente.id }} - Accidente ID: {{ pasajeroAccidente.vehiculoAccidente.accidente.id }}</h4></div>
+        <div class="card-body">
+            {% form_theme form 'bootstrap_4_horizontal_layout.html.twig' _self %}
+            {{ form_start(form) }}
+                {{ form_row(form.persona.run) }}
+                {{ form_row(form.persona.nombres) }}
+                {{ form_row(form.persona.apellidoPaterno) }}
+                {{ form_row(form.persona.apellidoMaterno) }}
+                {{ form_row(form.persona.ocupacion) }}
+                {{ form_row(form.persona.lugarNacimiento) }}
+                {{ form_row(form.persona.fechaNacimiento) }}
+                {{ form_row(form.persona.genero) }}
+                {{ form_row(form.persona.estadoCivil) }}
+                {{ form_row(form.persona.nacionalidad) }}
+                {{ form_row(form.tipoTrayecto) }}
+                {{ form_row(form.condicionFisica) }}
+                {{ form_row(form.cualidadEspecial) }}
+                {{ form_row(form.consecuenciaPersona) }}
+                {{ form_row(form.personaEsCausanteProbable) }}
+                {{ form_row(form.personaSeFuga) }}
+                {{ form_row(form.seguridad) }}
+                <div class="form-group row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-9">
+                        <button type="submit" class="btn-primary btn"> Guardar cambios</button>
+                    </div>
+                </div>
+            {{ form_rest(form) }}
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('vehiculos') }}
+{% endblock %}
+
+{% block form_label_class -%}col-sm-3 text-right{%- endblock form_label_class %}
+
+{% block form_group_class -%}col-sm-9{%- endblock form_group_class %}

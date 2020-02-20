@@ -1,0 +1,33 @@
+App\Entity\GradoCarabinero:
+    grado_carabinero_pni_carabinero:
+        nombre: 'Carabinero'
+    grado_carabinero_pni_cabo_2:
+        nombre: 'Cabo 2do.'
+    grado_carabinero_pni_cabo_1:
+        nombre: 'Cabo 1ro.'
+    grado_carabinero_pni_sargento_2:
+        nombre: 'Sargento 2do.'
+    grado_carabinero_pni_sargento_1:
+        nombre: 'Sargento 1ro.'
+    grado_carabinero_pni_suboficial:
+        nombre: 'Suboficial'
+    grado_carabinero_pni_suboficial_mayor:
+        nombre: 'Suboficial Mayor'
+    grado_carabinero_pns_subteniente:
+        nombre: 'Subteniente'
+    grado_carabinero_pns_teniente:
+        nombre: 'Teniente'
+    grado_carabinero_pns_capitan:
+        nombre: 'Capitán'
+    grado_carabinero_pns_mayor:
+        nombre: 'Mayor'
+    grado_carabinero_pns_teniente_coronel:
+        nombre: 'Teniente Coronel'
+    grado_carabinero_pns_coronel:
+        nombre: 'Coronel'
+    grado_carabinero_pns_general:
+        nombre: 'General'
+    grado_carabinero_pns_general_inspector:
+        nombre: 'General Inspector'
+    grado_carabinero_pns_general_director:
+        nombre: 'General Director'

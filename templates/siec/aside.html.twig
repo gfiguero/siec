@@ -1,0 +1,4 @@
+{% block aside %}
+    {% set menu = knp_menu_get('siec', [], {}) %}
+    {{ knp_menu_render(menu) }}
+{% endblock %}

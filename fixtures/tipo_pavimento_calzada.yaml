@@ -1,0 +1,19 @@
+App\Entity\TipoPavimentoCalzada:
+    tipo_pavimento_calzada_1:
+        nombre: 'Concreto'
+        codigo: '01'
+    tipo_pavimento_calzada_2:
+        nombre: 'Asfalto'
+        codigo: '02'
+    tipo_pavimento_calzada_3:
+        nombre: 'Adoquín'
+        codigo: '03'
+    tipo_pavimento_calzada_4:
+        nombre: 'Mixto'
+        codigo: '04'
+    tipo_pavimento_calzada_5:
+        nombre: 'Ripio'
+        codigo: '05'
+    tipo_pavimento_calzada_6:
+        nombre: 'Tierra'
+        codigo: '06'
