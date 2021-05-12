@@ -22,7 +22,7 @@
         "bootstrap-select": "^1.13.10",
         "bootstrap4-notify": "^4.0.3",
         "bootstrap4-toggle": "^3.5.0",
-        "chart.js": "^2.8.0",
+        "chart.js": "^2.9.4",
         "chilean-rut-v2": "^2.0.2",
         "d3": "^5.11.0",
         "d3-scale-chromatic": "^1.5.0",
