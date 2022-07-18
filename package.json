@@ -28,7 +28,7 @@
         "d3-scale-chromatic": "^1.5.0",
         "d3-webpack-loader": "^0.1.1",
         "jquery": "^3.4.1",
-        "jquery-ui": "^1.12.1",
+        "jquery-ui": "^1.13.2",
         "jquery-ui-bundle": "^1.12.1-migrate",
         "jquery-ui-dist": "^1.12.1",
         "jquery-validation": "^1.19.1",
